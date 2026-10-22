@@ -1,0 +1,107 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fcfbf8"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="stylesheet" href="/site.css?v=20261022"><link rel="icon" href="/assets/brand/taskobo-favicon.svg" type="image/svg+xml">%%HEAD%%</head><body><a class="skip-link" href="#main">本文へ移動</a><svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"></path></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M3 12h17M14 5l7 7-7 7"></path></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 9 5 5 5-5"></path></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"></path></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"></path></symbol>
+  </svg><header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="wordmark" href="/" aria-label="Taskobo ホーム"><img src="/assets/brand/taskobo-logo.svg" width="254" height="40" alt="TASKOBO"></a>
+      <nav class="desktop-nav" aria-label="メインナビゲーション">
+        <a href="/#products">製品</a>
+        
+        <a href="/#solutions">部門別の活用</a>
+        <a href="/#insights">本とInsights</a>
+        <a href="/#free-tools" aria-current="location">無料ツール</a>
+      </nav>
+      <div class="header-end">
+        <span class="current-language" lang="ja">日本語</span>
+        <a class="header-contact" href="/#products">製品を選ぶ <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        <button class="menu-button" id="menu-button" type="button" aria-label="メニューを開く" aria-controls="mobile-menu" aria-expanded="false">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header><div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="サイトメニュー" hidden="">
+    <div class="mobile-menu-head">
+      <span class="wordmark"><img src="/assets/brand/taskobo-logo.svg" width="254" height="40" alt="TASKOBO"></span>
+      <button class="menu-close" id="menu-close" type="button" aria-label="メニューを閉じる"><svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg></button>
+    </div>
+    <nav aria-label="モバイルナビゲーション">
+      <a href="/#products">製品</a>
+      
+      <a href="/#solutions">部門別の活用</a>
+      <a href="/#insights">本とInsights</a>
+      <a href="/#free-tools">無料ツール</a>
+      <a href="/#about">Taskoboについて</a>
+      
+    </nav>
+    <span class="mobile-language">日本語</span>
+  </div><main id="main" class="illustration-page" tabindex="-1">%%MAIN%%</main><footer class="site-footer">
+    <div class="container footer-main">
+      <div><a class="wordmark" href="/"><img src="/assets/brand/taskobo-logo.svg" width="254" height="40" alt="TASKOBO"></a><p>仕事をつなぎ、可能性を広げる。</p></div>
+      <nav aria-label="フッターナビゲーション"><a href="/#products">製品</a><a href="/#solutions">部門別の活用</a><a href="/#insights">本とInsights</a><a href="/#free-tools">無料ツール</a><a href="/#about">Taskoboについて</a></nav>
+    </div>
+  </footer><script id="taskobo-portal-navigation">(() => {
+  const menuButton = document.getElementById('menu-button');
+  const menuClose = document.getElementById('menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const header = document.querySelector('.site-header');
+  const menuBackground = [header, document.getElementById('main'), document.querySelector('.site-footer')];
+  let returnFocus = null;
+
+  function closeMenu() {
+    if (mobileMenu.hidden) return;
+    mobileMenu.hidden = true;
+    menuBackground.forEach(element => { element.inert = false; });
+    document.body.classList.remove('menu-open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'メニューを開く');
+    const focusTarget = window.innerWidth > 1020 ? header.querySelector('.wordmark') : (returnFocus || menuButton);
+    focusTarget.focus();
+  }
+
+  function openMenu() {
+    returnFocus = document.activeElement;
+    mobileMenu.hidden = false;
+    menuBackground.forEach(element => { element.inert = true; });
+    document.body.classList.add('menu-open');
+    menuButton.setAttribute('aria-expanded', 'true');
+    menuButton.setAttribute('aria-label', 'メニューを閉じる');
+    menuClose.focus();
+  }
+
+  menuButton.addEventListener('click', () => mobileMenu.hidden ? openMenu() : closeMenu());
+  menuClose.addEventListener('click', closeMenu);
+  mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+  document.addEventListener('keydown', event => {
+    if (mobileMenu.hidden) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeMenu();
+      return;
+    }
+    if (event.key !== 'Tab') return;
+    const focusable = [...mobileMenu.querySelectorAll('a, button')];
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1020 && !mobileMenu.hidden) closeMenu();
+  }, { passive: true });
+
+  const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 12);
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
+})();
+</script></body></html>

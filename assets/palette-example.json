@@ -1,0 +1,18 @@
+{
+  "colors": {
+    "background": "#F7FAF8",
+    "surface": "#FFFFFF",
+    "ink": "#173342",
+    "muted": "#50636C",
+    "primary": "#007F78",
+    "on_primary": "#FFFFFF",
+    "focus": "#B05727"
+  },
+  "checks": [
+    {"name": "body text", "foreground": "ink", "background": "background", "minimum": 4.5},
+    {"name": "secondary text", "foreground": "muted", "background": "background", "minimum": 4.5},
+    {"name": "essential primary shape", "foreground": "primary", "background": "surface", "minimum": 3.0},
+    {"name": "text on primary", "foreground": "on_primary", "background": "primary", "minimum": 4.5},
+    {"name": "essential focus mark", "foreground": "focus", "background": "surface", "minimum": 3.0}
+  ]
+}

@@ -1,0 +1,602 @@
+{
+  "routes": [
+    "/free-tools/taskobo-illustration/",
+    "/free-tools/taskobo-illustration/samples/manufacturing-logistics/",
+    "/free-tools/taskobo-illustration/samples/retail-service/",
+    "/free-tools/taskobo-illustration/samples/healthcare-care/",
+    "/free-tools/taskobo-illustration/samples/education-training/"
+  ],
+  "skillZip": "taskobo-illustration-v0.2.0-c11eff967455.zip",
+  "hero": {
+    "small": "portfolio-768-1f347b0a300e.webp",
+    "large": "portfolio-1440-f54d95aec6f1.webp",
+    "original": "portfolio-83b2fdfa9e76.png"
+  },
+  "cases": [
+    {
+      "id": "manufacturing-logistics",
+      "name": "製造・物流",
+      "title": "品質を確かめ、次の工程へつなぐ。",
+      "description": "検品、作業の確認、梱包と引渡し。工程を担う人の動きと、確かめる対象を一つの場面にまとめる。",
+      "audience": "現場担当者、品質管理、物流チーム",
+      "uses": "作業教育資料、品質改善の提案書、工程紹介のスライド",
+      "theme": "製造・物流における品質確認と引渡し",
+      "accent": "#1456D9",
+      "wash": "#EDF3FF",
+      "paletteName": "コバルトブルー",
+      "meaning": "確認する部品、作業を説明する担当者、梱包する担当者の関係を描く。実際の作業手順や設備配置を保証する図ではない。",
+      "alt": "製造現場で部品と確認シートを照合する担当者、治具を説明する技術者、梱包する物流担当者のイラスト",
+      "icons": [
+        [
+          "inspection",
+          "受入検査",
+          "部品の状態を確かめる"
+        ],
+        [
+          "instructions",
+          "作業標準",
+          "確認する手順を共有する"
+        ],
+        [
+          "traceability",
+          "トレーサビリティ",
+          "対象と履歴を結びつける"
+        ],
+        [
+          "exception",
+          "異常の報告",
+          "確認が必要な箇所を伝える"
+        ],
+        [
+          "maintenance",
+          "設備保全",
+          "設備を使える状態に保つ"
+        ],
+        [
+          "shipment",
+          "出荷・引渡し",
+          "確認した品物を引き継ぐ"
+        ]
+      ],
+      "assets": {
+        "small": "manufacturing-logistics-768-84b6fb631ac4.webp",
+        "large": "manufacturing-logistics-1440-7fc6740ee59f.webp",
+        "original": "manufacturing-logistics-95b5f9bb6810.png",
+        "zip": "taskobo-illustration-manufacturing-logistics-21c8a78c9416.zip"
+      }
+    },
+    {
+      "id": "retail-service",
+      "name": "小売・サービス",
+      "title": "商品だけでなく、対応の流れも伝える。",
+      "description": "返品の確認から交換品の用意まで。顧客とスタッフ、それぞれの行動が分かる場面でサービスを説明する。",
+      "audience": "店舗スタッフ、カスタマーサポート、店舗運営",
+      "uses": "接客研修、サービス紹介、業務改善の企画書",
+      "theme": "小売店の返品確認と交換対応",
+      "accent": "#A24530",
+      "wash": "#FAEDE6",
+      "paletteName": "テラコッタ",
+      "meaning": "商品を確かめる場面と交換品を用意する場面をつなぐ。実店舗の事例、販売実績、特定ブランドの商品を示すものではない。",
+      "alt": "店舗カウンターで返品の商品を確認する顧客とスタッフ、棚から交換品を用意する同僚のイラスト",
+      "icons": [
+        [
+          "inventory",
+          "在庫確認",
+          "品物の場所と有無を確かめる"
+        ],
+        [
+          "order",
+          "注文の引継ぎ",
+          "注文内容を担当者に渡す"
+        ],
+        [
+          "payment",
+          "決済",
+          "支払い方法を案内する"
+        ],
+        [
+          "return",
+          "返品・交換",
+          "戻る品物と次の対応を示す"
+        ],
+        [
+          "support",
+          "問い合わせ",
+          "顧客の疑問を受け付ける"
+        ],
+        [
+          "loyalty",
+          "継続利用",
+          "次回の利用につなげる"
+        ]
+      ],
+      "assets": {
+        "small": "retail-service-768-d55b1141836f.webp",
+        "large": "retail-service-1440-092a7ebc56ef.webp",
+        "original": "retail-service-fa0b7f986468.png",
+        "zip": "taskobo-illustration-retail-service-840dbaef78c4.zip"
+      }
+    },
+    {
+      "id": "healthcare-care",
+      "name": "医療・ケア",
+      "title": "支える人と、支えられる人を同じ目線で。",
+      "description": "相談、記録の共有、次の支援への引継ぎ。処置の描写よりも、説明と対話を中心に据える。",
+      "audience": "医療・介護スタッフ、連携担当者、利用者と家族",
+      "uses": "サービス案内、連携研修、ケア体制の説明資料",
+      "theme": "医療・ケアの相談と継続支援",
+      "accent": "#176C60",
+      "wash": "#E7F3EF",
+      "paletteName": "ディープティール",
+      "meaning": "共有する記録を中心に、本人、家族、支援する専門職の対話を描く。特定の診断、治療効果、医療機関の実績を表さない。",
+      "alt": "高齢の利用者と家族が専門職と同じ目線で記録を確認し、別の担当者がフォルダーを用意する相談場面のイラスト",
+      "icons": [
+        [
+          "appointment",
+          "予約・日程",
+          "相談する機会を確保する"
+        ],
+        [
+          "consultation",
+          "相談",
+          "希望や困りごとを聞く"
+        ],
+        [
+          "consent",
+          "説明と同意",
+          "内容を理解して選択する"
+        ],
+        [
+          "records",
+          "記録の共有",
+          "必要な情報を引き継ぐ"
+        ],
+        [
+          "follow-up",
+          "継続支援",
+          "次の確認につなげる"
+        ],
+        [
+          "accessibility",
+          "利用しやすさ",
+          "移動や利用への配慮を示す"
+        ]
+      ],
+      "assets": {
+        "small": "healthcare-care-768-04f4fd21d4cb.webp",
+        "large": "healthcare-care-1440-7e43d86fcbab.webp",
+        "original": "healthcare-care-98aff16bb073.png",
+        "zip": "taskobo-illustration-healthcare-care-680091e818d7.zip"
+      }
+    },
+    {
+      "id": "education-training",
+      "name": "教育・研修",
+      "title": "学ぶ、試す、振り返る。その場面を描く。",
+      "description": "教材を読むだけで終わらせない。手を動かす人、考える人、フィードバックする人を一つの学習場面にする。",
+      "audience": "研修担当者、講師、学習者",
+      "uses": "企業研修の教材、講座紹介、ナレッジ共有資料",
+      "theme": "実践とフィードバックを伴う社会人研修",
+      "accent": "#5B4AA5",
+      "wash": "#F0EDFA",
+      "paletteName": "インディゴ",
+      "meaning": "模型、ワークブック、対話を通じた知識の受渡しを描く。教材の技術的正確性や学習成果を保証する実験図ではない。",
+      "alt": "模型を動かす受講者、ワークブックに記録する受講者、説明する講師が同じテーブルで学ぶ社会人研修のイラスト",
+      "icons": [
+        [
+          "curriculum",
+          "学習計画",
+          "取り組む順序を見渡す"
+        ],
+        [
+          "materials",
+          "教材",
+          "知識の手掛かりをそろえる"
+        ],
+        [
+          "practice",
+          "実践",
+          "手を動かして確かめる"
+        ],
+        [
+          "mentoring",
+          "フィードバック",
+          "対話から改善点を見つける"
+        ],
+        [
+          "assessment",
+          "振り返り",
+          "理解と次の課題を確かめる"
+        ],
+        [
+          "completion",
+          "修了・次の学習",
+          "学びを次の実践へつなげる"
+        ]
+      ],
+      "assets": {
+        "small": "education-training-768-044584ecd770.webp",
+        "large": "education-training-1440-e6a430e3d401.webp",
+        "original": "education-training-d833bc8b5de9.png",
+        "zip": "taskobo-illustration-education-training-54d2280d9e52.zip"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/education-training-1440-e6a430e3d401.webp",
+      "sha256": "e6a430e3d40189bc02cbc20236cc3549dbeeb66b6a7c7936ca5c849eceac827c",
+      "bytes": 200304
+    },
+    {
+      "path": "assets/education-training-768-044584ecd770.webp",
+      "sha256": "044584ecd770aebf9518c15d9129277b1c4876c0142e8d8424dfdacd2f1b4f12",
+      "bytes": 70778
+    },
+    {
+      "path": "assets/education-training-d833bc8b5de9.png",
+      "sha256": "d833bc8b5de9baad3368bd60025523010ae3808ed6b33fb476f023dcf5bc035e",
+      "bytes": 2672307
+    },
+    {
+      "path": "assets/healthcare-care-1440-7e43d86fcbab.webp",
+      "sha256": "7e43d86fcbaba15c5c989557d299c6f48f1fbdc7ec7eeb57f869d077273b7457",
+      "bytes": 196656
+    },
+    {
+      "path": "assets/healthcare-care-768-04f4fd21d4cb.webp",
+      "sha256": "04f4fd21d4cb251a5ad55af8c51c8417e52fa8fb264a2b15a0e2a4b0e05f3b05",
+      "bytes": 69668
+    },
+    {
+      "path": "assets/healthcare-care-98aff16bb073.png",
+      "sha256": "98aff16bb073f7d2cdf6e710a68b9972a7ac24318971f6aefd401f0478e4c948",
+      "bytes": 2635700
+    },
+    {
+      "path": "assets/icons/education-training-assessment.png",
+      "sha256": "7078ab8190b4c11ca57126320b6e28d831360cd533a1cf9c7a02472dc00fe403",
+      "bytes": 20727
+    },
+    {
+      "path": "assets/icons/education-training-assessment.svg",
+      "sha256": "f05fe563ce5e51083d57b14b5bbc8a5a76e9ff4aa79ea15cf001075258b08213",
+      "bytes": 715
+    },
+    {
+      "path": "assets/icons/education-training-completion.png",
+      "sha256": "284978d84b4e4339094410a6b33aa7cdb3fa03d4a718306573a05eb209e7dc0f",
+      "bytes": 21170
+    },
+    {
+      "path": "assets/icons/education-training-completion.svg",
+      "sha256": "aba3c8f2466fe68ade6acd24a9d25415bfc8307a8f92ebf42dcb9ea8e509b05a",
+      "bytes": 625
+    },
+    {
+      "path": "assets/icons/education-training-curriculum.png",
+      "sha256": "46cd08caf67cfd5bbebfe516f0cddd7d1a1effc08a6adaab96ed8c14962c76d1",
+      "bytes": 8091
+    },
+    {
+      "path": "assets/icons/education-training-curriculum.svg",
+      "sha256": "d1dbd90d45e155977b7e9cd9e0170357d6cdbd8de53afbd97499189b956461d2",
+      "bytes": 559
+    },
+    {
+      "path": "assets/icons/education-training-materials.png",
+      "sha256": "7293b890fb4b78a6460e0b9e6727dc1eec424fac511c2577fb3eb15f9c7f0127",
+      "bytes": 24029
+    },
+    {
+      "path": "assets/icons/education-training-materials.svg",
+      "sha256": "1f6b84b2b6a098489df85cb206672ecea0e635f72dffad75627c61a4a271d79d",
+      "bytes": 594
+    },
+    {
+      "path": "assets/icons/education-training-mentoring.png",
+      "sha256": "e168e2f9ec292ad77fdf2ae9d651478cb1eed13e0d88cc7e39576c9857d8fa2b",
+      "bytes": 20503
+    },
+    {
+      "path": "assets/icons/education-training-mentoring.svg",
+      "sha256": "8faacb49c8af5143b7ab284b28a2d593cc85178e6945cfec485d9a2101101977",
+      "bytes": 693
+    },
+    {
+      "path": "assets/icons/education-training-practice.png",
+      "sha256": "94d3121bb2c47655db6c4699a662bec47a3927eac603264bfa294479fa83fdee",
+      "bytes": 20078
+    },
+    {
+      "path": "assets/icons/education-training-practice.svg",
+      "sha256": "8a336b565ea3062a40b0ba12910be57fa300a1031536cf790a7c250f75a9e6de",
+      "bytes": 575
+    },
+    {
+      "path": "assets/icons/healthcare-care-accessibility.png",
+      "sha256": "e1dd0b24e8c78581e1593abd30da0938f69ad039c463c510c7417b007e2b962b",
+      "bytes": 20883
+    },
+    {
+      "path": "assets/icons/healthcare-care-accessibility.svg",
+      "sha256": "76cb3d9a3cadd26972b61cc8ec1f4c6eb74f85eb0e894cc36992e4cf97a3075c",
+      "bytes": 566
+    },
+    {
+      "path": "assets/icons/healthcare-care-appointment.png",
+      "sha256": "8421698552b533e35cdb9e775d6bff9b900ae885e5fb0efce7d551a5803e09d1",
+      "bytes": 16820
+    },
+    {
+      "path": "assets/icons/healthcare-care-appointment.svg",
+      "sha256": "f9b067f0e4173cf7687026339ccf38762de0463781cee619295f5f4f032b0f69",
+      "bytes": 658
+    },
+    {
+      "path": "assets/icons/healthcare-care-consent.png",
+      "sha256": "154ee97ef890956b3e721d1996bb80727b5e542626ba58e00aeaf8e70c5010de",
+      "bytes": 19408
+    },
+    {
+      "path": "assets/icons/healthcare-care-consent.svg",
+      "sha256": "261c5e64e34a047dd1b8b91f7eec2baaf67352c705dbbfa3eacdcbc278eb68d2",
+      "bytes": 631
+    },
+    {
+      "path": "assets/icons/healthcare-care-consultation.png",
+      "sha256": "1f363160d3b07d7c81d173ddbc70070e831b7a5c5794b5b3ff2806c0fceaaab1",
+      "bytes": 16036
+    },
+    {
+      "path": "assets/icons/healthcare-care-consultation.svg",
+      "sha256": "378145e90d165581ae5eaaafcdca583feec12a5fe6c10f426f5f609ddde90ad3",
+      "bytes": 611
+    },
+    {
+      "path": "assets/icons/healthcare-care-follow-up.png",
+      "sha256": "a054a7019ebd484568e95b40c2e8a7d68f07c10d1948b10019cc8f2fdb4e7070",
+      "bytes": 18470
+    },
+    {
+      "path": "assets/icons/healthcare-care-follow-up.svg",
+      "sha256": "b32c471f037df4f629a70c8a8866ef66060b77ea9549a2e6dce9ac0fd7a5a597",
+      "bytes": 646
+    },
+    {
+      "path": "assets/icons/healthcare-care-records.png",
+      "sha256": "75965338a202c8abb901f3339d2f974fdcc11a93efa436c88e02c96949d2d2bd",
+      "bytes": 11651
+    },
+    {
+      "path": "assets/icons/healthcare-care-records.svg",
+      "sha256": "bcd38cfea9cf57beff94d2dbe8051188927c7a7f9a198379c0aff25fcba7a3d6",
+      "bytes": 660
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-exception.png",
+      "sha256": "4e8c38cd5c7bdeb5b5850403b9be95343dfc041092647d230ef8ff2c8c71239d",
+      "bytes": 23946
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-exception.svg",
+      "sha256": "95a256e1f7a59df5b4cb9ba9f8f5b20216b96ee1762276ae5d6d9eff8aa22194",
+      "bytes": 635
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-inspection.png",
+      "sha256": "32139c3d217553d8fc41dac4531a2cfde282c6dcbeb9d32c85d74fb4996e3b0b",
+      "bytes": 26591
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-inspection.svg",
+      "sha256": "1afccaf9b4bb5f3d935debaef75574b39f4b46169c6cf7f9a25296f89aee062d",
+      "bytes": 578
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-instructions.png",
+      "sha256": "1895b21eddb8fb63c48cd519235fdf89f1ee085dac86c9d9961f3c6adb646e7f",
+      "bytes": 12950
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-instructions.svg",
+      "sha256": "74eadad599694e973614a1407734f570d1a121dcd3806f19987e38824ce4caa3",
+      "bytes": 564
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-maintenance.png",
+      "sha256": "af3fa3a6982666ef64c8cf4c7fa52adce58b7730c6b51a6b09b0b2965efdb23d",
+      "bytes": 20772
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-maintenance.svg",
+      "sha256": "0a8459bb6d38143e8d920413fac0c621182d9b159b433e5affb4d2f99c89a579",
+      "bytes": 603
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-shipment.png",
+      "sha256": "9ffed0e952873cd69d853eb66790aab179e59207f284dc44420db3e20b0f718e",
+      "bytes": 21100
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-shipment.svg",
+      "sha256": "9f02a0f75f22dd6b12ea24f9ebb3f02cb4608e52edb2487784d908174f9a43be",
+      "bytes": 565
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-traceability.png",
+      "sha256": "116e4044c0288b3a6e39779cc12aaab98380d963a76229268f0780b5f14671b9",
+      "bytes": 13399
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-traceability.svg",
+      "sha256": "32635d8119f021dcf25c55862078f42a83ac078fa0163535a6527afde4ebbea8",
+      "bytes": 623
+    },
+    {
+      "path": "assets/icons/retail-service-inventory.png",
+      "sha256": "13a582212af2e5855c87b4d785e2f4060cfb6770e4bd26c40fffb8668a4bcf60",
+      "bytes": 9247
+    },
+    {
+      "path": "assets/icons/retail-service-inventory.svg",
+      "sha256": "625bcfdee50a312f8351c3bb6439b50939264b9699450459364c287137cc7377",
+      "bytes": 660
+    },
+    {
+      "path": "assets/icons/retail-service-loyalty.png",
+      "sha256": "fc79b738c72acb912ba2542a79ebbc84740686702f4ccc8988526d5dc91a5c95",
+      "bytes": 20667
+    },
+    {
+      "path": "assets/icons/retail-service-loyalty.svg",
+      "sha256": "c8bec51dd703e063d343a6b87e44449545e562d7031c60cb125865fa49e29ed5",
+      "bytes": 636
+    },
+    {
+      "path": "assets/icons/retail-service-order.png",
+      "sha256": "455aba1a06140d182b19643b471db4f57fd8f0335cb9858ff255a3a51e1f4746",
+      "bytes": 13533
+    },
+    {
+      "path": "assets/icons/retail-service-order.svg",
+      "sha256": "b5c60ca97689c851a0d172e169c8e7ad7c55414ba281593ef0c78db3dec9a707",
+      "bytes": 641
+    },
+    {
+      "path": "assets/icons/retail-service-payment.png",
+      "sha256": "8c7cd7f72710682ea804f2a9349dd85f3474e77a3af3a54fd639ef49f6acd6da",
+      "bytes": 11075
+    },
+    {
+      "path": "assets/icons/retail-service-payment.svg",
+      "sha256": "0bce7a4877043d1a388fb429170264aa0febc01e8abdbf14f3f5b9f22c8427e9",
+      "bytes": 691
+    },
+    {
+      "path": "assets/icons/retail-service-return.png",
+      "sha256": "5e7119a29c8290013bfe3c8311db25c93ee508d244f600984d93259a3399c9a5",
+      "bytes": 29388
+    },
+    {
+      "path": "assets/icons/retail-service-return.svg",
+      "sha256": "6feec9d795a93348aafe976d19ee706188372544783b5d44165cb9215b0912b1",
+      "bytes": 570
+    },
+    {
+      "path": "assets/icons/retail-service-support.png",
+      "sha256": "ac4e751489eef83d504cc4fe280f74f8646b526a4bdb8f25fd3cac0ab649c830",
+      "bytes": 16644
+    },
+    {
+      "path": "assets/icons/retail-service-support.svg",
+      "sha256": "60ac1f33f6153bbc2094dbd8c323ef8e71beeeb37be308c34df6e62c1ea81202",
+      "bytes": 628
+    },
+    {
+      "path": "assets/illustration-0bfcb26b2c4c.js",
+      "sha256": "0bfcb26b2c4c712dbce5b9657a549f99095d66126b5c0d95aaacf07e30647082",
+      "bytes": 6515
+    },
+    {
+      "path": "assets/illustration-1a75f486cd7a.css",
+      "sha256": "1a75f486cd7a17fdeb6acda5a846e562c4c069fdd4ea257b9d4ac91fbf5dc73d",
+      "bytes": 10027
+    },
+    {
+      "path": "assets/manufacturing-logistics-1440-7fc6740ee59f.webp",
+      "sha256": "7fc6740ee59f02fb3f59edabb37aef721f107bc6783068ff40b26a243b50575c",
+      "bytes": 251842
+    },
+    {
+      "path": "assets/manufacturing-logistics-768-84b6fb631ac4.webp",
+      "sha256": "84b6fb631ac494c05d4a28ffdd8d7325a57314da4513495d243b7390e21930b8",
+      "bytes": 94000
+    },
+    {
+      "path": "assets/manufacturing-logistics-95b5f9bb6810.png",
+      "sha256": "95b5f9bb6810303ea96db972f52c61dc4f42d8bae886fb52dd94965c7538bfa3",
+      "bytes": 2834676
+    },
+    {
+      "path": "assets/portfolio-1440-f54d95aec6f1.webp",
+      "sha256": "f54d95aec6f15e11c086873ebae2b45003033a1831d58b08e9a05b9925412b8d",
+      "bytes": 184378
+    },
+    {
+      "path": "assets/portfolio-768-1f347b0a300e.webp",
+      "sha256": "1f347b0a300ec57c1126331ca74eb3bb28131fc95b72b496e29bb0ded9f3d2f9",
+      "bytes": 77072
+    },
+    {
+      "path": "assets/portfolio-83b2fdfa9e76.png",
+      "sha256": "83b2fdfa9e762a16651aa0ba5a29445b4ce61220e28f2987da2641a6a3fedd0d",
+      "bytes": 2072783
+    },
+    {
+      "path": "assets/retail-service-1440-092a7ebc56ef.webp",
+      "sha256": "092a7ebc56eff1f2d8d21eaf7ff3ecac57efb8e5d740670592076455a947f173",
+      "bytes": 229174
+    },
+    {
+      "path": "assets/retail-service-768-d55b1141836f.webp",
+      "sha256": "d55b1141836f05ddf72ad3c3fccc87a73062cbc5fe5cafafd8c35f15270e9a97",
+      "bytes": 88270
+    },
+    {
+      "path": "assets/retail-service-fa0b7f986468.png",
+      "sha256": "fa0b7f9864684e046d0c198e77122d442d12117ca7dd31e47bea9b7f86970f3b",
+      "bytes": 2738651
+    },
+    {
+      "path": "downloads/taskobo-illustration-education-training-54d2280d9e52.zip",
+      "sha256": "54d2280d9e52f2ed03073c5994fdaef950d3bc5fa66c5fae97b618a001a4617f",
+      "bytes": 2716183
+    },
+    {
+      "path": "downloads/taskobo-illustration-healthcare-care-680091e818d7.zip",
+      "sha256": "680091e818d736d484db5b195894de988ebee359bb1ec4c7540749a1c0c1ef5a",
+      "bytes": 2678196
+    },
+    {
+      "path": "downloads/taskobo-illustration-manufacturing-logistics-21c8a78c9416.zip",
+      "sha256": "21c8a78c9416d3d217fe0cd9a64c2f40a164f79e91c99e712763464dd5754fcc",
+      "bytes": 2907344
+    },
+    {
+      "path": "downloads/taskobo-illustration-retail-service-840dbaef78c4.zip",
+      "sha256": "840dbaef78c4b3afe2ed38401427f315ad8c0a922896d3edb1f647f92fb9c63e",
+      "bytes": 2791136
+    },
+    {
+      "path": "downloads/taskobo-illustration-v0.2.0-c11eff967455.zip",
+      "sha256": "c11eff967455c9980ab7b3f564c5bd3141bae5981fbfee052b1d83876695973c",
+      "bytes": 1723282
+    },
+    {
+      "path": "index.html",
+      "sha256": "ebbea7c9c3bfef6de24a1de60c975f10bcc33efc9137c9daf47190de726b6669",
+      "bytes": 25138
+    },
+    {
+      "path": "samples/education-training/index.html",
+      "sha256": "1ea759bb3374ae8f7265664256fc1af5665e703a2b5d6001c144a341a0fe6ebc",
+      "bytes": 25962
+    },
+    {
+      "path": "samples/healthcare-care/index.html",
+      "sha256": "389812ea2c650b6129be2b20fc7f7d4d401e7132f839cd3653da9075d8556fb8",
+      "bytes": 25868
+    },
+    {
+      "path": "samples/manufacturing-logistics/index.html",
+      "sha256": "81df340d2d526575103cfbe2727a50d8f045f69dea901a790ca6118dec4bb326",
+      "bytes": 25884
+    },
+    {
+      "path": "samples/retail-service/index.html",
+      "sha256": "b86a6d05da07fad457dfba6960a3d4f374dc7d9e1213fa9316486757a2539387",
+      "bytes": 25968
+    }
+  ]
+}

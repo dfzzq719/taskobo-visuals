@@ -1,0 +1,9 @@
+{
+  "created": "2026-10-13",
+  "method": "built-in imagegen",
+  "image": "style-atlas.png",
+  "prompt": "style-atlas.prompt.txt",
+  "purpose": "Original same-subject visual comparison of twenty illustration treatments",
+  "external_art_references_supplied": false,
+  "scope": "Style demonstrations; not official company assets, endorsements, or adoption statistics"
+}

@@ -1,0 +1,61 @@
+Use case: editorial illustration style exploration / stylized-concept.
+Asset type: ONE high-resolution visual contact sheet showing all TWENTY enterprise illustration style branches in our comparison catalog.
+Primary request: The viewer wants to SEE what each style looks like, not read an explanation. Produce one unified polished comparison image, with twenty visibly different art treatments of the same neutral business-software motif. These are original style demonstrations, not official company assets. No corporate names, logos or claimed endorsements.
+
+Canvas and layout: high-resolution landscape, approximately 5:4 aspect ratio, ideally 3000x2400 or similarly detailed. EXACTLY FIVE columns and FOUR rows, twenty equal near-square sample tiles, reading left to right then top to bottom. White or warm near-white backgrounds, subtle thin gray dividers and generous internal whitespace. No large page title, no introductory text or paragraphs. Artwork takes about 80% of each tile, the bottom 20% is a clean caption strip. Identical legible modern navy sans-serif captions in all tiles, including two-digit sample number and exact short English title. Captions do not inherit the sample's texture. No missing samples, no duplicates, no swapped captions. All twenty artworks must stay within their own tile. Keep caption type comfortably readable when the whole sheet is viewed on a large desktop.
+
+Shared subject in EVERY tile: one simplified abstract app window with two or three horizontal placeholder bars; two smaller overlapping rectangular cards at lower right; one large pointer cursor at lower left; one short curved feedback arrow above. Keep these same four object categories in the same approximate composition and scale throughout. Vary the treatment, material, shape language and linework, not the narrative. No people, robots, office furniture, plants, irrelevant props, real software screenshots, tiny numerical data or semantic interface copy. Grayscale or colored bars only inside the illustrated UI. The twenty samples should read as illustration art, not pasted dashboard screenshots.
+
+Common color family: warm white #fcfbf8, navy #0d2046, cobalt #1456d9 and a very small optional coral #ff6d56 accent. Similar color balance across the sheet so the differences arise from style. No unrelated neon palettes. All objects clearly discernible. Extremely disciplined and mature art direction suitable for a corporate publication.
+
+Exact sample specifications in strict row-major order:
+
+ROW 1:
+01 caption "01  Monoline".
+Pure airy single-weight navy/cobalt contours, white interiors, simple elegant reduced shapes. No dimension shading, technical construction marks or texture. Quiet lightness and precise curves.
+02 caption "02  Technical Line".
+Fine engineering drafting, multiple purposeful line weights, small restrained dashed construction and projection lines, precise structural detail of the SAME objects. White interiors, no decorative graph paper and no dimension text. This must be visibly more engineered and structured than 01.
+03 caption "03  Outline + Fill".
+Crisp navy outlines combined with selective cobalt and ivory flat fills. Simple clean contemporary illustration, coherent line weight, a few colored surfaces and mostly white negative space. No gradients.
+04 caption "04  Geometric Flat".
+Bold solid flat shapes without outlines or shadows, precise rectangles/circles/triangles. Strong graphic silhouettes, polished geometric reduction, app window and cards remain instantly recognizable.
+05 caption "05  Organic Flat".
+Flat solid-color illustration with gently irregular curves, soft asymmetric corners and more fluid shapes. Mature understated warmth. Still recognizable window/cards/cursor/arrow, without cartoon people. No texture or 3D shadows.
+
+ROW 2:
+06 caption "06  Abstract Geometry".
+An intelligent editorial geometric metaphor of the same motif: window/card elements reduced to interlocking graphic planes, circles, frames and a sweeping arc. Strong conceptual graphic composition and intentional negative space, a more abstract poster quality than 04. Keep motif recognizable.
+07 caption "07  Modular Symbols".
+A compact visual language built from consistent reusable geometric modules. Window, cards, cursor and arrow assembled from equal-scale tiles and pictographic units with obvious repetition and rhythm. Clean structured flat construction; not a grid of unrelated icons.
+08 caption "08  Gradient Vector".
+Crisp vector-like silhouettes and precise edges with restrained cobalt/navy tonal gradients creating dimension. Smooth digital fills without photographic texture, no full 3D volumetric modeling.
+09 caption "09  Layered Relief".
+Shallow 2.5D dimensional plates: restrained stacked surfaces, tiny offsets, modest extrusions and fine cast shadows. Elegant flat-front layered construction, smooth solid surfaces. Clearly distinct from fully volumetric 3D and from physical torn-paper collage.
+10 caption "10  Digital Painting".
+Sophisticated semi-realistic digitally painted interpretation, controlled soft tonal transitions, selectively sharp and soft edges, hand-painted lighting and gentle volume. Smooth painterly execution rather than geometric vector gradients or brush-heavy gouache. Not a rendered plastic product.
+
+ROW 3:
+11 caption "11  Matte 3D".
+Beautifully lit three-dimensional ceramic/polymer-like objects, softly rounded bevels, tactile matte ivory and cobalt, gentle realistic diffuse shadows and ambient occlusion. Calm premium studio rendering.
+12 caption "12  Translucent 3D".
+Clear and frosted cobalt/ivory translucent objects with controlled refraction, visible overlapping transparent layers and elegant transmitted light. Mature restrained glass-like materials, no neon glow, no visually noisy reflections. Same motif.
+13 caption "13  Abstract Sculpture".
+Gallery-quality sculptural conceptual 3D interpretation: simplified app frame, cards, pointer and arc become bold interlocking sculptural geometric forms, intentional holes, asymmetrical mass and expressive negative space. Sculptural metaphor, clearly different from a rounded literal UI object in 11. Retain recognizable relative positions.
+14 caption "14  Technical Render".
+Precise realistic industrial visualization of the same window/card/cursor modules: rigid fabricated surfaces, clean panel seams, thin structural edges, anodized navy metal and ivory technical materials, restrained photoreal studio shading. Accurate hard geometry with little ornament, no machinery or extra props.
+15 caption "15  Editorial Ink".
+Mature contemporary ink illustration, expressive but disciplined pen contours, selective fine hatching and a single small cobalt color wash. White space remains dominant. Human drawn character, no comic actors or casual doodles. Distinguish it from 02's mechanical drafting.
+
+ROW 4:
+16 caption "16  Painterly Texture".
+Refined opaque gouache/acrylic editorial painting, clear cobalt/navy color masses, visible confident brush strokes and dry brush edges. Intentional warmth and hand-worked material, no muddy watercolor or childish treatment.
+17 caption "17  Print Texture".
+Sophisticated limited-ink risograph/screenprint treatment: strong reduced silhouettes, navy/cobalt duotone, visible fine ink grain and restrained registration offset/halftone. Texture belongs to the printed surfaces, not all the background. Distinct from painting and ink drawing.
+18 caption "18  Hybrid UI".
+Polished conceptual illustration assembled from editable-looking interface fragments, abstract pictograms and fine connecting paths. The same main app window, two cards, cursor and arrow become a purposeful UI-plus-concept composition with a few minimal symbolic badges. All data are blank placeholder strokes, no real software branding, words or numbers. Front-facing and graphically precise.
+19 caption "19  Photo + Graphics".
+Sophisticated mixed-media photomontage: realistically photographed blank ivory display/panel surfaces and cobalt physical cards, with a sharply flat navy graphic cursor and cobalt curved arrow superimposed. Deliberate contrast between photographic material detail and flat graphic overlays. No office backdrop or people.
+20 caption "20  Material Collage".
+Tactile editorial collage: the window, cards, cursor and arrow constructed from cut ivory/navy/cobalt papers, a few visible torn edges, printed scraps without readable text, subtle linen-like fibers and shallow natural shadows. Beautiful controlled assemblage, not childish scrapbooking. Clearly different from clean smooth relief in 09.
+
+Quality requirement: twenty convincing, substantially different art directions, not the same icon with twenty filters. Distinctions in line discipline, shape construction, light, volume and surface must be obvious. Every sample meets the same professional finish. Caption spelling must be exact. Nothing else is readable text. No watermark, brands, artist signatures, fabricated evidence or diagrams about development phases. One single finished bitmap comparison sheet.
