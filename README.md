@@ -2,7 +2,7 @@
 
 Enterprise illustrations and coordinated thematic icons, created from a topic or a document with your own AI. Content, art direction and palette remain independent choices.
 
-[日本語の展示ページ](https://taskobo.com/free-tools/taskobo-illustration/) · [日本語の利用ガイド](docs/guide.ja.md) · [業種別ギャラリー](docs/gallery.ja.md) · [Releases](https://github.com/dfzzq719/taskobo-illustration/releases)
+[日本語の展示ページ](https://taskobo.com/free-tools/taskobo-illustration/) · [制作ツール](https://taskobo.com/free-tools/taskobo-illustration/tool/) · [日本語の利用ガイド](docs/guide.ja.md) · [業種別ギャラリー](docs/gallery.ja.md) · [Releases](https://github.com/dfzzq719/taskobo-illustration/releases)
 
 ![Original cross-industry Taskobo Illustration portfolio](examples/portfolio.png)
 
@@ -12,13 +12,13 @@ Enterprise illustrations and coordinated thematic icons, created from a topic or
 - Local, read-only extraction of PPTX, DOCX, Markdown and text evidence; optional PDF text extraction with `pypdf`.
 - Four fictional industry samples: manufacturing and logistics, retail and service, healthcare and care, education and training.
 - Each sample includes an original AI-generated illustration, six native editable SVG icons, transparent PNG exports and reusable prompts.
-- Japanese static showcase source, including actual SVG palette previews and a browser-local request brief builder.
+- Japanese static showcase and separate tool source, including actual SVG palette previews and a browser-local request brief builder.
 
 The Skill instructions are currently written in Chinese. The usage guide, sample explanations and requests are Japanese. Specify the output language in your request.
 
 ## Install and use
 
-Download the Skill ZIP from [Releases](https://github.com/dfzzq719/taskobo-illustration/releases) or the [showcase](https://taskobo.com/free-tools/taskobo-illustration/#install). Extract the `taskobo-illustration` folder into a Skill directory supported by your AI application and reload the session. The Skill lives at the repository root; install from this root if your application's repository installer supports it.
+Download the Skill ZIP from [Releases](https://github.com/dfzzq719/taskobo-illustration/releases) or the [tool page](https://taskobo.com/free-tools/taskobo-illustration/tool/#install). Extract the `taskobo-illustration` folder into a Skill directory supported by your AI application and reload the session. The Skill lives at the repository root; install from this root if your application's repository installer supports it.
 
 ```text
 Use $taskobo-illustration to make an enterprise illustration and a set of six icons
@@ -59,7 +59,7 @@ python -m pip install Pillow
 python tools/build_site.py --output site
 ```
 
-It creates five pages for `/free-tools/taskobo-illustration/` and its sample routes. The portal shell shares the Taskobo root stylesheet and brand assets. It is intended for deployment within taskobo.com, rather than as a standalone root-level app.
+It creates six pages: an artwork-led showcase at `/free-tools/taskobo-illustration/`, a separate request workspace at `/free-tools/taskobo-illustration/tool/`, and four industry samples. Sample links can prefill the tool with an allowlisted sample ID. Legacy showcase `#request` and `#install` links redirect to the tool. The portal shell shares the Taskobo root stylesheet and brand assets. It is intended for deployment within taskobo.com, rather than as a standalone root-level app.
 
 ## Related
 

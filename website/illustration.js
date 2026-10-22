@@ -1,4 +1,9 @@
 (() => {
+  // Preserve links published before the showcase and tool were separated.
+  if (location.pathname.replace(/\/$/, '') === '/free-tools/taskobo-illustration' && ['#request', '#install'].includes(location.hash)) {
+    location.replace('/free-tools/taskobo-illustration/tool/' + location.hash);
+    return;
+  }
   const status = document.querySelector('[data-copy-status]');
   document.querySelectorAll('[data-copy]').forEach(button => {
     button.addEventListener('click', async () => {
@@ -30,6 +35,16 @@
   const custom = form.elements.customColor;
   const colors = { blue: '#1456D9', teal: '#176C60', terra: '#A24530', indigo: '#5B4AA5' };
   const names = { blue: 'コバルトブルー', teal: 'ディープティール', terra: 'テラコッタ', indigo: 'インディゴ', custom: '指定色', document: '文書の配色に合わせる' };
+  const presets = JSON.parse(document.getElementById('sample-presets').textContent);
+  const preset = presets[new URLSearchParams(location.search).get('sample')];
+  if (preset) {
+    form.elements.topic.value = preset.theme;
+    palette.value = 'custom';
+    custom.value = preset.accent;
+    const notice = document.getElementById('preset-status');
+    notice.hidden = false;
+    notice.textContent = `${preset.name}のテーマと配色を読み込んだ。自分の業務に合わせて変更できる。`;
+  }
   let profile = null;
   function updateColor() {
     custom.disabled = palette.value !== 'custom';
@@ -43,11 +58,11 @@
     const colorMode = data.get('palette');
     const primary = colorMode === 'custom' ? custom.value.toUpperCase() : (colors[colorMode] || null);
     const direction = data.get('direction');
-    const directionNames = { editorial: 'Editorial（企業エディトリアル）', precision: 'Precision（精密な輪郭と塗り）', dimensional: 'Dimensional（落ち着いた立体表現）' };
+    const directionNames = { editorial: 'Editorial（企業エディトリアル）', 'enterprise-narrative': 'Enterprise Narrative（企業叙事イラスト）。成熟した人物、目的のある動作、紺の輪郭と控えめな水彩の質感', precision: 'Precision（精密な輪郭と塗り）', dimensional: 'Dimensional（落ち着いた立体表現）' };
     profile = {
       schema: 'taskobo-illustration.visual-brief/v1',
       topic: { title: topic, origin: 'user', evidence: [] },
-      direction: { id: direction, origin: 'user', status: 'draft' },
+      direction: { id: direction === 'enterprise-narrative' ? 'editorial' : direction, ...(direction === 'enterprise-narrative' ? { preset: direction } : {}), origin: 'user', status: 'draft' },
       palette: { mode: colorMode === 'document' ? 'document' : colorMode === 'custom' ? 'custom' : 'preset', roles: primary ? { primary, ink: '#0D2046', paper: '#FCFBF8' } : {}, lockedRoles: primary ? ['primary'] : [] },
       medium: { kind: data.get('use').includes('PPT') ? 'presentation' : 'document', purpose: data.get('use'), language: 'ja', background: 'light' },
       assets: [

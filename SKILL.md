@@ -2,7 +2,7 @@
 name: taskobo-illustration
 description: "Create polished enterprise illustrations and coordinated thematic icon sets from a topic, business content, or document; choose visual form, a coherent Taskobo art direction, and a user-selected or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.2.0"
+  version: "0.2.1"
 ---
 
 # Taskobo Illustration
@@ -14,7 +14,7 @@ metadata:
 ## 内容、风格与色系分别决定
 
 - **内容主题**：图要说明的业务，例如企业经营、供应链或客户服务；包含对象、动作和关系。
-- **视觉风格**：画法、轮廓、体积、构图与材质。采用 [Taskobo 视觉语言](references/art-direction.md) 的一致规则；三个起始方向是可调整的候选，不是用户已批准的唯一画风。
+- **视觉风格**：画法、轮廓、体积、构图与材质。采用 [Taskobo 视觉语言](references/art-direction.md) 的一致规则。三个基础方向下可选择具体预设；用户已认可的 [企业叙事插画](references/enterprise-narrative.md)（`enterprise-narrative`）是其中一种能力，不设为所有任务的唯一画风。
 - **色系**：按角色使用的颜色。用户可选择主题色、匹配文档或加载公司规范，不能因换色改变主题或关系。
 
 三个维度可独立修改。只改色时保持构图与对象，只改主题时保持系列的线条和颜色规则。用户明确要求重新设计时才整体改变。规划系列或交接到服务时读取 [统一视觉简报](references/visual-profile.md)。
@@ -35,6 +35,8 @@ metadata:
 - 把画法、空间视角、题材、材质、构图和气质分别记录。它们可以组合，不是互斥的同级“风格总数”。
 - 样式对照固定主题、构图、尺寸和配色；配色对照固定画法和主题。用户要整套艺术方向时才同时改变多个维度，并说明变化。
 - 选一个主要方向，必要时给一个有明确差异的备选。用户已经指定风格时，直接使用它。
+
+用户提到“企业叙事插画”、`enterprise-narrative`，或要求沿用已认可的跨行业拼贴宣传图画风时，读该预设并查看其参考图。复用成熟人物、分级墨线、浅色块和轻水彩质感；按当前用途另选单场景或多场景布局，不自动照搬图中的行业、蓝色、标题和底部图标排布。
 
 ## 成套主题图标
 
@@ -76,6 +78,7 @@ metadata:
 ## 辅助材料
 
 - [Taskobo 视觉语言](references/art-direction.md)：识别特征、三种起始方向及宣传展示要求。
+- [企业叙事插画](references/enterprise-narrative.md)：已认可的具体画风、参考母样、适用场景和复用提示词。
 - [主题图标](references/themed-icons.md)：语义清单、矢量规则、整套检视和交付。
 - [从文档形成配图计划](references/document-context.md)：提取、证据、主题判断和局限。
 - [统一视觉简报](references/visual-profile.md)：独立的主题、风格、色系与资产计划。

@@ -1,0 +1,33 @@
+{
+  "schema": "taskobo-illustration.style-preset/v1",
+  "id": "enterprise-narrative",
+  "name": {
+    "en": "Enterprise Narrative",
+    "zh": "企业叙事插画"
+  },
+  "family": "editorial",
+  "approval": {
+    "status": "accepted-option",
+    "date": "2026-10-22",
+    "scope": "User accepted this drawing style as one reusable capability, not the exclusive brand style or approval of future outputs."
+  },
+  "reference": {
+    "file": "enterprise-narrative.png",
+    "sha256": "4d4196a39cb6c591ba81772a2ed3b8193489323c01c771aad925ec2423f5494f",
+    "role": "style",
+    "origin": "User-supplied feedback image of the original Taskobo portfolio artwork."
+  },
+  "traits": [
+    "mature-approachable-figures",
+    "graded-ink-contours",
+    "restrained-color-fills",
+    "soft-tonal-modeling",
+    "subtle-watercolor-paper-finish",
+    "credible-business-actions"
+  ],
+  "contentPolicy": "Use the current topic; reference industries and objects are not defaults.",
+  "palettePolicy": "User or organization palette wins; preserve color roles and tonal hierarchy.",
+  "compositionPolicy": "Choose independently; single scene, coordinated series and portfolio collage are options.",
+  "relatedIconDirection": "precision",
+  "reproducibility": "Constrains visual direction; does not guarantee identical pixels across generations or models."
+}
