@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-23",
+  "method": "built-in image generation edit",
+  "source": "portfolio.png",
+  "edit": "Remove embedded English title only; add no replacement text",
+  "request": "portfolio-no-title.prompt.txt",
+  "review": "Title absent; four scenes and eight icons visually preserved; not a claim of pixel equality"
+}

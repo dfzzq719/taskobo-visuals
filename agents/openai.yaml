@@ -1,4 +1,4 @@
 interface:
-  display_name: "Taskobo Illustration"
+  display_name: "Taskobo Visuals"
   short_description: "根据主题或文档制作企业插图与成套图标，匹配内容、品牌和色系"
-  default_prompt: "使用 $taskobo-illustration，根据我的主题或文档判断配图内容，以统一的企业视觉风格制作插图或主题图标；沿用我指定的色系，或说明文档配色依据，并交付适合目标尺寸的素材。"
+  default_prompt: "使用 $taskobo-visuals，根据我的主题或文档判断配图内容，以统一的企业视觉风格制作插图或主题图标；沿用我指定的色系，或说明文档配色依据，并交付适合目标尺寸的素材。"

@@ -1,12 +1,12 @@
-# Taskobo Illustration 利用ガイド
+# Taskobo Visuals 利用ガイド
 
 業務の内容を理解してから、イラストやテーマ別アイコンを制作するAI Skill。テーマ、画風、配色を別々に決め、チームの見本と制作基準を引き継ぐ。
 
-[展示ページ](https://taskobo.com/free-tools/taskobo-illustration/) · [サンプル一覧](gallery.ja.md) · [Skill本体](../SKILL.md)
+[展示ページ](https://taskobo.com/free-tools/taskobo-visuals/) · [サンプル一覧](gallery.ja.md) · [Skill本体](../SKILL.md)
 
 ## まずサンプルで確かめる
 
-[展示ページ](https://taskobo.com/free-tools/taskobo-illustration/)は作品の比較、[制作ツール](https://taskobo.com/free-tools/taskobo-illustration/tool/)は条件の設定とSkillの導入に使う。業種別サンプルから制作ツールに進むと、そのテーマと配色が入力される。
+[展示ページ](https://taskobo.com/free-tools/taskobo-visuals/)は作品の比較、[制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)は条件の設定とSkillの導入に使う。業種別サンプルから制作ツールに進むと、そのテーマと配色が入力される。
 
 製造・物流、小売・サービス、医療・ケア、教育・研修の4ページを公開している。各ページでイラスト1点とアイコン6点を確認し、SVGの配色を比較できる。サンプル一式にはイラストのPNG、独立したSVG・透明PNG、元の配色、依頼文と生成プロンプトが入る。
 
@@ -14,9 +14,9 @@
 
 ## Skillを追加する
 
-1. [Releases](https://github.com/dfzzq719/taskobo-illustration/releases)または[展示ページ](https://taskobo.com/free-tools/taskobo-illustration/#install)からSkill ZIPを保存する。
-2. 展開した `taskobo-illustration` フォルダー全体を、利用するAIソフトのSkill対応ディレクトリに置く。
-3. セッションを再読み込みし、`$taskobo-illustration` と制作条件を渡す。
+1. [Releases](https://github.com/dfzzq719/taskobo-visuals/releases)または[展示ページ](https://taskobo.com/free-tools/taskobo-visuals/#install)からSkill ZIPを保存する。
+2. 展開した `taskobo-visuals` フォルダー全体を、利用するAIソフトのSkill対応ディレクトリに置く。
+3. セッションを再読み込みし、`$taskobo-visuals` と制作条件を渡す。
 
 Skill本体の説明文は現在、中国語。日本語の依頼文とサンプルを同梱している。必要な出力言語を指定して使う。インストール先は利用ソフトによって異なる。
 
@@ -26,10 +26,10 @@ Skill本体の説明文は現在、中国語。日本語の依頼文とサンプ
 - **画風**：線、形、構図、立体感、細部の量。イラストと小さなアイコンで役割を分ける。
 - **色系**：自社の指定色、文書の用色、推薦色。主色だけでなく濃色、浅色、背景の役割を決める。
 
-[制作ツール](https://taskobo.com/free-tools/taskobo-illustration/tool/)で条件を入力すると、依頼文と制作ブリーフJSONをブラウザー内で作成できる。ここではAI生成を実行せず、文書もアップロードしない。作った依頼文を普段使っているAIに渡す。
+[制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)で条件を入力すると、依頼文と制作ブリーフJSONをブラウザー内で作成できる。ここではAI生成を実行せず、文書もアップロードしない。作った依頼文を普段使っているAIに渡す。
 
 ```text
-$taskobo-illustration を使い、新入社員のオンボーディングを説明する
+$taskobo-visuals を使い、新入社員のオンボーディングを説明する
 社内研修用のイラスト1点と、テーマ別アイコン6点を制作する。
 主色 #1456D9、濃色 #0D2046、背景 #FCFBF8。
 日本語で配図計画と使用上の注意を示す。

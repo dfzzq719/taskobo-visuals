@@ -1,11 +1,11 @@
 ---
-name: taskobo-illustration
+name: taskobo-visuals
 description: "Create polished enterprise illustrations and coordinated thematic icon sets from a topic, business content, or document; choose visual form, a coherent Taskobo art direction, and a user-selected or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.2.1"
+  version: "0.3.0"
 ---
 
-# Taskobo Illustration
+# Taskobo Visuals
 
 负责精美的企业插图、主题图标与成套视觉素材：理解业务，建立可辨认的视觉语言，再制作可用的图。支持主题输入、用户选色及文档辅助判断；沿用用户当前的研究、规划或生成模式，不把方案当成已生成图片。
 

@@ -1,7 +1,7 @@
 (() => {
   // Preserve links published before the showcase and tool were separated.
-  if (location.pathname.replace(/\/$/, '') === '/free-tools/taskobo-illustration' && ['#request', '#install'].includes(location.hash)) {
-    location.replace('/free-tools/taskobo-illustration/tool/' + location.hash);
+  if (location.pathname.replace(/\/$/, '') === '/free-tools/taskobo-visuals' && ['#request', '#install'].includes(location.hash)) {
+    location.replace('/free-tools/taskobo-visuals/tool/' + location.hash);
     return;
   }
   const status = document.querySelector('[data-copy-status]');
@@ -70,7 +70,7 @@
         ...(kind !== 'illustration' ? Array.from({ length: 6 }, (_, index) => ({ id: `icon-${String(index + 1).padStart(2, '0')}`, kind: 'icon', purpose: 'テーマに合う対象と行動を伝える', sourceRefs: [], status: 'planned' })) : [])
       ]
     };
-    output.value = `$taskobo-illustration を使い、次の条件で企業向けの素材を制作する。\n\n内容テーマ：${topic}\n用途：${data.get('use')}\n制作物：${kind === 'both' ? 'メインイラスト1点と、内容から選ぶテーマ別アイコン6点' : kind === 'icons' ? '内容から選ぶテーマ別アイコン6点' : 'メインイラスト1点'}\n画風：${directionNames[direction]}。アイコンは一貫した輪郭と塗りで整える。\n配色：${colorMode === 'document' ? '提供文書のテーマ定義と実際の用色を確認し、根拠を示して提案する。文書がない場合は必要な資料を確認する。' : `${names[colorMode]}。主色 ${primary}、濃色 #0D2046、背景 #FCFBF8。`}\n\n内容テーマ、画風、色系を分けて扱う。文書を添付した場合はページ・段落の根拠を示して挿絵計画を立て、推測を事実として描かない。業務上の数値や効果を創作しない。\nメインイラストは高解像度画像、図形として編集できるアイコンは独立SVGと透明PNGで納品する。ビットマップ画像をSVGと呼ばない。小サイズで確認し、全体一覧、配色、使用上の注意と生成プロンプトを保存する。`;
+    output.value = `$taskobo-visuals を使い、次の条件で企業向けの素材を制作する。\n\n内容テーマ：${topic}\n用途：${data.get('use')}\n制作物：${kind === 'both' ? 'メインイラスト1点と、内容から選ぶテーマ別アイコン6点' : kind === 'icons' ? '内容から選ぶテーマ別アイコン6点' : 'メインイラスト1点'}\n画風：${directionNames[direction]}。アイコンは一貫した輪郭と塗りで整える。\n配色：${colorMode === 'document' ? '提供文書のテーマ定義と実際の用色を確認し、根拠を示して提案する。文書がない場合は必要な資料を確認する。' : `${names[colorMode]}。主色 ${primary}、濃色 #0D2046、背景 #FCFBF8。`}\n\n内容テーマ、画風、色系を分けて扱う。文書を添付した場合はページ・段落の根拠を示して挿絵計画を立て、推測を事実として描かない。業務上の数値や効果を創作しない。\nメインイラストは高解像度画像、図形として編集できるアイコンは独立SVGと透明PNGで納品する。ビットマップ画像をSVGと呼ばない。小サイズで確認し、全体一覧、配色、使用上の注意と生成プロンプトを保存する。`;
     document.getElementById('download-brief').disabled = false;
     if (announce) resultStatus.textContent = '依頼文を更新した。画像の生成は、Skillを導入したAIで実行する。';
     return true;
@@ -87,7 +87,7 @@
     const blob = new Blob([JSON.stringify(profile, null, 2) + '\n'], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url; a.download = 'taskobo-illustration-brief.json'; a.click();
+    a.href = url; a.download = 'taskobo-visuals-brief.json'; a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     resultStatus.textContent = '制作ブリーフのJSONを保存した。利用中のAIに依頼文と一緒に渡せる。';
   });

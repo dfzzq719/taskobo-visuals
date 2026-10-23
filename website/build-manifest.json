@@ -1,18 +1,18 @@
 {
-  "skillVersion": "0.2.1",
+  "skillVersion": "0.3.0",
   "routes": [
-    "/free-tools/taskobo-illustration/",
-    "/free-tools/taskobo-illustration/tool/",
-    "/free-tools/taskobo-illustration/samples/manufacturing-logistics/",
-    "/free-tools/taskobo-illustration/samples/retail-service/",
-    "/free-tools/taskobo-illustration/samples/healthcare-care/",
-    "/free-tools/taskobo-illustration/samples/education-training/"
+    "/free-tools/taskobo-visuals/",
+    "/free-tools/taskobo-visuals/tool/",
+    "/free-tools/taskobo-visuals/samples/manufacturing-logistics/",
+    "/free-tools/taskobo-visuals/samples/retail-service/",
+    "/free-tools/taskobo-visuals/samples/healthcare-care/",
+    "/free-tools/taskobo-visuals/samples/education-training/"
   ],
-  "skillZip": "taskobo-illustration-v0.2.1-f97d660b35cc.zip",
+  "skillZip": "taskobo-visuals-v0.3.0-cf1b9a78c21c.zip",
   "hero": {
-    "small": "portfolio-768-1f347b0a300e.webp",
-    "large": "portfolio-1440-f54d95aec6f1.webp",
-    "original": "portfolio-83b2fdfa9e76.png"
+    "small": "portfolio-no-title-768-05d82f2135ca.webp",
+    "large": "portfolio-no-title-1440-41025e4b6852.webp",
+    "original": "portfolio-no-title-99a4bd8dd023.png"
   },
   "cases": [
     {
@@ -64,7 +64,7 @@
         "small": "manufacturing-logistics-768-84b6fb631ac4.webp",
         "large": "manufacturing-logistics-1440-7fc6740ee59f.webp",
         "original": "manufacturing-logistics-95b5f9bb6810.png",
-        "zip": "taskobo-illustration-manufacturing-logistics-21c8a78c9416.zip"
+        "zip": "taskobo-visuals-manufacturing-logistics-8b729120c579.zip"
       }
     },
     {
@@ -116,7 +116,7 @@
         "small": "retail-service-768-d55b1141836f.webp",
         "large": "retail-service-1440-092a7ebc56ef.webp",
         "original": "retail-service-fa0b7f986468.png",
-        "zip": "taskobo-illustration-retail-service-840dbaef78c4.zip"
+        "zip": "taskobo-visuals-retail-service-acecd5151658.zip"
       }
     },
     {
@@ -168,7 +168,7 @@
         "small": "healthcare-care-768-04f4fd21d4cb.webp",
         "large": "healthcare-care-1440-7e43d86fcbab.webp",
         "original": "healthcare-care-98aff16bb073.png",
-        "zip": "taskobo-illustration-healthcare-care-680091e818d7.zip"
+        "zip": "taskobo-visuals-healthcare-care-f4791ce8b1ff.zip"
       }
     },
     {
@@ -220,7 +220,7 @@
         "small": "education-training-768-044584ecd770.webp",
         "large": "education-training-1440-e6a430e3d401.webp",
         "original": "education-training-d833bc8b5de9.png",
-        "zip": "taskobo-illustration-education-training-54d2280d9e52.zip"
+        "zip": "taskobo-visuals-education-training-29d98aadf40a.zip"
       }
     }
   ],
@@ -496,14 +496,14 @@
       "bytes": 628
     },
     {
+      "path": "assets/illustration-1d01b6997b5e.js",
+      "sha256": "1d01b6997b5e54051f5efac1e52b89f726ef5e45c74cfea74297e046178136fb",
+      "bytes": 7625
+    },
+    {
       "path": "assets/illustration-2dfaa0326ed6.css",
       "sha256": "2dfaa0326ed601445eb83798b75b354527821be307ce6f6f586b802cc07a32d6",
       "bytes": 12556
-    },
-    {
-      "path": "assets/illustration-932a012d32e7.js",
-      "sha256": "932a012d32e70776971b03df3c10e1cb80e49be0989d9d73f81828aca6e97af8",
-      "bytes": 7645
     },
     {
       "path": "assets/manufacturing-logistics-1440-7fc6740ee59f.webp",
@@ -521,19 +521,19 @@
       "bytes": 2834676
     },
     {
-      "path": "assets/portfolio-1440-f54d95aec6f1.webp",
-      "sha256": "f54d95aec6f15e11c086873ebae2b45003033a1831d58b08e9a05b9925412b8d",
-      "bytes": 184378
+      "path": "assets/portfolio-no-title-1440-41025e4b6852.webp",
+      "sha256": "41025e4b6852456a62c4e6d0b180069e88dd9e7cf2f5a6d88e30c635347f8a3f",
+      "bytes": 168986
     },
     {
-      "path": "assets/portfolio-768-1f347b0a300e.webp",
-      "sha256": "1f347b0a300ec57c1126331ca74eb3bb28131fc95b72b496e29bb0ded9f3d2f9",
-      "bytes": 77072
+      "path": "assets/portfolio-no-title-768-05d82f2135ca.webp",
+      "sha256": "05d82f2135ca721b73d5590425ca252031db619cbd5e63a3a4e5a41f13ed9c74",
+      "bytes": 69294
     },
     {
-      "path": "assets/portfolio-83b2fdfa9e76.png",
-      "sha256": "83b2fdfa9e762a16651aa0ba5a29445b4ce61220e28f2987da2641a6a3fedd0d",
-      "bytes": 2072783
+      "path": "assets/portfolio-no-title-99a4bd8dd023.png",
+      "sha256": "99a4bd8dd02360f7d201a5a4ad029f899fd52ce9a394e356a516acf46bbaa92d",
+      "bytes": 2078650
     },
     {
       "path": "assets/retail-service-1440-092a7ebc56ef.webp",
@@ -551,59 +551,59 @@
       "bytes": 2738651
     },
     {
-      "path": "downloads/taskobo-illustration-education-training-54d2280d9e52.zip",
-      "sha256": "54d2280d9e52f2ed03073c5994fdaef950d3bc5fa66c5fae97b618a001a4617f",
-      "bytes": 2716183
+      "path": "downloads/taskobo-visuals-education-training-29d98aadf40a.zip",
+      "sha256": "29d98aadf40a59ab4e77ddca1b5c2e380ba756633404cb77dd7bc288b8f81fad",
+      "bytes": 2716180
     },
     {
-      "path": "downloads/taskobo-illustration-healthcare-care-680091e818d7.zip",
-      "sha256": "680091e818d736d484db5b195894de988ebee359bb1ec4c7540749a1c0c1ef5a",
-      "bytes": 2678196
+      "path": "downloads/taskobo-visuals-healthcare-care-f4791ce8b1ff.zip",
+      "sha256": "f4791ce8b1ffb13754f0ffbaa46344da382fc93e43bb78a2f176d411578dc0d0",
+      "bytes": 2678193
     },
     {
-      "path": "downloads/taskobo-illustration-manufacturing-logistics-21c8a78c9416.zip",
-      "sha256": "21c8a78c9416d3d217fe0cd9a64c2f40a164f79e91c99e712763464dd5754fcc",
-      "bytes": 2907344
+      "path": "downloads/taskobo-visuals-manufacturing-logistics-8b729120c579.zip",
+      "sha256": "8b729120c5797cb1f327e737f264b24668411a2dddcc9a72447e103ba726ba66",
+      "bytes": 2907341
     },
     {
-      "path": "downloads/taskobo-illustration-retail-service-840dbaef78c4.zip",
-      "sha256": "840dbaef78c4b3afe2ed38401427f315ad8c0a922896d3edb1f647f92fb9c63e",
-      "bytes": 2791136
+      "path": "downloads/taskobo-visuals-retail-service-acecd5151658.zip",
+      "sha256": "acecd515165893301411b0891ee03b48b6b65afc7b65ae365e1bbb9bd55fe2cb",
+      "bytes": 2791132
     },
     {
-      "path": "downloads/taskobo-illustration-v0.2.1-f97d660b35cc.zip",
-      "sha256": "f97d660b35cc758ec7e6e8fd320736d9029ce5b67a9124b83a57c748da45dee7",
-      "bytes": 2389781
+      "path": "downloads/taskobo-visuals-v0.3.0-cf1b9a78c21c.zip",
+      "sha256": "cf1b9a78c21ce7213cbb86a4874091349ecbe850f91db547a0c10aeffcee304b",
+      "bytes": 2389591
     },
     {
       "path": "index.html",
-      "sha256": "cf9750f931cf164846996e83ec1062409a1383a732f6bb47a930c7f8f5c5d381",
-      "bytes": 20975
+      "sha256": "9263614bdd66058e5b47e06dcf8ac411500eeceacfc6fd605be4a1516b943ea0",
+      "bytes": 20771
     },
     {
       "path": "samples/education-training/index.html",
-      "sha256": "e535b65864eb30577f80fa6becaf257e7bf23e9cc0fc44600cfe31710dc01b63",
-      "bytes": 26233
+      "sha256": "af6074115a9b3c3e9264804e2fe577f6c1c44a583ff0e83b2dc7ff0eda84b821",
+      "bytes": 25958
     },
     {
       "path": "samples/healthcare-care/index.html",
-      "sha256": "a6aefa72d919178fa7e6241269203e40efd33a0254f7354d79e15f8da41d2b3d",
-      "bytes": 26136
+      "sha256": "1cb5c7a5df955bcf7f594f5a6afc6d98273f76ba9fcd173f9171ea07536a5734",
+      "bytes": 25861
     },
     {
       "path": "samples/manufacturing-logistics/index.html",
-      "sha256": "011b01e16ef71aa8c6931300b831f207bfbfb5af56abb9023a6db1819288d002",
-      "bytes": 26160
+      "sha256": "fd9105d6633e4c93b789fafd2e9bcc57990910b43bd19982f65e47c737288b78",
+      "bytes": 25885
     },
     {
       "path": "samples/retail-service/index.html",
-      "sha256": "ca6b96663f27e377a66018b3a7a73353ca173faed984a2a8f37aec050b5bff02",
-      "bytes": 26235
+      "sha256": "867add8c286730e12c4486f39517df8f04cca3215a4e371675717ff07cbfcf1d",
+      "bytes": 25960
     },
     {
       "path": "tool/index.html",
-      "sha256": "edc61a17b8b385e550eef5c55d049a7249a3ea728acee90f018833408dbce826",
-      "bytes": 16399
+      "sha256": "a70db2d8463afeccf750a4e3955e0f404f0dd143e977310846418a8c219556f8",
+      "bytes": 16327
     }
   ]
 }
