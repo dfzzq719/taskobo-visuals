@@ -2,7 +2,7 @@
 name: taskobo-visuals
 description: "Create polished enterprise illustrations and coordinated thematic icon sets from a topic, business content, or document; choose visual form, a coherent Taskobo art direction, and a user-selected or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.3.0"
+  version: "0.3.1"
 ---
 
 # Taskobo Visuals

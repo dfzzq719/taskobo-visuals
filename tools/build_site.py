@@ -7,8 +7,8 @@ import argparse
 import hashlib
 import html
 import json
+import math
 import re
-import shutil
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 from PIL import Image
@@ -63,34 +63,58 @@ def archive(path, entries):
     with ZipFile(path) as z:
         assert z.testzip() is None
 
+def arrow_svg(path, tip, tangent, color, length=16, half_width=10):
+    """Draw an open chevron aligned to the actual shaft's terminal tangent."""
+    tx, ty = tip
+    magnitude = math.hypot(*tangent)
+    ux, uy = tangent[0] / magnitude, tangent[1] / magnitude
+    bx, by = tx - length * ux, ty - length * uy
+    left = (bx - half_width * uy, by + half_width * ux)
+    right = (bx + half_width * uy, by - half_width * ux)
+    head = f'M{left[0]:.3f} {left[1]:.3f}L{tx:g} {ty:g}L{right[0]:.3f} {right[1]:.3f}'
+    return f'<g data-icon-arrow="true" fill="none" stroke="{color}" stroke-width="5"><path data-arrow-shaft="true" d="{path}"/><path data-arrow-head="true" d="{head}"/></g>'
+
+
 def icon_svg(key, title, accent, wash):
     # Geometric outline/fill icons; no embedded bitmap, text shapes or external refs.
     body = {
         'inspection': '<path fill="{wash}" d="m98 39 48 28v56l-48 28-48-28V67Z"/><path d="m50 67 48 28 48-28M98 95v56"/><circle fill="#FCFBF8" cx="158" cy="151" r="34"/><path stroke="{accent}" d="m144 151 10 11 20-23"/><path stroke-width="10" d="m183 177 26 27"/>',
         'instructions': '<rect fill="{wash}" x="60" y="45" width="136" height="170" rx="9"/><rect fill="{accent}" x="99" y="34" width="58" height="25" rx="7"/><path d="m82 91 8 8 15-17m-23 50 8 8 15-17m-23 50 8 8 15-17M121 92h50m-50 41h50m-50 41h38"/>',
-        'traceability': '<path fill="{wash}" d="M46 74h105l47 47-47 47H46Z"/><circle fill="{accent}" cx="167" cy="121" r="7"/><path stroke-width="6" d="M68 96v49m14-49v49m19-49v49m11-49v49m17-49v49"/><path stroke="{accent}" d="M76 186h88m-15-11 15 11-15 11M91 58h48m-34-11L91 58l14 11"/>',
+        'traceability': '<path fill="{wash}" d="M46 74h105l47 47-47 47H46Z"/><circle fill="{accent}" cx="167" cy="121" r="7"/><path stroke-width="6" d="M68 96v49m14-49v49m19-49v49m11-49v49m17-49v49"/>',
         'exception': '<path fill="{wash}" d="m43 108 54-24 54 24v77l-54 25-54-25Z"/><path d="m43 108 54 26 54-26m-54 26v76m-28-113 55 25v25"/><path fill="#FCFBF8" d="M143 43h58q12 0 12 12v49q0 12-12 12h-29l-23 21v-21h-6q-12 0-12-12V55q0-12 12-12Z"/><path stroke="{accent}" stroke-width="6" d="M172 61v23m0 14v1"/>',
         'maintenance': '<rect fill="{wash}" x="44" y="76" width="130" height="123" rx="8"/><path d="M44 109h130M60 91h1m13 0h1M64 132h42v42H64m-8 25v13m101-13v13"/><path fill="{accent}" d="M196 44q-25-8-39 11-13 17-2 36l-48 48a14 14 0 0 0 20 20l48-48q24 11 40-8 11-15 5-32l-20 21-21-20Z"/>',
-        'shipment': '<path fill="{wash}" d="m48 80 60-28 60 28v81l-60 28-60-28Z"/><path d="m48 80 60 28 60-28m-60 28v81M78 66l60 28v27"/><path stroke="{accent}" stroke-width="7" d="M136 191h76m-20-20 20 20-20 20"/><path d="M43 213h62"/>',
-        'inventory': '<path d="M45 46v167m166-167v167M45 116h166M45 198h166"/><rect fill="{wash}" x="61" y="59" width="54" height="57" rx="3"/><rect fill="{accent}" x="133" y="70" width="59" height="46" rx="3"/><rect fill="{wash}" x="72" y="139" width="74" height="59" rx="3"/><path d="M88 59v18m72-7v15m-52 54v20m51 8h35m-16-15 16 15-16 15"/>',
-        'order': '<rect fill="{wash}" x="40" y="58" width="73" height="126" rx="7"/><path d="M58 82h36M58 101h28M58 124h30M58 143h24"/><rect fill="#FCFBF8" x="150" y="75" width="66" height="126" rx="7"/><path stroke="{accent}" stroke-width="5" d="M98 132h58m-15-15 15 15-15 15"/><path d="m166 166 9 9 24-27"/>',
+        'shipment': '<path fill="{wash}" d="m48 80 60-28 60 28v81l-60 28-60-28Z"/><path d="m48 80 60 28 60-28m-60 28v81M78 66l60 28v27"/><path d="M43 213h62"/>',
+        'inventory': '<path d="M45 46v167m166-167v167M45 116h166M45 198h166"/><rect fill="{wash}" x="61" y="59" width="54" height="57" rx="3"/><rect fill="{accent}" x="133" y="70" width="59" height="46" rx="3"/><rect fill="{wash}" x="72" y="139" width="74" height="59" rx="3"/><path d="M88 59v18m72-7v15m-52 54v20"/>',
+        'order': '<rect fill="{wash}" x="40" y="58" width="73" height="126" rx="7"/><path d="M58 82h36M58 101h28M58 124h30M58 143h24"/><rect fill="#FCFBF8" x="150" y="75" width="66" height="126" rx="7"/><path d="m166 166 9 9 24-27"/>',
         'payment': '<rect fill="{wash}" x="91" y="63" width="113" height="150" rx="12"/><rect fill="{accent}" x="108" y="80" width="79" height="37" rx="4"/><path d="M113 140h12m18 0h12m18 0h10M113 162h12m18 0h12m18 0h10M113 184h12m18 0h12"/><rect fill="#FCFBF8" x="38" y="36" width="113" height="71" rx="8"/><path stroke="{accent}" stroke-width="9" d="M39 56h111"/><path d="M56 85h23"/>',
-        'return': '<path fill="{wash}" d="m66 111 57-26 57 26v77l-57 26-57-26Z"/><path d="m66 111 57 27 57-27m-57 27v76m-28-116 55 26v23"/><path stroke="{accent}" stroke-width="6" d="M197 82c-14-35-57-48-91-30-15 8-27 21-33 37m-7-27 7 27 27-6"/>',
+        'return': '<path fill="{wash}" d="m66 111 57-26 57 26v77l-57 26-57-26Z"/><path d="m66 111 57 27 57-27m-57 27v76m-28-116 55 26v23"/>',
         'support': '<path fill="{wash}" d="M47 51h114q14 0 14 14v65q0 14-14 14H99l-34 27v-27H47q-14 0-14-14V65q0-14 14-14Z"/><path fill="{accent}" d="M175 107h25q14 0 14 14v60q0 14-14 14h-12v21l-28-21h-44q-14 0-14-14v-16"/><path d="M61 84h83M61 108h55"/><path stroke="#FCFBF8" d="M135 162h50m-50 17h31"/>',
-        'loyalty': '<rect fill="{wash}" x="47" y="61" width="162" height="117" rx="10"/><circle fill="{accent}" cx="89" cy="105" r="18"/><path d="M66 149q4-25 23-25t23 25m19-55h53m-53 22h37"/><path stroke="{accent}" stroke-width="5" d="M67 204c23 17 60 16 83 1m-3-18 3 18-18 4M190 36c-23-14-57-12-77 2m2 16-2-16 17-5"/>',
+        'loyalty': '<rect fill="{wash}" x="47" y="61" width="162" height="117" rx="10"/><circle fill="{accent}" cx="89" cy="105" r="18"/><path d="M66 149q4-25 23-25t23 25m19-55h53m-53 22h37"/>',
         'appointment': '<rect fill="{wash}" x="43" y="57" width="154" height="143" rx="9"/><path fill="{accent}" d="M43 66q0-9 9-9h136q9 0 9 9v32H43Z"/><path d="M81 39v36m78-36v36M64 119h14m17 0h14m17 0h14M64 145h14m17 0h14"/><circle fill="#FCFBF8" cx="177" cy="173" r="38"/><path stroke="{accent}" stroke-width="5" d="M177 151v23l15 10"/>',
         'consultation': '<path fill="{wash}" d="M46 47h106q14 0 14 14v61q0 14-14 14h-39l-29 26v-26H46q-14 0-14-14V61q0-14 14-14Z"/><path fill="{accent}" d="M155 111h48q15 0 15 15v52q0 15-15 15h-15v21l-27-21h-43q-14 0-14-14v-21"/><path d="M61 80h75M61 104h49"/><path stroke="#FCFBF8" d="M141 148h47m-47 21h32"/>',
         'consent': '<path fill="{wash}" d="M60 39h92l41 41v127H60Z"/><path d="M152 39v41h41M82 105h86M82 128h57"/><path stroke="{accent}" stroke-width="4" d="m82 173 13-17 9 16 13-9 8 10h25"/><circle fill="#FCFBF8" cx="183" cy="188" r="31"/><path stroke="{accent}" stroke-width="5" d="m167 187 11 12 21-24"/>',
         'records': '<path fill="{wash}" d="M38 79h66l19 18h88v101H38Z"/><path fill="#FCFBF8" d="M61 49h94l35 35v93H61Z"/><path d="M155 49v35h35M82 101h64m-64 22h53"/><rect fill="{accent}" x="135" y="149" width="71" height="59" rx="8"/><path d="M149 148v-13a22 22 0 0 1 44 0v13"/><path stroke="#FCFBF8" stroke-width="5" d="M171 172v15"/>',
-        'follow-up': '<rect fill="{wash}" x="46" y="44" width="125" height="162" rx="8"/><path stroke="{accent}" stroke-width="9" d="M108 73v42m-21-21h42"/><path d="M67 142h80m-80 23h51"/><circle fill="#FCFBF8" cx="178" cy="175" r="39"/><path stroke="{accent}" stroke-width="5" d="M178 151v25l17 10"/><path d="m197 143 11 5 6-10"/>',
+        'follow-up': '<rect fill="{wash}" x="46" y="44" width="125" height="162" rx="8"/><path stroke="{accent}" stroke-width="9" d="M108 73v42m-21-21h42"/><path d="M67 142h80m-80 23h51"/><circle fill="#FCFBF8" stroke="none" cx="178" cy="175" r="39"/><path stroke="{accent}" stroke-width="5" d="M178 151v25l17 10"/>',
         'accessibility': '<circle fill="{accent}" cx="115" cy="49" r="17"/><path stroke="{accent}" stroke-width="9" d="m108 80 4 62h53l26 49m-76-88h44"/><path d="M92 113a49 49 0 1 0 62 71m30 7h24"/><path fill="{wash}" d="M110 146h45v16h-45Z"/>',
-        'curriculum': '<rect fill="{wash}" x="43" y="45" width="112" height="153" rx="8"/><path d="M71 45v153M91 76h43m-43 22h31"/><path stroke="{accent}" stroke-width="6" d="M93 176h37v-28h35v-29h45m-15-15 15 15-15 15"/><path d="M56 211h134"/>',
+        'curriculum': '<rect fill="{wash}" x="43" y="45" width="112" height="153" rx="8"/><path d="M71 45v153M91 76h43m-43 22h31"/><path d="M56 211h134"/>',
         'materials': '<path fill="{wash}" d="M128 65q-38-22-84-7v133q45-15 84 8 39-23 84-8V58q-46-15-84 7Z"/><path d="M128 65v134M62 86q25-7 47 5M62 111q25-7 47 5M62 137q25-7 47 5M147 91q24-12 47-5M147 116q24-12 47-5M147 142q24-12 47-5"/><path fill="{accent}" d="M174 53v60l11-7 11 7V53Z"/>',
         'practice': '<rect fill="{wash}" x="43" y="68" width="114" height="129" rx="8"/><path d="M43 99h114M60 84h20m-37 91h114M67 124h28v28H67"/><path fill="{accent}" d="M197 44q-25-5-38 13-11 16-2 33l-43 43a13 13 0 0 0 19 19l43-43q22 9 37-7 12-13 8-29l-21 18-19-19Z"/>',
-        'mentoring': '<path fill="{wash}" d="M46 46h112q13 0 13 13v63q0 13-13 13h-40l-29 24v-24H46q-13 0-13-13V59q0-13 13-13Z"/><path stroke="{accent}" stroke-width="5" d="M61 90h75m-18-17 18 17-18 17"/><path fill="{accent}" d="M183 113h19q15 0 15 15v52q0 15-15 15h-18v21l-28-21h-39q-15 0-15-15v-17"/><path stroke="#FCFBF8" d="M188 160h-46m14-13-14 13 14 13"/>',
+        'mentoring': '<path fill="{wash}" d="M46 46h112q13 0 13 13v63q0 13-13 13h-40l-29 24v-24H46q-13 0-13-13V59q0-13 13-13Z"/><path fill="{accent}" d="M183 113h19q15 0 15 15v52q0 15-15 15h-18v21l-28-21h-39q-15 0-15-15v-17"/>',
         'assessment': '<rect fill="{wash}" x="48" y="46" width="126" height="161" rx="8"/><rect fill="{accent}" x="82" y="34" width="58" height="24" rx="6"/><path d="m68 88 7 7 12-15m-19 42 7 7 12-15M101 88h48m-48 35h33M68 159h48m-48 21h34"/><circle fill="#FCFBF8" cx="173" cy="172" r="30"/><path stroke="{accent}" stroke-width="5" d="m159 171 10 10 19-20"/><path stroke-width="8" d="m195 196 17 17"/>',
         'completion': '<path fill="{wash}" d="M55 53h146v134H55Z"/><path d="M72 72h111M76 96h104m-88 23h72M75 168h31"/><circle fill="{accent}" cx="157" cy="157" r="32"/><path fill="{wash}" d="m137 182-9 36 28-15 29 15-9-36"/><path stroke="#FCFBF8" stroke-width="5" d="m142 155 10 11 21-23"/>'
     }[key].replace('{accent}', accent).replace('{wash}', wash)
+    arrows = {
+        'traceability': [('M76 186H164', (164, 186), (1, 0), accent), ('M139 58H91', (91, 58), (-1, 0), accent)],
+        'shipment': [('M136 191H212', (212, 191), (1, 0), accent)],
+        'inventory': [('M159 167H194', (194, 167), (1, 0), accent)],
+        'order': [('M121 132H142', (142, 132), (1, 0), accent, 12, 8)],
+        'return': [('M197 82C183 47 140 34 106 52C91 60 79 73 73 89', (73, 89), (-6, 16), accent)],
+        'loyalty': [('M67 204C90 221 127 220 150 205', (150, 205), (23, -15), accent), ('M190 36C167 22 133 24 113 38', (113, 38), (-20, 14), accent)],
+        'follow-up': [('M208 200A39 39 0 1 1 208 150', (208, 150), (25, 30), accent)],
+        'curriculum': [('M93 176H130V148H165V119H210', (210, 119), (1, 0), accent)],
+        'mentoring': [('M61 90H136', (136, 90), (1, 0), accent), ('M188 160H142', (142, 160), (-1, 0), '#FCFBF8')],
+    }
+    body += ''.join(arrow_svg(*spec) for spec in arrows.get(key, []))
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="{E(title)}"><title>{E(title)}</title><metadata>Original Taskobo geometric icon; editable SVG; 2026-10-22.</metadata><g fill="none" stroke="#0D2046" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">{body}</g></svg>'
 
 def request(case):
@@ -127,7 +151,7 @@ def sample(case):
     for key, title, meaning in case['icons']:
         svg = (ROOT / 'examples' / case['id'] / 'icons' / (key + '.svg')).read_text(encoding='utf-8')
         svg = svg.replace(case['accent'], 'var(--sample-accent)').replace(case['wash'], 'var(--sample-wash)')
-        icons += f'<article class="ill-icon"><div class="ill-icon-stage">{svg}</div><h3>{E(title)}</h3><p>{E(meaning)}</p><div class="ill-icon-links"><a href="{BASE}assets/icons/{case["id"]}-{key}.svg" download aria-label="{E(title)}のSVGを保存">SVG</a><a href="{BASE}assets/icons/{case["id"]}-{key}.png" download aria-label="{E(title)}のPNGを保存">PNG</a></div></article>'
+        icons += f'<article class="ill-icon"><div class="ill-icon-stage">{svg}</div><h3>{E(title)}</h3><p>{E(meaning)}</p><div class="ill-icon-links"><a href="{BASE}assets/icons/{case["assets"]["icons"][key]["svg"]}" download aria-label="{E(title)}のSVGを保存">SVG</a><a href="{BASE}assets/icons/{case["assets"]["icons"][key]["png"]}" download aria-label="{E(title)}のPNGを保存">PNG</a></div></article>'
     related = ''.join(f'<a href="{BASE}samples/{c["id"]}/">{image(c, True)}<strong>{E(c["name"])} {ARROW}</strong></a>' for c in CATALOG if c['id'] != case['id'])
     return f'''<div class="container"><nav class="ill-breadcrumbs" aria-label="パンくずリスト"><a href="/">ホーム</a><span>/</span><a href="{BASE}">Taskobo Visuals</a><span>/</span><span aria-current="page">{E(case['name'])}</span></nav>
 <header class="ill-intro"><h1>{E(case['title'])}</h1><p>{E(case['description'])}</p><div class="ill-actions"><a class="button button-primary" href="#sample-icons">テーマ別アイコンを見る {ARROW}</a><a href="{BASE}downloads/{case['assets']['zip']}" download>このサンプル一式を保存</a></div></header>
@@ -178,7 +202,16 @@ def toolpage(skill_zip):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, default=ROOT / 'site')
+    parser.add_argument('--icons-only', action='store_true', help='Regenerate editable icon sources before PNG export')
     args = parser.parse_args()
+    if args.icons_only:
+        for case in CATALOG:
+            folder = ROOT / 'examples' / case['id'] / 'icons'
+            folder.mkdir(parents=True, exist_ok=True)
+            for key, title, _ in case['icons']:
+                (folder / (key + '.svg')).write_text(icon_svg(key, title, case['accent'], case['wash']), encoding='utf-8')
+        print('Updated 24 editable SVG sources')
+        return
     out = args.output.resolve()
     out.mkdir(parents=True, exist_ok=True)
     (out / 'assets/icons').mkdir(parents=True, exist_ok=True)
@@ -210,13 +243,16 @@ def main():
         (folder / 'icons').mkdir(exist_ok=True)
         case['assets'] = exports(folder / 'illustration.png', case['id'], (folder / 'generation.prompt.txt').read_text(encoding='utf-8'))
         (folder / 'request.ja.txt').write_text(request(case) + '\n', encoding='utf-8')
+        case['assets']['icons'] = {}
         for key, title, meaning in case['icons']:
             svg = icon_svg(key, title, case['accent'], case['wash'])
             (folder / 'icons' / (key + '.svg')).write_text(svg, encoding='utf-8')
-            (out / 'assets/icons' / f'{case["id"]}-{key}.svg').write_text(svg, encoding='utf-8')
+            case['assets']['icons'][key] = {'svg': put_asset(f'{case["id"]}-{key}.svg', svg.encode('utf-8'), 'assets/icons')}
+            (out / 'assets/icons' / f'{case["id"]}-{key}.svg').write_bytes(svg.encode('utf-8'))
             png = folder / 'icons' / (key + '.png')
             if png.exists():
-                shutil.copyfile(png, out / 'assets/icons' / f'{case["id"]}-{key}.png')
+                case['assets']['icons'][key]['png'] = put_asset(f'{case["id"]}-{key}.png', png.read_bytes(), 'assets/icons')
+                (out / 'assets/icons' / f'{case["id"]}-{key}.png').write_bytes(png.read_bytes())
         archive_name = f'taskobo-visuals-{case["id"]}.zip'
         entries = [(p.relative_to(folder.parent).as_posix(), p.read_bytes()) for p in folder.rglob('*') if p.is_file() and p.name != 'index.html']
         archive(out / 'downloads' / archive_name, entries)

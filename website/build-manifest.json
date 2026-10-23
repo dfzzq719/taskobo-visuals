@@ -1,5 +1,5 @@
 {
-  "skillVersion": "0.3.0",
+  "skillVersion": "0.3.1",
   "routes": [
     "/free-tools/taskobo-visuals/",
     "/free-tools/taskobo-visuals/tool/",
@@ -8,7 +8,7 @@
     "/free-tools/taskobo-visuals/samples/healthcare-care/",
     "/free-tools/taskobo-visuals/samples/education-training/"
   ],
-  "skillZip": "taskobo-visuals-v0.3.0-cf1b9a78c21c.zip",
+  "skillZip": "taskobo-visuals-v0.3.1-502f4941c4ca.zip",
   "hero": {
     "small": "portfolio-no-title-768-05d82f2135ca.webp",
     "large": "portfolio-no-title-1440-41025e4b6852.webp",
@@ -64,7 +64,33 @@
         "small": "manufacturing-logistics-768-84b6fb631ac4.webp",
         "large": "manufacturing-logistics-1440-7fc6740ee59f.webp",
         "original": "manufacturing-logistics-95b5f9bb6810.png",
-        "zip": "taskobo-visuals-manufacturing-logistics-8b729120c579.zip"
+        "icons": {
+          "inspection": {
+            "svg": "manufacturing-logistics-inspection-1afccaf9b4bb.svg",
+            "png": "manufacturing-logistics-inspection-32139c3d2175.png"
+          },
+          "instructions": {
+            "svg": "manufacturing-logistics-instructions-74eadad59969.svg",
+            "png": "manufacturing-logistics-instructions-1895b21eddb8.png"
+          },
+          "traceability": {
+            "svg": "manufacturing-logistics-traceability-63e3ba70aa36.svg",
+            "png": "manufacturing-logistics-traceability-6a4f5f40b368.png"
+          },
+          "exception": {
+            "svg": "manufacturing-logistics-exception-95a256e1f7a5.svg",
+            "png": "manufacturing-logistics-exception-4e8c38cd5c7b.png"
+          },
+          "maintenance": {
+            "svg": "manufacturing-logistics-maintenance-0a8459bb6d38.svg",
+            "png": "manufacturing-logistics-maintenance-af3fa3a69826.png"
+          },
+          "shipment": {
+            "svg": "manufacturing-logistics-shipment-d3be19ed9bfa.svg",
+            "png": "manufacturing-logistics-shipment-b20615579a18.png"
+          }
+        },
+        "zip": "taskobo-visuals-manufacturing-logistics-2572ff539c17.zip"
       }
     },
     {
@@ -116,7 +142,33 @@
         "small": "retail-service-768-d55b1141836f.webp",
         "large": "retail-service-1440-092a7ebc56ef.webp",
         "original": "retail-service-fa0b7f986468.png",
-        "zip": "taskobo-visuals-retail-service-acecd5151658.zip"
+        "icons": {
+          "inventory": {
+            "svg": "retail-service-inventory-1f5bf1e2ff97.svg",
+            "png": "retail-service-inventory-0ce4eb1230fd.png"
+          },
+          "order": {
+            "svg": "retail-service-order-3be959730e2a.svg",
+            "png": "retail-service-order-4c623df4f9db.png"
+          },
+          "payment": {
+            "svg": "retail-service-payment-0bce7a487704.svg",
+            "png": "retail-service-payment-8c7cd7f72710.png"
+          },
+          "return": {
+            "svg": "retail-service-return-f3a68b43dadf.svg",
+            "png": "retail-service-return-90aa64abb25b.png"
+          },
+          "support": {
+            "svg": "retail-service-support-60ac1f33f615.svg",
+            "png": "retail-service-support-ac4e751489ee.png"
+          },
+          "loyalty": {
+            "svg": "retail-service-loyalty-c6ec3fdbc8f5.svg",
+            "png": "retail-service-loyalty-7940f776ffda.png"
+          }
+        },
+        "zip": "taskobo-visuals-retail-service-ec0c5c27b82a.zip"
       }
     },
     {
@@ -168,7 +220,33 @@
         "small": "healthcare-care-768-04f4fd21d4cb.webp",
         "large": "healthcare-care-1440-7e43d86fcbab.webp",
         "original": "healthcare-care-98aff16bb073.png",
-        "zip": "taskobo-visuals-healthcare-care-f4791ce8b1ff.zip"
+        "icons": {
+          "appointment": {
+            "svg": "healthcare-care-appointment-f9b067f0e417.svg",
+            "png": "healthcare-care-appointment-8421698552b5.png"
+          },
+          "consultation": {
+            "svg": "healthcare-care-consultation-378145e90d16.svg",
+            "png": "healthcare-care-consultation-1f363160d3b0.png"
+          },
+          "consent": {
+            "svg": "healthcare-care-consent-261c5e64e34a.svg",
+            "png": "healthcare-care-consent-154ee97ef890.png"
+          },
+          "records": {
+            "svg": "healthcare-care-records-bcd38cfea9cf.svg",
+            "png": "healthcare-care-records-75965338a202.png"
+          },
+          "follow-up": {
+            "svg": "healthcare-care-follow-up-98e3e8cac6bf.svg",
+            "png": "healthcare-care-follow-up-18fdff3fcddf.png"
+          },
+          "accessibility": {
+            "svg": "healthcare-care-accessibility-76cb3d9a3cad.svg",
+            "png": "healthcare-care-accessibility-e1dd0b24e8c7.png"
+          }
+        },
+        "zip": "taskobo-visuals-healthcare-care-5ede97469f6b.zip"
       }
     },
     {
@@ -220,7 +298,33 @@
         "small": "education-training-768-044584ecd770.webp",
         "large": "education-training-1440-e6a430e3d401.webp",
         "original": "education-training-d833bc8b5de9.png",
-        "zip": "taskobo-visuals-education-training-29d98aadf40a.zip"
+        "icons": {
+          "curriculum": {
+            "svg": "education-training-curriculum-af169d17fae4.svg",
+            "png": "education-training-curriculum-3647792d2ec2.png"
+          },
+          "materials": {
+            "svg": "education-training-materials-1f6b84b2b6a0.svg",
+            "png": "education-training-materials-7293b890fb4b.png"
+          },
+          "practice": {
+            "svg": "education-training-practice-8a336b565ea3.svg",
+            "png": "education-training-practice-94d3121bb2c4.png"
+          },
+          "mentoring": {
+            "svg": "education-training-mentoring-b798446bdd06.svg",
+            "png": "education-training-mentoring-84668f0366e9.png"
+          },
+          "assessment": {
+            "svg": "education-training-assessment-f05fe563ce5e.svg",
+            "png": "education-training-assessment-7078ab8190b4.png"
+          },
+          "completion": {
+            "svg": "education-training-completion-aba3c8f2466f.svg",
+            "png": "education-training-completion-284978d84b4e.png"
+          }
+        },
+        "zip": "taskobo-visuals-education-training-dfb962e7e659.zip"
       }
     }
   ],
@@ -256,6 +360,16 @@
       "bytes": 2635700
     },
     {
+      "path": "assets/icons/education-training-assessment-7078ab8190b4.png",
+      "sha256": "7078ab8190b4c11ca57126320b6e28d831360cd533a1cf9c7a02472dc00fe403",
+      "bytes": 20727
+    },
+    {
+      "path": "assets/icons/education-training-assessment-f05fe563ce5e.svg",
+      "sha256": "f05fe563ce5e51083d57b14b5bbc8a5a76e9ff4aa79ea15cf001075258b08213",
+      "bytes": 715
+    },
+    {
       "path": "assets/icons/education-training-assessment.png",
       "sha256": "7078ab8190b4c11ca57126320b6e28d831360cd533a1cf9c7a02472dc00fe403",
       "bytes": 20727
@@ -264,6 +378,16 @@
       "path": "assets/icons/education-training-assessment.svg",
       "sha256": "f05fe563ce5e51083d57b14b5bbc8a5a76e9ff4aa79ea15cf001075258b08213",
       "bytes": 715
+    },
+    {
+      "path": "assets/icons/education-training-completion-284978d84b4e.png",
+      "sha256": "284978d84b4e4339094410a6b33aa7cdb3fa03d4a718306573a05eb209e7dc0f",
+      "bytes": 21170
+    },
+    {
+      "path": "assets/icons/education-training-completion-aba3c8f2466f.svg",
+      "sha256": "aba3c8f2466fe68ade6acd24a9d25415bfc8307a8f92ebf42dcb9ea8e509b05a",
+      "bytes": 625
     },
     {
       "path": "assets/icons/education-training-completion.png",
@@ -276,14 +400,34 @@
       "bytes": 625
     },
     {
+      "path": "assets/icons/education-training-curriculum-3647792d2ec2.png",
+      "sha256": "3647792d2ec2b6990bad574ce8b31aa14a1bba4c59d4fcf38cfba241b52ba8dd",
+      "bytes": 8694
+    },
+    {
+      "path": "assets/icons/education-training-curriculum-af169d17fae4.svg",
+      "sha256": "af169d17fae4a44a4963776cfa0432586644ed5c90efa4023eef35a2c60b58ea",
+      "bytes": 684
+    },
+    {
       "path": "assets/icons/education-training-curriculum.png",
-      "sha256": "46cd08caf67cfd5bbebfe516f0cddd7d1a1effc08a6adaab96ed8c14962c76d1",
-      "bytes": 8091
+      "sha256": "3647792d2ec2b6990bad574ce8b31aa14a1bba4c59d4fcf38cfba241b52ba8dd",
+      "bytes": 8694
     },
     {
       "path": "assets/icons/education-training-curriculum.svg",
-      "sha256": "d1dbd90d45e155977b7e9cd9e0170357d6cdbd8de53afbd97499189b956461d2",
-      "bytes": 559
+      "sha256": "af169d17fae4a44a4963776cfa0432586644ed5c90efa4023eef35a2c60b58ea",
+      "bytes": 684
+    },
+    {
+      "path": "assets/icons/education-training-materials-1f6b84b2b6a0.svg",
+      "sha256": "1f6b84b2b6a098489df85cb206672ecea0e635f72dffad75627c61a4a271d79d",
+      "bytes": 594
+    },
+    {
+      "path": "assets/icons/education-training-materials-7293b890fb4b.png",
+      "sha256": "7293b890fb4b78a6460e0b9e6727dc1eec424fac511c2577fb3eb15f9c7f0127",
+      "bytes": 24029
     },
     {
       "path": "assets/icons/education-training-materials.png",
@@ -296,14 +440,34 @@
       "bytes": 594
     },
     {
+      "path": "assets/icons/education-training-mentoring-84668f0366e9.png",
+      "sha256": "84668f0366e9cfaa9bf04a991423554b89df1bf797323413e030b8f461bf122e",
+      "bytes": 18460
+    },
+    {
+      "path": "assets/icons/education-training-mentoring-b798446bdd06.svg",
+      "sha256": "b798446bdd06229a302a80908c4883499f376de90cc6fb375cd8ea81b039f0a6",
+      "bytes": 954
+    },
+    {
       "path": "assets/icons/education-training-mentoring.png",
-      "sha256": "e168e2f9ec292ad77fdf2ae9d651478cb1eed13e0d88cc7e39576c9857d8fa2b",
-      "bytes": 20503
+      "sha256": "84668f0366e9cfaa9bf04a991423554b89df1bf797323413e030b8f461bf122e",
+      "bytes": 18460
     },
     {
       "path": "assets/icons/education-training-mentoring.svg",
-      "sha256": "8faacb49c8af5143b7ab284b28a2d593cc85178e6945cfec485d9a2101101977",
-      "bytes": 693
+      "sha256": "b798446bdd06229a302a80908c4883499f376de90cc6fb375cd8ea81b039f0a6",
+      "bytes": 954
+    },
+    {
+      "path": "assets/icons/education-training-practice-8a336b565ea3.svg",
+      "sha256": "8a336b565ea3062a40b0ba12910be57fa300a1031536cf790a7c250f75a9e6de",
+      "bytes": 575
+    },
+    {
+      "path": "assets/icons/education-training-practice-94d3121bb2c4.png",
+      "sha256": "94d3121bb2c47655db6c4699a662bec47a3927eac603264bfa294479fa83fdee",
+      "bytes": 20078
     },
     {
       "path": "assets/icons/education-training-practice.png",
@@ -316,6 +480,16 @@
       "bytes": 575
     },
     {
+      "path": "assets/icons/healthcare-care-accessibility-76cb3d9a3cad.svg",
+      "sha256": "76cb3d9a3cadd26972b61cc8ec1f4c6eb74f85eb0e894cc36992e4cf97a3075c",
+      "bytes": 566
+    },
+    {
+      "path": "assets/icons/healthcare-care-accessibility-e1dd0b24e8c7.png",
+      "sha256": "e1dd0b24e8c78581e1593abd30da0938f69ad039c463c510c7417b007e2b962b",
+      "bytes": 20883
+    },
+    {
       "path": "assets/icons/healthcare-care-accessibility.png",
       "sha256": "e1dd0b24e8c78581e1593abd30da0938f69ad039c463c510c7417b007e2b962b",
       "bytes": 20883
@@ -324,6 +498,16 @@
       "path": "assets/icons/healthcare-care-accessibility.svg",
       "sha256": "76cb3d9a3cadd26972b61cc8ec1f4c6eb74f85eb0e894cc36992e4cf97a3075c",
       "bytes": 566
+    },
+    {
+      "path": "assets/icons/healthcare-care-appointment-8421698552b5.png",
+      "sha256": "8421698552b533e35cdb9e775d6bff9b900ae885e5fb0efce7d551a5803e09d1",
+      "bytes": 16820
+    },
+    {
+      "path": "assets/icons/healthcare-care-appointment-f9b067f0e417.svg",
+      "sha256": "f9b067f0e4173cf7687026339ccf38762de0463781cee619295f5f4f032b0f69",
+      "bytes": 658
     },
     {
       "path": "assets/icons/healthcare-care-appointment.png",
@@ -336,6 +520,16 @@
       "bytes": 658
     },
     {
+      "path": "assets/icons/healthcare-care-consent-154ee97ef890.png",
+      "sha256": "154ee97ef890956b3e721d1996bb80727b5e542626ba58e00aeaf8e70c5010de",
+      "bytes": 19408
+    },
+    {
+      "path": "assets/icons/healthcare-care-consent-261c5e64e34a.svg",
+      "sha256": "261c5e64e34a047dd1b8b91f7eec2baaf67352c705dbbfa3eacdcbc278eb68d2",
+      "bytes": 631
+    },
+    {
       "path": "assets/icons/healthcare-care-consent.png",
       "sha256": "154ee97ef890956b3e721d1996bb80727b5e542626ba58e00aeaf8e70c5010de",
       "bytes": 19408
@@ -344,6 +538,16 @@
       "path": "assets/icons/healthcare-care-consent.svg",
       "sha256": "261c5e64e34a047dd1b8b91f7eec2baaf67352c705dbbfa3eacdcbc278eb68d2",
       "bytes": 631
+    },
+    {
+      "path": "assets/icons/healthcare-care-consultation-1f363160d3b0.png",
+      "sha256": "1f363160d3b07d7c81d173ddbc70070e831b7a5c5794b5b3ff2806c0fceaaab1",
+      "bytes": 16036
+    },
+    {
+      "path": "assets/icons/healthcare-care-consultation-378145e90d16.svg",
+      "sha256": "378145e90d165581ae5eaaafcdca583feec12a5fe6c10f426f5f609ddde90ad3",
+      "bytes": 611
     },
     {
       "path": "assets/icons/healthcare-care-consultation.png",
@@ -356,14 +560,34 @@
       "bytes": 611
     },
     {
+      "path": "assets/icons/healthcare-care-follow-up-18fdff3fcddf.png",
+      "sha256": "18fdff3fcddf76706c57b4a27c598346ff4cd205801be1f06ee51318ae76ba52",
+      "bytes": 18557
+    },
+    {
+      "path": "assets/icons/healthcare-care-follow-up-98e3e8cac6bf.svg",
+      "sha256": "98e3e8cac6bf7bb350272259654bfd1128bab101a6d0706d8ca16aab0c5e4d7b",
+      "bytes": 845
+    },
+    {
       "path": "assets/icons/healthcare-care-follow-up.png",
-      "sha256": "a054a7019ebd484568e95b40c2e8a7d68f07c10d1948b10019cc8f2fdb4e7070",
-      "bytes": 18470
+      "sha256": "18fdff3fcddf76706c57b4a27c598346ff4cd205801be1f06ee51318ae76ba52",
+      "bytes": 18557
     },
     {
       "path": "assets/icons/healthcare-care-follow-up.svg",
-      "sha256": "b32c471f037df4f629a70c8a8866ef66060b77ea9549a2e6dce9ac0fd7a5a597",
-      "bytes": 646
+      "sha256": "98e3e8cac6bf7bb350272259654bfd1128bab101a6d0706d8ca16aab0c5e4d7b",
+      "bytes": 845
+    },
+    {
+      "path": "assets/icons/healthcare-care-records-75965338a202.png",
+      "sha256": "75965338a202c8abb901f3339d2f974fdcc11a93efa436c88e02c96949d2d2bd",
+      "bytes": 11651
+    },
+    {
+      "path": "assets/icons/healthcare-care-records-bcd38cfea9cf.svg",
+      "sha256": "bcd38cfea9cf57beff94d2dbe8051188927c7a7f9a198379c0aff25fcba7a3d6",
+      "bytes": 660
     },
     {
       "path": "assets/icons/healthcare-care-records.png",
@@ -376,6 +600,16 @@
       "bytes": 660
     },
     {
+      "path": "assets/icons/manufacturing-logistics-exception-4e8c38cd5c7b.png",
+      "sha256": "4e8c38cd5c7bdeb5b5850403b9be95343dfc041092647d230ef8ff2c8c71239d",
+      "bytes": 23946
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-exception-95a256e1f7a5.svg",
+      "sha256": "95a256e1f7a59df5b4cb9ba9f8f5b20216b96ee1762276ae5d6d9eff8aa22194",
+      "bytes": 635
+    },
+    {
       "path": "assets/icons/manufacturing-logistics-exception.png",
       "sha256": "4e8c38cd5c7bdeb5b5850403b9be95343dfc041092647d230ef8ff2c8c71239d",
       "bytes": 23946
@@ -384,6 +618,16 @@
       "path": "assets/icons/manufacturing-logistics-exception.svg",
       "sha256": "95a256e1f7a59df5b4cb9ba9f8f5b20216b96ee1762276ae5d6d9eff8aa22194",
       "bytes": 635
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-inspection-1afccaf9b4bb.svg",
+      "sha256": "1afccaf9b4bb5f3d935debaef75574b39f4b46169c6cf7f9a25296f89aee062d",
+      "bytes": 578
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-inspection-32139c3d2175.png",
+      "sha256": "32139c3d217553d8fc41dac4531a2cfde282c6dcbeb9d32c85d74fb4996e3b0b",
+      "bytes": 26591
     },
     {
       "path": "assets/icons/manufacturing-logistics-inspection.png",
@@ -396,6 +640,16 @@
       "bytes": 578
     },
     {
+      "path": "assets/icons/manufacturing-logistics-instructions-1895b21eddb8.png",
+      "sha256": "1895b21eddb8fb63c48cd519235fdf89f1ee085dac86c9d9961f3c6adb646e7f",
+      "bytes": 12950
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-instructions-74eadad59969.svg",
+      "sha256": "74eadad599694e973614a1407734f570d1a121dcd3806f19987e38824ce4caa3",
+      "bytes": 564
+    },
+    {
       "path": "assets/icons/manufacturing-logistics-instructions.png",
       "sha256": "1895b21eddb8fb63c48cd519235fdf89f1ee085dac86c9d9961f3c6adb646e7f",
       "bytes": 12950
@@ -404,6 +658,16 @@
       "path": "assets/icons/manufacturing-logistics-instructions.svg",
       "sha256": "74eadad599694e973614a1407734f570d1a121dcd3806f19987e38824ce4caa3",
       "bytes": 564
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-maintenance-0a8459bb6d38.svg",
+      "sha256": "0a8459bb6d38143e8d920413fac0c621182d9b159b433e5affb4d2f99c89a579",
+      "bytes": 603
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-maintenance-af3fa3a69826.png",
+      "sha256": "af3fa3a6982666ef64c8cf4c7fa52adce58b7730c6b51a6b09b0b2965efdb23d",
+      "bytes": 20772
     },
     {
       "path": "assets/icons/manufacturing-logistics-maintenance.png",
@@ -416,54 +680,114 @@
       "bytes": 603
     },
     {
+      "path": "assets/icons/manufacturing-logistics-shipment-b20615579a18.png",
+      "sha256": "b20615579a18057ab4a15ccd80a2599b61f1959d650a0e142486418bf4da31f3",
+      "bytes": 21417
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-shipment-d3be19ed9bfa.svg",
+      "sha256": "d3be19ed9bfa21aafd8862c70a10170cf7be5031137418c6f32470d39cf14ed6",
+      "bytes": 688
+    },
+    {
       "path": "assets/icons/manufacturing-logistics-shipment.png",
-      "sha256": "9ffed0e952873cd69d853eb66790aab179e59207f284dc44420db3e20b0f718e",
-      "bytes": 21100
+      "sha256": "b20615579a18057ab4a15ccd80a2599b61f1959d650a0e142486418bf4da31f3",
+      "bytes": 21417
     },
     {
       "path": "assets/icons/manufacturing-logistics-shipment.svg",
-      "sha256": "9f02a0f75f22dd6b12ea24f9ebb3f02cb4608e52edb2487784d908174f9a43be",
-      "bytes": 565
+      "sha256": "d3be19ed9bfa21aafd8862c70a10170cf7be5031137418c6f32470d39cf14ed6",
+      "bytes": 688
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-traceability-63e3ba70aa36.svg",
+      "sha256": "63e3ba70aa36eef709ef1fcb968edcacaad5dee9773528104f9db358bd793b51",
+      "bytes": 928
+    },
+    {
+      "path": "assets/icons/manufacturing-logistics-traceability-6a4f5f40b368.png",
+      "sha256": "6a4f5f40b368f7bec19c499e05832ac80f2d8ee801b6aa44a743c5c4d6db803f",
+      "bytes": 12596
     },
     {
       "path": "assets/icons/manufacturing-logistics-traceability.png",
-      "sha256": "116e4044c0288b3a6e39779cc12aaab98380d963a76229268f0780b5f14671b9",
-      "bytes": 13399
+      "sha256": "6a4f5f40b368f7bec19c499e05832ac80f2d8ee801b6aa44a743c5c4d6db803f",
+      "bytes": 12596
     },
     {
       "path": "assets/icons/manufacturing-logistics-traceability.svg",
-      "sha256": "32635d8119f021dcf25c55862078f42a83ac078fa0163535a6527afde4ebbea8",
-      "bytes": 623
+      "sha256": "63e3ba70aa36eef709ef1fcb968edcacaad5dee9773528104f9db358bd793b51",
+      "bytes": 928
+    },
+    {
+      "path": "assets/icons/retail-service-inventory-0ce4eb1230fd.png",
+      "sha256": "0ce4eb1230fd48ba05f2aadcd0ffd0d33de6143a3786271fce27881406b3749b",
+      "bytes": 8403
+    },
+    {
+      "path": "assets/icons/retail-service-inventory-1f5bf1e2ff97.svg",
+      "sha256": "1f5bf1e2ff974a3dafdf3c431fc33821df76d48e9e352d9eeb4393c97e7eff8e",
+      "bytes": 832
     },
     {
       "path": "assets/icons/retail-service-inventory.png",
-      "sha256": "13a582212af2e5855c87b4d785e2f4060cfb6770e4bd26c40fffb8668a4bcf60",
-      "bytes": 9247
+      "sha256": "0ce4eb1230fd48ba05f2aadcd0ffd0d33de6143a3786271fce27881406b3749b",
+      "bytes": 8403
     },
     {
       "path": "assets/icons/retail-service-inventory.svg",
-      "sha256": "625bcfdee50a312f8351c3bb6439b50939264b9699450459364c287137cc7377",
-      "bytes": 660
+      "sha256": "1f5bf1e2ff974a3dafdf3c431fc33821df76d48e9e352d9eeb4393c97e7eff8e",
+      "bytes": 832
+    },
+    {
+      "path": "assets/icons/retail-service-loyalty-7940f776ffda.png",
+      "sha256": "7940f776ffda8f5d835b621e33a48b7b01aaff42345f1b0835188a9b86086d9f",
+      "bytes": 21543
+    },
+    {
+      "path": "assets/icons/retail-service-loyalty-c6ec3fdbc8f5.svg",
+      "sha256": "c6ec3fdbc8f596c1fb31edcd7e4e35469b2910dfbf8637dce5dd8ea8f2488775",
+      "bytes": 939
     },
     {
       "path": "assets/icons/retail-service-loyalty.png",
-      "sha256": "fc79b738c72acb912ba2542a79ebbc84740686702f4ccc8988526d5dc91a5c95",
-      "bytes": 20667
+      "sha256": "7940f776ffda8f5d835b621e33a48b7b01aaff42345f1b0835188a9b86086d9f",
+      "bytes": 21543
     },
     {
       "path": "assets/icons/retail-service-loyalty.svg",
-      "sha256": "c8bec51dd703e063d343a6b87e44449545e562d7031c60cb125865fa49e29ed5",
-      "bytes": 636
+      "sha256": "c6ec3fdbc8f596c1fb31edcd7e4e35469b2910dfbf8637dce5dd8ea8f2488775",
+      "bytes": 939
+    },
+    {
+      "path": "assets/icons/retail-service-order-3be959730e2a.svg",
+      "sha256": "3be959730e2a005112456ff6db7d8427a6e5f732ed6b4088a0da520ee18acbc9",
+      "bytes": 765
+    },
+    {
+      "path": "assets/icons/retail-service-order-4c623df4f9db.png",
+      "sha256": "4c623df4f9db3f4ed9216608df6d9ca0547024aaeaf75234d218b17692ff1587",
+      "bytes": 11675
     },
     {
       "path": "assets/icons/retail-service-order.png",
-      "sha256": "455aba1a06140d182b19643b471db4f57fd8f0335cb9858ff255a3a51e1f4746",
-      "bytes": 13533
+      "sha256": "4c623df4f9db3f4ed9216608df6d9ca0547024aaeaf75234d218b17692ff1587",
+      "bytes": 11675
     },
     {
       "path": "assets/icons/retail-service-order.svg",
-      "sha256": "b5c60ca97689c851a0d172e169c8e7ad7c55414ba281593ef0c78db3dec9a707",
-      "bytes": 641
+      "sha256": "3be959730e2a005112456ff6db7d8427a6e5f732ed6b4088a0da520ee18acbc9",
+      "bytes": 765
+    },
+    {
+      "path": "assets/icons/retail-service-payment-0bce7a487704.svg",
+      "sha256": "0bce7a4877043d1a388fb429170264aa0febc01e8abdbf14f3f5b9f22c8427e9",
+      "bytes": 691
+    },
+    {
+      "path": "assets/icons/retail-service-payment-8c7cd7f72710.png",
+      "sha256": "8c7cd7f72710682ea804f2a9349dd85f3474e77a3af3a54fd639ef49f6acd6da",
+      "bytes": 11075
     },
     {
       "path": "assets/icons/retail-service-payment.png",
@@ -476,14 +800,34 @@
       "bytes": 691
     },
     {
+      "path": "assets/icons/retail-service-return-90aa64abb25b.png",
+      "sha256": "90aa64abb25bf989f9f96a6ad3d2f419b0022cb1a5cd1cd17d37f62dfed443d6",
+      "bytes": 28718
+    },
+    {
+      "path": "assets/icons/retail-service-return-f3a68b43dadf.svg",
+      "sha256": "f3a68b43dadf6d00bb969e4b98ddbc15e985f7e2a4d421ad03304a066e5417bb",
+      "bytes": 692
+    },
+    {
       "path": "assets/icons/retail-service-return.png",
-      "sha256": "5e7119a29c8290013bfe3c8311db25c93ee508d244f600984d93259a3399c9a5",
-      "bytes": 29388
+      "sha256": "90aa64abb25bf989f9f96a6ad3d2f419b0022cb1a5cd1cd17d37f62dfed443d6",
+      "bytes": 28718
     },
     {
       "path": "assets/icons/retail-service-return.svg",
-      "sha256": "6feec9d795a93348aafe976d19ee706188372544783b5d44165cb9215b0912b1",
-      "bytes": 570
+      "sha256": "f3a68b43dadf6d00bb969e4b98ddbc15e985f7e2a4d421ad03304a066e5417bb",
+      "bytes": 692
+    },
+    {
+      "path": "assets/icons/retail-service-support-60ac1f33f615.svg",
+      "sha256": "60ac1f33f6153bbc2094dbd8c323ef8e71beeeb37be308c34df6e62c1ea81202",
+      "bytes": 628
+    },
+    {
+      "path": "assets/icons/retail-service-support-ac4e751489ee.png",
+      "sha256": "ac4e751489eef83d504cc4fe280f74f8646b526a4bdb8f25fd3cac0ab649c830",
+      "bytes": 16644
     },
     {
       "path": "assets/icons/retail-service-support.png",
@@ -551,58 +895,58 @@
       "bytes": 2738651
     },
     {
-      "path": "downloads/taskobo-visuals-education-training-29d98aadf40a.zip",
-      "sha256": "29d98aadf40a59ab4e77ddca1b5c2e380ba756633404cb77dd7bc288b8f81fad",
-      "bytes": 2716180
+      "path": "downloads/taskobo-visuals-education-training-dfb962e7e659.zip",
+      "sha256": "dfb962e7e65905e8f71d26cf8b0ce1513c5b7c8110843a2abd6542b40813163b",
+      "bytes": 2715247
     },
     {
-      "path": "downloads/taskobo-visuals-healthcare-care-f4791ce8b1ff.zip",
-      "sha256": "f4791ce8b1ffb13754f0ffbaa46344da382fc93e43bb78a2f176d411578dc0d0",
-      "bytes": 2678193
+      "path": "downloads/taskobo-visuals-healthcare-care-5ede97469f6b.zip",
+      "sha256": "5ede97469f6ba58ca37bd92b961df55732bdd112e39358843eaa17a596a0d48e",
+      "bytes": 2678528
     },
     {
-      "path": "downloads/taskobo-visuals-manufacturing-logistics-8b729120c579.zip",
-      "sha256": "8b729120c5797cb1f327e737f264b24668411a2dddcc9a72447e103ba726ba66",
-      "bytes": 2907341
+      "path": "downloads/taskobo-visuals-manufacturing-logistics-2572ff539c17.zip",
+      "sha256": "2572ff539c173323a9068c22c43b3f922965546cb3c8daca51e4b0ffa4497cef",
+      "bytes": 2906754
     },
     {
-      "path": "downloads/taskobo-visuals-retail-service-acecd5151658.zip",
-      "sha256": "acecd515165893301411b0891ee03b48b6b65afc7b65ae365e1bbb9bd55fe2cb",
-      "bytes": 2791132
+      "path": "downloads/taskobo-visuals-retail-service-ec0c5c27b82a.zip",
+      "sha256": "ec0c5c27b82a83d54c5405505cd8a5fd6a6ad3b96b8c1a64ac60d8047ab2815d",
+      "bytes": 2788610
     },
     {
-      "path": "downloads/taskobo-visuals-v0.3.0-cf1b9a78c21c.zip",
-      "sha256": "cf1b9a78c21ce7213cbb86a4874091349ecbe850f91db547a0c10aeffcee304b",
-      "bytes": 2389591
+      "path": "downloads/taskobo-visuals-v0.3.1-502f4941c4ca.zip",
+      "sha256": "502f4941c4cafa6a9b136bf8a2d25cbe5b1aace134d75d3fae953fa352a30a37",
+      "bytes": 2389722
     },
     {
       "path": "index.html",
-      "sha256": "9263614bdd66058e5b47e06dcf8ac411500eeceacfc6fd605be4a1516b943ea0",
+      "sha256": "a98fd9e0efa4088c21bcd94ef3ed22618cfc5e6682735e675e52933e59cf1935",
       "bytes": 20771
     },
     {
       "path": "samples/education-training/index.html",
-      "sha256": "af6074115a9b3c3e9264804e2fe577f6c1c44a583ff0e83b2dc7ff0eda84b821",
-      "bytes": 25958
+      "sha256": "9506e6b3c17a36cc2e4a03a5373fa4d7235acd10ff686e7081ce6b44534c6c1b",
+      "bytes": 26500
     },
     {
       "path": "samples/healthcare-care/index.html",
-      "sha256": "1cb5c7a5df955bcf7f594f5a6afc6d98273f76ba9fcd173f9171ea07536a5734",
-      "bytes": 25861
+      "sha256": "f1d0b481a78da51a4597064f152a01aee7bd2cd1557c05985ff2b72ef0560852",
+      "bytes": 26229
     },
     {
       "path": "samples/manufacturing-logistics/index.html",
-      "sha256": "fd9105d6633e4c93b789fafd2e9bcc57990910b43bd19982f65e47c737288b78",
-      "bytes": 25885
+      "sha256": "885054a1cdb4c6dc7f86a20887a4ceb2475ba613fe902de6fee71e4d6241d273",
+      "bytes": 26482
     },
     {
       "path": "samples/retail-service/index.html",
-      "sha256": "867add8c286730e12c4486f39517df8f04cca3215a4e371675717ff07cbfcf1d",
-      "bytes": 25960
+      "sha256": "8dfb508dc6f55e846e496fdc6fb9312ca1c6b1b4ee61cb1a5bdc1bf7ac82f0d0",
+      "bytes": 26863
     },
     {
       "path": "tool/index.html",
-      "sha256": "a70db2d8463afeccf750a4e3955e0f404f0dd143e977310846418a8c219556f8",
+      "sha256": "7890ebc1c12834792a6f0e68995730e43a3826d2bf8c8ecabe2db9f6852090ff",
       "bytes": 16327
     }
   ]
