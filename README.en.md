@@ -12,7 +12,7 @@ Enterprise illustrations and coordinated thematic icons, made with your own AI f
 
 The Skill has three starting directions: `precision`, `editorial` and `dimensional`. Two named optional presets are documented: [`technical-spot`](references/technical-spot.md) and [`enterprise-narrative`](references/enterprise-narrative.md). Choose content, palette and viewpoint independently.
 
-v0.3.5 also bundles [23 drawing recipes](references/icon-style-recipes.json), selectable by number or name and combined with the current document's subjects and palette. [Document-to-image validation](docs/document-driven-validation.ja.md) records three fictional inputs and 12 actually generated Technical Spot icons. Recipe routing checks cover all 23; visual validation currently covers No.06, not every style or arbitrary input.
+v0.3.5 also bundles [23 drawing recipes](references/icon-style-recipes.json), selectable by number or name and combined with the current document's subjects and palette. Both comparison boards have been regenerated from these recipes and reviewed cell by cell. [Document-to-image validation](docs/document-driven-validation.ja.md) records three fictional inputs and 12 actually generated Technical Spot icons. The comparison boards cover all23 styles on controlled topics; document-driven forward generation currently covers No.06, not every style or arbitrary input.
 
 ## Start
 

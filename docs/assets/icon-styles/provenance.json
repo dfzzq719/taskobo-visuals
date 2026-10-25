@@ -29,6 +29,14 @@
     {
       "file": "styles-ja-01-v3.png",
       "sha256": "2391bcc2c12a335e7c57b6a01a0f72bff63ca33cf259ddbbbbddfcbabb220147"
+    },
+    {
+      "file": "styles-ja-01-v4.png",
+      "sha256": "755bf8eaa50a336075472c834735d76e023a3927fb90004e1b644f7036f828b0"
+    },
+    {
+      "file": "styles-ja-02-v2.png",
+      "sha256": "b4366d36d2b4507aa3708bc858f576c3261a1f1500a95d5361e277ce64a844a0"
     }
   ],
   "japaneseBoards": {
@@ -68,5 +76,31 @@
     "previousFile": "styles-ja-01-v2.png",
     "prompt": "styles-ja-01-v3.prompt.txt",
     "direction": "User explicitly clarified flat2D. Same four subjects; flat heads and bodies, no sculpted lighting, extrusion or dimensional material."
+  },
+  "fullAtlasRegeneration": {
+    "date": "2026-10-25",
+    "skillVersion": "0.3.5",
+    "recipeFile": "references/icon-style-recipes.json",
+    "recipeSha256": "43ef105c285eed6a59c2ec5295e05a33890e513a6ead626f21845583e29d8cba",
+    "files": [
+      "styles-ja-01-v4.png",
+      "styles-ja-02-v2.png"
+    ],
+    "mode": "New generation from all23 current Skill recipes, then targeted imagegen corrections",
+    "prompts": "regeneration-20261025.prompts.json",
+    "subjects": [
+      "document",
+      "collaboration",
+      "automation",
+      "security"
+    ],
+    "physicalMetaphorException": "No.11 uses real office paper, chairs/table, motor/gear and lock for the same four meanings.",
+    "review": "Authoring Agent reviewed all23 cells,92 examples and Japanese labels.06 flattened,07 kept2D,09/10 distinguished;23 lightning restored. Drafts, not user-approved masters.",
+    "limits": "Controlled-topic style comparison, not arbitrary-document validation for all23 recipes. Bitmap generation is not pixel-deterministic.",
+    "previousFiles": [
+      "styles-ja-01-v3.png",
+      "styles-ja-02.png"
+    ],
+    "runtimeUnchanged": true
   }
 }

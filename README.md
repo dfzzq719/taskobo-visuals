@@ -15,11 +15,11 @@
 線画、フラット、テクニカルスポット、マット3D、ガラス、金属、紙、刺繍まで。23の作例を、同じ4テーマ・同じブルー系の配色で比較できる。
 
 <p>
-  <a href="docs/icon-styles.ja.md#基本表現と立体表現"><img src="docs/assets/icon-styles/styles-ja-01-v3.png" width="49%" alt="01から12：基本表現と立体表現の作例" /></a>
-  <a href="docs/icon-styles.ja.md#素材感とブランド表現"><img src="docs/assets/icon-styles/styles-ja-02.png" width="49%" alt="13から23：素材感とブランド表現の作例" /></a>
+  <a href="docs/icon-styles.ja.md#基本表現と立体表現"><img src="docs/assets/icon-styles/styles-ja-01-v4.png" width="49%" alt="01から12：基本表現と立体表現の作例" /></a>
+  <a href="docs/icon-styles.ja.md#素材感とブランド表現"><img src="docs/assets/icon-styles/styles-ja-02-v2.png" width="49%" alt="13から23：素材感とブランド表現の作例" /></a>
 </p>
 
-[23の作例を拡大して見る・用途から選ぶ](docs/icon-styles.ja.md)。番号と名称を依頼文に添えると、求める表現を共有しやすい。配列は用途の広さを考えた目安で、企業の利用率を測定したランキングではない。
+[23の作例を拡大して見る・用途から選ぶ](docs/icon-styles.ja.md)。2枚とも現行v0.3.5のレシピから新規制作し、06の平面表現と各素材の違いを見直した。番号と名称を依頼文に添えると、求める表現を共有しやすい。配列は用途の広さを考えた目安で、企業の利用率を測定したランキングではない。
 
 現在のSkillは3つの基本方向と2つの具体的なプリセットを持つ。v0.3.5では23作例に対応する[画法レシピ](references/icon-style-recipes.json)も同梱する。番号・名称から画法を選び、今回の文書の意味と配色を組み合わせられる。23種類の固定レンダラーや既製アイコン集ではない。[新しい3業務の文書から実際に制作した例](docs/document-driven-validation.ja.md)で、確認した範囲と限界を公開する。
 

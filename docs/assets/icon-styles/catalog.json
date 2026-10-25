@@ -333,13 +333,23 @@
   "scope": "Online drawing/material examples; only the Technical Spot preset rendering rules are clarified as flat2D in v0.3.4.",
   "registeredIconPreset": "technical-spot",
   "imageFiles": [
-    "styles-ja-01-v3.png",
-    "styles-ja-02.png"
+    "styles-ja-01-v4.png",
+    "styles-ja-02-v2.png"
   ],
-  "generation": "built-in imagegen; Japanese text-localization from original Chinese comparison boards",
+  "generation": "built-in imagegen; regenerated from current v0.3.5 recipes with targeted review corrections",
   "runtimeRecipes": {
     "file": "references/icon-style-recipes.json",
     "count": 23,
     "scope": "Generative recipes; subject and palette supplied per document, not fixed renderers. Actual image validation is documented separately."
+  },
+  "generationDetails": {
+    "date": "2026-10-25",
+    "skillVersion": "0.3.5",
+    "recipeSha256": "43ef105c285eed6a59c2ec5295e05a33890e513a6ead626f21845583e29d8cba",
+    "prompts": "regeneration-20261025.prompts.json",
+    "mode": "regenerated from current recipes, reviewed with targeted corrections",
+    "status": "draft-comparison",
+    "iconCount": 92,
+    "scope": "Style comparison only; document-driven forward validation remains separately documented."
   }
 }
