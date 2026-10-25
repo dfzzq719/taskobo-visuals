@@ -1,0 +1,41 @@
+{
+  "schema": "taskobo-visuals.generated-example/v1",
+  "date": "2026-10-25",
+  "status": "generated-draft",
+  "userApproved": false,
+  "skillVersion": "0.3.7",
+  "styleId": "enterprise-narrative",
+  "framing": "freeform",
+  "background": "transparent",
+  "tool": "built-in imagegen",
+  "image": "handover-enterprise-narrative.png",
+  "prompt": "handover-enterprise-narrative.prompt.txt",
+  "sha256": "f14587303320ba1d20cb0c8111b8e00793dfaf765e42e384fd54041957be2c9c",
+  "styleReference": "assets/approved/enterprise-narrative.png",
+  "palette": {
+    "ink": "#0D2046",
+    "primary": "#1456D9",
+    "primarySoft": "#EDF3FF"
+  },
+  "inputScope": "Original fictional workplace, no user document or customer data.",
+  "alphaInspection": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "extrema": [
+      0,
+      254
+    ],
+    "fullyTransparentPixels": 786668,
+    "maximumEdgeAlpha": 1
+  },
+  "visualReview": [
+    "Two complete adult figures share a checklist.",
+    "The pointing/review action is legible; no approval outcome is shown.",
+    "No scene rectangle, card, circular mask or display base.",
+    "Ink outlines, color shapes and selected watercolor detail follow the requested style."
+  ],
+  "limits": "One freeform illustration; no paired icon generated, no all-style visual validation or independent reader review."
+}

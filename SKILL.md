@@ -2,7 +2,7 @@
 name: taskobo-visuals
 description: "Create polished enterprise illustrations and coordinated thematic icon sets from a topic, business content, or document; choose visual form, a coherent Taskobo art direction, and a user-selected or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.3.6"
+  version: "0.3.7"
 ---
 
 # Taskobo Visuals
@@ -16,6 +16,8 @@ metadata:
 - **内容主题**：图要说明的业务，例如企业经营、供应链或客户服务；包含对象、动作和关系。
 - **视觉风格**：画法、轮廓、体积、构图与材质。采用 [Taskobo 视觉语言](references/art-direction.md) 的一致规则。三个基础方向下可选择具体预设，包括 [企业叙事插画](references/enterprise-narrative.md)（`enterprise-narrative`）和 [技术主题小插图](references/technical-spot.md)（`technical-spot`）；均为可选能力，不设为所有任务的唯一画风。
 - **色系**：按角色使用的颜色。用户可选择主题色、匹配文档或加载公司规范，不能因换色改变主题或关系。
+
+插图与图标使用完全相同的画法并一一对应：同一系列选择同一个 `styleId`，共同读取[统一样式目录](references/style-recipes.json)。轮廓、填色、材质、纹理与光照规则共用；按尺寸调整构图和细节量，不为图标另选“相近”画风。样式新增、修改、停用和删除只维护这一份记录，同时影响两类资产。执行与兼容规则见[统一样式管理](references/shared-styles.md)。
 
 三个维度可独立修改。只改色时保持构图与对象，只改主题时保持系列的线条和颜色规则。用户明确要求重新设计时才整体改变。规划系列或交接到服务时读取 [统一视觉简报](references/visual-profile.md)。
 
@@ -38,7 +40,9 @@ metadata:
 - 样式对照固定主题、构图、尺寸和配色；配色对照固定画法和主题。用户要整套艺术方向时才同时改变多个维度，并说明变化。
 - 选一个主要方向，必要时给一个有明确差异的备选。用户已经指定风格时，直接使用它。
 
-用户按23种作例的编号、名称或画法选型时，读取随安装包分发的 [图标画法配方](references/icon-style-recipes.json)，按 `number`、`id` 或中日英文名称匹配，再把 `treatment` 中的画法与本次语义、配色组合。配方没有固定业务对象和固定蓝色；06映射到 `technical-spot`。不把编号当成图标库存，也不把23种配方宣称为23套逐项通过实测的确定性渲染器。自定义画法不受目录限制。
+独立配图默认采用“自然轮廓透明插图”：`framing: freeform`、`background: transparent`。主体和必要环境形成自然外轮廓，不加矩形卡片、相框或几何底板，不靠从矩形画面去背景来冒充无边构图；保留选定画法的物件描边。可选外围渐隐 `vignette`，明确需要背景铺满画面时用 `full-scene`＋`opaque`。这是与所有画法组合的外形参数，不新增独立样式编号；字段和验图见[图片外形与透明背景](references/image-framing.md)。
+
+用户按23种作例的编号、名称或画法选型时，读取随安装包分发的 [统一画法配方](references/style-recipes.json)，按 `number`、`id` 或中日英文名称匹配，再把同一 `treatment` 中的画法与本次语义、配色组合，应用于插图和图标。已有命名预设也在该目录维护；`direction.styleId` 为统一入口，旧 `recipe/preset` 仅作同一ID的兼容选型，冲突时先解决冲突而不按素材类型分配。目录中不存在或已停用的样式不得根据旧说明、旧快照或相近画法继续生成。配方没有固定业务对象和固定蓝色；06映射到 `technical-spot`。不把编号当成图标库存，也不把23种配方宣称为23套逐项通过实测的确定性渲染器。用户另定画法时先建立一份插图/图标共用的草稿定义，再进行当前任务，不各自建立独立样式。
 
 用户提到“企业叙事插画”、`enterprise-narrative`，或要求沿用已认可的跨行业拼贴宣传图画风时，读该预设并查看其参考图。复用成熟人物、分级墨线、浅色块和轻水彩质感；按当前用途另选单场景或多场景布局，不自动照搬图中的行业、蓝色、标题和底部图标排布。
 
@@ -48,7 +52,7 @@ metadata:
 
 读 [主题图标](references/themed-icons.md)。先从主题或文档列出值得图形化的对象和动作，再用同一套视觉语言设计；不用一个通用机器人、芯片或圆圈代表所有概念。成套检查轮廓、线宽、填色、视觉重量及小尺寸识别，保留可独立使用的图标与外置可编辑标签。
 
-文档驱动任务先完成 [从文档形成配图计划](references/document-context.md) 中的语义映射，至少让每项图标对应到“原文依据→要表达的含义→对象/动作→不能误示的关系”。主题不受示例行业和四个对照题材限制。可用 `scripts/prepare_icon_jobs.py` 把Agent已判断的简报和配方编成生成任务；它只检查引用、配色及选型并组合提示词，不读取词频来替代文档理解，也不调用生图。实际使用可用的图像工具生成、查看并修正后，才能称为完成。
+文档驱动任务先完成 [从文档形成配图计划](references/document-context.md) 中的语义映射，至少让每项图标对应到“原文依据→要表达的含义→对象/动作→不能误示的关系”。主题不受示例行业和四个对照题材限制。可用 `scripts/prepare_visual_jobs.py` 把Agent已判断的插图/图标简报和统一配方编成生成任务；`prepare_icon_jobs.py` 保留仅图标的兼容入口，两者读取同一目录；它只检查引用、配色及选型并组合提示词，不读取词频来替代文档理解，也不调用生图。实际使用可用的图像工具生成、查看并修正后，才能称为完成。
 
 默认交付静态 SVG 与透明 PNG，并提供总览及使用说明。几何与线条可编辑的图标用矢量工具制作；图像生成得到的图标只称位图，不把描摹或嵌入 PNG 的 SVG 宣称为原生矢量。准确流程、结构、WBS/RACI/甘特等可调用可用的 Taskobo Diagrams 或同等确定性工具；不把整个项目更新流程强加给一次配图任务。
 
@@ -92,7 +96,7 @@ metadata:
 - [技术主题小插图](references/technical-spot.md)：说明性小物件的画法、可选视角、无底座原创草稿样例及复用提示词。
 - [主题图标](references/themed-icons.md)：语义清单、矢量规则、整套检视和交付。
 - [从文档形成配图计划](references/document-context.md)：提取、证据、主题判断和局限。
-- [图标画法配方](references/icon-style-recipes.json)：23种展示作例的编号、画法和生成约束，不锁定主题或颜色。
+- [统一画法配方](references/style-recipes.json)：23种已编号样式与已有命名预设，共用画法和生命周期；不锁定主题或颜色，也不因支持两类资产就宣称配套成图均已验证。
 - [统一视觉简报](references/visual-profile.md)：独立的主题、风格、色系与资产计划。
 
 - [形式与画风](references/forms-and-styles.md)：场景判断、20 个比较标签及企业资料依据。

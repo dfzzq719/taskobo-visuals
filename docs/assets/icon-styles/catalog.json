@@ -338,10 +338,11 @@
   ],
   "generation": "built-in imagegen; regenerated from current v0.3.5 recipes with targeted review corrections",
   "runtimeRecipes": {
-    "file": "references/icon-style-recipes.json",
-    "count": 23,
-    "scope": "Generative recipes; subject and palette supplied per document, not fixed renderers. Actual image validation is documented separately.",
-    "version": "0.3.6"
+    "file": "references/style-recipes.json",
+    "count": 24,
+    "numberedStyles": 23,
+    "scope": "One shared drawing-method registry for illustrations and icons; paired image validation is recorded separately.",
+    "version": "0.3.7"
   },
   "generationDetails": {
     "date": "2026-10-25",

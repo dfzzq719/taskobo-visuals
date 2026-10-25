@@ -1,0 +1,24 @@
+Generate ONE polished Japanese business-presentation page as a single finished PNG image, edge-to-edge horizontal 16:9, matching 1672x941. This is a promotional example for Taskobo Visuals, a website plus an installable AI Skill. It is NOT a PPTX file, computer screen, mockup, stock asset sheet, photographed poster or thumbnail collection.
+This is one of a THREE-IMAGE STORY: (1) meaningful custom business icons, (2) matching icons plus scene illustrations communicating business content, (3) sharing a common production standard across a team. Each image has a deliberately DIFFERENT asset composition specified below.
+STYLE AND REFERENCE ROLES: Reference 1 is the user's liked slide-image and supplies the premium editorial finish, typography quality, palette and restrained navy-ink/blue-watercolor drawing language. Its old handover story, text, people layout and icon row are NOT compulsory. Reference 2 is the enterprise-narrative art reference, drawing method only; do not copy its title, collage or industry subjects. Use the SAME drawing method for all illustrated objects, icons and scenes across the three images: graded deep navy contours, selected fine interior lines, restrained blue color shapes, soft tonal modeling and subtle watercolor texture. Small icons simplify detail without switching renderer. No glossy 3D, inconsistent icon styles or generic stock vector silhouettes.
+BRAND SYSTEM: warm white #FCFBF8, deep navy #0D2046, cobalt #1456D9, pale blue #EDF3FF. Contemporary mature enterprise aesthetic, strong typography, clear hierarchy, meaningful large artwork, carefully aligned copy, no arbitrary dashboard/card UI or ornamental frame. Natural skin/hair only when the requested page includes people. Opaque warm-white slide background; illustrated scenes or objects have naturally irregular silhouettes blended directly into it, never inside rectangular image frames or display bases.
+SERIES TYPOGRAPHY: small but clearly readable 'Taskobo Visuals' wordmark at upper left above the main headline. Big confident Japanese gothic headline, an informative short subtitle, then the page's specified visual content. Keep body copy readable, not miniature filler. Footer has a very thin pale rule and the exact line 'Webで条件を整え、Skillを導入したAIで制作する。' on the left, 'taskobo.com' on the right. This footer accurately distinguishes the website's planning role from generation in the user's AI. No fake upload/generate UI, SaaS screenshot, claim of automatic PPT creation, invented statistics, quality guarantees, watermark or extra text. All copy below is Japanese plain style; reproduce it accurately. Do not print the quotation marks used to identify exact copy.
+Every page must look like a real sophisticated presentation example explaining OUR SERVICE, not a generic handover project or a catalog of unrelated decorative assets.
+PAGE 3: ONE LARGE NARRATIVE ILLUSTRATION + TEXT ONLY. NO standalone icons, NO pictogram row, NO feature tiles, NO tiny floating symbols or icon-based flowchart. Natural physical work objects inside the scene are allowed, but do not add an icon gallery anywhere. This page concludes the story with the website, Skill and shared team standard.
+Exact headline, over two balanced lines:
+選んだ表現を、
+チームの共通基準に。
+Emphasize 共通基準 in cobalt, other headline text in navy.
+Exact subtitle:
+Webで制作条件を整え、Skillと採用した見本を共有する。
+LEFT COPY, as three clear typographic statements without icons or panels:
+01 Webで選ぶ
+   テーマ・画風・配色を整理
+02 AIでつくる
+   Skillを導入し、内容に合わせて生成
+03 チームでそろえる
+   制作条件と採用した見本を共有
+MAIN NARRATIVE ILLUSTRATION: a complete tasteful editorial scene across the right/middle 60 percent. Three mature colleagues in a modern shared workspace discuss the same printed visual guideline and document drafts. The leading woman in blue presents a sample sheet and a short color-swatch strip; a male colleague with glasses and a second female colleague listen and compare their printed documents. Meaningful eye contact and hand gestures show they are agreeing on a shared production standard. One laptop with a modest generic text page and neatly arranged papers supports the scene; do not fabricate the actual Taskobo site UI. Include coherent blue clothing, navy contours and restrained office elements with peripheral pale watercolor wash. The scene has a natural freeform silhouette merging into the page, no photo frame or panel. Do not reuse the exact handover poses or replicate page 2's two-person scene.
+In the lower left, above the standard footer, include a strong concise cobalt call to action as TEXT ONLY:
+無料Skillと作例を見る
+No button enclosure, QR code, download symbol or icon. Let this invitation and the visible taskobo.com address connect the three-image story to our website. Keep the illustration substantial and the page balanced; no icon row.

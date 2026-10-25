@@ -1,0 +1,27 @@
+Generate ONE polished Japanese business-presentation page as a single finished PNG image, edge-to-edge horizontal 16:9, matching 1672x941. This is a promotional example for Taskobo Visuals, a website plus an installable AI Skill. It is NOT a PPTX file, computer screen, mockup, stock asset sheet, photographed poster or thumbnail collection.
+This is one of a THREE-IMAGE STORY: (1) meaningful custom business icons, (2) matching icons plus scene illustrations communicating business content, (3) sharing a common production standard across a team. Each image has a deliberately DIFFERENT asset composition specified below.
+STYLE AND REFERENCE ROLES: Reference 1 is the user's liked slide-image and supplies the premium editorial finish, typography quality, palette and restrained navy-ink/blue-watercolor drawing language. Its old handover story, text, people layout and icon row are NOT compulsory. Reference 2 is the enterprise-narrative art reference, drawing method only; do not copy its title, collage or industry subjects. Use the SAME drawing method for all illustrated objects, icons and scenes across the three images: graded deep navy contours, selected fine interior lines, restrained blue color shapes, soft tonal modeling and subtle watercolor texture. Small icons simplify detail without switching renderer. No glossy 3D, inconsistent icon styles or generic stock vector silhouettes.
+BRAND SYSTEM: warm white #FCFBF8, deep navy #0D2046, cobalt #1456D9, pale blue #EDF3FF. Contemporary mature enterprise aesthetic, strong typography, clear hierarchy, meaningful large artwork, carefully aligned copy, no arbitrary dashboard/card UI or ornamental frame. Natural skin/hair only when the requested page includes people. Opaque warm-white slide background; illustrated scenes or objects have naturally irregular silhouettes blended directly into it, never inside rectangular image frames or display bases.
+SERIES TYPOGRAPHY: small but clearly readable 'Taskobo Visuals' wordmark at upper left above the main headline. Big confident Japanese gothic headline, an informative short subtitle, then the page's specified visual content. Keep body copy readable, not miniature filler. Footer has a very thin pale rule and the exact line 'Webで条件を整え、Skillを導入したAIで制作する。' on the left, 'taskobo.com' on the right. This footer accurately distinguishes the website's planning role from generation in the user's AI. No fake upload/generate UI, SaaS screenshot, claim of automatic PPT creation, invented statistics, quality guarantees, watermark or extra text. All copy below is Japanese plain style; reproduce it accurately. Do not print the quotation marks used to identify exact copy.
+Every page must look like a real sophisticated presentation example explaining OUR SERVICE, not a generic handover project or a catalog of unrelated decorative assets.
+PAGE 2: ICONS + ONE LARGE NARRATIVE ILLUSTRATION + TEXT. This is the central bridge page of the story, applying the icon language from page 1 to full business-document illustration. Preserve the composition quality of the liked reference, but replace ALL old handover/approval content with the promotional service copy here.
+Exact headline, over two balanced lines:
+アイコンと挿絵で、
+業務の話をわかりやすく。
+Emphasize アイコン and 挿絵 in cobalt, the rest in navy.
+Exact subtitle:
+提案書・報告書・研修資料へ、同じ表現を広げる。
+LEFT COPY: three compact numbered statements, no enclosing cards:
+01 内容から構図を選ぶ
+   伝える対象・行動・関係を整理
+02 文書の色に合わせる
+   指定色と色の役割を引き継ぐ
+03 同じ画風でそろえる
+   挿絵とアイコンを一つの基準に
+MAIN ILLUSTRATION: occupy roughly the middle/right 60 percent of the useful page with a rich professional business scene: two mature adult colleagues preparing a proposal and training material together. A woman with tied-back dark hair and blue business clothing reviews an open report while a male colleague in a navy jacket discusses the message beside a laptop. Their actions clearly communicate planning a business explanation rather than approving a handover checklist. Use convincing adult anatomy, credible complete hands, selected useful papers and modest functional office fragments. Show one simple illustrative page on a loose sheet without legible fake content, and a few controlled color swatches on another sheet to suggest document-matched art direction. Do not invent a real app UI. Blend the irregular office scene edges and pale watercolor fragments directly into the warm-white page, not a rectangle or card.
+LOWER CONTENT: before the common footer, a purposeful band of four matching thematic icons with concise use-case labels:
+a document/pen: 提案書
+a report with magnifier: 報告書
+an open learning book: 研修資料
+a simple browser-window symbol: Web
+These four icons use precisely the same graded ink, blue color regions and watercolor method as the main scene and page 1. They indicate document destinations, not an automated export feature. No arrow is necessary between the unrelated destinations. Keep this band slim enough that the main illustration remains the dominant visual, with all text legible.

@@ -1,0 +1,477 @@
+{
+  "schema": "taskobo-visuals.style-recipes/v1",
+  "version": "0.3.7",
+  "scope": "One drawing-style registry for illustrations and icons. Published numbers 01-23 are unchanged; enterprise-narrative is an existing unnumbered preset. Shared recipes are callable directions, not proof that both asset kinds have been visually validated.",
+  "styles": [
+    {
+      "number": 1,
+      "id": "monoline",
+      "nameZh": "单线轮廓",
+      "nameJa": "モノライン",
+      "nameEn": "Monoline",
+      "treatment": "Flat frontal uniform medium ink strokes, rounded caps and joins, unfilled interiors, no shading. Keep the same primary-color accent policy throughout the set. Functional, clean and precise.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 2,
+      "id": "geometric-flat",
+      "nameZh": "几何扁平",
+      "nameJa": "フラット",
+      "nameEn": "Geometric flat",
+      "treatment": "Flat filled primary-color silhouettes with clean negative-space details, smooth simple geometric forms. No enclosing outlines, gradients, dimension or shadows.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 3,
+      "id": "outline-fill",
+      "nameZh": "描边填色",
+      "nameJa": "線と塗り",
+      "nameEn": "Outline and fill",
+      "treatment": "Flat frontal strong ink outlines, finer internal strokes, primary and primarySoft solid color regions. No gradients or dimension. Use clear selected structural detail; simplify its amount at small display sizes.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 4,
+      "id": "negative-space",
+      "nameZh": "负形镂空",
+      "nameJa": "ネガティブスペース",
+      "nameEn": "Negative space",
+      "treatment": "Bold continuous ink or primary silhouettes with incisive negative-space apertures that carry the meaning. Strong figure-ground shapes, no enclosing contours, surface texture or dimensional lighting. Keep apertures transparent where intended.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 5,
+      "id": "technical-line",
+      "nameZh": "精密线稿",
+      "nameJa": "テクニカル線画",
+      "nameEn": "Technical line",
+      "treatment": "Precise frontal technical line drawings, graded ink exterior and finer internal structural strokes. Very restrained construction guides only when useful; no microtext, wash, modeled shading or invented engineering detail.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 6,
+      "id": "technical-spot",
+      "nameZh": "技术主题小插图",
+      "nameJa": "テクニカルスポット",
+      "nameEn": "Technical spot",
+      "treatment": "Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render. For compact report icons use one dominant object and at most one supporting cue, broad flat fills and few structural lines. Do not turn a technical topic into a miniature device assembly; avoid circuit/port/fin microdetail at small size.",
+      "styleReference": {
+        "file": "assets/presets/technical-spot-compact.png",
+        "sha256": "88f5a1f117f260ab923841895abfbd8b57d11c4a6f941931320b47a84abd272d",
+        "role": "style-and-compact-detail-density",
+        "status": "draft",
+        "scope": "Use drawing treatment and detail density only; current topic and palette remain independent."
+      },
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 7,
+      "id": "gradient-vector",
+      "nameZh": "渐变矢量",
+      "nameJa": "グラデーション",
+      "nameEn": "Gradient vector",
+      "treatment": "Crisp frontal 2D silhouettes with controlled primary-to-primarySoft gradients on flat faces. No actual extrusion, rounded plastic volume, hard enclosing outlines or glow.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 8,
+      "id": "isometric-vector",
+      "nameZh": "轴测线面",
+      "nameJa": "アイソメトリック",
+      "nameEn": "Isometric vector",
+      "defaultViewpoint": "shallow-isometric",
+      "treatment": "Consistent shallow 30-degree isometric projection, ink linework, flat primary and light front/side planes, restrained visible vector extrusion. No soft material shading, gloss or supporting platform.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 9,
+      "id": "matte-3d",
+      "nameZh": "哑光立体",
+      "nameJa": "マット3D",
+      "nameEn": "Matte 3D",
+      "defaultViewpoint": "elevated-front",
+      "treatment": "Fully modeled rounded volume with moderate real thickness, refined matte satin surfaces in current palette roles, consistent upper-left studio light, low-intensity semi-transparent close shadows. No inflated toy forms, decorative plinths or glossy plastic.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 10,
+      "id": "layered-relief",
+      "nameZh": "浅浮雕",
+      "nameJa": "浅いレリーフ",
+      "nameEn": "Layered relief",
+      "treatment": "Front-facing shallow stacked relief with broad flat front planes, two or three thin layers and short close shadows at overlaps. Use current palette roles; not fully rounded 3D or torn fiber collage.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 11,
+      "id": "real-object-miniature",
+      "nameZh": "实物写实",
+      "nameJa": "実物のミニチュア",
+      "nameEn": "Real object miniature",
+      "treatment": "Credible realistic physical objects of the current brief's physical objects. Real material joins, functional construction and restrained studio lighting. For abstract ideas, choose and record a meaningful physical-object metaphor rather than sculpting an arbitrary glyph. Preserve the current meaning; no decorative floor plate, display base or brand; include a setting only when requested.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 12,
+      "id": "editorial-ink",
+      "nameZh": "钢笔编辑",
+      "nameJa": "ペン画",
+      "nameEn": "Editorial ink",
+      "treatment": "Mature hand-drawn pen drawings with fine line-weight variation, intentional light hatching and restrained primarySoft color wash inside forms. No messy doodles; use only the background requested by the current asset brief.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 13,
+      "id": "translucent-glass",
+      "nameZh": "透光玻璃",
+      "nameJa": "ガラス",
+      "nameEn": "Translucent glass",
+      "treatment": "Transparent glass tinted in the current primary color, visible refraction, clear edge thickness and crisp restrained reflective rims. Semantic detail stays legible. No backdrop glass panel or neon; object glass transparency is separate from the transparent canvas.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 14,
+      "id": "machined-metal",
+      "nameZh": "精工金属",
+      "nameJa": "切削メタル",
+      "nameEn": "Machined metal",
+      "treatment": "Anodized brushed metal in the selected primary color, fine directional brushing, precise modest bevels, neutral metal edges and machined inset detail. No mirror chrome, unrelated colors or toy plastic.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 15,
+      "id": "paper-collage",
+      "nameZh": "纸艺拼贴",
+      "nameJa": "ペーパーコラージュ",
+      "nameEn": "Paper collage",
+      "treatment": "Thin overlapping primary and primarySoft paper cut-outs, subtle visible fibers and a few purposeful torn edges, tiny shadows only at overlaps. Flat composition; no folded triangular facets, thick relief or confetti.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 16,
+      "id": "screen-print",
+      "nameZh": "双色网印",
+      "nameJa": "2色スクリーン印刷",
+      "nameEn": "Two-color screen print",
+      "treatment": "Flat primary and ink screen-print silhouettes, controlled visible halftone dots and a few intentional registration offsets. No watercolor, 3D volume, background paper or distressed scenery.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 17,
+      "id": "geometric-origami",
+      "nameZh": "折纸几何",
+      "nameJa": "折り紙",
+      "nameEn": "Geometric origami",
+      "treatment": "Crisp folded paper in the current palette, a few angular triangular or trapezoidal facets and meaningful creases, limited planar shading and credible sharp fold construction. No torn collage or smooth curved plastic.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 18,
+      "id": "powder-coated",
+      "nameZh": "工业涂层",
+      "nameJa": "粉体塗装",
+      "nameEn": "Powder coated",
+      "treatment": "Rigid thin engineered metal shapes with fine primary-color powder-coat orange-peel texture, modest chamfers and only necessary functional fasteners. Clearly rough coated surfaces, not brushed bare metal or smooth porcelain.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 19,
+      "id": "bookbinding-paper",
+      "nameZh": "装帧纸材",
+      "nameJa": "製本・紙素材",
+      "nameEn": "Bookbinding paper",
+      "treatment": "Thin shapes made of layered neutral page edges and primary-color bookcloth, precise small folded spine joins. Page layers and bookcloth remain visible. No torn collage, bulky leather or fixed book subject unrelated to this brief.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 20,
+      "id": "glazed-porcelain",
+      "nameZh": "瓷釉工艺",
+      "nameJa": "磁器・釉薬",
+      "nameEn": "Glazed porcelain",
+      "treatment": "Thin hard light porcelain silhouettes with selected-primary glazed faces and exposed neutral rims, controlled vitreous glaze highlights and clean slender thickness. No thick inflated clay or transparent glass.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 21,
+      "id": "embossed-leather",
+      "nameZh": "皮革压印",
+      "nameJa": "レザーの型押し",
+      "nameEn": "Embossed leather",
+      "treatment": "Fine-grain structured leather tinted in the selected primary or ink color, thin credible cut edges, sparse neat stitches and debossed semantic marks. No rectangular backing patch, plush stuffing or fixed brown/blue palette.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 22,
+      "id": "embroidered-textile",
+      "nameZh": "织物刺绣",
+      "nameJa": "刺繍",
+      "nameEn": "Embroidered textile",
+      "treatment": "High-density directional satin stitches in the current palette, fine thread fibers and clean cut edges following the depicted forms. Thin unstuffed fabric; no surrounding badge, backing rectangle or unrelated fabric decoration.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 23,
+      "id": "modular-pixel",
+      "nameZh": "模块像素",
+      "nameJa": "ピクセル",
+      "nameEn": "Modular pixel",
+      "treatment": "Crisp square-grid modules, only horizontal and vertical stepped boundaries, about 18 to 24 cells across each symbol. Use current ink and primary colors with transparent voids. No antialiased smooth curves, invented pixel text or arcade scenery.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": null,
+      "id": "enterprise-narrative",
+      "nameZh": "企业叙事插画",
+      "nameJa": "企業叙事イラスト",
+      "nameEn": "Enterprise narrative",
+      "treatment": "Mature approachable adult figures and credible objects with purposeful business actions. Elegant graded dark-ink contours, fine selected structural detail, restrained flat color regions, soft tonal modeling and subtle watercolor surface texture. Bright spacious compositions. Preserve this same ink-and-watercolor drawing method in illustrations and icons; small icons reduce detail but do not switch to flat Technical Spot, glossy 3D or a different renderer. No childish proportions, exaggerated limbs or generic office clipart. Paper texture belongs to the depicted artwork, not an opaque canvas.",
+      "styleReference": {
+        "file": "assets/approved/enterprise-narrative.png",
+        "sha256": "4d4196a39cb6c591ba81772a2ed3b8193489323c01c771aad925ec2423f5494f",
+        "role": "style",
+        "status": "accepted-option",
+        "scope": "Drawing method only; do not inherit branding, subject, collage layout, palette or icon row."
+      },
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "illustration": "existing-examples",
+        "icon": "not-pair-validated"
+      }
+    }
+  ],
+  "policy": {
+    "assetKinds": [
+      "illustration",
+      "icon"
+    ],
+    "oneStylePerSeries": true,
+    "sharedFields": [
+      "treatment",
+      "styleReference",
+      "status",
+      "styleVersion"
+    ],
+    "variableFields": [
+      "subject",
+      "composition",
+      "displaySize",
+      "detailLevel",
+      "background"
+    ],
+    "lifecycle": "Change, retire or remove one shared style record for both asset kinds. Unknown or retired styles fail without a fallback.",
+    "adaptation": "Scale detail and composition to the asset; preserve the exact drawing method, contour, fill, material, texture and lighting. Do not substitute a related style."
+  }
+}

@@ -1,0 +1,24 @@
+Generate ONE polished Japanese business-presentation page as a single finished PNG image, edge-to-edge horizontal 16:9, matching 1672x941. This is a promotional example for Taskobo Visuals, a website plus an installable AI Skill. It is NOT a PPTX file, computer screen, mockup, stock asset sheet, photographed poster or thumbnail collection.
+This is one of a THREE-IMAGE STORY: (1) meaningful custom business icons, (2) matching icons plus scene illustrations communicating business content, (3) sharing a common production standard across a team. Each image has a deliberately DIFFERENT asset composition specified below.
+STYLE AND REFERENCE ROLES: Reference 1 is the user's liked slide-image and supplies the premium editorial finish, typography quality, palette and restrained navy-ink/blue-watercolor drawing language. Its old handover story, text, people layout and icon row are NOT compulsory. Reference 2 is the enterprise-narrative art reference, drawing method only; do not copy its title, collage or industry subjects. Use the SAME drawing method for all illustrated objects, icons and scenes across the three images: graded deep navy contours, selected fine interior lines, restrained blue color shapes, soft tonal modeling and subtle watercolor texture. Small icons simplify detail without switching renderer. No glossy 3D, inconsistent icon styles or generic stock vector silhouettes.
+BRAND SYSTEM: warm white #FCFBF8, deep navy #0D2046, cobalt #1456D9, pale blue #EDF3FF. Contemporary mature enterprise aesthetic, strong typography, clear hierarchy, meaningful large artwork, carefully aligned copy, no arbitrary dashboard/card UI or ornamental frame. Natural skin/hair only when the requested page includes people. Opaque warm-white slide background; illustrated scenes or objects have naturally irregular silhouettes blended directly into it, never inside rectangular image frames or display bases.
+SERIES TYPOGRAPHY: small but clearly readable 'Taskobo Visuals' wordmark at upper left above the main headline. Big confident Japanese gothic headline, an informative short subtitle, then the page's specified visual content. Keep body copy readable, not miniature filler. Footer has a very thin pale rule and the exact line 'Webで条件を整え、Skillを導入したAIで制作する。' on the left, 'taskobo.com' on the right. This footer accurately distinguishes the website's planning role from generation in the user's AI. No fake upload/generate UI, SaaS screenshot, claim of automatic PPT creation, invented statistics, quality guarantees, watermark or extra text. All copy below is Japanese plain style; reproduce it accurately. Do not print the quotation marks used to identify exact copy.
+Every page must look like a real sophisticated presentation example explaining OUR SERVICE, not a generic handover project or a catalog of unrelated decorative assets.
+PAGE 1: ICONS AND TEXT ONLY. Absolutely NO hero illustration, office scene, desk, room, full people, lifestyle image, photograph or large narrative picture. Only the six standalone thematic icons and typography described below. Speech balloons are icons, not people.
+Exact headline, over two balanced lines:
+伝えたい意味を、
+使えるアイコンに。
+Emphasize アイコン in cobalt and other headline words in navy.
+Exact subtitle:
+テーマや文書の内容から、業務に合う図柄をつくる。
+COMPOSITION: a strong restrained editorial headline across the upper portion, followed by six generous, highly crafted business icons in two rows of three. These are semantic capability examples, not six style variations: ALL six must have exactly the same ink-and-watercolor drawing method and blue palette. Each icon is an isolated object, with clear silhouette and light watercolor finish inside/near its natural shape. No enclosing tiles, geometric badges, platforms or decorative blobs. A clear large Japanese noun and one short explanatory line accompany each icon with precise alignment. Give the icons real visual presence, not tiny pictograms in a lot of white space.
+Six icon subjects, exact labels and explanatory lines:
+1. A document with selected content lines: 文書 / 要点と根拠を伝える
+2. Two purposeful overlapping speech balloons: 協働 / 役割と対話を示す
+3. A refined gear with one simple lightning cue: 自動化 / 仕組みをわかりやすく
+4. A document and magnifier: 品質 / 確認する対象を明確に
+5. A protective shield with one clean check: 安全 / 守る対象を伝える
+6. An open learning book and one pencil: 学習 / 学びの内容を示す
+These motifs illustrate topics a user can request; do not imply the Skill operates these business processes. Include a compact cobalt statement above the footer:
+題材は自由。画風と配色は共通に。
+The overall effect is a premium icon-based business slide with strong text and consistent topic-specific icons, not a webpage feature grid.

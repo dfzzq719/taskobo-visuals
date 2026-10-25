@@ -1,0 +1,79 @@
+{
+  "schema": "taskobo-visuals.promotional-story/v1",
+  "date": "2026-10-26",
+  "product": "Taskobo Visuals",
+  "styleId": "enterprise-narrative",
+  "skillVersion": "0.3.7",
+  "generator": "built-in imagegen",
+  "status": "user-approved-public-example",
+  "language": "ja",
+  "palette": {
+    "ink": "#0D2046",
+    "primary": "#1456D9",
+    "primarySoft": "#EDF3FF",
+    "paper": "#FCFBF8"
+  },
+  "reference": {
+    "file": "assets/approved/enterprise-narrative.png",
+    "role": "drawing-style"
+  },
+  "seriesReference": "The prior user-accepted original slide was supplied for editorial art direction, not its handover content.",
+  "websiteEvidence": {
+    "url": "https://taskobo.com/free-tools/taskobo-visuals/tool/",
+    "checked": "2026-10-26",
+    "scope": "Public tool page: Web creates requests/briefs; image generation and document review occur in the user AI with the Skill installed."
+  },
+  "background": "opaque full slide; unframed artwork within the composition",
+  "pages": [
+    {
+      "page": 1,
+      "file": "page-01.png",
+      "prompt": "page-01.prompt.txt",
+      "composition": "icons-and-text",
+      "message": "Design meaningful business icons from a topic or document.",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "cf9c2c5951b3db91f4668dc67ebfd28106d367fb981f86d36be79c1945266f20"
+    },
+    {
+      "page": 2,
+      "file": "page-02.png",
+      "prompt": "page-02.prompt.txt",
+      "composition": "icons-illustration-and-text",
+      "message": "Apply the same visual language to business illustrations and documents.",
+      "size": [
+        1671,
+        941
+      ],
+      "sha256": "54a511fe46efaf8ebd6eac9fe48dedebd880a2b131cd557412444e8dcbd81e9a"
+    },
+    {
+      "page": 3,
+      "file": "page-03.png",
+      "prompt": "page-03.prompt.txt",
+      "composition": "illustration-and-text",
+      "message": "Set conditions on the website; create with the installed Skill and share selected standards.",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "2acd29ae7f7136f5b3dc6b41d993d04a3f869f59953f689827d881146ffb1081"
+    }
+  ],
+  "visualReview": [
+    "All Japanese primary and secondary copy checked.",
+    "Page 1 has six icons and text, with no narrative illustration.",
+    "Page 2 combines icons, a narrative scene and text.",
+    "Page 3 has a narrative scene and text with no standalone icon row.",
+    "All use the same ink-and-watercolor drawing language and blue/navy palette."
+  ],
+  "limitations": "Original promotional examples, not proof of pixel-identical generation or independent reader validation. No PPTX created. The full-page examples use opaque backgrounds; independent assets default to real Alpha.",
+  "publicationApproval": {
+    "date": "2026-10-26",
+    "github": "three-image example story",
+    "website": "page-02",
+    "scope": "These exact images; not a blanket approval of future generations."
+  }
+}

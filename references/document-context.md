@@ -38,13 +38,13 @@ PPTX 按实际演示顺序保留 `slide:编号`，DOCX 按段落保留 `paragrap
 
 上述判断由当前Agent完成。文档中没有某个物件时，可提出用于解释概念的视觉隐喻，但标记为推断，不能声称它来自原文。一个图标无法解释的条件、责任或流程留在正文或拆为图表，不靠堆符号声称覆盖全文。
 
-需要可记录的生成任务时，可在视觉简报的 `assets` 中加入 `meaning`、`subject`、`avoid` 和实际 `sourceRefs`，指定 `direction.recipe` 为23种配方之一；已有 `direction.preset: technical-spot` 仍有效。运行：
+需要可记录的生成任务时，可在视觉简报的 `assets` 中加入 `meaning`、`subject`、`avoid` 和实际 `sourceRefs`，用 `direction.styleId` 选择统一画法目录中的一条记录。插图与图标共用这一条画法，不分别选型；旧 `direction.recipe/preset` 仍可兼容解析到同一ID。运行：
 
 ```text
-python scripts/prepare_icon_jobs.py --brief brief.json --context extracted-context.json --output generation-jobs.json
+python scripts/prepare_visual_jobs.py --brief brief.json --context extracted-context.json --output generation-jobs.json
 ```
 
-脚本不替Agent理解文档，不上传资料，不生成图片；它验证引用存在、风格唯一匹配及颜色合法，然后产出逐素材提示词和内置imagegen的透明背景要求。`--contact-sheet` 可另给一张审阅用总览的提示词，总览不等于已拆分的独立素材。机器检查引用存在，不代表引用足以支持语义；Agent仍需核对含义和生成图。
+脚本不替Agent理解文档，不上传资料，不生成图片；它验证引用存在、共享风格唯一匹配及颜色合法，然后产出插图/图标任务，共用画法、参考、状态和版本。`prepare_icon_jobs.py` 是只接受图标的兼容入口，读取同一目录。仅图标任务可用 `--contact-sheet` 另给一张审阅用总览的提示词，总览不等于已拆分的独立素材。机器检查引用存在，不代表引用足以支持语义；Agent仍需核对含义和生成图。
 
 正式调用时使用本次摘要和最少必要对象描述，画法参考只负责线条、形体及材质。查看成图，核对语义、系列一致性、实际Alpha和目标尺寸；失败时针对原因修正。保存简报、来源哈希、配方版本、实际提示词、工具、原图和检查记录，区分“计划”“已生成草稿”“已审核”“已获用户认可”。
 

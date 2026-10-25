@@ -124,7 +124,7 @@ def request(case):
 読者：{case['audience']}
 用途：{case['uses']}
 制作物：メインイラスト1点、テーマ別アイコン6点。
-画風：イラストはEditorial。アイコンはPrecisionの一貫した輪郭と塗り。
+画風：挿絵とアイコンの両方に同じ enterprise-narrative の画法を使う。線・塗り・質感・光を共通化し、サイズに応じて構図と細部の量を調整する。
 配色：主色 {case['accent']}、浅色 {case['wash']}、濃色 #0D2046、背景 #FCFBF8。
 
 人物、対象物、行動の関係が伝わる構図にする。テーマと画風と色系は別々に扱う。
@@ -168,10 +168,10 @@ def homepage(hero):
     nav = ''.join(f'<a href="{BASE}samples/{c["id"]}/">{c["name"]}{ARROW}</a>' for c in CATALOG)
     return f'''<div class="container"><nav class="ill-breadcrumbs" aria-label="パンくずリスト"><a href="/">ホーム</a><span>/</span><a href="/#free-tools">無料ツール</a><span>/</span><span aria-current="page">Taskobo Visuals</span></nav>
 <header class="ill-intro"><h1>伝えたい仕事を、伝わる絵に。</h1><p>企業向けイラスト・アイコン制作。テーマや文書から内容を決め、画風と配色を選び、チームで共通の表現を育てるAI Skill。</p><div class="ill-actions"><a class="button button-primary" href="{BASE}tool/">制作ツールを使う {ARROW}</a><a href="#samples">業種別サンプルを見る</a><a href="{REPO}">GitHub</a></div><p class="ill-fineprint">Skill v{VERSION}公開中。画像は、制作ツールで条件を整えて利用中のAIで生成する。</p></header>
-<figure class="ill-portfolio"><img src="{BASE}assets/{hero['large']}" srcset="{BASE}assets/{hero['small']} 768w, {BASE}assets/{hero['large']} 1440w" sizes="(max-width:600px) calc(100vw - 40px), (max-width:1020px) calc(100vw - 96px), 1280px" width="1672" height="941" alt="製造、店舗、ケア相談、学習の4つの場面と、分野をまたぐ8つのアイコンを同じ青系の画風で制作した作品集" fetchpriority="high" decoding="async"><figcaption>このSkillで制作したオリジナルの作品例。業種ごとに題材を変え、線と色の表現に共通性を持たせる。</figcaption></figure>
+<figure class="ill-portfolio"><img src="{BASE}assets/{hero['large']}" srcset="{BASE}assets/{hero['small']} 768w, {BASE}assets/{hero['large']} 1440w" sizes="(max-width:600px) calc(100vw - 40px), (max-width:1020px) calc(100vw - 96px), 1280px" width="1671" height="941" alt="アイコンと挿絵で業務の話をわかりやすく伝える、Taskobo Visualsのプレゼンテーション画像。構図・配色・共通の画法を説明し、提案書・報告書・研修資料・Webへの展開を示す" fetchpriority="high" decoding="async"><figcaption>同じ画法のアイコンと挿絵を組み合わせた、Skillによるオリジナル作例。<a href="{REPO}/tree/main/examples/service-story">3枚の作例と生成プロンプトを見る</a>。</figcaption></figure>
 <nav class="ill-industry-nav" aria-label="業種別サンプル">{nav}</nav>
 <section class="ill-section" id="samples"><div class="ill-section-head"><h2>違う仕事にも、伝わる画風を。</h2><p>各ページでメインイラスト、テーマ別アイコン6点、配色、依頼文を確認できる。4業種は入口で、ほかの業種も内容に合わせて制作する。</p></div><div class="ill-gallery">{gallery}</div></section>
-<section class="ill-section"><div class="ill-split"><div><h2>変えるところと、そろえるところ。</h2><p>見た目を毎回ゼロから決めず、仕事に必要な表現に集中する。</p></div><dl class="ill-definitions"><div><dt>内容テーマ</dt><dd>何を、誰に、何のために伝えるか。文書がある場合は、AIが本文と出典を確認して挿絵を提案する。</dd></div><div><dt>画風</dt><dd>輪郭、立体感、構図、細部の量。イラストとアイコンは役割に合う描き方を選び、同じ資料の中で調和させる。</dd></div><div><dt>色系</dt><dd>自社の指定色、サンプルの配色、文書の配色から選ぶ。文書のテーマ色と、正式なブランド規定は区別する。</dd></div><div><dt>全社の基準</dt><dd>色の役割、画風、承認済みの見本を版として共有する。生成画像の構図や細部には差が出るため、採用する素材は人が確認する。</dd></div></dl></div></section>
+<section class="ill-section"><div class="ill-split"><div><h2>変えるところと、そろえるところ。</h2><p>見た目を毎回ゼロから決めず、仕事に必要な表現に集中する。</p></div><dl class="ill-definitions"><div><dt>内容テーマ</dt><dd>何を、誰に、何のために伝えるか。文書がある場合は、AIが本文と出典を確認して挿絵を提案する。</dd></div><div><dt>画風</dt><dd>輪郭、立体感、構図、細部の量。イラストとアイコンに同じスタイルID・同じ画法を使う。線・塗り・質感は共通に、大きさに応じて構図と細部の量を調整する。</dd></div><div><dt>色系</dt><dd>自社の指定色、サンプルの配色、文書の配色から選ぶ。文書のテーマ色と、正式なブランド規定は区別する。</dd></div><div><dt>全社の基準</dt><dd>色の役割、画風、承認済みの見本を版として共有する。生成画像の構図や細部には差が出るため、採用する素材は人が確認する。</dd></div></dl></div></section>
 <section class="ill-section"><div class="ill-split"><div><h2>自分の業務に、置き換えて使う。</h2><p>制作ツールでテーマ・用途・画風・配色を選び、AIに渡す依頼文を作成する。</p></div><div><p>気になるサンプルから始めるか、あなたの業務を入力して始められる。Skillの導入手順とダウンロードも制作ツールにまとめた。</p><div class="ill-actions"><a class="button button-primary" href="{BASE}tool/">制作ツールを開く {ARROW}</a><a href="{BASE}tool/#install">Skillの導入手順</a></div></div></div></section>
 <section class="ill-section"><h2>現在できることを、確かめて使う。</h2><div class="ill-scope"><div><h3>Skillと利用中のAIで</h3><ul><li>テーマ、用途、ブランドから挿絵を計画する。</li><li>利用できる生成機能でイラストを制作する。</li><li>シリーズアイコンの輪郭・配色・表示サイズをそろえる。</li><li>PPTX・DOCX・テキストの内容と色の根拠を読み、AIが提案する。</li></ul></div><div><h3>このWebページで</h3><ul><li>業種別の実作品とSVGアイコンを比較する。</li><li>アイコンの色を切り替え、素材をダウンロードする。</li><li><a href="{BASE}tool/">制作ツール</a>で依頼文と制作ブリーフを作成する。</li><li>Skill、サンプル、ソースコードを入手する。</li></ul></div></div><p class="ill-note">文書の画像内文字やレイアウト理解には、利用するAIの対応機能が必要。Web上での文書解析・画像生成、WordやPPTへの自動配置は本ページでは提供していない。実際の内容、利用権、人物表現と業務上の正確性は人が確認する。</p></section>
 <section class="ill-section"><div class="ill-split"><h2>図表は正確に。<br>挿絵は、伝わるように。</h2><div><p>イラストとアイコンはTaskobo Visuals。計画と議事録からのWBS・RACI・工程表の更新はTaskobo Diagrams。用途に合わせて使い分け、同じ文書の中で組み合わせられる。</p><nav class="ill-inline-links" aria-label="関連ツール"><a href="/free-tools/taskobo-diagrams/">Taskobo Diagrams</a><a href="/free-tools/mermaid/">Mermaidスタイルメーカー</a><a href="https://docskobo.com/app?lang=ja">DOCSKOBO</a></nav></div></div></section>
@@ -190,7 +190,7 @@ def toolpage(skill_zip):
 <p class="ill-tool-note">入力はブラウザー内で処理する。画像の生成と文書の確認は、Skillを導入した利用中のAIで行う。<a href="#install">Skillの導入手順</a></p>
 <p class="ill-preset-status" id="preset-status" role="status" hidden></p>
 <section class="ill-tool-layout" id="request" aria-label="制作条件と依頼文">
-<div class="ill-tool-settings"><h2>制作条件</h2><p class="ill-request-help">内容と見た目を、それぞれ指定する。</p><form id="request-form" class="ill-form"><label class="ill-field ill-full">内容テーマ<input name="topic" required maxlength="300" value="新入社員のオンボーディングとチームの連携"><small>どんな仕事・行動・関係を伝えたいかを書く。</small></label><label class="ill-field">用途<select name="use"><option>社内研修のPPT</option><option>サービス紹介の提案書</option><option>事業報告書</option><option>書籍・記事</option><option>Webサイトの紹介画像</option></select></label><label class="ill-field">制作物<select name="kind"><option value="both">イラスト＋アイコン</option><option value="illustration">イラスト</option><option value="icons">テーマ別アイコン</option></select></label><label class="ill-field">画風<select name="direction"><option value="editorial">Editorial · 企業エディトリアル</option><option value="enterprise-narrative">Enterprise Narrative · 人と仕事の叙事表現</option><option value="precision">Precision · 精密な輪郭と塗り</option><option value="technical-spot">Technical Spot · 技術テーマの小さな説明イラスト</option><option value="dimensional">Dimensional · 落ち着いた立体表現</option></select></label><label class="ill-field">配色<select name="palette"><option value="blue">コバルトブルー</option><option value="teal">ディープティール</option><option value="terra">テラコッタ</option><option value="indigo">インディゴ</option><option value="custom">主色を指定</option><option value="document">文書に合わせて提案</option></select></label><label class="ill-field">指定する主色<input type="color" name="customColor" value="#1456d9" disabled></label><div class="ill-palette-sample"><span class="ill-swatch" data-color-swatch aria-hidden="true" style="--swatch:#1456D9"></span><span>AIに渡す配色の方向<br><small>画像の再生成は行わない</small></span></div><button class="ill-full" type="submit">依頼文を更新 {ARROW}</button></form></div>
+<div class="ill-tool-settings"><h2>制作条件</h2><p class="ill-request-help">内容と見た目を、それぞれ指定する。</p><form id="request-form" class="ill-form"><label class="ill-field ill-full">内容テーマ<input name="topic" required maxlength="300" value="新入社員のオンボーディングとチームの連携"><small>どんな仕事・行動・関係を伝えたいかを書く。</small></label><label class="ill-field">用途<select name="use"><option>社内研修のPPT</option><option>サービス紹介の提案書</option><option>事業報告書</option><option>書籍・記事</option><option>Webサイトの紹介画像</option></select></label><label class="ill-field">制作物<select name="kind"><option value="both">イラスト＋アイコン</option><option value="illustration">イラスト</option><option value="icons">テーマ別アイコン</option></select></label><label class="ill-field">画風<select name="direction"><option value="editorial">Editorial · 企業エディトリアル</option><option value="enterprise-narrative">Enterprise Narrative · 人と仕事の叙事表現</option><option value="precision">Precision · 精密な輪郭と塗り</option><option value="technical-spot">Technical Spot · 技術テーマの小さな説明イラスト</option><option value="dimensional">Dimensional · 落ち着いた立体表現</option></select></label><label class="ill-field">イラストの外形<select name="framing" aria-describedby="framing-help"><option value="freeform">自然な輪郭・透過（枠なし）</option><option value="vignette">周辺をぼかす・透過（枠なし）</option><option value="full-scene">背景付きの場面（全面）</option></select><small id="framing-help">画風はそのままに、外形と背景を選ぶ。標準は自然な輪郭の透過素材。</small></label><label class="ill-field">配色<select name="palette"><option value="blue">コバルトブルー</option><option value="teal">ディープティール</option><option value="terra">テラコッタ</option><option value="indigo">インディゴ</option><option value="custom">主色を指定</option><option value="document">文書に合わせて提案</option></select></label><label class="ill-field">指定する主色<input type="color" name="customColor" value="#1456d9" disabled></label><div class="ill-palette-sample"><span class="ill-swatch" data-color-swatch aria-hidden="true" style="--swatch:#1456D9"></span><span>AIに渡す配色の方向<br><small>画像の再生成は行わない</small></span></div><button class="ill-full" type="submit">依頼文を更新 {ARROW}</button></form></div>
 <div class="ill-tool-output"><h2>AIに渡す依頼文</h2><p class="ill-request-help">条件を更新した後にコピーし、Skillを導入したAIに貼り付ける。</p><div class="ill-result"><div class="ill-result-label"><label for="request-output">利用中のAIに渡す</label><button class="ill-copy" type="button" data-copy="request-output" data-status="request-status">コピー</button></div><textarea class="ill-prompt" id="request-output" readonly spellcheck="false"></textarea><p class="ill-status" id="request-status" role="status">条件から依頼文を作成した。</p><button class="ill-copy secondary" id="download-brief" type="button">制作ブリーフをJSONで保存</button><noscript><p>依頼文の作成にはJavaScriptが必要。各サンプルページの依頼文はそのまま選択してコピーできる。</p></noscript></div><p class="ill-note">JSONにはテーマ、画風、色の役割と制作物の計画を保存する。社内で条件を共有するときに使える。</p></div>
 </section>
 <section class="ill-section" id="install"><div class="ill-split"><div><h2>あなたのAIに、Skillを追加する。</h2><p>無料・オープンソース。普段使っているAIと組み合わせ、素材と基準を手元に残す。</p><div class="ill-actions"><a class="button button-primary" href="{BASE}downloads/{skill_zip}" download>Skill v{VERSION}を保存 {ARROW}</a></div></div><div><ol class="ill-steps"><li><strong>ZIPを展開する。</strong><code>taskobo-visuals</code>フォルダーを、利用するAIソフトのSkill対応ディレクトリに置く。</li><li><strong>Skillを再読み込みする。</strong>対応AIソフトで新しいセッションを開き、<code>$taskobo-visuals</code>を指定する。導入場所は利用ソフトによって異なる。</li><li><strong>依頼文と必要な資料を渡す。</strong>題材・用途・色を指定する。画像生成には、そのAIソフトで使える画像生成機能が必要。図形アイコンはSVGで制作できる。</li><li><strong>見本を確認し、社内に共有する。</strong>用語、表現、配色、小サイズでの見やすさを確認する。採用した見本と制作ブリーフを版付きで残す。</li></ol><p class="ill-note">Skill本体の説明文は現在、中国語。日本語の利用ガイドとサンプルを公開している。ローカルの文書抽出スクリプトにはPython 3.10以上が必要で、PDFの文字抽出は追加のpypdfに依存する。モデルやAPIキーは同梱しない。</p><nav class="ill-inline-links" aria-label="導入資料"><a href="{REPO}/blob/main/docs/guide.ja.md">日本語の導入ガイド</a><a href="{REPO}/blob/main/SKILL.md">Skillの内容</a><a href="{REPO}/blob/main/LICENSE">ライセンス</a></nav></div></div></section>
@@ -223,11 +223,11 @@ def main():
         return filename
     css = put_asset('illustration.css', (ROOT / 'website/illustration.css').read_bytes())
     js = put_asset('illustration.js', (ROOT / 'website/illustration.js').read_bytes())
-    def exports(path, stem, prompt):
+    def exports(path, stem, prompt, generated_date='2026-10-22'):
         from io import BytesIO
         image = Image.open(path).convert('RGB')
         values = {}
-        metadata = f'<x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description xmlns:dc="http://purl.org/dc/elements/1.1/" dc:source="Taskobo original; built-in image generation; 2026-10-22" dc:description="{E(prompt, quote=True)}"/></rdf:RDF></x:xmpmeta>'.encode('utf-8')
+        metadata = f'<x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description xmlns:dc="http://purl.org/dc/elements/1.1/" dc:source="Taskobo original; built-in image generation; {generated_date}" dc:description="{E(prompt, quote=True)}"/></rdf:RDF></x:xmpmeta>'.encode('utf-8')
         for key, width in [('small', 768), ('large', 1440)]:
             thumb = image.copy()
             thumb.thumbnail((width, width), Image.Resampling.LANCZOS)
@@ -236,13 +236,13 @@ def main():
             values[key] = put_asset(f'{stem}-{width}.webp', buf.getvalue())
         values['original'] = put_asset(stem + '.png', path.read_bytes())
         return values
-    hero = exports(ROOT / 'examples/portfolio-no-title.png', 'portfolio-no-title', (ROOT / 'examples/portfolio-no-title.prompt.txt').read_text(encoding='utf-8'))
+    hero = exports(ROOT / 'examples/service-story/page-02.png', 'service-story-02', (ROOT / 'examples/service-story/page-02.prompt.txt').read_text(encoding='utf-8'), '2026-10-26')
     for case in CATALOG:
         folder = ROOT / 'examples' / case['id']
         folder.mkdir(exist_ok=True)
         (folder / 'icons').mkdir(exist_ok=True)
         case['assets'] = exports(folder / 'illustration.png', case['id'], (folder / 'generation.prompt.txt').read_text(encoding='utf-8'))
-        (folder / 'request.ja.txt').write_text(request(case) + '\n', encoding='utf-8')
+        (folder / 'request.ja.txt').write_text(request(case) + '\n', encoding='utf-8', newline='\n')
         case['assets']['icons'] = {}
         for key, title, meaning in case['icons']:
             svg = icon_svg(key, title, case['accent'], case['wash'])
@@ -277,15 +277,19 @@ def main():
         target = out / path / 'index.html'
         target.parent.mkdir(parents=True, exist_ok=True)
         content = content.replace('</nav>', '</nav>' + product_nav(path), 1)
-        target.write_text(template.replace('%%HEAD%%', head).replace('%%MAIN%%', phrase_headings(content)), encoding='utf-8')
+        target.write_text(template.replace('%%HEAD%%', head).replace('%%MAIN%%', phrase_headings(content)), encoding='utf-8', newline='\n')
         routes.append(BASE + path)
     page('', 'Taskobo Visuals | 企業資料のイラスト・テーマ別アイコンをつくるAI Skill', 'テーマや文書から企業向けのイラストとアイコンを制作する無料のAI Skill。製造・物流、小売・サービス、医療・ケア、教育・研修の実作品と配色プレビューを公開。独立した制作ツールで依頼文の作成とSkillの導入ができる。', homepage(hero), hero['large'], [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE)])
     page('tool/', '制作ツール | Taskobo Visuals', 'テーマ・用途・画風・配色から、企業資料用イラストとアイコンの依頼文を作成。制作ブリーフをJSONで保存し、無料Skillと組み合わせて利用中のAIに渡せる。', toolpage(skill_zip), hero['large'], [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE), ('制作ツール', ORIGIN + BASE + 'tool/')])
     for case in CATALOG:
         page('samples/' + case['id'] + '/', f'{case["name"]}のイラスト・アイコン例 | Taskobo Visuals', case['description'] + 'メインイラスト、編集可能なSVGアイコン6点、透明PNG、配色とAIへの依頼文を公開。', sample(case), case['assets']['large'], [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE), (case['name'], ORIGIN + BASE + 'samples/' + case['id'] + '/')])
     manifest = {'skillVersion': VERSION, 'routes': routes, 'skillZip': skill_zip, 'hero': hero, 'cases': CATALOG, 'files': [{'path': p.relative_to(out).as_posix(), 'sha256': digest(p.read_bytes()), 'bytes': p.stat().st_size} for p in sorted(out.rglob('*')) if p.is_file()]}
-    (ROOT / 'website/build-manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    gallery = '# 業種別サンプル / Industry samples\n\n[公開README](../README.md) · [画風と素材の作例](icon-styles.ja.md) · [制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)\n\n架空の業務場面から制作したオリジナル。実企業の導入事例ではない。\n\n'
+    (ROOT / 'website/build-manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
+    gallery_path = ROOT / 'docs/gallery.ja.md'
+    marker = '<!-- industry-samples -->'
+    authored_gallery = gallery_path.read_text(encoding='utf-8') if gallery_path.exists() else ''
+    gallery = (authored_gallery.split(marker, 1)[0].rstrip() + '\n\n' if marker in authored_gallery else '# 業種別サンプル / Industry samples\n\n[公開README](../README.md) · [画風と素材の作例](icon-styles.ja.md) · [制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)\n\n架空の業務場面から制作したオリジナル。実企業の導入事例ではない。\n\n')
+    gallery += marker + '\n\n'
     for case in CATALOG:
         gallery += f'## {case["name"]}\n\n{case["description"]}\n\n![{case["alt"]}](../examples/{case["id"]}/illustration.png)\n\n[Webで作品とアイコンを見る]({ORIGIN}{BASE}samples/{case["id"]}/) · [素材とプロンプト](../examples/{case["id"]}/)\n\n'
     (ROOT / 'docs/gallery.ja.md').write_bytes(gallery.encode('utf-8'))

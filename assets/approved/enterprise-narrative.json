@@ -28,6 +28,11 @@
   "contentPolicy": "Use the current topic; reference industries and objects are not defaults.",
   "palettePolicy": "User or organization palette wins; preserve color roles and tonal hierarchy.",
   "compositionPolicy": "Choose independently; single scene, coordinated series and portfolio collage are options.",
-  "relatedIconDirection": "precision",
-  "reproducibility": "Constrains visual direction; does not guarantee identical pixels across generations or models."
+  "reproducibility": "Constrains visual direction; does not guarantee identical pixels across generations or models.",
+  "sharedStyleId": "enterprise-narrative",
+  "activeRegistry": "references/style-recipes.json",
+  "pairedAssetKinds": [
+    "illustration",
+    "icon"
+  ]
 }
