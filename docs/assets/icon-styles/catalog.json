@@ -1,6 +1,6 @@
 {
   "date": "2026-10-25",
-  "skill": "taskobo-visuals v0.3.5",
+  "skill": "taskobo-visuals v0.3.6",
   "count": 23,
   "orderBasis": "Qualitative approximate order across general enterprise documents, PPTs, business applications and websites; not measured usage or market share. Adjacent rankings have no statistical significance.",
   "palette": {
@@ -340,7 +340,8 @@
   "runtimeRecipes": {
     "file": "references/icon-style-recipes.json",
     "count": 23,
-    "scope": "Generative recipes; subject and palette supplied per document, not fixed renderers. Actual image validation is documented separately."
+    "scope": "Generative recipes; subject and palette supplied per document, not fixed renderers. Actual image validation is documented separately.",
+    "version": "0.3.6"
   },
   "generationDetails": {
     "date": "2026-10-25",

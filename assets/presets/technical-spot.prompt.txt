@@ -5,7 +5,12 @@ This is a flat 2D explanatory line-and-fill illustration. No spherical gradients
 plastic shine, inflated volume, bevels, extrusion, ambient occlusion or default cast
 shadow. Human heads and bodies remain flat drawn shapes. Viewpoint is a drawing
 projection, never permission to switch to 3D material rendering. Smooth steady curves
-with a subtle illustrative character; detail between a pictogram and a full scene.
+with a subtle illustrative character. For compact72–128px report icons, use ONE dominant
+object and at most ONE necessary supporting cue, broad flat fills and very few internal
+lines. No dense circuits, cooling fins, port arrays, tiny instruments or device clusters.
+Judge detail at actual display size, not native image resolution. Inspect and pass the
+current technical-spot-compact.png reference to the image tool for drawing treatment
+and compact density. The historical two-view study is not the default small-icon anchor.
 Use [current user/organization palette], not a mandatory blue-gray palette.
 Viewpoint: [front / side / three-quarter / shallow-isometric].
 NO display bases, pedestals, floor plates, background blobs or decorative badges

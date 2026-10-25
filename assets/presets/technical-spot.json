@@ -15,7 +15,7 @@
   "reference": {
     "file": "technical-spot.png",
     "sha256": "4b9aeaf41e625c2a5dc7892e93886d178378fe416ae089f6f1e65cb5ac70c55e",
-    "role": "style",
+    "role": "historical-viewpoint-study",
     "origin": "Original built-in AI-generated cross-industry demonstration, inspired only by drawing treatment from user-supplied references. Original reference images are not distributed.",
     "status": "draft",
     "prompt": "technical-spot.prompt.txt",
@@ -73,6 +73,23 @@
       "extruded thickness",
       "ambient occlusion"
     ],
-    "viewpointPolicy": "Optional viewpoints are 2D drawing projections; they do not change the preset into 3D rendering."
+    "viewpointPolicy": "Optional viewpoints are 2D drawing projections; they do not change the preset into 3D rendering.",
+    "detailPolicy": {
+      "smallIconDefault": "compact",
+      "compactSizePx": [
+        72,
+        128
+      ],
+      "primaryObjects": 1,
+      "maximumSupportingCues": 1,
+      "rule": "At small display sizes remove device clusters, repeated ports, cooling fins and circuitry. More concrete does not mean more intricate."
+    }
+  },
+  "generationReference": {
+    "file": "assets/presets/technical-spot-compact.png",
+    "sha256": "88f5a1f117f260ab923841895abfbd8b57d11c4a6f941931320b47a84abd272d",
+    "role": "style-and-compact-detail-density",
+    "status": "draft",
+    "scope": "Use drawing treatment and detail density only; current topic and palette remain independent."
   }
 }

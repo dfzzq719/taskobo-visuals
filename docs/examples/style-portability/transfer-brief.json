@@ -1,0 +1,52 @@
+{
+  "schema": "taskobo-illustration.visual-brief/v1",
+  "topic": {
+    "title": "Fictional business paperwork and goods identification",
+    "origin": "test"
+  },
+  "direction": {
+    "recipe": "06",
+    "preset": "technical-spot"
+  },
+  "medium": {
+    "kind": "presentation",
+    "iconSizePx": 96
+  },
+  "palette": {
+    "mode": "custom",
+    "roles": {
+      "ink": "#173D38",
+      "primary": "#176C60",
+      "primarySoft": "#E3F0EB",
+      "neutral": "#FCFBF8"
+    }
+  },
+  "assets": [
+    {
+      "id": "signed-document",
+      "kind": "icon",
+      "meaning": "A document being signed, not a completed approval or legally verified contract",
+      "subject": "One broad upright paper sheet with two content lines and one simple pen cue. No extra desk, hands, seals or stamps.",
+      "subjectParts": [
+        "paper sheet",
+        "one pen cue"
+      ],
+      "avoid": [
+        "Do not add an approval check, seal or outcome."
+      ]
+    },
+    {
+      "id": "identified-box",
+      "kind": "icon",
+      "meaning": "One item identified for inventory, not proven inspected or shipped",
+      "subject": "One plain compact carton with a single broad identification-label cue on its front. Label uses just three simple vertical bars, no letters, digits or dense barcode.",
+      "subjectParts": [
+        "carton",
+        "one simple identification-label cue"
+      ],
+      "avoid": [
+        "No trolley, warehouse scene, scanner gun, shipping arrows or passed-inspection tick."
+      ]
+    }
+  ]
+}

@@ -2,11 +2,11 @@
 
 标识：`technical-spot`。基础方向：`precision`。用户于2026-10-25要求保留参考中的画法，状态为 `accepted-option`。新生成样稿仍为 `draft`，不能视为用户逐张认可的母样。
 
-![技术主题小插图原创草稿：四个跨行业主题的平视和浅轴测对照](../assets/presets/technical-spot.png)
+![当前紧凑画法参考：少量对象、清楚轮廓、平面色块](../assets/presets/technical-spot-compact.png)
 
-[机器可读预设](../assets/presets/technical-spot.json)。公开样稿采用云服务、物流、医疗、学习四个主题；上行平视、下行浅轴测，两行均无底座。它用于说明视角变化，不是每次必须沿用的布局或对象。用户原始参考仅作私有画法参考，不纳入公开包。
+[机器可读预设](../assets/presets/technical-spot.json) 的 `generationReference` 是当前生成用参考；查看该图并把它传给图像工具，仅借鉴画法及细节密度，不复用它的业务对象和颜色。当前参考仍为待用户逐图认可的原创草稿。早期[双视角研究样稿](../assets/presets/technical-spot.png)保留作历史视角研究，不能据其较多设备细节决定小图标的默认密度。用户原始参考仅作私有画法参考，不纳入公开包。
 
-独立输出默认透明背景，平视和浅轴测相同。当前样稿的白色底只用于展示画法；复用时不继承该底色。需要的柔和阴影保留为半透明，不增加展示底座。内置 imagegen 使用 `transparent_background: true`，交付前检查真实 Alpha 和深浅底上的边缘。
+独立输出默认透明背景，平视和浅轴测相同。当前紧凑参考具有真实Alpha；早期双视角样稿的白底只用于研究，不继承为输出底色。内置 imagegen 使用 `transparent_background: true`，交付前检查真实Alpha和深浅底上的边缘。
 
 ## 识别特征与适用范围
 
@@ -18,6 +18,14 @@
 - **清楚的说明性气质**：适合企业PPT、报告、培训资料中的能力、设备、服务和业务动作。它不是工程结构图或精确操作证明。
 
 基础 `precision` 强调简洁符号与描边填色；本预设可保留更多物件结构和轻微插画感。`enterprise-narrative` 更适合人物、业务动作与环境构成的完整情境，并使用轻绘画质感。三个选择可以在同一报告中分工，不把各自的细节密度混进同一组图标。
+
+## 按实际尺寸控制密度
+
+- **compact（小图标默认）**：约72–128px，一个清楚主对象＋至多一个必要辅助提示；主轮廓和大色面优先。移除密集电路、鳍片、成排接口和无助于辨认的机械纹理。专业性来自准确取舍，不来自零件数量。
+- **standard（较大的说明插图）**：显示空间足够时才保留更多结构和一两个必要关系，仍有一个视觉重心。若关系本身复杂，改用更大的结构图，不把它挤成图标。
+- **24/32px**：另作符号简化，不能承诺这套说明插图直接缩小仍可读。
+
+“汽车”“AI”“感知”等文档主题决定当前含义，不自动要求画出完整设备总成。若需要表达多项能力，选择一个能辨认的代表物件，文字承载其他组成项。色板、透明度和无底座通过，仍不等于复杂度与风格已通过。
 
 ## 视角与配色独立选择
 
@@ -40,7 +48,7 @@
 }
 ```
 
-使用图像工具前查看样稿，把它作为画法参考。当前对象、业务动作、视角与色板分别写入提示词，并写明不加展示底座；不把样稿当成必须保留对象的编辑目标。
+使用图像工具前查看当前紧凑参考，并作为style reference实际传入。记录版本、配方、参考图哈希、`detailLevel`、`iconSizePx`和色板；当前对象、业务动作、视角分别确定，不把样稿当成必须保留对象的编辑目标。`detailLevel`缺省按实际尺寸选择，小图标默认compact。
 
 ```text
 Create a technical spot illustration of [current object and business action].
@@ -48,9 +56,12 @@ Use graded dark contours, finer lighter structural lines, restrained flat fills,
 flat color regions, minimal graphic tonal accents and credible simplified proportions.
 Use a 2D line-and-fill illustration, never a shaded 3D render. No spherical lighting,
 puffy volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadow.
-Human head circles and torso fills remain flat; viewpoint does not imply 3D material. Keep a subtle illustrative
-line character with smooth, steady curves. Detail should sit between a compact symbol
-and a full scene. Viewpoint: [front / side / three-quarter / shallow-isometric].
+Human head circles and torso fills remain flat; viewpoint does not imply 3D material.
+Keep a smooth, steady, mildly illustrative contour. For a compact icon, use one dominant
+object plus at most one supporting cue, broad readable flat fills and very few internal
+lines. Remove dense circuitry, cooling fins, repeated ports, screws and device clusters.
+Do not increase detail merely because the subject is technical. Match the CURRENT compact
+reference's density at the actual display size. Viewpoint: [front / side / three-quarter / shallow-isometric].
 No decorative display base, pedestal, square support platform or backing plate,
 including in shallow-isometric views. Palette roles: [current user or organization roles].
 Export isolated artwork on a genuinely transparent background with an Alpha channel.

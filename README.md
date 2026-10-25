@@ -4,7 +4,7 @@
 
 テーマや文書から伝える内容を決め、画風と配色を選び、普段使っているAIで制作するSkill。提案書、研修資料、報告書、Webのために、承認した見本と制作条件を引き継ぐ。
 
-[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.5) · [利用ガイド](docs/guide.ja.md)
+[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.6) · [利用ガイド](docs/guide.ja.md)
 
 [English](README.en.md) · [中文・维护基准](README.zh-CN.md)
 
@@ -31,7 +31,7 @@
 
 ## まず1セット作る
 
-1. [v0.3.5のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.5)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
+1. [v0.3.6のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.6)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
 2. Skillを再読み込みし、制作条件を渡す。[Webの制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)でも依頼文とJSONを作れる。
 3. 素材を用途に合うサイズで確認し、採用した見本、配色、生成プロンプトをチームに共有する。
 
@@ -50,9 +50,11 @@ $taskobo-visuals を使い、業務引継ぎ資料の挿絵1点とテーマ別�
 
 独立したイラストとアイコンは、実際のAlphaチャンネルを持つ透明PNGを標準とする。必要な影は薄い半透明で残し、背景プレートや展示台は加えない。文書の背景色と、生成する素材の透明背景は別々に指定する。
 
-![Technical Spotの透明PNG見本。クラウドと文書、物流、医療、学習の4テーマを一枚に配置](docs/assets/icon-styles/technical-spot-transparent.png)
+![Technical Spotの現在のコンパクト参照。通信、処理、検知、文書、接続端末を平面の線と色面で表す透明PNG](assets/presets/technical-spot-compact.png)
 
-**作例集では[06 テクニカルスポット](docs/icon-styles.ja.md#06-テクニカルスポット)に対応する。** [この透過PNGを開く](docs/assets/icon-styles/technical-spot-transparent.png)。上は4テーマを一枚に配置した表示用の見本で、白い部分を含む物の表面は残し、周囲を透明にしている。明暗両方の背景で輪郭を確認する。完全な場面背景や色付きの比較表を明示した場合は、その指定に従う。
+**作例集では[06 テクニカルスポット](docs/icon-styles.ja.md#06-テクニカルスポット)に対応する。** [現在の透過PNG参照を開く](assets/presets/technical-spot-compact.png)。v0.3.6では生成用の参照画像と、実際の表示サイズに応じた細部の量もSkillに同梱する。72–128px程度の小さな図は、主対象1つと必要な補助1つまでを基本とし、機器や端子を詰め込まない。白い物の表面は残し、周囲を透明にする。明暗両方の背景で輪郭を確認する。[従来の4テーマ見本](docs/assets/icon-styles/technical-spot-transparent.png)は履歴として残す。
+
+[別の文書へ画風を引き継ぐ方法と、題材・配色を変えた実生成](docs/style-portability.ja.md)。
 
 ## 文書に合わせ、会社の基準を残す
 

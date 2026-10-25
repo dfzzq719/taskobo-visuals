@@ -1,0 +1,22 @@
+{
+  "tool": "built-in imagegen",
+  "status": "generated-reviewed-draft",
+  "skillVersion": "0.3.6",
+  "size": [
+    2172,
+    724
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "sha256": "88ad75746943a3411f5d6ef9b0c54c2f7009d587e5cef01283b42041e62985c6",
+  "reference": "assets/presets/technical-spot-compact.png",
+  "recipe": "technical-spot",
+  "actualDisplaySizePx": 96,
+  "detailLevel": "compact",
+  "review": "Authoring Agent observed two new objects with sparse structure, shared contour treatment, teal color family and real Alpha.",
+  "limits": "One two-icon overview, not independent assets, exact pixel/color reproduction or independent user approval.",
+  "privacy": "Entirely fictional generic business examples. No customer slide, screenshot, brand, research text or identity sent to image generation."
+}

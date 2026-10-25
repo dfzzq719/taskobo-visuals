@@ -2,7 +2,7 @@
 name: taskobo-visuals
 description: "Create polished enterprise illustrations and coordinated thematic icon sets from a topic, business content, or document; choose visual form, a coherent Taskobo art direction, and a user-selected or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.3.5"
+  version: "0.3.6"
 ---
 
 # Taskobo Visuals
@@ -25,6 +25,8 @@ metadata:
 
 缺少可推断的信息时说明假设并继续；只有会实质改变结果且无法推断的信息才简短询问。阅读适用的项目规则；源资料的访问与产物写入目录分别确认，临时文件也遵守指定目录。没有品牌并不阻止生成。
 
+跨项目或“仍用第06种”等延续任务，先核对本次安装的版本及所选配方，把版本、配方ID、参考图、实际显示尺寸、细节等级和色板写入本次简报/生成记录。编号以当前23种目录为准，不复用早期20种研究图中的同号标签。选型明确时直接继续；不要把同一编号重新解释为另一画法，也不要因为更新了说明文字就声称成图已符合。
+
 上传文档时读取 [从文档形成配图计划](references/document-context.md)。可运行 `scripts/extract_context.py` 只读提取 PPTX、DOCX、Markdown 和文本；PDF 在安装 pypdf 的环境中可提取文本。提取器输出内容与颜色证据，不以词频或文件名假装理解主题。由当前 Agent 根据证据推荐主题、风格和色系，并区分明确依据与推断。缺少文字的扫描件需要宿主 OCR 能力，不根据空结果编造内容。
 
 ## 先选形式，再选画风
@@ -40,7 +42,7 @@ metadata:
 
 用户提到“企业叙事插画”、`enterprise-narrative`，或要求沿用已认可的跨行业拼贴宣传图画风时，读该预设并查看其参考图。复用成熟人物、分级墨线、浅色块和轻水彩质感；按当前用途另选单场景或多场景布局，不自动照搬图中的行业、蓝色、标题和底部图标排布。
 
-用户提到“技术主题小插图”、`technical-spot`，或要在符号与完整场景之间表达具体技术物件时，读 [该预设](references/technical-spot.md) 并查看原创样稿。采用二维描边填色：分级深色轮廓、克制的平面色块和少量说明性明暗，不渲染球面体积、塑料高光、倒角或挤出厚度；默认平视，可选不同绘制视角，均不加装饰展示台、方形承托或底板，不把参考中的车辆、卫星或蓝色带入所有主题。
+用户提到“技术主题小插图”、`technical-spot`，或要在符号与完整场景之间表达具体技术物件时，读 [该预设](references/technical-spot.md)，查看并在生图时传入当前 `generationReference`，不能只在提示词里声称有参考。采用二维描边填色：清楚的分级轮廓、克制平面色块和少量说明性明暗，不渲染球面体积、塑料高光、倒角或挤出厚度；默认平视，均不加装饰底座。PPT小图标通常按 `compact`：一个主对象和至多一个必要提示，不把文档中的设备、芯片、端口等关键词全部画进同一小图。更具体不等于更繁密；密度按实际显示尺寸调整，不靠缩小一张大插图来满足。
 
 ## 成套主题图标
 

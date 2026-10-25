@@ -68,10 +68,11 @@
       medium: { kind: data.get('use').includes('PPT') ? 'presentation' : 'document', purpose: data.get('use'), language: 'ja', background: 'light' },
       assets: [
         ...(kind !== 'icons' ? [{ id: 'illustration-01', kind: 'illustration', background: 'transparent', purpose: data.get('use'), sourceRefs: [], status: 'planned' }] : []),
-        ...(kind !== 'illustration' ? Array.from({ length: 6 }, (_, index) => ({ id: `icon-${String(index + 1).padStart(2, '0')}`, kind: 'icon', background: 'transparent', purpose: 'テーマに合う対象と行動を伝える', sourceRefs: [], status: 'planned' })) : [])
+        ...(kind !== 'illustration' ? Array.from({ length: 6 }, (_, index) => ({ id: `icon-${String(index + 1).padStart(2, '0')}`, kind: 'icon', background: 'transparent', purpose: 'テーマに合う対象と行動を伝える', ...(direction === 'technical-spot' ? { iconSizePx: 96, detailLevel: 'compact' } : {}), sourceRefs: [], status: 'planned' })) : [])
       ]
     };
     output.value = `$taskobo-visuals を使い、次の条件で企業向けの素材を制作する。\n\n内容テーマ：${topic}\n用途：${data.get('use')}\n制作物：${kind === 'both' ? 'メインイラスト1点と、内容から選ぶテーマ別アイコン6点' : kind === 'icons' ? '内容から選ぶテーマ別アイコン6点' : 'メインイラスト1点'}\n画風：${directionNames[direction]}。アイコンは一貫した輪郭と塗りで整える。\n配色：${colorMode === 'document' ? '提供文書のテーマ定義と実際の用色を確認し、根拠を示して提案する。文書がない場合は必要な資料を確認する。' : `${names[colorMode]}。主色 ${primary}、濃色 #0D2046、配置先の参考背景 #FCFBF8（画像には塗らない）。`}\n背景：独立したイラストとアイコンは、実際のAlphaチャンネルを持つ透明PNGを標準とする。必要な柔らかい影は薄い半透明で残し、白い縁・背景プレート・展示台は加えない。内蔵imagegenでは transparent_background: true を指定する。完全な場面背景や色付きの比較表を明示した場合は、その指定に従う。\n\n内容テーマ、画風、色系を分けて扱う。文書を添付した場合はページ・段落の根拠を示し、各素材の意味、対象・動作、誤解してはいけない条件を整理してから制作する。見本の対象や青色を固定せず、今回の文書から新しいアイコンを設計する。承認待ちを承認済みに描き替えず、推測を事実として描かない。業務上の数値や効果を創作しない。\nメインイラストは高解像度画像、図形として編集できるアイコンは独立SVGと透明PNGで納品する。ビットマップ画像をSVGと呼ばない。小サイズで確認し、全体一覧、配色、使用上の注意と生成プロンプトを保存する。`;
+    if (direction === 'technical-spot') output.value += '\n06の小さな図は実表示96px・compactを起点にする。主対象1つと必要な補助1つまでとし、密集した端子・配線・放熱フィンや機器の寄せ集めを描かない。Skill同梱の現在のコンパクト参照を実際に画像生成ツールへ渡し、版・画法・参照・表示サイズ・細部の量・配色を記録する。';
     document.getElementById('download-brief').disabled = false;
     if (announce) resultStatus.textContent = '依頼文を更新した。画像の生成は、Skillを導入したAIで実行する。';
     return true;

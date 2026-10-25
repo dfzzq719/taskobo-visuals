@@ -2,7 +2,7 @@
 
 **围绕业务内容制作企业插图与主题图标，让团队沿用共同的视觉基准。**
 
-中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.3.5](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.5)。
+中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.3.5](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.6)。
 
 [作品展示](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件与依頼文工具](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [23种画法与材质作例](docs/icon-styles.ja.md)
 
@@ -23,7 +23,7 @@ v0.3.5已将对应的[23种画法配方](references/icon-style-recipes.json)放�
 
 独立图标和配图默认交付带真实Alpha的透明PNG，必要的柔和阴影保留为渐隐半透明，无装饰展示底座。文档底色与素材画布分开；用户明确指定完整场景或带底色对照图时按该要求执行。
 
-[四主题透明PNG显示样稿](docs/assets/icon-styles/technical-spot-transparent.png)已实际检查Alpha；这是将四个主题放在一张图上的显示样稿。原来上下两排的白底样稿继续保留在预设参考中，不把它冒充透明素材。生成位图不自动成为可编辑SVG，需要原生图形的图标另用矢量工具制作。
+[当前紧凑画法透明参考](assets/presets/technical-spot-compact.png)已实际检查Alpha，并随v0.3.6安装包分发。生成时实际传入该参考，记录版本、画法、参考哈希、显示尺寸、细节等级和色板。72–128px小图标默认一个主对象＋至多一个必要提示，不堆设备、端口和电路细节。旧四主题透明样稿和双视角白底样稿保留作历史，不再作为小图标的默认密度依据。生成位图不自动成为可编辑SVG，需要原生图形的图标另用矢量工具制作。
 
 ## 使用与交付
 

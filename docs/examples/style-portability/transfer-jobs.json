@@ -1,0 +1,103 @@
+{
+  "schema": "taskobo-visuals.generation-jobs/v1",
+  "status": "planned",
+  "recipe": {
+    "number": 6,
+    "id": "technical-spot",
+    "version": "0.3.6"
+  },
+  "styleLock": {
+    "skillVersion": "0.3.6",
+    "recipeId": "technical-spot",
+    "viewpoint": "front",
+    "referenceImages": [
+      {
+        "file": "assets/presets/technical-spot-compact.png",
+        "sha256": "88f5a1f117f260ab923841895abfbd8b57d11c4a6f941931320b47a84abd272d",
+        "role": "style-and-compact-detail-density",
+        "status": "draft",
+        "scope": "Use drawing treatment and detail density only; current topic and palette remain independent."
+      }
+    ],
+    "palette": {
+      "ink": "#173D38",
+      "primary": "#176C60",
+      "primarySoft": "#E3F0EB",
+      "neutral": "#FCFBF8"
+    }
+  },
+  "source": null,
+  "palette": {
+    "ink": "#173D38",
+    "primary": "#176C60",
+    "primarySoft": "#E3F0EB",
+    "neutral": "#FCFBF8"
+  },
+  "jobs": [
+    {
+      "id": "signed-document",
+      "label": "signed-document",
+      "meaning": "A document being signed, not a completed approval or legally verified contract",
+      "subject": "One broad upright paper sheet with two content lines and one simple pen cue. No extra desk, hands, seals or stamps.",
+      "sourceRefs": [],
+      "avoid": [
+        "Do not add an approval check, seal or outcome."
+      ],
+      "status": "planned",
+      "iconSizePx": 96,
+      "detailLevel": "compact",
+      "referenceImages": [
+        {
+          "file": "assets/presets/technical-spot-compact.png",
+          "sha256": "88f5a1f117f260ab923841895abfbd8b57d11c4a6f941931320b47a84abd272d",
+          "role": "style-and-compact-detail-density",
+          "status": "draft",
+          "scope": "Use drawing treatment and detail density only; current topic and palette remain independent."
+        }
+      ],
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: A document being signed, not a completed approval or legally verified contract\nDraw this current subject/action: One broad upright paper sheet with two content lines and one simple pen cue. No extra desk, hands, seals or stamps.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render. For compact report icons use one dominant object and at most one supporting cue, broad flat fills and few structural lines. Do not turn a technical topic into a miniature device assembly; avoid circuit/port/fin microdetail at small size.\nActual icon display size: 96px; detail level: compact. Judge at this size, not at native export resolution.\nCompact Technical Spot: one dominant object plus at most one necessary supporting cue. Broad flat fills and medium clear contours; at96px about2–3px outer lines and1–1.5px necessary inner lines. Remove dense circuitry, cooling fins, repeated ports, screws, miniature instruments and multi-device clusters. Keep a few meaningful structural lines; technical subject matter is not a reason to add parts.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #173D38; primary: #176C60; primarySoft: #E3F0EB; neutral: #FCFBF8. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nInspect and pass the bundled current compact style reference to the image tool; do not substitute the historical two-view device study.\nAvoid these semantic errors: Do not add an approval check, seal or outcome."
+    },
+    {
+      "id": "identified-box",
+      "label": "identified-box",
+      "meaning": "One item identified for inventory, not proven inspected or shipped",
+      "subject": "One plain compact carton with a single broad identification-label cue on its front. Label uses just three simple vertical bars, no letters, digits or dense barcode.",
+      "sourceRefs": [],
+      "avoid": [
+        "No trolley, warehouse scene, scanner gun, shipping arrows or passed-inspection tick."
+      ],
+      "status": "planned",
+      "iconSizePx": 96,
+      "detailLevel": "compact",
+      "referenceImages": [
+        {
+          "file": "assets/presets/technical-spot-compact.png",
+          "sha256": "88f5a1f117f260ab923841895abfbd8b57d11c4a6f941931320b47a84abd272d",
+          "role": "style-and-compact-detail-density",
+          "status": "draft",
+          "scope": "Use drawing treatment and detail density only; current topic and palette remain independent."
+        }
+      ],
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: One item identified for inventory, not proven inspected or shipped\nDraw this current subject/action: One plain compact carton with a single broad identification-label cue on its front. Label uses just three simple vertical bars, no letters, digits or dense barcode.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render. For compact report icons use one dominant object and at most one supporting cue, broad flat fills and few structural lines. Do not turn a technical topic into a miniature device assembly; avoid circuit/port/fin microdetail at small size.\nActual icon display size: 96px; detail level: compact. Judge at this size, not at native export resolution.\nCompact Technical Spot: one dominant object plus at most one necessary supporting cue. Broad flat fills and medium clear contours; at96px about2–3px outer lines and1–1.5px necessary inner lines. Remove dense circuitry, cooling fins, repeated ports, screws, miniature instruments and multi-device clusters. Keep a few meaningful structural lines; technical subject matter is not a reason to add parts.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #173D38; primary: #176C60; primarySoft: #E3F0EB; neutral: #FCFBF8. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nInspect and pass the bundled current compact style reference to the image tool; do not substitute the historical two-view device study.\nAvoid these semantic errors: No trolley, warehouse scene, scanner gun, shipping arrows or passed-inspection tick."
+    }
+  ],
+  "limits": "Reference existence is validated; semantic judgment and generated images require review. No generation was performed.",
+  "contactSheet": {
+    "transparent_background": true,
+    "referenceImages": [
+      {
+        "file": "assets/presets/technical-spot-compact.png",
+        "sha256": "88f5a1f117f260ab923841895abfbd8b57d11c4a6f941931320b47a84abd272d",
+        "role": "style-and-compact-detail-density",
+        "status": "draft",
+        "scope": "Use drawing treatment and detail density only; current topic and palette remain independent."
+      }
+    ],
+    "status": "planned",
+    "prompt": "Generate ONE review sheet of 2 distinct coordinated icons. Arrange left-to-right in the given order with equal generous gaps; no panel backgrounds, labels, dividers or captions. This is an overview, not separate asset delivery.\n\nICON 1:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: A document being signed, not a completed approval or legally verified contract\nDraw this current subject/action: One broad upright paper sheet with two content lines and one simple pen cue. No extra desk, hands, seals or stamps.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render. For compact report icons use one dominant object and at most one supporting cue, broad flat fills and few structural lines. Do not turn a technical topic into a miniature device assembly; avoid circuit/port/fin microdetail at small size.\nActual icon display size: 96px; detail level: compact. Judge at this size, not at native export resolution.\nCompact Technical Spot: one dominant object plus at most one necessary supporting cue. Broad flat fills and medium clear contours; at96px about2–3px outer lines and1–1.5px necessary inner lines. Remove dense circuitry, cooling fins, repeated ports, screws, miniature instruments and multi-device clusters. Keep a few meaningful structural lines; technical subject matter is not a reason to add parts.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #173D38; primary: #176C60; primarySoft: #E3F0EB; neutral: #FCFBF8. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nInspect and pass the bundled current compact style reference to the image tool; do not substitute the historical two-view device study.\nAvoid these semantic errors: Do not add an approval check, seal or outcome.\n\nICON 2:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: One item identified for inventory, not proven inspected or shipped\nDraw this current subject/action: One plain compact carton with a single broad identification-label cue on its front. Label uses just three simple vertical bars, no letters, digits or dense barcode.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render. For compact report icons use one dominant object and at most one supporting cue, broad flat fills and few structural lines. Do not turn a technical topic into a miniature device assembly; avoid circuit/port/fin microdetail at small size.\nActual icon display size: 96px; detail level: compact. Judge at this size, not at native export resolution.\nCompact Technical Spot: one dominant object plus at most one necessary supporting cue. Broad flat fills and medium clear contours; at96px about2–3px outer lines and1–1.5px necessary inner lines. Remove dense circuitry, cooling fins, repeated ports, screws, miniature instruments and multi-device clusters. Keep a few meaningful structural lines; technical subject matter is not a reason to add parts.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #173D38; primary: #176C60; primarySoft: #E3F0EB; neutral: #FCFBF8. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nInspect and pass the bundled current compact style reference to the image tool; do not substitute the historical two-view device study.\nAvoid these semantic errors: No trolley, warehouse scene, scanner gun, shipping arrows or passed-inspection tick."
+  }
+}
