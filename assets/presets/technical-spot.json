@@ -1,0 +1,53 @@
+{
+  "schema": "taskobo-illustration.style-preset/v1",
+  "id": "technical-spot",
+  "name": {
+    "en": "Technical Spot Illustration",
+    "zh": "技术主题小插图",
+    "ja": "技術テーマのスポットイラスト"
+  },
+  "family": "precision",
+  "approval": {
+    "status": "accepted-option",
+    "date": "2026-10-25",
+    "scope": "User requested this optional drawing treatment and then explicitly removed display bases on 2026-10-25. New generated samples remain draft outputs."
+  },
+  "reference": {
+    "file": "technical-spot.png",
+    "sha256": "4b9aeaf41e625c2a5dc7892e93886d178378fe416ae089f6f1e65cb5ac70c55e",
+    "role": "style",
+    "origin": "Original built-in AI-generated cross-industry demonstration, inspired only by drawing treatment from user-supplied references. Original reference images are not distributed.",
+    "status": "draft",
+    "prompt": "technical-spot.prompt.txt",
+    "promptRole": "Reusable prompt for the final no-base direction, not a claim that the sample was generated in a single call.",
+    "creation": "Original built-in imagegen sample, then imagegen editing removed all four separate display platforms as requested."
+  },
+  "traits": [
+    "graded-blue-gray-contours",
+    "restrained-flat-fills",
+    "light-tonal-modeling",
+    "subtle-illustrative-line-character",
+    "credible-simplified-objects",
+    "moderate-structural-detail"
+  ],
+  "viewpoint": {
+    "default": "front",
+    "options": [
+      "front",
+      "side",
+      "three-quarter",
+      "shallow-isometric"
+    ]
+  },
+  "base": {
+    "default": "none",
+    "options": [
+      "none"
+    ],
+    "policy": "No decorative display base, pedestal, floor plate or background badge, including in shallow-isometric views. Functional parts of the actual object are preserved."
+  },
+  "palettePolicy": "User, organization or current document color roles take precedence; blue-gray is the demonstration palette only.",
+  "contentPolicy": "Use the current business topic; vehicles, satellites, globes and robot arms from the private references are not default subjects.",
+  "compositionPolicy": "Spot illustration or coordinated icon set. Choose viewpoint separately; both sample rows have no display base.",
+  "reproducibility": "Provides art direction, not identical generated pixels or engineering verification."
+}

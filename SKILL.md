@@ -2,7 +2,7 @@
 name: taskobo-visuals
 description: "Create polished enterprise illustrations and coordinated thematic icon sets from a topic, business content, or document; choose visual form, a coherent Taskobo art direction, and a user-selected or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.3.1"
+  version: "0.3.2"
 ---
 
 # Taskobo Visuals
@@ -14,7 +14,7 @@ metadata:
 ## 内容、风格与色系分别决定
 
 - **内容主题**：图要说明的业务，例如企业经营、供应链或客户服务；包含对象、动作和关系。
-- **视觉风格**：画法、轮廓、体积、构图与材质。采用 [Taskobo 视觉语言](references/art-direction.md) 的一致规则。三个基础方向下可选择具体预设；用户已认可的 [企业叙事插画](references/enterprise-narrative.md)（`enterprise-narrative`）是其中一种能力，不设为所有任务的唯一画风。
+- **视觉风格**：画法、轮廓、体积、构图与材质。采用 [Taskobo 视觉语言](references/art-direction.md) 的一致规则。三个基础方向下可选择具体预设，包括 [企业叙事插画](references/enterprise-narrative.md)（`enterprise-narrative`）和 [技术主题小插图](references/technical-spot.md)（`technical-spot`）；均为可选能力，不设为所有任务的唯一画风。
 - **色系**：按角色使用的颜色。用户可选择主题色、匹配文档或加载公司规范，不能因换色改变主题或关系。
 
 三个维度可独立修改。只改色时保持构图与对象，只改主题时保持系列的线条和颜色规则。用户明确要求重新设计时才整体改变。规划系列或交接到服务时读取 [统一视觉简报](references/visual-profile.md)。
@@ -37,6 +37,8 @@ metadata:
 - 选一个主要方向，必要时给一个有明确差异的备选。用户已经指定风格时，直接使用它。
 
 用户提到“企业叙事插画”、`enterprise-narrative`，或要求沿用已认可的跨行业拼贴宣传图画风时，读该预设并查看其参考图。复用成熟人物、分级墨线、浅色块和轻水彩质感；按当前用途另选单场景或多场景布局，不自动照搬图中的行业、蓝色、标题和底部图标排布。
+
+用户提到“技术主题小插图”、`technical-spot`，或要在符号与完整场景之间表达具体技术物件时，读 [该预设](references/technical-spot.md) 并查看原创样稿。采用分级深色轮廓、克制色面与轻明暗；可选不同视角，均不加装饰展示台、方形承托或底板，不把参考中的车辆、卫星或蓝色带入所有主题。
 
 ## 成套主题图标
 
@@ -79,6 +81,7 @@ metadata:
 
 - [Taskobo 视觉语言](references/art-direction.md)：识别特征、三种起始方向及宣传展示要求。
 - [企业叙事插画](references/enterprise-narrative.md)：已认可的具体画风、参考母样、适用场景和复用提示词。
+- [技术主题小插图](references/technical-spot.md)：说明性小物件的画法、可选视角、无底座原创草稿样例及复用提示词。
 - [主题图标](references/themed-icons.md)：语义清单、矢量规则、整套检视和交付。
 - [从文档形成配图计划](references/document-context.md)：提取、证据、主题判断和局限。
 - [统一视觉简报](references/visual-profile.md)：独立的主题、风格、色系与资产计划。

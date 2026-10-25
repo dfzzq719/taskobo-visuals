@@ -1,0 +1,17 @@
+Create a technical spot illustration of [current business object or service].
+Graded dark contours, lighter structural details, restrained flat color fills,
+light tonal modeling and credible simplified proportions. Smooth steady curves
+with a subtle illustrative character; detail between a pictogram and a full scene.
+Use [current user/organization palette], not a mandatory blue-gray palette.
+Viewpoint: [front / side / three-quarter / shallow-isometric].
+NO display bases, pedestals, floor plates, background blobs or decorative badges
+in any view, including isometric views. Keep functional parts of the actual object,
+for example trolley decks, handles and wheels. Plain clean background [current brief].
+Read the current topic and explain it through the chosen objects; do not import
+cars, satellites or other reference subjects automatically. Use the supplied sample
+for drawing treatment only. Avoid photorealistic texture, glossy plastic, heavy
+gradients, jittery sketch lines, decorative environments and embedded brand text.
+
+Prompt role: reusable current preset request. The supplied sample was originally
+generated using imagegen and subsequently edited using imagegen to remove four
+separate display platforms; original requests are retained in project provenance.

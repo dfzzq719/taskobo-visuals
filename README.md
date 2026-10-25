@@ -20,6 +20,15 @@ Taskobo Visuals is the new product name for Taskobo Illustration. New installati
 
 The Skill instructions are currently written in Chinese. The usage guide, sample explanations and requests are Japanese. Specify the output language in your request.
 
+### Optional art-direction presets
+
+- [`enterprise-narrative`](references/enterprise-narrative.md): mature figures, purposeful business scenes, graded contours and a light painterly finish, within the `editorial` direction.
+- [`technical-spot`](references/technical-spot.md) · **Technical Spot Illustration**: graded contours, restrained color fills and light tonal modeling for concrete explanatory objects, within the `precision` direction. Choose the topic, palette and viewpoint independently. This preset uses no decorative display base, pedestal, square support platform or backing plate, including in shallow-isometric views.
+
+![Original draft showing Technical Spot Illustration across four business themes and two viewpoints without display bases](assets/presets/technical-spot.png)
+
+The technical-spot drawing treatment is an accepted optional capability; this original cross-industry sample remains a draft, not an approved production master. The upper row uses front views and the lower row uses shallow isometric views; neither row has display bases. User-supplied reference images are private and are not distributed. See the [preset metadata](assets/presets/technical-spot.json) for provenance and options.
+
 ## Install and use
 
 Download the Skill ZIP from [Releases](https://github.com/dfzzq719/taskobo-visuals/releases) or the [tool page](https://taskobo.com/free-tools/taskobo-visuals/tool/#install). Extract the `taskobo-visuals` folder into a Skill directory supported by your AI application and reload the session. The Skill lives at the repository root; install from this root if your application's repository installer supports it.
