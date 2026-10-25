@@ -13,6 +13,7 @@ Taskobo Visuals is the new product name for Taskobo Illustration. New installati
 ## What it provides
 
 - A reusable AI Skill with enterprise art direction, semantic icon planning and palette guidance.
+- Transparent backgrounds by default for independent icons and illustrations, with genuine Alpha and optional restrained semi-transparent shadows. Explicit full-scene or comparison-board backgrounds take precedence.
 - Local, read-only extraction of PPTX, DOCX, Markdown and text evidence; optional PDF text extraction with `pypdf`.
 - Four fictional industry samples: manufacturing and logistics, retail and service, healthcare and care, education and training.
 - Each sample includes an original AI-generated illustration, six native editable SVG icons, transparent PNG exports and reusable prompts.
@@ -37,7 +38,8 @@ Download the Skill ZIP from [Releases](https://github.com/dfzzq719/taskobo-visua
 Use $taskobo-visuals to make an enterprise illustration and a set of six icons
 about employee onboarding for an internal training deck.
 Keep the content topic, art direction and palette separate.
-Use cobalt #1456D9 with navy outlines and an ivory ground.
+Use cobalt #1456D9 with navy outlines; the target document has an ivory ground.
+Generate independent artwork on a transparent background, with soft semi-transparent shadows if needed.
 Provide Japanese explanations, independent editable SVG icons and transparent PNGs.
 Save the visual brief, source files and generation prompts.
 ```

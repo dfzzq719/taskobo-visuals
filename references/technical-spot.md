@@ -6,6 +6,8 @@
 
 [机器可读预设](../assets/presets/technical-spot.json)。公开样稿采用云服务、物流、医疗、学习四个主题；上行平视、下行浅轴测，两行均无底座。它用于说明视角变化，不是每次必须沿用的布局或对象。用户原始参考仅作私有画法参考，不纳入公开包。
 
+独立输出默认透明背景，平视和浅轴测相同。当前样稿的白色底只用于展示画法；复用时不继承该底色。需要的柔和阴影保留为半透明，不增加展示底座。内置 imagegen 使用 `transparent_background: true`，交付前检查真实 Alpha 和深浅底上的边缘。
+
 ## 识别特征与适用范围
 
 - **分级轮廓**：示例用深蓝灰外轮廓，内部结构线更细、更轻。曲线和接合流畅，稍有插画亲和感，但不画成抖动草线。
@@ -46,6 +48,8 @@ line character with smooth, steady curves. Detail should sit between a compact s
 and a full scene. Viewpoint: [front / side / three-quarter / shallow-isometric].
 No decorative display base, pedestal, square support platform or backing plate,
 including in shallow-isometric views. Palette roles: [current user or organization roles].
+Export isolated artwork on a genuinely transparent background with an Alpha channel.
+Keep any required soft shadow semi-transparent and fading to zero opacity; no white matte.
 Use the reference for drawing treatment only. Subject, layout and palette come from
 the current brief. Avoid photorealistic texture, glossy plastic, heavy gradients,
 decorative scenery and copying objects from the reference.

@@ -6,7 +6,11 @@ Use [current user/organization palette], not a mandatory blue-gray palette.
 Viewpoint: [front / side / three-quarter / shallow-isometric].
 NO display bases, pedestals, floor plates, background blobs or decorative badges
 in any view, including isometric views. Keep functional parts of the actual object,
-for example trolley decks, handles and wheels. Plain clean background [current brief].
+for example trolley decks, handles and wheels. Default output is a genuinely transparent
+PNG with Alpha. Retain only restrained semi-transparent soft shadows fading to zero
+opacity. No opaque white matte, background fill or checkerboard baked into the artwork.
+When calling built-in imagegen set transparent_background: true; an explicitly requested
+full scene or comparison-board background overrides this independent-asset default.
 Read the current topic and explain it through the chosen objects; do not import
 cars, satellites or other reference subjects automatically. Use the supplied sample
 for drawing treatment only. Avoid photorealistic texture, glossy plastic, heavy

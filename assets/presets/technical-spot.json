@@ -46,6 +46,15 @@
     ],
     "policy": "No decorative display base, pedestal, floor plate or background badge, including in shallow-isometric views. Functional parts of the actual object are preserved."
   },
+  "output": {
+    "background": "transparent",
+    "format": "png",
+    "alpha": "required",
+    "imagegen": {"transparent_background": true},
+    "shadow": "Restrained soft shadows may use partial Alpha and fade to zero; no opaque background matte or display base.",
+    "referenceBackground": "The existing draft board has a white viewing background; do not inherit that opaque canvas for independent assets.",
+    "override": "Follow an explicitly requested full-scene or comparison-board background."
+  },
   "palettePolicy": "User, organization or current document color roles take precedence; blue-gray is the demonstration palette only.",
   "contentPolicy": "Use the current business topic; vehicles, satellites, globes and robot arms from the private references are not default subjects.",
   "compositionPolicy": "Spot illustration or coordinated icon set. Choose viewpoint separately; both sample rows have no display base.",

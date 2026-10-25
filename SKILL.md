@@ -2,7 +2,7 @@
 name: taskobo-visuals
 description: "Create polished enterprise illustrations and coordinated thematic icon sets from a topic, business content, or document; choose visual form, a coherent Taskobo art direction, and a user-selected or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.3.2"
+  version: "0.3.3"
 ---
 
 # Taskobo Visuals
@@ -45,6 +45,8 @@ metadata:
 读 [主题图标](references/themed-icons.md)。先从主题或文档列出值得图形化的对象和动作，再用同一套视觉语言设计；不用一个通用机器人、芯片或圆圈代表所有概念。成套检查轮廓、线宽、填色、视觉重量及小尺寸识别，保留可独立使用的图标与外置可编辑标签。
 
 默认交付静态 SVG 与透明 PNG，并提供总览及使用说明。几何与线条可编辑的图标用矢量工具制作；图像生成得到的图标只称位图，不把描摹或嵌入 PNG 的 SVG 宣称为原生矢量。准确流程、结构、WBS/RACI/甘特等可调用可用的 Taskobo Diagrams 或同等确定性工具；不把整个项目更新流程强加给一次配图任务。
+
+独立图标、主题小插图和其他独立配图默认生成透明背景；调用内置 imagegen 时设置 `transparent_background: true`，并在提示词中要求真实 Alpha。风格需要的柔和阴影可保留为渐隐的半透明像素，不烘焙白底、底板或展示底座。参考图的纸白和文档底色只作预览依据，不作为不透明画布带入。用户明确指定完整场景背景、封面或带底色对照板时按该要求执行；详细检视见 [主题图标](references/themed-icons.md)。
 
 ## 由内容与品牌确定颜色
 

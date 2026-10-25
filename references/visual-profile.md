@@ -14,13 +14,15 @@
   },
   "medium": {"kind": "presentation", "background": "light", "targetSize": "16:9"},
   "assets": [
-    {"id": "visual-01", "kind": "illustration", "purpose": "说明从咨询到交接的主要关系", "sourceRefs": ["slide:3"], "status": "planned"},
-    {"id": "icon-01", "kind": "icon", "purpose": "辨认人工确认", "sourceRefs": ["slide:5"], "status": "planned"}
+    {"id": "visual-01", "kind": "illustration", "background": "transparent", "purpose": "说明从咨询到交接的主要关系", "sourceRefs": ["slide:3"], "status": "planned"},
+    {"id": "icon-01", "kind": "icon", "background": "transparent", "purpose": "辨认人工确认", "sourceRefs": ["slide:5"], "status": "planned"}
   ]
 }
 ```
 
 `origin` 区分用户选择、文档依据和 Agent 建议；`status` 区分建议、草稿与已认可母样。只有确实读取过资料时才写 `sourceRefs`；示例中的页码不是任何真实文档的依据。
+
+`medium.background` 记录放置素材的文档或页面底色；`assets[].background` 记录独立生成文件的背景，两者分别处理。新简报的独立图标和配图缺省为 `transparent`，保留真实 Alpha 和必要的半透明阴影；不可把 `palette.roles.paper` 或 `medium.background: light` 当成必须烘焙的底色。旧简报没有资产背景字段时沿用这一默认，用户明确指定完整场景或对照板背景时优先执行。
 
 `direction.preset` 是可选的具体画风标识。`enterprise-narrative` 调用已认可的企业叙事插画参考；不提供该字段的已有简报仍按基础方向处理。认可参考图的画风，不等于新生成的每张图已获认可，所以新产物的 `status` 仍从草稿开始。题材写入 `topic`，相框拼贴或单场景等布局按任务另记，不能塞入画风标识或据此锁死配色。
 
