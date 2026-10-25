@@ -58,7 +58,7 @@
     const colorMode = data.get('palette');
     const primary = colorMode === 'custom' ? custom.value.toUpperCase() : (colors[colorMode] || null);
     const direction = data.get('direction');
-    const directionNames = { editorial: 'Editorial（企業エディトリアル）', 'enterprise-narrative': 'Enterprise Narrative（企業叙事イラスト）。成熟した人物、目的のある動作、紺の輪郭と控えめな水彩の質感', 'technical-spot': 'Technical Spot（技術テーマの小さな説明イラスト）。濃い輪郭と控えめな色面、軽い陰影、分かりやすく簡略化した対象。題材と配色は今回の条件に従い、正面・台座なし。視点は個別に指定でき、浅い等角でも展示台や背景プレートは付けない', precision: 'Precision（精密な輪郭と塗り）', dimensional: 'Dimensional（落ち着いた立体表現）' };
+    const directionNames = { editorial: 'Editorial（企業エディトリアル）', 'enterprise-narrative': 'Enterprise Narrative（企業叙事イラスト）。成熟した人物、目的のある動作、紺の輪郭と控えめな水彩の質感', 'technical-spot': 'Technical Spot（技術テーマの小さな説明イラスト）。強弱のある輪郭と平面的な色面を使う2Dの説明イラスト。球面の陰影、膨らんだ立体、プラスチックの光沢、面取り、押出しの厚みは付けない。明度差は構造の説明に限定する。題材と配色は今回の条件に従い、正面・台座なし。視点は個別に指定でき、浅い等角でも展示台や背景プレートは付けない', precision: 'Precision（精密な輪郭と塗り）', dimensional: 'Dimensional（落ち着いた立体表現）' };
     const presetFamilies = { 'enterprise-narrative': 'editorial', 'technical-spot': 'precision' };
     profile = {
       schema: 'taskobo-illustration.visual-brief/v1',

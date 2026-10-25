@@ -285,10 +285,10 @@ def main():
         page('samples/' + case['id'] + '/', f'{case["name"]}のイラスト・アイコン例 | Taskobo Visuals', case['description'] + 'メインイラスト、編集可能なSVGアイコン6点、透明PNG、配色とAIへの依頼文を公開。', sample(case), case['assets']['large'], [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE), (case['name'], ORIGIN + BASE + 'samples/' + case['id'] + '/')])
     manifest = {'skillVersion': VERSION, 'routes': routes, 'skillZip': skill_zip, 'hero': hero, 'cases': CATALOG, 'files': [{'path': p.relative_to(out).as_posix(), 'sha256': digest(p.read_bytes()), 'bytes': p.stat().st_size} for p in sorted(out.rglob('*')) if p.is_file()]}
     (ROOT / 'website/build-manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    gallery = '# 業種別サンプル / Industry samples\n\n架空の業務場面から制作したオリジナル。実企業の導入事例ではない。\n\n'
+    gallery = '# 業種別サンプル / Industry samples\n\n[公開README](../README.md) · [画風と素材の作例](icon-styles.ja.md) · [制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)\n\n架空の業務場面から制作したオリジナル。実企業の導入事例ではない。\n\n'
     for case in CATALOG:
         gallery += f'## {case["name"]}\n\n{case["description"]}\n\n![{case["alt"]}](../examples/{case["id"]}/illustration.png)\n\n[Webで作品とアイコンを見る]({ORIGIN}{BASE}samples/{case["id"]}/) · [素材とプロンプト](../examples/{case["id"]}/)\n\n'
-    (ROOT / 'docs/gallery.ja.md').write_text(gallery, encoding='utf-8')
+    (ROOT / 'docs/gallery.ja.md').write_bytes(gallery.encode('utf-8'))
     print(json.dumps({'pages': len(routes), 'icons': 24, 'files': len(manifest['files']), 'skillZip': skill_zip}))
 
 if __name__ == '__main__':

@@ -22,7 +22,7 @@
 
 ## 技术主题小插图预设
 
-需要比符号更具体、又无需完整场景的说明性图标时，可选 [Technical Spot Illustration](technical-spot.md)（`technical-spot`，基础方向 `precision`）。保留可信结构和适量细节，以分级轮廓、浅色面及少量明暗建立形体；不增加摄影质感、强高光或水彩背景。
+需要比符号更具体、又无需完整场景的说明性图标时，可选 [Technical Spot Illustration](technical-spot.md)（`technical-spot`，基础方向 `precision`）。保留可信结构和适量细节，以二维分级轮廓、平面浅色块及少量明度差说明结构，不把人头画成球体、不把肩部画成充气或塑料体积；不增加摄影质感、强高光或水彩背景。
 
 系列先统一视角（`front`、`side`、`three-quarter` 或 `shallow-isometric`）。本预设的 `base` 为 `none`；包括浅轴测在内，都不加装饰展示台、方形承托或底板。主题来自本次业务，配色来自用户或公司规范。72/96 px仍看不清结构时减少细节，24/32 px另做符号版。
 

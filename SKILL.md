@@ -2,7 +2,7 @@
 name: taskobo-visuals
 description: "Create polished enterprise illustrations and coordinated thematic icon sets from a topic, business content, or document; choose visual form, a coherent Taskobo art direction, and a user-selected or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.3.3"
+  version: "0.3.4"
 ---
 
 # Taskobo Visuals
@@ -38,7 +38,7 @@ metadata:
 
 用户提到“企业叙事插画”、`enterprise-narrative`，或要求沿用已认可的跨行业拼贴宣传图画风时，读该预设并查看其参考图。复用成熟人物、分级墨线、浅色块和轻水彩质感；按当前用途另选单场景或多场景布局，不自动照搬图中的行业、蓝色、标题和底部图标排布。
 
-用户提到“技术主题小插图”、`technical-spot`，或要在符号与完整场景之间表达具体技术物件时，读 [该预设](references/technical-spot.md) 并查看原创样稿。采用分级深色轮廓、克制色面与轻明暗；可选不同视角，均不加装饰展示台、方形承托或底板，不把参考中的车辆、卫星或蓝色带入所有主题。
+用户提到“技术主题小插图”、`technical-spot`，或要在符号与完整场景之间表达具体技术物件时，读 [该预设](references/technical-spot.md) 并查看原创样稿。采用二维描边填色：分级深色轮廓、克制的平面色块和少量说明性明暗，不渲染球面体积、塑料高光、倒角或挤出厚度；默认平视，可选不同绘制视角，均不加装饰展示台、方形承托或底板，不把参考中的车辆、卫星或蓝色带入所有主题。
 
 ## 成套主题图标
 

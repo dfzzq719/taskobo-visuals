@@ -4,7 +4,7 @@
 
 テーマや文書から伝える内容を決め、画風と配色を選び、普段使っているAIで制作するSkill。提案書、研修資料、報告書、Webのために、承認した見本と制作条件を引き継ぐ。
 
-[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.3) · [利用ガイド](docs/guide.ja.md)
+[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.4) · [利用ガイド](docs/guide.ja.md)
 
 [English](README.en.md) · [中文・维护基准](README.zh-CN.md)
 
@@ -15,7 +15,7 @@
 線画、フラット、テクニカルスポット、マット3D、ガラス、金属、紙、刺繍まで。23の作例を、同じ4テーマ・同じブルー系の配色で比較できる。
 
 <p>
-  <a href="docs/icon-styles.ja.md#基本表現と立体表現"><img src="docs/assets/icon-styles/styles-ja-01-v2.png" width="49%" alt="01から12：基本表現と立体表現の作例" /></a>
+  <a href="docs/icon-styles.ja.md#基本表現と立体表現"><img src="docs/assets/icon-styles/styles-ja-01-v3.png" width="49%" alt="01から12：基本表現と立体表現の作例" /></a>
   <a href="docs/icon-styles.ja.md#素材感とブランド表現"><img src="docs/assets/icon-styles/styles-ja-02.png" width="49%" alt="13から23：素材感とブランド表現の作例" /></a>
 </p>
 
@@ -25,13 +25,13 @@
 
 | 基本方向 | 主な用途 | 整理済みのプリセット |
 | --- | --- | --- |
-| Precision | 説明用アイコン、技術・業務の小さな挿絵 | [`technical-spot`](references/technical-spot.md)：輪郭と控えめな明暗で具体的な対象を伝える |
+| Precision | 説明用アイコン、技術・業務の小さな挿絵 | [`technical-spot`](references/technical-spot.md)：2Dの輪郭線と平面の色面で具体的な対象を伝える |
 | Editorial | 人と仕事の関係、書籍、広報の場面イラスト | [`enterprise-narrative`](references/enterprise-narrative.md)：自然な人物と動作、軽い描画の質感 |
 | Dimensional | 表紙、製品能力、強調したい概念 | マットな立体と安定した光で方向を決める |
 
 ## まず1セット作る
 
-1. [v0.3.3のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.3)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
+1. [v0.3.4のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.4)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
 2. Skillを再読み込みし、制作条件を渡す。[Webの制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)でも依頼文とJSONを作れる。
 3. 素材を用途に合うサイズで確認し、採用した見本、配色、生成プロンプトをチームに共有する。
 

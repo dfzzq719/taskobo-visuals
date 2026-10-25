@@ -10,8 +10,10 @@
 
 ## 识别特征与适用范围
 
+用户已明确：这是二维的平面说明插画。明暗仅辅助识别结构，不建立球面、枕状体积、塑料材质、倒角或挤出厚度。对照图默认正面；人头是平面圆形，衣服是平面色块。浅轴测仅指二维绘制的投影视角，不转为3D材质渲染。
+
 - **分级轮廓**：示例用深蓝灰外轮廓，内部结构线更细、更轻。曲线和接合流畅，稍有插画亲和感，但不画成抖动草线。
-- **克制色面**：主题色与浅灰、中性面交代对象，以少量轻明暗区分体积；不依赖强渐变、玻璃高光或照片纹理。
+- **克制色面**：主题色与浅灰、中性面交代对象，以少量平面明度差说明结构；不依赖强渐变、玻璃高光或照片纹理。
 - **具体而简化的物件**：比例、接合和重叠可信，保留用于识别用途的结构。细节介于符号和完整业务场景之间，通常围绕一个对象或一个小关系。
 - **清楚的说明性气质**：适合企业PPT、报告、培训资料中的能力、设备、服务和业务动作。它不是工程结构图或精确操作证明。
 
@@ -43,7 +45,10 @@
 ```text
 Create a technical spot illustration of [current object and business action].
 Use graded dark contours, finer lighter structural lines, restrained flat fills,
-light tonal modeling and credible simplified proportions. Keep a subtle illustrative
+flat color regions, minimal graphic tonal accents and credible simplified proportions.
+Use a 2D line-and-fill illustration, never a shaded 3D render. No spherical lighting,
+puffy volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadow.
+Human head circles and torso fills remain flat; viewpoint does not imply 3D material. Keep a subtle illustrative
 line character with smooth, steady curves. Detail should sit between a compact symbol
 and a full scene. Viewpoint: [front / side / three-quarter / shallow-isometric].
 No decorative display base, pedestal, square support platform or backing plate,

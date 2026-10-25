@@ -25,7 +25,7 @@
   "traits": [
     "graded-blue-gray-contours",
     "restrained-flat-fills",
-    "light-tonal-modeling",
+    "minimal-flat-tonal-accents",
     "subtle-illustrative-line-character",
     "credible-simplified-objects",
     "moderate-structural-detail"
@@ -50,13 +50,29 @@
     "background": "transparent",
     "format": "png",
     "alpha": "required",
-    "imagegen": {"transparent_background": true},
-    "shadow": "Restrained soft shadows may use partial Alpha and fade to zero; no opaque background matte or display base.",
+    "imagegen": {
+      "transparent_background": true
+    },
+    "shadow": "None by default for this flat 2D preset. If explicitly requested, a restrained semi-transparent shadow must not imply sculpted volume or a display base.",
     "referenceBackground": "The existing draft board has a white viewing background; do not inherit that opaque canvas for independent assets.",
     "override": "Follow an explicitly requested full-scene or comparison-board background."
   },
   "palettePolicy": "User, organization or current document color roles take precedence; blue-gray is the demonstration palette only.",
   "contentPolicy": "Use the current business topic; vehicles, satellites, globes and robot arms from the private references are not default subjects.",
   "compositionPolicy": "Spot illustration or coordinated icon set. Choose viewpoint separately; both sample rows have no display base.",
-  "reproducibility": "Provides art direction, not identical generated pixels or engineering verification."
+  "reproducibility": "Provides art direction, not identical generated pixels or engineering verification.",
+  "rendering": {
+    "medium": "flat-2d-line-and-fill",
+    "defaultView": "front",
+    "tone": "Minimal flat tonal accents describe structure without rounded volume.",
+    "avoid": [
+      "spherical gradients",
+      "puffy plastic volume",
+      "glossy specular highlights",
+      "bevels",
+      "extruded thickness",
+      "ambient occlusion"
+    ],
+    "viewpointPolicy": "Optional viewpoints are 2D drawing projections; they do not change the preset into 3D rendering."
+  }
 }

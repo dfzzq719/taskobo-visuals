@@ -2,7 +2,7 @@
 
 **围绕业务内容制作企业插图与主题图标，让团队沿用共同的视觉基准。**
 
-中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.3.3](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.3)。
+中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.3.4](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.4)。
 
 [作品展示](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件与依頼文工具](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [23种画法与材质作例](docs/icon-styles.ja.md)
 

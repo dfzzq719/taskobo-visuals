@@ -2,7 +2,7 @@
 
 Enterprise illustrations and coordinated thematic icons, made with your own AI from a topic or document. Content, art direction and palette remain independent choices.
 
-[日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.3.3](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.3)
+[日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.3.4](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.4)
 
 ![Original cross-industry portfolio](examples/portfolio-no-title.png)
 
@@ -14,7 +14,7 @@ The Skill has three starting directions: `precision`, `editorial` and `dimension
 
 ## Start
 
-1. Extract the Skill ZIP from [v0.3.3](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.3) into a Skill directory supported by your AI application. The folder is `taskobo-visuals`; repository-based installers should use this repository root.
+1. Extract the Skill ZIP from [v0.3.4](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.4) into a Skill directory supported by your AI application. The folder is `taskobo-visuals`; repository-based installers should use this repository root.
 2. Reload the Skill and invoke `$taskobo-visuals` with a topic, use, palette and art direction. The Web workspace creates a reusable request and brief JSON.
 3. Review at the intended size and share the approved master, palette and prompts with your team.
 

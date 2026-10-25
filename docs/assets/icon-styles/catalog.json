@@ -1,6 +1,6 @@
 {
   "date": "2026-10-25",
-  "skill": "taskobo-visuals v0.3.2",
+  "skill": "taskobo-visuals v0.3.4",
   "count": 23,
   "orderBasis": "Qualitative approximate order across general enterprise documents, PPTs, business applications and websites; not measured usage or market share. Adjacent rankings have no statistical significance.",
   "palette": {
@@ -90,12 +90,12 @@
       "rank": 6,
       "nameZh": "技术主题小插图",
       "nameEn": "Technical Spot",
-      "treatment": "Match the supplied Technical Spot reference's smooth graded blue-gray contours, restrained filled surfaces, light tonal modeling, credible object structure and slight illustrative character. Focused small objects, not a full scene, no construction guides, no rough hatching, no pedestal.",
+      "treatment": "Flat 2D explanatory line-and-fill illustration, graded outlines and fine structural detail. Flat fills with minimal graphic tonal accents. No rounded plastic volume, spherical gradients, bevels or extrusion.",
       "board": 1,
       "catalogId": "technical-spot",
       "nameJa": "テクニカルスポット",
       "useJa": "具体的な物やサービスの説明",
-      "traitsJa": "分級の輪郭、控えめな色面と明暗",
+      "traitsJa": "2Dの輪郭と平面色、細い構造線",
       "status": "retained-preset",
       "runtimePreset": "technical-spot",
       "comparisonSubjects": [
@@ -104,7 +104,7 @@
         "automation",
         "security"
       ],
-      "comparisonTreatment": "Same four metaphors and captions as other regular panels; graded outlines, restrained fills and soft tonal modeling without rigid isometric extrusion."
+      "comparisonTreatment": "Flat 2D explanatory line-and-fill illustration, graded outlines and fine structural detail. Flat fills with minimal graphic tonal accents. No rounded plastic volume, spherical gradients, bevels or extrusion."
     },
     {
       "rank": 7,
@@ -330,10 +330,10 @@
   ],
   "maintainedLanguage": "zh-CN",
   "displayLanguage": "ja",
-  "scope": "Online documentation examples. This catalog does not add runtime presets or alter the immutable v0.3.3 Skill package.",
+  "scope": "Online drawing/material examples; only the Technical Spot preset rendering rules are clarified as flat2D in v0.3.4.",
   "registeredIconPreset": "technical-spot",
   "imageFiles": [
-    "styles-ja-01-v2.png",
+    "styles-ja-01-v3.png",
     "styles-ja-02.png"
   ],
   "generation": "built-in imagegen; Japanese text-localization from original Chinese comparison boards"

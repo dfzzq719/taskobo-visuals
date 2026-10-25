@@ -1,6 +1,10 @@
 Create a technical spot illustration of [current business object or service].
 Graded dark contours, lighter structural details, restrained flat color fills,
-light tonal modeling and credible simplified proportions. Smooth steady curves
+flat color regions with minimal graphic tonal accents and credible simplified proportions.
+This is a flat 2D explanatory line-and-fill illustration. No spherical gradients,
+plastic shine, inflated volume, bevels, extrusion, ambient occlusion or default cast
+shadow. Human heads and bodies remain flat drawn shapes. Viewpoint is a drawing
+projection, never permission to switch to 3D material rendering. Smooth steady curves
 with a subtle illustrative character; detail between a pictogram and a full scene.
 Use [current user/organization palette], not a mandatory blue-gray palette.
 Viewpoint: [front / side / three-quarter / shallow-isometric].

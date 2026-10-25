@@ -1,0 +1,17 @@
+Use case: precise-object-edit. Correct ONE panel in a controlled Japanese icon style comparison.
+Image1 is the EDIT TARGET: the existing 12-panel sheet.
+Image2 is a STYLE-LANGUAGE reference only. Do not import its subjects.
+
+REPLACE ONLY the icon artwork inside panel "06 テクニカルスポット", right column/third row, with FOUR STRICTLY TWO-DIMENSIONAL FLAT DRAWN ICONS.
+The current06 looks like rounded plastic3D. This is WRONG. Eliminate ALL spherical lighting, puffy volume, smooth shading gradients, shiny glints, bevelled rims, side extrusion, cast shadows, ambient occlusion and photographic rendering from panel06.
+Use opaque FLAT blue-gray/pale-blue color regions, smooth graded dark navy outer strokes and finer interior structural linework. At most one small flat two-tone patch may explain structure; it must NOT create a ball, pillow, glossy edge or sculpted volume. The head circles must be uniformly filled, never rendered as blue spheres. The busts must be flat drawings, never molded figurines. No drop shadow under any of these four icons. This is an explanatory 2D line-and-fill illustration with more careful structural detail than generic flat pictograms.
+
+EXACT FOUR SUBJECTS AND LABELS, same as the other panels:
+- "文書": one FRONT-FACING upright paper sheet, folded upper-right corner, three short horizontal content lines and one lower checkbox. Flat paper face.
+- "協働": two FRONT-FACING human bust symbols with one shared speech bubble above. Use uniformly filled head circles and flat clothing/shoulder shapes with subtle thin collar/structure lines. No faces, no extra people, no spherical shine or body shading.
+- "自動化": one FRONT-FACING eight-tooth gear with a central lightning bolt, flat face with delicate inner structural ring if useful, NO tooth thickness/side planes.
+- "安全": one FRONT-FACING shield with one central checkmark, flat filled face and fine interior boundary line, NO beveled/extruded edge.
+
+Keep the original optical size, positions, palette family and alignment. Limit06 colors to navy #0D2046, muted blue-gray #6F8FB9, pale blue #DCE7FA, cobalt #1456D9 used sparingly, and the page ivory. Do not import beige cartons, a trolley, a bag, a book, a cloud or server.
+KEEP the other11 panels exactly as they are, including their intentionally different 3D, gradient and isometric styles. Do NOT flatten the whole board. KEEP every original header, footer, numbering, panel title and Japanese caption unchanged. 12 panels,48 examples, original page size, light viewing ground.
+Success means06 is instantly recognizable as a FLAT2D illustration, clearly unlike08's isometric solids and09's rounded3D, while keeping the same four subjects. Do not solve this with merely subtler3D shading: REMOVE that shading language entirely. No additional brand text or object.

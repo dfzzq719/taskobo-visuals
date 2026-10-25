@@ -25,6 +25,10 @@
     {
       "file": "styles-ja-01-v2.png",
       "sha256": "a45d1ab6ee16fd42d0f90ef1ea1aa66efa820ee576926c50c805be40c905360c"
+    },
+    {
+      "file": "styles-ja-01-v3.png",
+      "sha256": "2391bcc2c12a335e7c57b6a01a0f72bff63ca33cf259ddbbbbddfcbabb220147"
     }
   ],
   "japaneseBoards": {
@@ -58,5 +62,11 @@
       "shield with check"
     ],
     "scope": "Corrected panel06 to the same four topics and front view, preserving numbering, palette and the other style categories. A rejected intermediate showing different objects was not published."
+  },
+  "panel06FlatCorrection": {
+    "currentFile": "styles-ja-01-v3.png",
+    "previousFile": "styles-ja-01-v2.png",
+    "prompt": "styles-ja-01-v3.prompt.txt",
+    "direction": "User explicitly clarified flat2D. Same four subjects; flat heads and bodies, no sculpted lighting, extrusion or dimensional material."
   }
 }
