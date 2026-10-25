@@ -1,0 +1,14 @@
+Use case: precise-object-edit / style-transfer. Correct ONE panel of an enterprise icon style comparison.
+INPUT IMAGE 1 = EDIT TARGET: the original Japanese 12-panel comparison board. It already has the CORRECT FOUR SUBJECTS in panel06.
+INPUT IMAGE 2 = DRAWING-TREATMENT REFERENCE ONLY. It shows how Technical Spot uses graded contours, restrained blue-gray fills and soft tonal modeling. Its objects MUST NOT be imported.
+
+Change ONLY the four icon DRAWING TREATMENTS inside panel "06 テクニカルスポット" (right column, third row). The user REQUIRES a CONTROLLED STYLE COMPARISON: SAME icon subjects, SAME arrangement and object count, SAME blue/navy palette, SAME approximate optical size as the other11 panels. Never use cartons, a trolley, a medical bag, books, a pencil, server equipment, clouds, or any other reference object.
+Panel06 MUST contain these FOUR exact same concepts and visual metaphors as every other regular panel:
+1 文書: one upright sheet of paper with folded top-right corner, three horizontal content lines and one lower checkbox. NO cloud/server and no additional props.
+2 協働: exactly two frontal human bust symbols next to each other, one small shared speech bubble above. NO realistic faces or extra people. Same arrangement as panel03, with slightly more credible rounded shoulder forms and fine inner structural strokes.
+3 自動化: one FRONT-VIEW eight-tooth gear with a single lightning bolt in the center. NO visible thick extruded tooth side planes, no isometric rotation.
+4 安全: one FRONT-VIEW shield with one centered checkmark. NO thick wedge extrusion, no isometric side face.
+
+Apply the reference DRAWING LANGUAGE to those subjects: confidently graded dark navy outer contours, finer lighter internal structural lines, natural smooth curves, restrained blue/gray/ivory color faces and very LIGHT tonal modeling across the faces. Slight illustrative realism and credible proportions. Subtle soft volume within forms, but NOT cubic extrusion, beveled metal, glossy toy3D, stacked slabs or angular hard isometric geometry. This must visibly differ from panel03's pure flat outlined fills and panel08's rigid isometric side planes, while remaining a controlled comparison of the SAME four meanings.
+Keep the other11 panels, every title, numbering, Japanese labels, header, footer, rules, layout, scale and original page background unchanged. Panel06's FOUR captions MUST be EXACTLY "文書", "協働", "自動化", "安全". Keep its heading EXACTLY "06 テクニカルスポット". Keep the third page header line EXACTLY "同じテーマ・同じ配色で、画風を比較". Do not change it to justify different subjects.
+No new objects, no supporting platforms or background blobs, no new panel, no watermark, no English product name. This is a Japanese display board with a light viewing ground; preserve it. All12 panels complete with4 icons each.

@@ -15,7 +15,7 @@
 線画、フラット、テクニカルスポット、マット3D、ガラス、金属、紙、刺繍まで。23の作例を、同じ4テーマ・同じブルー系の配色で比較できる。
 
 <p>
-  <a href="docs/icon-styles.ja.md#基本表現と立体表現"><img src="docs/assets/icon-styles/styles-ja-01.png" width="49%" alt="01から12：基本表現と立体表現の作例" /></a>
+  <a href="docs/icon-styles.ja.md#基本表現と立体表現"><img src="docs/assets/icon-styles/styles-ja-01-v2.png" width="49%" alt="01から12：基本表現と立体表現の作例" /></a>
   <a href="docs/icon-styles.ja.md#素材感とブランド表現"><img src="docs/assets/icon-styles/styles-ja-02.png" width="49%" alt="13から23：素材感とブランド表現の作例" /></a>
 </p>
 
@@ -52,7 +52,7 @@ $taskobo-visuals を使い、業務引継ぎ資料の挿絵1点とテーマ別�
 
 ![Technical Spotの透明PNG見本。クラウドと文書、物流、医療、学習の4テーマを一枚に配置](docs/assets/icon-styles/technical-spot-transparent.png)
 
-[この透過PNGを開く](docs/assets/icon-styles/technical-spot-transparent.png)。上は4テーマを一枚に配置した表示用の見本で、白い部分を含む物の表面は残し、周囲を透明にしている。明暗両方の背景で輪郭を確認する。完全な場面背景や色付きの比較表を明示した場合は、その指定に従う。
+**作例集では[06 テクニカルスポット](docs/icon-styles.ja.md#06-テクニカルスポット)に対応する。** [この透過PNGを開く](docs/assets/icon-styles/technical-spot-transparent.png)。上は4テーマを一枚に配置した表示用の見本で、白い部分を含む物の表面は残し、周囲を透明にしている。明暗両方の背景で輪郭を確認する。完全な場面背景や色付きの比較表を明示した場合は、その指定に従う。
 
 ## 文書に合わせ、会社の基準を残す
 

@@ -97,7 +97,14 @@
       "useJa": "具体的な物やサービスの説明",
       "traitsJa": "分級の輪郭、控えめな色面と明暗",
       "status": "retained-preset",
-      "runtimePreset": "technical-spot"
+      "runtimePreset": "technical-spot",
+      "comparisonSubjects": [
+        "document",
+        "collaboration",
+        "automation",
+        "security"
+      ],
+      "comparisonTreatment": "Same four metaphors and captions as other regular panels; graded outlines, restrained fills and soft tonal modeling without rigid isometric extrusion."
     },
     {
       "rank": 7,
@@ -326,7 +333,7 @@
   "scope": "Online documentation examples. This catalog does not add runtime presets or alter the immutable v0.3.3 Skill package.",
   "registeredIconPreset": "technical-spot",
   "imageFiles": [
-    "styles-ja-01.png",
+    "styles-ja-01-v2.png",
     "styles-ja-02.png"
   ],
   "generation": "built-in imagegen; Japanese text-localization from original Chinese comparison boards"

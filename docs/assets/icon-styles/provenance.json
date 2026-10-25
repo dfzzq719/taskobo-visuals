@@ -21,6 +21,10 @@
     {
       "file": "technical-spot-transparent.png",
       "sha256": "457643b892021cbf3b2a34bcb68ea3e986588e4c0f96937b61595b65f03c4c38"
+    },
+    {
+      "file": "styles-ja-01-v2.png",
+      "sha256": "a45d1ab6ee16fd42d0f90ef1ea1aa66efa820ee576926c50c805be40c905360c"
     }
   ],
   "japaneseBoards": {
@@ -40,5 +44,19 @@
     ],
     "status": "draft-demo"
   },
-  "scope": "Display examples, not production-approved masters or 23 deterministic presets. Private user references are not distributed."
+  "scope": "Display examples, not production-approved masters or 23 deterministic presets. Private user references are not distributed.",
+  "panel06Correction": {
+    "currentFile": "styles-ja-01-v2.png",
+    "previousFile": "styles-ja-01.png",
+    "prompt": "styles-ja-01-v2.prompt.txt",
+    "reference": "technical-spot-transparent.png",
+    "referenceRole": "Drawing treatment only; its subjects were not imported.",
+    "subjects": [
+      "document with checkbox",
+      "two busts and shared bubble",
+      "gear with lightning",
+      "shield with check"
+    ],
+    "scope": "Corrected panel06 to the same four topics and front view, preserving numbering, palette and the other style categories. A rejected intermediate showing different objects was not published."
+  }
 }
