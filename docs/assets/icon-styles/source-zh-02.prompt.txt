@@ -1,0 +1,41 @@
+Use case: productivity-visual. Create an ORIGINAL ENTERPRISE ICON STYLE COMPARISON BOARD, a carefully art-directed visual selection sheet, not a website or dashboard.
+This is one of TWO matching plates combining all 23 previously explored treatments, ordered approximately by prevalence across general enterprise documents, PPT presentations, business applications and websites. Rank is a qualitative editorial estimate, NOT a measured usage percentage. Do not invent charts or statistical bars.
+
+CANVAS: high resolution portrait, approximately 2400 x 3360 pixels. Premium restrained design. Flat warm ivory #FCFBF8 page ground. Navy #0D2046 clean Chinese sans-serif typography. Tightly organized but uncrowded. All labels fully inside canvas.
+LAYOUT: TWO equal columns and SIX equal rows of style panels (12 panel positions). Reading order LEFT TO RIGHT then TOP TO BOTTOM. Each panel has its short numbered Chinese style title, then one generously sized horizontal row of FOUR icons, equally spaced. Thin hairline dividers, not bulky cards. No individual background tiles behind icons. Four tiny topic labels can appear immediately under each icon group ONCE PER PANEL: 文档 / 协作 / 自动化 / 安全. Use the same consistent four topics in the same positions in every panel. Do not add English style subtitles or company names; give maximum room to the icons. Titles readable and elegantly aligned.
+FIXED SUBJECTS except real-object miniature panel: document = upright paper sheet with folded top-right corner, three short content lines and lower checkbox; collaboration = exactly two bust symbols side-by-side and one shared speech bubble above; automation = one eight-tooth gear with a central lightning bolt; security = a shield with one centered checkmark. No extra subjects. This is a style comparison, not different business stories.
+FIXED PALETTE: cobalt #1456D9, navy #0D2046, pale blue #DCE7FA, cool slate #52637A, warm ivory #FCFBF8. Uniform across every panel, no unique hue per style. Thin-line panels may predominantly use navy, filled panels cobalt, both share the same roles. Materials must be blue/navy/ivory/slate or restrained neutral steel only; no gold, brown leather, rainbow or electric cyan. Upper-left lighting for all dimensional examples. Avoid turning all materials into glossy plastic.
+NO decorative display bases, pedestals, square support platforms, floor plates, oval blobs, background badges or enclosing rounded app tiles anywhere. Actual functional object parts may remain.
+Every panel must visibly reflect its stated drawing/material treatment, not merely recolor the same render. Distinguish flat gradient from actual 3D volume; thin relief from rounded solid objects; line drawing from the fuller Technical Spot object illustration. Do not blend neighboring styles.
+REFERENCE ROLES: previous generated boards are STYLE/CONTENT REFERENCE ONLY, NOT edit targets and not a requirement to preserve their layout or mixed hue/lighting. The Technical Spot sample is reference for that ONE preset only. New palette and new orderly layout override all reference colors/composition. Redraw original examples without copying reference labels or source artifacts.
+Footer in small readable text: "参考排序，非市场份额统计；画法、视角与材质可组合。"
+
+PLATE 2 OF 2.
+Title verbatim: "企业图标风格总览 · 2/2"
+Subtitle verbatim: "13—23 · 专题材质与品牌表达"
+A smaller line below subtitle: "同主题 · 同色系 · 按企业常见使用场景近似排序"
+Panel positions in row-major order, verbatim numbered Chinese headings and drawing directions:
+13 透光玻璃: Transparent tinted BLUE glass, visible refraction, clear edge thickness, crisp reflective rims, dark legible semantic details, no backdrop glass panels or neon.
+
+14 精工金属: Blue-anodized brushed metal faces, fine directional brushing and precise modest bevels, restrained neutral steel edges, machined inset detail. Not shiny chrome or toy plastic.
+
+15 纸艺拼贴: Thin overlapping cobalt and pale-blue paper cut-outs with subtle visible fibers and a few purposeful torn edges, tiny shadows only at overlaps; flat composition. No folded triangular facets, thick relief or confetti.
+
+16 双色网印: Flat cobalt and navy screen-print silhouettes, visible controlled halftone dots and a few intentional registration offsets, no watercolor, no 3D volume, no distressed scenery.
+
+17 折纸几何: Crisp folded blue paper forms, few angular triangular/trapezoidal facets and meaningful creases, limited planar shading, sharp fold construction. Not torn collage or smooth curved plastic.
+
+18 工业涂层: Rigid thin icon-shaped engineered metal shells with fine cobalt powder-coat orange-peel texture, modest chamfers, only minimal functional fasteners, inset ivory marks. Clearly rough coated surface, not brushed bare metal or smooth porcelain.
+
+19 装帧纸材: Thin shapes made of layered ivory page edges, navy bookcloth and precise small folded spine joins. Page-edge stacks and bookcloth clearly visible. Not torn collage or bulky leather.
+
+20 瓷釉工艺: Thin hard warm-white porcelain silhouettes with cobalt glazed faces and exposed ivory rims, controlled vitreous glaze highlights, clean slender thickness. Not thick inflated clay, not transparent glass.
+
+21 皮革压印: Fine-grain structured navy-blue leather cut to icon shapes, thin credible leather edge, sparse neat stitches and debossed ivory semantic marks. No brown leather, no rectangular backing patch, no plush.
+
+22 织物刺绣: High-density navy/cobalt directional satin stitches, fine thread fibers, ivory semantic marks, clean cut edge following the symbol; thin unstuffed fabric, no surrounding badge or cloth rectangle.
+
+23 模块像素: Crisp square-grid modules with horizontal/vertical stepped boundaries ONLY, approximately 18-to-24 cells across each symbol, navy/cobalt pixels and ivory voids, no antialiased smooth curves or arcade scenery.
+The bottom-right (12th) panel is NOT a 24th style. Use it as a restrained palette legend with the exact heading "统一主题色系", four tiny navy/cobalt/pale-blue/slate swatches and names, and one small note "编号延续上页". No icons in that legend.
+Success: precisely 11 numbered styles, 44 complete icon examples; correctly spelled Chinese labels, no clipped shapes. Preserve semantic clarity and visible material differences. The result should feel like a professional reference atlas with deliberate optical sizing, not a scattered collage.
+

@@ -1,5 +1,7 @@
 # 業種別サンプル / Industry samples
 
+[公開README](../README.md) · [画風と素材の作例](icon-styles.ja.md) · [制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)
+
 架空の業務場面から制作したオリジナル。実企業の導入事例ではない。
 
 ## 製造・物流

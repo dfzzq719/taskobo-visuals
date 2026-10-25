@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-25",
+  "origin": "Original built-in imagegen samples and edits",
+  "assets": [
+    {
+      "file": "source-zh-01.png",
+      "sha256": "e8ee747da269e152f434718466b159830c9c02e8ccee6a554678e2f54c28f215"
+    },
+    {
+      "file": "source-zh-02.png",
+      "sha256": "0c996f26877d55aacb221ba8c5f56feb2588e61ab0ff0782c7f24b7b32dd50bf"
+    },
+    {
+      "file": "styles-ja-01.png",
+      "sha256": "31ba6d5beeb1e0d3f98f6daa343dc8c096d64041248874fa2331490037e53be8"
+    },
+    {
+      "file": "styles-ja-02.png",
+      "sha256": "63cf80d287ec0af32e0d52c8e198cd5daa9af325835b850e1735e61e7ef19361"
+    },
+    {
+      "file": "technical-spot-transparent.png",
+      "sha256": "457643b892021cbf3b2a34bcb68ea3e986588e4c0f96937b61595b65f03c4c38"
+    }
+  ],
+  "japaneseBoards": {
+    "source": [
+      "source-zh-01.png",
+      "source-zh-02.png"
+    ],
+    "edit": "Japanese labels; original topics, palette, numbering and drawing treatments retained"
+  },
+  "transparentExample": {
+    "source": "assets/presets/technical-spot.png",
+    "sourceSha256": "4b9aeaf41e625c2a5dc7892e93886d178378fe416ae089f6f1e65cb5ac70c55e",
+    "edit": "One-row version of four top-row themes with genuine Alpha; original style reference unchanged",
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "status": "draft-demo"
+  },
+  "scope": "Display examples, not production-approved masters or 23 deterministic presets. Private user references are not distributed."
+}

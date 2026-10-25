@@ -2,7 +2,7 @@
 
 業務の内容を理解してから、イラストやテーマ別アイコンを制作するAI Skill。テーマ、画風、配色を別々に決め、チームの見本と制作基準を引き継ぐ。
 
-[展示ページ](https://taskobo.com/free-tools/taskobo-visuals/) · [サンプル一覧](gallery.ja.md) · [Skill本体](../SKILL.md)
+[作品展示](https://taskobo.com/free-tools/taskobo-visuals/) · [23の画風・素材の作例](icon-styles.ja.md) · [業種別サンプル](gallery.ja.md) · [Skill本体](../SKILL.md)
 
 ## まずサンプルで確かめる
 
@@ -14,7 +14,7 @@
 
 ## Skillを追加する
 
-1. [Releases](https://github.com/dfzzq719/taskobo-visuals/releases)または[展示ページ](https://taskobo.com/free-tools/taskobo-visuals/#install)からSkill ZIPを保存する。
+1. [Releases](https://github.com/dfzzq719/taskobo-visuals/releases)または[制作ツールの導入欄](https://taskobo.com/free-tools/taskobo-visuals/tool/#install)からSkill ZIPを保存する。
 2. 展開した `taskobo-visuals` フォルダー全体を、利用するAIソフトのSkill対応ディレクトリに置く。
 3. セッションを再読み込みし、`$taskobo-visuals` と制作条件を渡す。
 
@@ -31,12 +31,14 @@ Skill本体の説明文は現在、中国語。日本語の依頼文とサンプ
 ```text
 $taskobo-visuals を使い、新入社員のオンボーディングを説明する
 社内研修用のイラスト1点と、テーマ別アイコン6点を制作する。
-主色 #1456D9、濃色 #0D2046、背景 #FCFBF8。
+主色 #1456D9、濃色 #0D2046。配置先の文書は #FCFBF8、独立素材には塗らない。
 日本語で配図計画と使用上の注意を示す。
 編集可能な図形アイコンは独立SVGと透明PNGにする。
 独立したイラストとアイコンの背景は透明にし、必要な柔らかい影は半透明で残す。
 小サイズで確認し、採用する見本と生成プロンプトを保存する。
 ```
+
+[23の画法・素材作例](icon-styles.ja.md)から方向を選べる。作例集と、Webにある3つの基本方向・2つの具体的なプリセットは範囲が異なる。作例番号と名称を依頼文に添え、今回の内容・表示サイズに合わせて制作する。
 
 ### 技術テーマのスポットイラスト
 
@@ -45,6 +47,8 @@ $taskobo-visuals を使い、新入社員のオンボーディングを説明す
 独立素材は透明背景を標準とする。必要な影は薄い半透明として残し、白い縁、背景プレート、展示台は加えない。内蔵imagegenでは `transparent_background: true` を指定する。既存の試作見本の白い背景は画風を見るためのもので、新しい素材に引き継がない。完全な場面背景や色付きの比較表を明示した場合は、その指定に従う。実際のAlphaチャンネルと明暗両方の背景で輪郭を確認する。
 
 [オリジナルの試作見本](../assets/presets/technical-spot.png)と[画風の説明](../references/technical-spot.md)を参照できる。画風は選択肢として採用済みだが、試作見本は個別承認前の草稿。上段は正面、下段は浅いアイソメトリックで、同じ4テーマを比較している。両段とも台座は付けない。本プリセットでは視点にかかわらず、装飾用の展示台、四角い支持台、下敷き板を加えない。
+
+公開READMEには、同じ4テーマを一枚に並べた[実際の透過PNG](assets/icon-styles/technical-spot-transparent.png)を掲載する。比較表と透過素材の違いを確認できる。
 
 ```text
 $taskobo-visuals の technical-spot を使い、物流サービスの説明用イラストを4点制作する。

@@ -1,0 +1,43 @@
+Use case: productivity-visual. Create an ORIGINAL ENTERPRISE ICON STYLE COMPARISON BOARD, a carefully art-directed visual selection sheet, not a website or dashboard.
+This is one of TWO matching plates combining all 23 previously explored treatments, ordered approximately by prevalence across general enterprise documents, PPT presentations, business applications and websites. Rank is a qualitative editorial estimate, NOT a measured usage percentage. Do not invent charts or statistical bars.
+
+CANVAS: high resolution portrait, approximately 2400 x 3360 pixels. Premium restrained design. Flat warm ivory #FCFBF8 page ground. Navy #0D2046 clean Chinese sans-serif typography. Tightly organized but uncrowded. All labels fully inside canvas.
+LAYOUT: TWO equal columns and SIX equal rows of style panels (12 panel positions). Reading order LEFT TO RIGHT then TOP TO BOTTOM. Each panel has its short numbered Chinese style title, then one generously sized horizontal row of FOUR icons, equally spaced. Thin hairline dividers, not bulky cards. No individual background tiles behind icons. Four tiny topic labels can appear immediately under each icon group ONCE PER PANEL: 文档 / 协作 / 自动化 / 安全. Use the same consistent four topics in the same positions in every panel. Do not add English style subtitles or company names; give maximum room to the icons. Titles readable and elegantly aligned.
+FIXED SUBJECTS except real-object miniature panel: document = upright paper sheet with folded top-right corner, three short content lines and lower checkbox; collaboration = exactly two bust symbols side-by-side and one shared speech bubble above; automation = one eight-tooth gear with a central lightning bolt; security = a shield with one centered checkmark. No extra subjects. This is a style comparison, not different business stories.
+FIXED PALETTE: cobalt #1456D9, navy #0D2046, pale blue #DCE7FA, cool slate #52637A, warm ivory #FCFBF8. Uniform across every panel, no unique hue per style. Thin-line panels may predominantly use navy, filled panels cobalt, both share the same roles. Materials must be blue/navy/ivory/slate or restrained neutral steel only; no gold, brown leather, rainbow or electric cyan. Upper-left lighting for all dimensional examples. Avoid turning all materials into glossy plastic.
+NO decorative display bases, pedestals, square support platforms, floor plates, oval blobs, background badges or enclosing rounded app tiles anywhere. Actual functional object parts may remain.
+Every panel must visibly reflect its stated drawing/material treatment, not merely recolor the same render. Distinguish flat gradient from actual 3D volume; thin relief from rounded solid objects; line drawing from the fuller Technical Spot object illustration. Do not blend neighboring styles.
+REFERENCE ROLES: previous generated boards are STYLE/CONTENT REFERENCE ONLY, NOT edit targets and not a requirement to preserve their layout or mixed hue/lighting. The Technical Spot sample is reference for that ONE preset only. New palette and new orderly layout override all reference colors/composition. Redraw original examples without copying reference labels or source artifacts.
+Footer in small readable text: "参考排序，非市场份额统计；画法、视角与材质可组合。"
+
+PLATE 1 OF 2.
+Title verbatim: "企业图标风格总览 · 1/2"
+Subtitle verbatim: "01—12 · 通用企业表达"
+A smaller line below subtitle: "同主题 · 同色系 · 按企业常见使用场景近似排序"
+Panel positions in row-major order, verbatim numbered Chinese headings and drawing directions:
+01 单线轮廓: Flat frontal uniform medium navy strokes, rounded caps and joins, empty interiors, no shading, no fill except a tiny cobalt cue. Functional and precise.
+
+02 几何扁平: Flat filled cobalt silhouettes with ivory cut details, simple smooth geometric forms, NO enclosing outlines, NO gradients, no shadows.
+
+03 描边填色: Flat frontal strong navy outlines, finer inner strokes, cobalt and pale-blue solid faces; no gradients, no dimension.
+
+04 负形镂空: Bold continuous navy silhouettes with incisive ivory negative-space apertures. Navy dominates; no contours, no texture; visibly stronger figure-ground than ordinary blue flat icons.
+
+05 精密线稿: Precise frontal technical line drawings, graded dark exterior and finer internal strokes; a few very restrained drafting construction guides, no microtext, no wash or shading.
+
+06 技术主题小插图: Match the supplied Technical Spot reference's smooth graded blue-gray contours, restrained filled surfaces, light tonal modeling, credible object structure and slight illustrative character. Focused small objects, not a full scene, no construction guides, no rough hatching, no pedestal.
+
+07 渐变矢量: Crisp frontal 2D silhouettes with controlled cobalt-to-pale-blue gradients on FLAT faces, NO actual extrusion, NO plastic volume, NO hard outlines, no glow. Distinct from fully modeled matte 3D.
+
+08 轴测线面: A consistent shallow 30-degree isometric projection, navy linework, flat cobalt/light-blue front and side planes, visible restrained vector extrusion, no soft shading or gloss. No supporting platform.
+
+09 哑光立体: Fully modeled rounded volume and moderate real thickness, premium matte satin finish, elevated frontal view, upper-left studio light, low-intensity soft contact shadows. No inflated toy forms or plinths.
+
+10 浅浮雕: Front-facing forms with very shallow stacked relief, broad flat front planes, two or three thin layers, short close shadows at overlaps. Not fully rounded 3D and not collage fiber.
+
+11 实物写实: Realistic product miniatures: document is neat ivory office paper stack with navy binder clip; collaboration is two blue office chairs sharing one small pale-blue round table; automation is a compact cobalt motor with ONE sensible connected steel gear; security is a navy physical padlock with a steel shackle. No room, floor plate, display base or brand. Genuine photoreal material and construction. Use the same four semantic concepts as other panels; this one intentionally uses actual objects rather than sculpted abstract glyphs.
+
+12 钢笔编辑: Mature hand-drawn pen miniature icons, fine line-weight variation, intentional light hatching and restrained pale-blue watercolor wash inside forms. No messy doodles or illustrative background.
+Exactly twelve style panels and forty-eight icon examples, no missing row or filler panel.
+Success: precisely 12 numbered styles, 48 complete icon examples; correctly spelled Chinese labels, no clipped shapes. Preserve semantic clarity and visible material differences. The result should feel like a professional reference atlas with deliberate optical sizing, not a scattered collage.
+

@@ -1,0 +1,24 @@
+Use case: text-localization. EDIT the supplied original icon comparison board into a JAPANESE publication version for a GitHub documentation gallery.
+Preserve the complete icon artwork, drawing treatments, materials, composition, TWO columns and SIX row positions, numbering, cobalt/navy/ivory palette, clean light viewing ground and optical scale. This is a labeled comparison sheet, not a transparent independent icon delivery. Keep the viewing ground as it is. Do not invent or omit icons. Improve typesetting only to accommodate the Japanese labels. No English product name or added brand title.
+Replace ALL Chinese text, including repeated topic labels, with the following EXACT Japanese, clean legible Japanese sans-serif type:
+Main title: "企業向けアイコンの表現見本 1/2"
+Subtitle: "01–12 基本表現と立体表現"
+Third line: "同じテーマ・同じ配色で、画風を比較"
+Panel titles in the existing row-major order, preserving their numbers:
+01 モノライン
+02 フラット
+03 線と塗り
+04 ネガティブスペース
+05 テクニカル線画
+06 テクニカルスポット
+07 グラデーション
+08 アイソメトリック
+09 マット3D
+10 浅いレリーフ
+11 実物のミニチュア
+12 ペン画
+Under each icon group the FOUR topics, left to right, must be "文書", "協働", "自動化", "安全". Replace every repeated occurrence. Keep all four icons per numbered panel.
+Footer exactly: "用途に応じた参考配列。利用率の統計ではない。画法・視点・素材は組み合わせ可能。"
+Exactly twelve numbered treatments and 48 icons.
+Keep each panel title on one line if possible, shrinking only the title modestly for longer names. Preserve sufficient icon space. No additional marketing copy, stamps, flags or brands. Do not change icon metaphors or surfaces. Make no new claims about adoption statistics or engineering accuracy.
+

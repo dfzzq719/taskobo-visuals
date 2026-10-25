@@ -1,0 +1,9 @@
+Use case: precise-object-edit / background-extraction.
+Input: the supplied ORIGINAL Technical Spot sample sheet is the EDIT TARGET. Create a genuine transparent PNG showing ONLY its TOP ROW of FOUR icons, in ONE wide compact horizontal strip, approximately 3:1 aspect ratio. Preserve the TOP ROW's exact subjects and drawing treatment:
+1 cloud + server + document,
+2 two cartons + logistics trolley with its functional handle, deck and wheels,
+3 medical bag with cross,
+4 open book and pencil.
+REMOVE the bottom row entirely. REMOVE the surrounding white viewing background and reduce the empty top and bottom margins. Maintain equal spacing, original left-to-right order, smooth graded navy/blue-gray outlines, restrained blue-gray/ivory fills, subtle object shading, original proportions and details. Do not restyle the icons, do not turn them into glossy 3D, do not add other objects.
+Output MUST have a real Alpha channel: all empty space around/between icons fully transparent. White paper, book pages, bag surfaces and other light parts of the actual objects must remain opaque; do not punch holes in their interiors. Subtle shadows may be partially transparent and fade naturally to zero. No white matte, no checkerboard pattern or colored background baked into the image, no rectangular frame, no floor plate, no display base, no oval blob. No text, no labels, no product name.
+All four icons fully visible, none cut off, comfortable narrow safe margin, professional crisp standalone enterprise artwork.
