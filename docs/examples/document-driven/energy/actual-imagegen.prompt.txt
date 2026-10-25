@@ -1,0 +1,50 @@
+Generate ONE review sheet of 4 distinct coordinated icons. Arrange left-to-right in the given order with equal generous gaps; no panel backgrounds, labels, dividers or captions. This is an overview, not separate asset delivery.
+
+ICON 1:
+Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.
+Reader should recognize: 太陽光パネルの発電状況を監視する。数値や実績のグラフは作らない。
+Draw this current subject/action: A recognizable flat solar panel grid with a small monitoring meter showing a simple nonnumeric indicator.
+Drawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.
+Viewpoint: front. Match line hierarchy, detail density and optical weight across the series.
+Palette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.
+Output: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.
+No decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.
+A style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.
+Avoid these semantic errors: No invented generation figures, trend chart or performance claim.
+
+ICON 2:
+Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.
+Reader should recognize: 担当者が設備を点検し、不具合の有無を記録する。図は点検手順を表さない。
+Draw this current subject/action: A simplified closed inverter cabinet with a small inspection wrench and one visible service-status indicator.
+Drawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.
+Viewpoint: front. Match line hierarchy, detail density and optical weight across the series.
+Palette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.
+Output: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.
+No decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.
+A style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.
+Avoid these semantic errors: No invented wiring, open live electrical internals or detailed repair instructions.
+
+ICON 3:
+Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.
+Reader should recognize: 保守作業の前に隔離と作業許可を確認する。これは安全操作の手順書ではない。
+Draw this current subject/action: A conceptual disconnected isolator-switch symbol with a lockout tag and a small blank permit card, purely explanatory.
+Drawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.
+Viewpoint: front. Match line hierarchy, detail density and optical weight across the series.
+Palette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.
+Output: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.
+No decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.
+A style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.
+Avoid these semantic errors: No exact electrical circuit, sequential safety instructions or energised repair depiction.
+
+ICON 4:
+Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.
+Reader should recognize: 作業終了後、担当者が復旧状態を確認して記録する。稼働再開を自動化したと示さない。
+Draw this current subject/action: A restored closed equipment cabinet with a separate final-inspection clipboard and a single confirmation check.
+Drawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.
+Viewpoint: front. Match line hierarchy, detail density and optical weight across the series.
+Palette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.
+Output: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.
+No decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.
+A style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.
+Avoid these semantic errors: No autonomous restart arrow or guaranteed zero-downtime claim.
+The attached reference is ONLY an example of structural line hierarchy; the written flat-2D recipe overrides its highlights. Strictly flat 2D drawing, no 3D shading. Recreate only this new document's objects in its specified nonblue palette. Four icons, one horizontal row, isolated from each other, equal optical size. No base and no text.

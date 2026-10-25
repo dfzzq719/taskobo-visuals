@@ -1,0 +1,43 @@
+{
+  "case": "insurance",
+  "status": "generated-reviewed-draft",
+  "recipe": "technical-spot",
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "source": {
+    "name": "claims-review.docx",
+    "format": "docx",
+    "sha256": "8797bdc1c09fda68d13c4fc4d3b8050666e87b672dfd387dfd61fdd24b13f7da"
+  },
+  "output": "insurance/technical-spot.png",
+  "sha256": "12b83848e782be8f6ef8f9ffe946cad098f34272eed670a589e48b76717eb502",
+  "alphaInspection": {
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "fullyTransparentPixels": 1019890,
+    "partiallyTransparentPixels": 549259,
+    "fullyOpaquePixels": 3379,
+    "transparentCorners": true
+  },
+  "reference": {
+    "file": "docs/assets/icon-styles/technical-spot-transparent.png",
+    "role": "Style treatment only, overridden by flat2D recipe; no topic or palette copying"
+  },
+  "prompt": "insurance/actual-imagegen.prompt.txt",
+  "review": {
+    "observer": "authoring Agent, not an independent reader",
+    "objects": "4 distinct document-derived subjects visible in planned order",
+    "style": "2D contour-and-fill illustration; some tonal variation remains, no sculpted/plastic figures",
+    "palette": "Specified nonblue color family visible; bitmap colors not guaranteed exact HEX",
+    "semanticLimits": "Icons summarize concepts; conditions, role sequencing and technical procedures remain in editable text",
+    "delivery": "One transparent review sheet of 4 icons, not 4 separate files or native SVG",
+    "userApproved": false
+  }
+}

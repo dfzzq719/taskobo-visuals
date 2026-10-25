@@ -1,0 +1,118 @@
+{
+  "schema": "taskobo-illustration.document-context/v1",
+  "source": {
+    "name": "claims-review.docx",
+    "format": "docx",
+    "sha256": "8797bdc1c09fda68d13c4fc4d3b8050666e87b672dfd387dfd61fdd24b13f7da"
+  },
+  "units": [
+    {
+      "ref": "paragraph:1",
+      "style": "",
+      "text": "架空の業務資料：保険金請求の確認",
+      "truncated": false
+    },
+    {
+      "ref": "paragraph:2",
+      "style": "",
+      "text": "事故受付：建物の水漏れの申告を受け付け、被害状況を記録する。受付は支払決定を意味しない。",
+      "truncated": false
+    },
+    {
+      "ref": "paragraph:3",
+      "style": "",
+      "text": "証憑照合：提出された領収書と請求明細を照合し、食い違いを担当者が確認する。",
+      "truncated": false
+    },
+    {
+      "ref": "paragraph:4",
+      "style": "",
+      "text": "追加確認：証拠が不足した請求は追加資料を依頼し、確認が終わるまで保留する。",
+      "truncated": false
+    },
+    {
+      "ref": "paragraph:5",
+      "style": "",
+      "text": "支払承認：担当者の確認後、別の承認者が支払を承認する。自動入金は描かない。",
+      "truncated": false
+    },
+    {
+      "ref": "paragraph:6",
+      "style": "",
+      "text": "文書指定色：主色 #7A395A、補助色 #EBDDE5、輪郭 #302537。",
+      "truncated": false
+    }
+  ],
+  "themes": [
+    {
+      "part": "word/theme/theme1.xml",
+      "name": "Office",
+      "colors": [
+        {
+          "slot": "dk1",
+          "hex": "#000000"
+        },
+        {
+          "slot": "lt1",
+          "hex": "#FFFFFF"
+        },
+        {
+          "slot": "dk2",
+          "hex": "#1F497D"
+        },
+        {
+          "slot": "lt2",
+          "hex": "#EEECE1"
+        },
+        {
+          "slot": "accent1",
+          "hex": "#4F81BD"
+        },
+        {
+          "slot": "accent2",
+          "hex": "#C0504D"
+        },
+        {
+          "slot": "accent3",
+          "hex": "#9BBB59"
+        },
+        {
+          "slot": "accent4",
+          "hex": "#8064A2"
+        },
+        {
+          "slot": "accent5",
+          "hex": "#4BACC6"
+        },
+        {
+          "slot": "accent6",
+          "hex": "#F79646"
+        },
+        {
+          "slot": "hlink",
+          "hex": "#0000FF"
+        },
+        {
+          "slot": "folHlink",
+          "hex": "#800080"
+        }
+      ]
+    }
+  ],
+  "directColors": [
+    {
+      "ref": "paragraph:1",
+      "hex": "#7A395A",
+      "xmlOccurrences": 1
+    }
+  ],
+  "warnings": [
+    "Paragraph references are not rendered page numbers. Headers, footers, tracked-change decisions and drawing content require document-specific review."
+  ],
+  "inference": {
+    "status": "not-performed",
+    "next": "Agent proposes content topic, visual direction and palette separately, citing unit refs."
+  },
+  "textCharacters": 211,
+  "colorScope": "Office theme definitions and direct XML occurrences; not visual area, computed style, or verified brand identity."
+}

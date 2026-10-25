@@ -4,7 +4,7 @@
 
 テーマや文書から伝える内容を決め、画風と配色を選び、普段使っているAIで制作するSkill。提案書、研修資料、報告書、Webのために、承認した見本と制作条件を引き継ぐ。
 
-[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.4) · [利用ガイド](docs/guide.ja.md)
+[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.5) · [利用ガイド](docs/guide.ja.md)
 
 [English](README.en.md) · [中文・维护基准](README.zh-CN.md)
 
@@ -21,7 +21,7 @@
 
 [23の作例を拡大して見る・用途から選ぶ](docs/icon-styles.ja.md)。番号と名称を依頼文に添えると、求める表現を共有しやすい。配列は用途の広さを考えた目安で、企業の利用率を測定したランキングではない。
 
-現在のSkillは3つの基本方向と2つの具体的なプリセットを持つ。作例集は画法・視点・素材の選択肢を示すもので、23種類すべてを固定パラメーターのプリセットとして配布するものではない。
+現在のSkillは3つの基本方向と2つの具体的なプリセットを持つ。v0.3.5では23作例に対応する[画法レシピ](references/icon-style-recipes.json)も同梱する。番号・名称から画法を選び、今回の文書の意味と配色を組み合わせられる。23種類の固定レンダラーや既製アイコン集ではない。[新しい3業務の文書から実際に制作した例](docs/document-driven-validation.ja.md)で、確認した範囲と限界を公開する。
 
 | 基本方向 | 主な用途 | 整理済みのプリセット |
 | --- | --- | --- |
@@ -31,7 +31,7 @@
 
 ## まず1セット作る
 
-1. [v0.3.4のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.4)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
+1. [v0.3.5のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.5)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
 2. Skillを再読み込みし、制作条件を渡す。[Webの制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)でも依頼文とJSONを作れる。
 3. 素材を用途に合うサイズで確認し、採用した見本、配色、生成プロンプトをチームに共有する。
 

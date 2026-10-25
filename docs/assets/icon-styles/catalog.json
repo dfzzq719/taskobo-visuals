@@ -1,6 +1,6 @@
 {
   "date": "2026-10-25",
-  "skill": "taskobo-visuals v0.3.4",
+  "skill": "taskobo-visuals v0.3.5",
   "count": 23,
   "orderBasis": "Qualitative approximate order across general enterprise documents, PPTs, business applications and websites; not measured usage or market share. Adjacent rankings have no statistical significance.",
   "palette": {
@@ -336,5 +336,10 @@
     "styles-ja-01-v3.png",
     "styles-ja-02.png"
   ],
-  "generation": "built-in imagegen; Japanese text-localization from original Chinese comparison boards"
+  "generation": "built-in imagegen; Japanese text-localization from original Chinese comparison boards",
+  "runtimeRecipes": {
+    "file": "references/icon-style-recipes.json",
+    "count": 23,
+    "scope": "Generative recipes; subject and palette supplied per document, not fixed renderers. Actual image validation is documented separately."
+  }
 }

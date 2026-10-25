@@ -2,7 +2,7 @@
 name: taskobo-visuals
 description: "Create polished enterprise illustrations and coordinated thematic icon sets from a topic, business content, or document; choose visual form, a coherent Taskobo art direction, and a user-selected or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.3.4"
+  version: "0.3.5"
 ---
 
 # Taskobo Visuals
@@ -36,6 +36,8 @@ metadata:
 - 样式对照固定主题、构图、尺寸和配色；配色对照固定画法和主题。用户要整套艺术方向时才同时改变多个维度，并说明变化。
 - 选一个主要方向，必要时给一个有明确差异的备选。用户已经指定风格时，直接使用它。
 
+用户按23种作例的编号、名称或画法选型时，读取随安装包分发的 [图标画法配方](references/icon-style-recipes.json)，按 `number`、`id` 或中日英文名称匹配，再把 `treatment` 中的画法与本次语义、配色组合。配方没有固定业务对象和固定蓝色；06映射到 `technical-spot`。不把编号当成图标库存，也不把23种配方宣称为23套逐项通过实测的确定性渲染器。自定义画法不受目录限制。
+
 用户提到“企业叙事插画”、`enterprise-narrative`，或要求沿用已认可的跨行业拼贴宣传图画风时，读该预设并查看其参考图。复用成熟人物、分级墨线、浅色块和轻水彩质感；按当前用途另选单场景或多场景布局，不自动照搬图中的行业、蓝色、标题和底部图标排布。
 
 用户提到“技术主题小插图”、`technical-spot`，或要在符号与完整场景之间表达具体技术物件时，读 [该预设](references/technical-spot.md) 并查看原创样稿。采用二维描边填色：分级深色轮廓、克制的平面色块和少量说明性明暗，不渲染球面体积、塑料高光、倒角或挤出厚度；默认平视，可选不同绘制视角，均不加装饰展示台、方形承托或底板，不把参考中的车辆、卫星或蓝色带入所有主题。
@@ -43,6 +45,8 @@ metadata:
 ## 成套主题图标
 
 读 [主题图标](references/themed-icons.md)。先从主题或文档列出值得图形化的对象和动作，再用同一套视觉语言设计；不用一个通用机器人、芯片或圆圈代表所有概念。成套检查轮廓、线宽、填色、视觉重量及小尺寸识别，保留可独立使用的图标与外置可编辑标签。
+
+文档驱动任务先完成 [从文档形成配图计划](references/document-context.md) 中的语义映射，至少让每项图标对应到“原文依据→要表达的含义→对象/动作→不能误示的关系”。主题不受示例行业和四个对照题材限制。可用 `scripts/prepare_icon_jobs.py` 把Agent已判断的简报和配方编成生成任务；它只检查引用、配色及选型并组合提示词，不读取词频来替代文档理解，也不调用生图。实际使用可用的图像工具生成、查看并修正后，才能称为完成。
 
 默认交付静态 SVG 与透明 PNG，并提供总览及使用说明。几何与线条可编辑的图标用矢量工具制作；图像生成得到的图标只称位图，不把描摹或嵌入 PNG 的 SVG 宣称为原生矢量。准确流程、结构、WBS/RACI/甘特等可调用可用的 Taskobo Diagrams 或同等确定性工具；不把整个项目更新流程强加给一次配图任务。
 
@@ -86,6 +90,7 @@ metadata:
 - [技术主题小插图](references/technical-spot.md)：说明性小物件的画法、可选视角、无底座原创草稿样例及复用提示词。
 - [主题图标](references/themed-icons.md)：语义清单、矢量规则、整套检视和交付。
 - [从文档形成配图计划](references/document-context.md)：提取、证据、主题判断和局限。
+- [图标画法配方](references/icon-style-recipes.json)：23种展示作例的编号、画法和生成约束，不锁定主题或颜色。
 - [统一视觉简报](references/visual-profile.md)：独立的主题、风格、色系与资产计划。
 
 - [形式与画风](references/forms-and-styles.md)：场景判断、20 个比较标签及企业资料依据。

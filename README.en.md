@@ -2,7 +2,7 @@
 
 Enterprise illustrations and coordinated thematic icons, made with your own AI from a topic or document. Content, art direction and palette remain independent choices.
 
-[日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.3.4](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.4)
+[日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.3.5](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.5)
 
 ![Original cross-industry portfolio](examples/portfolio-no-title.png)
 
@@ -12,9 +12,11 @@ Enterprise illustrations and coordinated thematic icons, made with your own AI f
 
 The Skill has three starting directions: `precision`, `editorial` and `dimensional`. Two named optional presets are documented: [`technical-spot`](references/technical-spot.md) and [`enterprise-narrative`](references/enterprise-narrative.md). Choose content, palette and viewpoint independently.
 
+v0.3.5 also bundles [23 drawing recipes](references/icon-style-recipes.json), selectable by number or name and combined with the current document's subjects and palette. [Document-to-image validation](docs/document-driven-validation.ja.md) records three fictional inputs and 12 actually generated Technical Spot icons. Recipe routing checks cover all 23; visual validation currently covers No.06, not every style or arbitrary input.
+
 ## Start
 
-1. Extract the Skill ZIP from [v0.3.4](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.4) into a Skill directory supported by your AI application. The folder is `taskobo-visuals`; repository-based installers should use this repository root.
+1. Extract the Skill ZIP from [v0.3.5](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.5) into a Skill directory supported by your AI application. The folder is `taskobo-visuals`; repository-based installers should use this repository root.
 2. Reload the Skill and invoke `$taskobo-visuals` with a topic, use, palette and art direction. The Web workspace creates a reusable request and brief JSON.
 3. Review at the intended size and share the approved master, palette and prompts with your team.
 

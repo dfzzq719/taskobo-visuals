@@ -1,0 +1,129 @@
+{
+  "schema": "taskobo-illustration.document-context/v1",
+  "source": {
+    "name": "solar-maintenance.pptx",
+    "format": "pptx",
+    "sha256": "3f009ff5247c80d0953cad5b5dd82a032acb11c44e687c3caf67d59bee925bfd"
+  },
+  "units": [
+    {
+      "ref": "slide:1",
+      "part": "ppt/slides/slide3.xml",
+      "title": "発電監視",
+      "hidden": false,
+      "text": "発電監視\n発電監視：太陽光パネルの発電状況を監視する。数値や実績のグラフは作らない。\n文書指定色：主色 #17695C、補助色 #DDEDE7、輪郭 #243C38。",
+      "truncated": false
+    },
+    {
+      "ref": "slide:2",
+      "part": "ppt/slides/slide1.xml",
+      "title": "設備点検",
+      "hidden": false,
+      "text": "設備点検\n設備点検：担当者が設備を点検し、不具合の有無を記録する。図は点検手順を表さない。\n文書指定色：主色 #17695C、補助色 #DDEDE7、輪郭 #243C38。",
+      "truncated": false
+    },
+    {
+      "ref": "slide:3",
+      "part": "ppt/slides/slide4.xml",
+      "title": "作業許可",
+      "hidden": false,
+      "text": "作業許可\n作業許可：保守作業の前に隔離と作業許可を確認する。これは安全操作の手順書ではない。\n文書指定色：主色 #17695C、補助色 #DDEDE7、輪郭 #243C38。",
+      "truncated": false
+    },
+    {
+      "ref": "slide:4",
+      "part": "ppt/slides/slide2.xml",
+      "title": "復旧確認",
+      "hidden": false,
+      "text": "復旧確認\n復旧確認：作業終了後、担当者が復旧状態を確認して記録する。稼働再開を自動化したと示さない。\n文書指定色：主色 #17695C、補助色 #DDEDE7、輪郭 #243C38。",
+      "truncated": false
+    }
+  ],
+  "themes": [
+    {
+      "part": "ppt/theme/theme1.xml",
+      "name": "Office",
+      "colors": [
+        {
+          "slot": "dk1",
+          "hex": "#000000"
+        },
+        {
+          "slot": "lt1",
+          "hex": "#FFFFFF"
+        },
+        {
+          "slot": "dk2",
+          "hex": "#1F497D"
+        },
+        {
+          "slot": "lt2",
+          "hex": "#EEECE1"
+        },
+        {
+          "slot": "accent1",
+          "hex": "#4F81BD"
+        },
+        {
+          "slot": "accent2",
+          "hex": "#C0504D"
+        },
+        {
+          "slot": "accent3",
+          "hex": "#9BBB59"
+        },
+        {
+          "slot": "accent4",
+          "hex": "#8064A2"
+        },
+        {
+          "slot": "accent5",
+          "hex": "#4BACC6"
+        },
+        {
+          "slot": "accent6",
+          "hex": "#F79646"
+        },
+        {
+          "slot": "hlink",
+          "hex": "#0000FF"
+        },
+        {
+          "slot": "folHlink",
+          "hex": "#800080"
+        }
+      ]
+    }
+  ],
+  "directColors": [
+    {
+      "ref": "slide:1",
+      "hex": "#17695C",
+      "xmlOccurrences": 1
+    },
+    {
+      "ref": "slide:2",
+      "hex": "#17695C",
+      "xmlOccurrences": 1
+    },
+    {
+      "ref": "slide:3",
+      "hex": "#17695C",
+      "xmlOccurrences": 1
+    },
+    {
+      "ref": "slide:4",
+      "hex": "#17695C",
+      "xmlOccurrences": 1
+    }
+  ],
+  "warnings": [
+    "Text extraction does not read notes, embedded images, or visual relationships. Theme parts are candidates, not certified brand colors."
+  ],
+  "inference": {
+    "status": "not-performed",
+    "next": "Agent proposes content topic, visual direction and palette separately, citing unit refs."
+  },
+  "textCharacters": 347,
+  "colorScope": "Office theme definitions and direct XML occurrences; not visual area, computed style, or verified brand identity."
+}

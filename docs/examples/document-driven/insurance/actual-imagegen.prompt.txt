@@ -1,0 +1,50 @@
+Generate ONE review sheet of 4 distinct coordinated icons. Arrange left-to-right in the given order with equal generous gaps; no panel backgrounds, labels, dividers or captions. This is an overview, not separate asset delivery.
+
+ICON 1:
+Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.
+Reader should recognize: 建物の水漏れの申告を受け付け、被害状況を記録する。受付は支払決定を意味しない。
+Draw this current subject/action: A small flat house facade with one leaking water droplet and a separate intake clipboard. No car or damage explosion.
+Drawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.
+Viewpoint: front. Match line hierarchy, detail density and optical weight across the series.
+Palette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.
+Output: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.
+No decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.
+A style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.
+Avoid these semantic errors: Do not show an approved claim or payment outcome.
+
+ICON 2:
+Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.
+Reader should recognize: 提出された領収書と請求明細を照合し、食い違いを担当者が確認する。
+Draw this current subject/action: Two overlapping itemized receipts with a small magnifying glass inspecting their line items.
+Drawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.
+Viewpoint: front. Match line hierarchy, detail density and optical weight across the series.
+Palette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.
+Output: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.
+No decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.
+A style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.
+Avoid these semantic errors: Do not show money paid, identical verified totals or a success check.
+
+ICON 3:
+Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.
+Reader should recognize: 証拠が不足した請求は追加資料を依頼し、確認が終わるまで保留する。
+Draw this current subject/action: An incomplete evidence folder with a clearly empty outlined placeholder slot and a small question-mark speech bubble.
+Drawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.
+Viewpoint: front. Match line hierarchy, detail density and optical weight across the series.
+Palette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.
+Output: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.
+No decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.
+A style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.
+Avoid these semantic errors: Do not turn a pending request into rejection or approval.
+
+ICON 4:
+Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.
+Reader should recognize: 担当者の確認後、別の承認者が支払を承認する。自動入金は描かない。
+Draw this current subject/action: A payment instruction sheet held between two distinct flat approval-role stamps, with one small authorization check on the sheet.
+Drawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.
+Viewpoint: front. Match line hierarchy, detail density and optical weight across the series.
+Palette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.
+Output: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.
+No decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.
+A style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.
+Avoid these semantic errors: No automatic transfer arrow, banknote rain or completed bank deposit.
+The attached reference is ONLY an example of structural line hierarchy; the written flat-2D recipe overrides its highlights. Strictly flat 2D drawing, no 3D shading. Recreate only this new document's objects in its specified nonblue palette. Four icons, one horizontal row, isolated from each other, equal optical size. No base and no text.

@@ -1,0 +1,43 @@
+{
+  "case": "people",
+  "status": "generated-reviewed-draft",
+  "recipe": "technical-spot",
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "source": {
+    "name": "employee-onboarding.md",
+    "format": "md",
+    "sha256": "11997f905f23063d6b9ae5db9465dbaba6a75a2608a1063194f037cefdd2c364"
+  },
+  "output": "people/technical-spot.png",
+  "sha256": "19c18143bcda92a8e9c09aa7542cc1b892f82bbe8904b6148060f315cc08a5a4",
+  "alphaInspection": {
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "fullyTransparentPixels": 1058655,
+    "partiallyTransparentPixels": 511164,
+    "fullyOpaquePixels": 2709,
+    "transparentCorners": true
+  },
+  "reference": {
+    "file": "docs/assets/icon-styles/technical-spot-transparent.png",
+    "role": "Style treatment only, overridden by flat2D recipe; no topic or palette copying"
+  },
+  "prompt": "people/actual-imagegen.prompt.txt",
+  "review": {
+    "observer": "authoring Agent, not an independent reader",
+    "objects": "4 distinct document-derived subjects visible in planned order",
+    "style": "2D contour-and-fill illustration; some tonal variation remains, no sculpted/plastic figures",
+    "palette": "Specified nonblue color family visible; bitmap colors not guaranteed exact HEX",
+    "semanticLimits": "Icons summarize concepts; conditions, role sequencing and technical procedures remain in editable text",
+    "delivery": "One transparent review sheet of 4 icons, not 4 separate files or native SVG",
+    "userApproved": false
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "taskobo-visuals.generation-jobs/v1",
+  "status": "planned",
+  "recipe": {
+    "number": 6,
+    "id": "technical-spot",
+    "version": "0.3.5"
+  },
+  "source": {
+    "name": "solar-maintenance.pptx",
+    "format": "pptx",
+    "sha256": "3f009ff5247c80d0953cad5b5dd82a032acb11c44e687c3caf67d59bee925bfd"
+  },
+  "palette": {
+    "ink": "#243C38",
+    "primary": "#17695C",
+    "primarySoft": "#DDEDE7",
+    "neutral": "#E7E5E1"
+  },
+  "jobs": [
+    {
+      "id": "energy-1",
+      "label": "発電監視",
+      "meaning": "太陽光パネルの発電状況を監視する。数値や実績のグラフは作らない。",
+      "subject": "A recognizable flat solar panel grid with a small monitoring meter showing a simple nonnumeric indicator.",
+      "sourceRefs": [
+        "slide:1"
+      ],
+      "avoid": [
+        "No invented generation figures, trend chart or performance claim."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 太陽光パネルの発電状況を監視する。数値や実績のグラフは作らない。\nDraw this current subject/action: A recognizable flat solar panel grid with a small monitoring meter showing a simple nonnumeric indicator.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No invented generation figures, trend chart or performance claim."
+    },
+    {
+      "id": "energy-2",
+      "label": "設備点検",
+      "meaning": "担当者が設備を点検し、不具合の有無を記録する。図は点検手順を表さない。",
+      "subject": "A simplified closed inverter cabinet with a small inspection wrench and one visible service-status indicator.",
+      "sourceRefs": [
+        "slide:2"
+      ],
+      "avoid": [
+        "No invented wiring, open live electrical internals or detailed repair instructions."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 担当者が設備を点検し、不具合の有無を記録する。図は点検手順を表さない。\nDraw this current subject/action: A simplified closed inverter cabinet with a small inspection wrench and one visible service-status indicator.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No invented wiring, open live electrical internals or detailed repair instructions."
+    },
+    {
+      "id": "energy-3",
+      "label": "作業許可",
+      "meaning": "保守作業の前に隔離と作業許可を確認する。これは安全操作の手順書ではない。",
+      "subject": "A conceptual disconnected isolator-switch symbol with a lockout tag and a small blank permit card, purely explanatory.",
+      "sourceRefs": [
+        "slide:3"
+      ],
+      "avoid": [
+        "No exact electrical circuit, sequential safety instructions or energised repair depiction."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 保守作業の前に隔離と作業許可を確認する。これは安全操作の手順書ではない。\nDraw this current subject/action: A conceptual disconnected isolator-switch symbol with a lockout tag and a small blank permit card, purely explanatory.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No exact electrical circuit, sequential safety instructions or energised repair depiction."
+    },
+    {
+      "id": "energy-4",
+      "label": "復旧確認",
+      "meaning": "作業終了後、担当者が復旧状態を確認して記録する。稼働再開を自動化したと示さない。",
+      "subject": "A restored closed equipment cabinet with a separate final-inspection clipboard and a single confirmation check.",
+      "sourceRefs": [
+        "slide:4"
+      ],
+      "avoid": [
+        "No autonomous restart arrow or guaranteed zero-downtime claim."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 作業終了後、担当者が復旧状態を確認して記録する。稼働再開を自動化したと示さない。\nDraw this current subject/action: A restored closed equipment cabinet with a separate final-inspection clipboard and a single confirmation check.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No autonomous restart arrow or guaranteed zero-downtime claim."
+    }
+  ],
+  "limits": "Reference existence is validated; semantic judgment and generated images require review. No generation was performed.",
+  "contactSheet": {
+    "transparent_background": true,
+    "status": "planned",
+    "prompt": "Generate ONE review sheet of 4 distinct coordinated icons. Arrange left-to-right in the given order with equal generous gaps; no panel backgrounds, labels, dividers or captions. This is an overview, not separate asset delivery.\n\nICON 1:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 太陽光パネルの発電状況を監視する。数値や実績のグラフは作らない。\nDraw this current subject/action: A recognizable flat solar panel grid with a small monitoring meter showing a simple nonnumeric indicator.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No invented generation figures, trend chart or performance claim.\n\nICON 2:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 担当者が設備を点検し、不具合の有無を記録する。図は点検手順を表さない。\nDraw this current subject/action: A simplified closed inverter cabinet with a small inspection wrench and one visible service-status indicator.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No invented wiring, open live electrical internals or detailed repair instructions.\n\nICON 3:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 保守作業の前に隔離と作業許可を確認する。これは安全操作の手順書ではない。\nDraw this current subject/action: A conceptual disconnected isolator-switch symbol with a lockout tag and a small blank permit card, purely explanatory.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No exact electrical circuit, sequential safety instructions or energised repair depiction.\n\nICON 4:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 作業終了後、担当者が復旧状態を確認して記録する。稼働再開を自動化したと示さない。\nDraw this current subject/action: A restored closed equipment cabinet with a separate final-inspection clipboard and a single confirmation check.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #243C38; primary: #17695C; primarySoft: #DDEDE7; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No autonomous restart arrow or guaranteed zero-downtime claim."
+  }
+}

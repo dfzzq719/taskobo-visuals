@@ -1,0 +1,98 @@
+{
+  "schema": "taskobo-illustration.visual-brief/v1",
+  "source": {
+    "name": "solar-maintenance.pptx",
+    "format": "pptx",
+    "sha256": "3f009ff5247c80d0953cad5b5dd82a032acb11c44e687c3caf67d59bee925bfd"
+  },
+  "topic": {
+    "title": "架空の業務資料：太陽光設備の保全",
+    "origin": "document"
+  },
+  "direction": {
+    "id": "precision",
+    "recipe": "06",
+    "preset": "technical-spot",
+    "status": "draft"
+  },
+  "palette": {
+    "mode": "document",
+    "roles": {
+      "ink": "#243C38",
+      "primary": "#17695C",
+      "primarySoft": "#DDEDE7",
+      "neutral": "#E7E5E1"
+    }
+  },
+  "layout": {
+    "viewpoint": "front",
+    "base": "none"
+  },
+  "medium": {
+    "kind": "presentation",
+    "background": "light",
+    "targetSize": "96px icon preview"
+  },
+  "assets": [
+    {
+      "id": "energy-1",
+      "label": "発電監視",
+      "kind": "icon",
+      "meaning": "太陽光パネルの発電状況を監視する。数値や実績のグラフは作らない。",
+      "subject": "A recognizable flat solar panel grid with a small monitoring meter showing a simple nonnumeric indicator.",
+      "avoid": [
+        "No invented generation figures, trend chart or performance claim."
+      ],
+      "sourceRefs": [
+        "slide:1"
+      ],
+      "semanticOrigin": "Agent-designed visual representation of cited meaning",
+      "status": "planned"
+    },
+    {
+      "id": "energy-2",
+      "label": "設備点検",
+      "kind": "icon",
+      "meaning": "担当者が設備を点検し、不具合の有無を記録する。図は点検手順を表さない。",
+      "subject": "A simplified closed inverter cabinet with a small inspection wrench and one visible service-status indicator.",
+      "avoid": [
+        "No invented wiring, open live electrical internals or detailed repair instructions."
+      ],
+      "sourceRefs": [
+        "slide:2"
+      ],
+      "semanticOrigin": "Agent-designed visual representation of cited meaning",
+      "status": "planned"
+    },
+    {
+      "id": "energy-3",
+      "label": "作業許可",
+      "kind": "icon",
+      "meaning": "保守作業の前に隔離と作業許可を確認する。これは安全操作の手順書ではない。",
+      "subject": "A conceptual disconnected isolator-switch symbol with a lockout tag and a small blank permit card, purely explanatory.",
+      "avoid": [
+        "No exact electrical circuit, sequential safety instructions or energised repair depiction."
+      ],
+      "sourceRefs": [
+        "slide:3"
+      ],
+      "semanticOrigin": "Agent-designed visual representation of cited meaning",
+      "status": "planned"
+    },
+    {
+      "id": "energy-4",
+      "label": "復旧確認",
+      "kind": "icon",
+      "meaning": "作業終了後、担当者が復旧状態を確認して記録する。稼働再開を自動化したと示さない。",
+      "subject": "A restored closed equipment cabinet with a separate final-inspection clipboard and a single confirmation check.",
+      "avoid": [
+        "No autonomous restart arrow or guaranteed zero-downtime claim."
+      ],
+      "sourceRefs": [
+        "slide:4"
+      ],
+      "semanticOrigin": "Agent-designed visual representation of cited meaning",
+      "status": "planned"
+    }
+  ]
+}

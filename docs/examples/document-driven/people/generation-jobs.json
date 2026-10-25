@@ -1,0 +1,90 @@
+{
+  "schema": "taskobo-visuals.generation-jobs/v1",
+  "status": "planned",
+  "recipe": {
+    "number": 6,
+    "id": "technical-spot",
+    "version": "0.3.5"
+  },
+  "source": {
+    "name": "employee-onboarding.md",
+    "format": "md",
+    "sha256": "11997f905f23063d6b9ae5db9465dbaba6a75a2608a1063194f037cefdd2c364"
+  },
+  "palette": {
+    "ink": "#3A3328",
+    "primary": "#9A671E",
+    "primarySoft": "#F3E8D5",
+    "neutral": "#E7E5E1"
+  },
+  "jobs": [
+    {
+      "id": "people-1",
+      "label": "入社準備",
+      "meaning": "入社前に社員証と必要な備品を用意する。",
+      "subject": "A blank employee ID badge with flat portrait silhouette beside a compact equipment checklist.",
+      "sourceRefs": [
+        "line:3-3"
+      ],
+      "avoid": [],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 入社前に社員証と必要な備品を用意する。\nDraw this current subject/action: A blank employee ID badge with flat portrait silhouette beside a compact equipment checklist.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #3A3328; primary: #9A671E; primarySoft: #F3E8D5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: inventing approval, outcomes, figures or relationships absent from the brief."
+    },
+    {
+      "id": "people-2",
+      "label": "権限申請",
+      "meaning": "業務に必要なアクセス権だけを申請し、承認されるまで付与しない。",
+      "subject": "A small permission-request form with a key symbol and a pending ellipsis bubble, no approved mark.",
+      "sourceRefs": [
+        "line:5-5"
+      ],
+      "avoid": [
+        "Do not imply access has been granted, administrator privileges or automatic approval."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 業務に必要なアクセス権だけを申請し、承認されるまで付与しない。\nDraw this current subject/action: A small permission-request form with a key symbol and a pending ellipsis bubble, no approved mark.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #3A3328; primary: #9A671E; primarySoft: #F3E8D5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: Do not imply access has been granted, administrator privileges or automatic approval."
+    },
+    {
+      "id": "people-3",
+      "label": "研修受講",
+      "meaning": "入社研修を受講し、説明資料を読みながら業務ルールを確認する。",
+      "subject": "A flat training monitor with a simple play triangle beside a short open learning booklet.",
+      "sourceRefs": [
+        "line:7-7"
+      ],
+      "avoid": [
+        "No fabricated completion certificate or assessment score."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 入社研修を受講し、説明資料を読みながら業務ルールを確認する。\nDraw this current subject/action: A flat training monitor with a simple play triangle beside a short open learning booklet.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #3A3328; primary: #9A671E; primarySoft: #F3E8D5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No fabricated completion certificate or assessment score."
+    },
+    {
+      "id": "people-4",
+      "label": "試用面談",
+      "meaning": "試用期間に上司と本人が対話し、次の課題を確認する。合否の判定は含まない。",
+      "subject": "Two flat seated human busts facing a shared small meeting-note sheet; uniformly filled flat heads and clothing.",
+      "sourceRefs": [
+        "line:9-9"
+      ],
+      "avoid": [
+        "No pass/fail result, one-sided ranking, spherical heads or inflated shoulders."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 試用期間に上司と本人が対話し、次の課題を確認する。合否の判定は含まない。\nDraw this current subject/action: Two flat seated human busts facing a shared small meeting-note sheet; uniformly filled flat heads and clothing.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #3A3328; primary: #9A671E; primarySoft: #F3E8D5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No pass/fail result, one-sided ranking, spherical heads or inflated shoulders."
+    }
+  ],
+  "limits": "Reference existence is validated; semantic judgment and generated images require review. No generation was performed.",
+  "contactSheet": {
+    "transparent_background": true,
+    "status": "planned",
+    "prompt": "Generate ONE review sheet of 4 distinct coordinated icons. Arrange left-to-right in the given order with equal generous gaps; no panel backgrounds, labels, dividers or captions. This is an overview, not separate asset delivery.\n\nICON 1:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 入社前に社員証と必要な備品を用意する。\nDraw this current subject/action: A blank employee ID badge with flat portrait silhouette beside a compact equipment checklist.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #3A3328; primary: #9A671E; primarySoft: #F3E8D5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: inventing approval, outcomes, figures or relationships absent from the brief.\n\nICON 2:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 業務に必要なアクセス権だけを申請し、承認されるまで付与しない。\nDraw this current subject/action: A small permission-request form with a key symbol and a pending ellipsis bubble, no approved mark.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #3A3328; primary: #9A671E; primarySoft: #F3E8D5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: Do not imply access has been granted, administrator privileges or automatic approval.\n\nICON 3:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 入社研修を受講し、説明資料を読みながら業務ルールを確認する。\nDraw this current subject/action: A flat training monitor with a simple play triangle beside a short open learning booklet.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #3A3328; primary: #9A671E; primarySoft: #F3E8D5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No fabricated completion certificate or assessment score.\n\nICON 4:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 試用期間に上司と本人が対話し、次の課題を確認する。合否の判定は含まない。\nDraw this current subject/action: Two flat seated human busts facing a shared small meeting-note sheet; uniformly filled flat heads and clothing.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #3A3328; primary: #9A671E; primarySoft: #F3E8D5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No pass/fail result, one-sided ranking, spherical heads or inflated shoulders."
+  }
+}

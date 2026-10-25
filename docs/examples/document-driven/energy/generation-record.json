@@ -1,0 +1,43 @@
+{
+  "case": "energy",
+  "status": "generated-reviewed-draft",
+  "recipe": "technical-spot",
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "source": {
+    "name": "solar-maintenance.pptx",
+    "format": "pptx",
+    "sha256": "3f009ff5247c80d0953cad5b5dd82a032acb11c44e687c3caf67d59bee925bfd"
+  },
+  "output": "energy/technical-spot.png",
+  "sha256": "fcf5830d26c4f18c4ebf3835e927446542bea92cb54e859a537f9f12353074bb",
+  "alphaInspection": {
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "fullyTransparentPixels": 979849,
+    "partiallyTransparentPixels": 589736,
+    "fullyOpaquePixels": 2943,
+    "transparentCorners": true
+  },
+  "reference": {
+    "file": "docs/assets/icon-styles/technical-spot-transparent.png",
+    "role": "Style treatment only, overridden by flat2D recipe; no topic or palette copying"
+  },
+  "prompt": "energy/actual-imagegen.prompt.txt",
+  "review": {
+    "observer": "authoring Agent, not an independent reader",
+    "objects": "4 distinct document-derived subjects visible in planned order",
+    "style": "2D contour-and-fill illustration; some tonal variation remains, no sculpted/plastic figures",
+    "palette": "Specified nonblue color family visible; bitmap colors not guaranteed exact HEX",
+    "semanticLimits": "Icons summarize concepts; conditions, role sequencing and technical procedures remain in editable text",
+    "delivery": "One transparent review sheet of 4 icons, not 4 separate files or native SVG",
+    "userApproved": false
+  }
+}

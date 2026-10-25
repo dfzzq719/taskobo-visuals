@@ -1,0 +1,92 @@
+{
+  "schema": "taskobo-visuals.generation-jobs/v1",
+  "status": "planned",
+  "recipe": {
+    "number": 6,
+    "id": "technical-spot",
+    "version": "0.3.5"
+  },
+  "source": {
+    "name": "claims-review.docx",
+    "format": "docx",
+    "sha256": "8797bdc1c09fda68d13c4fc4d3b8050666e87b672dfd387dfd61fdd24b13f7da"
+  },
+  "palette": {
+    "ink": "#302537",
+    "primary": "#7A395A",
+    "primarySoft": "#EBDDE5",
+    "neutral": "#E7E5E1"
+  },
+  "jobs": [
+    {
+      "id": "insurance-1",
+      "label": "事故受付",
+      "meaning": "建物の水漏れの申告を受け付け、被害状況を記録する。受付は支払決定を意味しない。",
+      "subject": "A small flat house facade with one leaking water droplet and a separate intake clipboard. No car or damage explosion.",
+      "sourceRefs": [
+        "paragraph:2"
+      ],
+      "avoid": [
+        "Do not show an approved claim or payment outcome."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 建物の水漏れの申告を受け付け、被害状況を記録する。受付は支払決定を意味しない。\nDraw this current subject/action: A small flat house facade with one leaking water droplet and a separate intake clipboard. No car or damage explosion.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: Do not show an approved claim or payment outcome."
+    },
+    {
+      "id": "insurance-2",
+      "label": "証憑照合",
+      "meaning": "提出された領収書と請求明細を照合し、食い違いを担当者が確認する。",
+      "subject": "Two overlapping itemized receipts with a small magnifying glass inspecting their line items.",
+      "sourceRefs": [
+        "paragraph:3"
+      ],
+      "avoid": [
+        "Do not show money paid, identical verified totals or a success check."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 提出された領収書と請求明細を照合し、食い違いを担当者が確認する。\nDraw this current subject/action: Two overlapping itemized receipts with a small magnifying glass inspecting their line items.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: Do not show money paid, identical verified totals or a success check."
+    },
+    {
+      "id": "insurance-3",
+      "label": "追加確認",
+      "meaning": "証拠が不足した請求は追加資料を依頼し、確認が終わるまで保留する。",
+      "subject": "An incomplete evidence folder with a clearly empty outlined placeholder slot and a small question-mark speech bubble.",
+      "sourceRefs": [
+        "paragraph:4"
+      ],
+      "avoid": [
+        "Do not turn a pending request into rejection or approval."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 証拠が不足した請求は追加資料を依頼し、確認が終わるまで保留する。\nDraw this current subject/action: An incomplete evidence folder with a clearly empty outlined placeholder slot and a small question-mark speech bubble.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: Do not turn a pending request into rejection or approval."
+    },
+    {
+      "id": "insurance-4",
+      "label": "支払承認",
+      "meaning": "担当者の確認後、別の承認者が支払を承認する。自動入金は描かない。",
+      "subject": "A payment instruction sheet held between two distinct flat approval-role stamps, with one small authorization check on the sheet.",
+      "sourceRefs": [
+        "paragraph:5"
+      ],
+      "avoid": [
+        "No automatic transfer arrow, banknote rain or completed bank deposit."
+      ],
+      "status": "planned",
+      "tool": "host-image-generation",
+      "transparent_background": true,
+      "prompt": "Use case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 担当者の確認後、別の承認者が支払を承認する。自動入金は描かない。\nDraw this current subject/action: A payment instruction sheet held between two distinct flat approval-role stamps, with one small authorization check on the sheet.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No automatic transfer arrow, banknote rain or completed bank deposit."
+    }
+  ],
+  "limits": "Reference existence is validated; semantic judgment and generated images require review. No generation was performed.",
+  "contactSheet": {
+    "transparent_background": true,
+    "status": "planned",
+    "prompt": "Generate ONE review sheet of 4 distinct coordinated icons. Arrange left-to-right in the given order with equal generous gaps; no panel backgrounds, labels, dividers or captions. This is an overview, not separate asset delivery.\n\nICON 1:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 建物の水漏れの申告を受け付け、被害状況を記録する。受付は支払決定を意味しない。\nDraw this current subject/action: A small flat house facade with one leaking water droplet and a separate intake clipboard. No car or damage explosion.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: Do not show an approved claim or payment outcome.\n\nICON 2:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 提出された領収書と請求明細を照合し、食い違いを担当者が確認する。\nDraw this current subject/action: Two overlapping itemized receipts with a small magnifying glass inspecting their line items.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: Do not show money paid, identical verified totals or a success check.\n\nICON 3:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 証拠が不足した請求は追加資料を依頼し、確認が終わるまで保留する。\nDraw this current subject/action: An incomplete evidence folder with a clearly empty outlined placeholder slot and a small question-mark speech bubble.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: Do not turn a pending request into rejection or approval.\n\nICON 4:\nUse case: productivity-visual. Asset: a standalone enterprise explanatory icon.\nReader should recognize: 担当者の確認後、別の承認者が支払を承認する。自動入金は描かない。\nDraw this current subject/action: A payment instruction sheet held between two distinct flat approval-role stamps, with one small authorization check on the sheet.\nDrawing treatment: Flat 2D explanatory line-and-fill illustration, graded ink outlines and fine structural detail. Restrained primary, primarySoft and neutral flat color regions, with minimal graphic tonal accents only to explain structure. Human heads and clothing stay flat. No spherical gradients, inflated volume, plastic shine, bevels, extrusion, ambient occlusion or cast shadows. More object structure than a generic pictogram, never a 3D material render.\nViewpoint: front. Match line hierarchy, detail density and optical weight across the series.\nPalette roles: ink: #302537; primary: #7A395A; primarySoft: #EBDDE5; neutral: #E7E5E1. These override reference and example colors.\nOutput: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.\nNo decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.\nA style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.\nAvoid these semantic errors: No automatic transfer arrow, banknote rain or completed bank deposit."
+  }
+}

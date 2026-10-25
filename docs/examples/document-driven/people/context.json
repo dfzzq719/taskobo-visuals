@@ -1,0 +1,49 @@
+{
+  "schema": "taskobo-illustration.document-context/v1",
+  "source": {
+    "name": "employee-onboarding.md",
+    "format": "md",
+    "sha256": "11997f905f23063d6b9ae5db9465dbaba6a75a2608a1063194f037cefdd2c364"
+  },
+  "units": [
+    {
+      "ref": "line:1-1",
+      "text": "架空の業務資料：入社と権限の準備",
+      "truncated": false
+    },
+    {
+      "ref": "line:3-3",
+      "text": "入社準備：入社前に社員証と必要な備品を用意する。",
+      "truncated": false
+    },
+    {
+      "ref": "line:5-5",
+      "text": "権限申請：業務に必要なアクセス権だけを申請し、承認されるまで付与しない。",
+      "truncated": false
+    },
+    {
+      "ref": "line:7-7",
+      "text": "研修受講：入社研修を受講し、説明資料を読みながら業務ルールを確認する。",
+      "truncated": false
+    },
+    {
+      "ref": "line:9-9",
+      "text": "試用面談：試用期間に上司と本人が対話し、次の課題を確認する。合否の判定は含まない。",
+      "truncated": false
+    },
+    {
+      "ref": "line:11-11",
+      "text": "文書指定色：主色 #9A671E、補助色 #F3E8D5、輪郭 #3A3328。",
+      "truncated": false
+    }
+  ],
+  "themes": [],
+  "directColors": [],
+  "warnings": [],
+  "inference": {
+    "status": "not-performed",
+    "next": "Agent proposes content topic, visual direction and palette separately, citing unit refs."
+  },
+  "textCharacters": 192,
+  "colorScope": "Office theme definitions and direct XML occurrences; not visual area, computed style, or verified brand identity."
+}

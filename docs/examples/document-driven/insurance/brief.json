@@ -1,0 +1,98 @@
+{
+  "schema": "taskobo-illustration.visual-brief/v1",
+  "source": {
+    "name": "claims-review.docx",
+    "format": "docx",
+    "sha256": "8797bdc1c09fda68d13c4fc4d3b8050666e87b672dfd387dfd61fdd24b13f7da"
+  },
+  "topic": {
+    "title": "架空の業務資料：保険金請求の確認",
+    "origin": "document"
+  },
+  "direction": {
+    "id": "precision",
+    "recipe": "06",
+    "preset": "technical-spot",
+    "status": "draft"
+  },
+  "palette": {
+    "mode": "document",
+    "roles": {
+      "ink": "#302537",
+      "primary": "#7A395A",
+      "primarySoft": "#EBDDE5",
+      "neutral": "#E7E5E1"
+    }
+  },
+  "layout": {
+    "viewpoint": "front",
+    "base": "none"
+  },
+  "medium": {
+    "kind": "presentation",
+    "background": "light",
+    "targetSize": "96px icon preview"
+  },
+  "assets": [
+    {
+      "id": "insurance-1",
+      "label": "事故受付",
+      "kind": "icon",
+      "meaning": "建物の水漏れの申告を受け付け、被害状況を記録する。受付は支払決定を意味しない。",
+      "subject": "A small flat house facade with one leaking water droplet and a separate intake clipboard. No car or damage explosion.",
+      "avoid": [
+        "Do not show an approved claim or payment outcome."
+      ],
+      "sourceRefs": [
+        "paragraph:2"
+      ],
+      "semanticOrigin": "Agent-designed visual representation of cited meaning",
+      "status": "planned"
+    },
+    {
+      "id": "insurance-2",
+      "label": "証憑照合",
+      "kind": "icon",
+      "meaning": "提出された領収書と請求明細を照合し、食い違いを担当者が確認する。",
+      "subject": "Two overlapping itemized receipts with a small magnifying glass inspecting their line items.",
+      "avoid": [
+        "Do not show money paid, identical verified totals or a success check."
+      ],
+      "sourceRefs": [
+        "paragraph:3"
+      ],
+      "semanticOrigin": "Agent-designed visual representation of cited meaning",
+      "status": "planned"
+    },
+    {
+      "id": "insurance-3",
+      "label": "追加確認",
+      "kind": "icon",
+      "meaning": "証拠が不足した請求は追加資料を依頼し、確認が終わるまで保留する。",
+      "subject": "An incomplete evidence folder with a clearly empty outlined placeholder slot and a small question-mark speech bubble.",
+      "avoid": [
+        "Do not turn a pending request into rejection or approval."
+      ],
+      "sourceRefs": [
+        "paragraph:4"
+      ],
+      "semanticOrigin": "Agent-designed visual representation of cited meaning",
+      "status": "planned"
+    },
+    {
+      "id": "insurance-4",
+      "label": "支払承認",
+      "kind": "icon",
+      "meaning": "担当者の確認後、別の承認者が支払を承認する。自動入金は描かない。",
+      "subject": "A payment instruction sheet held between two distinct flat approval-role stamps, with one small authorization check on the sheet.",
+      "avoid": [
+        "No automatic transfer arrow, banknote rain or completed bank deposit."
+      ],
+      "sourceRefs": [
+        "paragraph:5"
+      ],
+      "semanticOrigin": "Agent-designed visual representation of cited meaning",
+      "status": "planned"
+    }
+  ]
+}

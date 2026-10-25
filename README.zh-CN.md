@@ -2,7 +2,7 @@
 
 **围绕业务内容制作企业插图与主题图标，让团队沿用共同的视觉基准。**
 
-中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.3.4](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.4)。
+中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.3.5](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.5)。
 
 [作品展示](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件与依頼文工具](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [23种画法与材质作例](docs/icon-styles.ja.md)
 
@@ -16,6 +16,8 @@
 三个基础方向为Precision、Editorial、Dimensional；两个已整理的具体预设为 `technical-spot`（技术主题小插图）和 `enterprise-narrative`（企业叙事插画）。
 
 新作例集覆盖此前生成的22个方向，加上技术主题小插图，共23种。它们是画法、视角、材质的组合示范，不能描述成23套固定参数的正式预设。编号沿用之前按企业常见场景作出的近似选型顺序，不是实际采用率或优劣排名。中文名称与说明在[机器可读清单](docs/assets/icon-styles/catalog.json)保留，日文展示图与用途说明见作例集。
+
+v0.3.5已将对应的[23种画法配方](references/icon-style-recipes.json)放入安装包。按编号或名称匹配后，结合当次文档的语义、对象与色系组合提示词，图标内容不锁定为示例库存。[文档到成图的公开验证](docs/document-driven-validation.ja.md)保留3份自拟资料、语义简报、原始提示词和12个实际生成图标；23种通过的是路由和组合检查，当前新增成图验证针对06号，不把它夸大成所有风格或任意文档一次成功。
 
 ## 独立素材默认透明背景
 
