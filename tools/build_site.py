@@ -18,6 +18,11 @@ BASE = '/free-tools/taskobo-visuals/'
 ORIGIN = 'https://taskobo.com'
 REPO = 'https://github.com/dfzzq719/taskobo-visuals'
 VERSION = re.search(r'version:\s*[\"\']([^\"\']+)', (ROOT / 'SKILL.md').read_text(encoding='utf-8'))[1]
+PAGE_MODIFIED = '2026-10-28'
+LANDING_TITLE = '業務資料のイラスト・アイコン制作AIスキル | Taskobo Visuals'
+LANDING_DESCRIPTION = 'Taskobo Visualsは、業務資料のイラストとテーマ別アイコンを制作する無料のAIスキル。画風・配色を選び、利用中のAIで制作する。4業種の作品例、SVG・透明PNGの素材、日本語ガイドを公開。'
+TOOL_TITLE = 'イラスト・アイコンの依頼文作成 | Taskobo Visuals'
+TOOL_DESCRIPTION = 'テーマ・用途・画風・配色から、イラストとアイコンの依頼文を作る無料ツール。制作ブリーフをJSONで保存し、Taskobo VisualsのAIスキルと利用中のAIに渡せる。Web上で画像生成は行わない。'
 CATALOG = json.loads((ROOT / 'examples/catalog.json').read_text(encoding='utf-8'))
 E = html.escape
 ARROW = '<svg class="ill-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>'
@@ -167,7 +172,7 @@ def homepage(hero):
     gallery = ''.join(f'<article class="ill-work"><a href="{BASE}samples/{c["id"]}/">{image(c, True)}<div class="ill-work-title"><h3>{c["name"]}</h3>{ARROW}</div><p>{c["description"]}</p></a></article>' for c in CATALOG)
     nav = ''.join(f'<a href="{BASE}samples/{c["id"]}/">{c["name"]}{ARROW}</a>' for c in CATALOG)
     return f'''<div class="container"><nav class="ill-breadcrumbs" aria-label="パンくずリスト"><a href="/">ホーム</a><span>/</span><a href="/#free-tools">無料ツール</a><span>/</span><span aria-current="page">Taskobo Visuals</span></nav>
-<header class="ill-intro"><h1>伝えたい仕事を、伝わる絵に。</h1><p>企業向けイラスト・アイコン制作。テーマや文書から内容を決め、画風と配色を選び、チームで共通の表現を育てるAI Skill。</p><div class="ill-actions"><a class="button button-primary" href="{BASE}tool/">制作ツールを使う {ARROW}</a><a href="#samples">業種別サンプルを見る</a><a href="{REPO}">GitHub</a></div><p class="ill-fineprint">Skill v{VERSION}公開中。画像は、制作ツールで条件を整えて利用中のAIで生成する。</p></header>
+<header class="ill-intro"><h1>伝えたい仕事を、伝わる絵に。</h1><p>Taskobo Visualsは、業務資料のイラストとテーマ別アイコンを制作するAIスキル（Skill）だ。テーマや文書から内容を決め、画風と配色を選び、チームで共通の表現を育てる。</p><div class="ill-actions"><a class="button button-primary" href="{BASE}tool/">制作ツールを使う {ARROW}</a><a href="#samples">業種別サンプルを見る</a><a href="{REPO}">GitHub</a></div><p class="ill-fineprint">Skill v{VERSION}公開中。画像は、制作ツールで条件を整えて利用中のAIで生成する。Skillは無料。AIソフトの利用料は各プランによる。</p></header>
 <figure class="ill-portfolio"><img src="{BASE}assets/{hero['large']}" srcset="{BASE}assets/{hero['small']} 768w, {BASE}assets/{hero['large']} 1440w" sizes="(max-width:600px) calc(100vw - 40px), (max-width:1020px) calc(100vw - 96px), 1280px" width="1671" height="941" alt="アイコンと挿絵で業務の話をわかりやすく伝える、Taskobo Visualsのプレゼンテーション画像。構図・配色・共通の画法を説明し、提案書・報告書・研修資料・Webへの展開を示す" fetchpriority="high" decoding="async"><figcaption>同じ画法のアイコンと挿絵を組み合わせた、Skillによるオリジナル作例。<a href="{REPO}/tree/main/examples/service-story">3枚の作例と生成プロンプトを見る</a>。</figcaption></figure>
 <nav class="ill-industry-nav" aria-label="業種別サンプル">{nav}</nav>
 <section class="ill-section" id="samples"><div class="ill-section-head"><h2>違う仕事にも、伝わる画風を。</h2><p>各ページでメインイラスト、テーマ別アイコン6点、配色、依頼文を確認できる。4業種は入口で、ほかの業種も内容に合わせて制作する。</p></div><div class="ill-gallery">{gallery}</div></section>
@@ -180,13 +185,13 @@ def homepage(hero):
 
 def product_nav(path):
     is_tool = path == 'tool/'
-    return f'<nav class="ill-product-nav" aria-label="Taskobo Visuals"><a href="{BASE}"' + (' aria-current="page"' if not path else ' aria-current="true"' if not is_tool else '') + '>サンプルを見る</a><a href="' + BASE + 'tool/"' + (' aria-current="page"' if is_tool else '') + '>制作ツール</a></nav>'
+    return f'<nav class="ill-product-nav" aria-label="Taskobo Visuals"><a href="{BASE}"' + (' aria-current="page"' if not path else ' aria-current="true"' if not is_tool else '') + '>サンプルを見る</a><a href="' + BASE + 'tool/"' + (' aria-current="page"' if is_tool else '') + '>制作ツール</a><a href="/skills/">AIスキル一覧・選び方</a></nav>'
 
 
 def toolpage(skill_zip):
     presets = json.dumps({c['id']: {'name':c['name'], 'theme':c['theme'], 'accent':c['accent']} for c in CATALOG}, ensure_ascii=False).replace('<', chr(92)+'u003c')
     return f'''<div class="container"><nav class="ill-breadcrumbs" aria-label="パンくずリスト"><a href="/">ホーム</a><span>/</span><a href="{BASE}">Taskobo Visuals</a><span>/</span><span aria-current="page">制作ツール</span></nav>
-<header class="ill-tool-intro"><h1>制作条件を整え、AIに渡す。</h1><p>企業向けイラスト・アイコン制作の条件を整える。テーマ、用途、画風、配色を選び、AIに渡す依頼文を作る。</p></header>
+<header class="ill-tool-intro"><h1>イラスト・アイコンの依頼文作成</h1><p>Taskobo VisualsのAIスキル（Skill）で使う依頼文を作る。テーマ、用途、画風、配色を選び、制作ブリーフを整理して、利用中のAIに渡せる。</p></header>
 <p class="ill-tool-note">入力はブラウザー内で処理する。画像の生成と文書の確認は、Skillを導入した利用中のAIで行う。<a href="#install">Skillの導入手順</a></p>
 <p class="ill-preset-status" id="preset-status" role="status" hidden></p>
 <section class="ill-tool-layout" id="request" aria-label="制作条件と依頼文">
@@ -199,11 +204,82 @@ def toolpage(skill_zip):
 <script type="application/json" id="sample-presets">{presets}</script></div>'''
 
 
+def render_page(page_path, title, description, content, og_asset, breadcrumb, template, css, js):
+    """Render HTML only; existing asset and archive names remain inputs, not rebuild outputs."""
+    url = ORIGIN + BASE + page_path
+    page_entity = {'@type': 'WebPage', '@id': url + '#webpage', 'name': title,
+                   'description': description, 'url': url, 'inLanguage': 'ja',
+                   'isPartOf': {'@id': ORIGIN + '/#website'}}
+    graph = [page_entity, {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb',
+                          'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': name, 'item': link}
+                                              for i, (name, link) in enumerate(breadcrumb)]}]
+    if page_path in ('', 'tool/'):
+        organization_id = ORIGIN + '/#organization'
+        skill_id = ORIGIN + BASE + '#skill'
+        graph[:0] = [
+            {'@type': 'Organization', '@id': organization_id, 'name': 'Taskobo', 'url': ORIGIN + '/',
+             'logo': ORIGIN + '/assets/brand/taskobo-logo.svg'},
+            {'@type': 'WebSite', '@id': ORIGIN + '/#website', 'name': 'Taskobo', 'url': ORIGIN + '/',
+             'inLanguage': 'ja', 'publisher': {'@id': organization_id}},
+        ]
+        page_entity.update({'publisher': {'@id': organization_id}, 'dateModified': PAGE_MODIFIED,
+                            'breadcrumb': {'@id': url + '#breadcrumb'}, 'relatedLink': ORIGIN + '/skills/'})
+        graph.append({'@type': 'SoftwareSourceCode', '@id': skill_id, 'name': 'Taskobo Visuals',
+                      'url': ORIGIN + BASE, 'codeRepository': REPO, 'license': REPO + '/blob/main/LICENSE',
+                      'description': '業務資料のイラストとアイコンの制作手順を提供するAIスキル。主な指示は中国語で、日本語の利用ガイドとサンプルを公開。画像生成には利用中のAIの機能を使う。',
+                      'programmingLanguage': 'Python', 'runtimePlatform': 'Skill対応AI。補助スクリプトはPython 3.10以上。',
+                      'inLanguage': 'zh-CN', 'version': VERSION, 'isAccessibleForFree': True,
+                      'author': {'@id': organization_id}, 'mainEntityOfPage': {'@id': ORIGIN + BASE + '#webpage'}})
+        if page_path == '':
+            page_entity['mainEntity'] = {'@id': skill_id}
+        else:
+            app_id = url + '#application'
+            page_entity.update({'mainEntity': {'@id': app_id}, 'about': {'@id': skill_id}})
+            graph.append({'@type': 'WebApplication', '@id': app_id, 'name': 'Taskobo Visuals 依頼文作成ツール',
+                          'url': url, 'description': TOOL_DESCRIPTION, 'inLanguage': 'ja',
+                          'applicationCategory': 'DesignApplication', 'operatingSystem': 'Web browser',
+                          'browserRequirements': 'JavaScript enabled', 'isAccessibleForFree': True,
+                          'publisher': {'@id': organization_id},
+                          'featureList': ['テーマ・用途・画風・配色の指定', 'AIに渡す依頼文の作成とコピー', '制作ブリーフのJSON保存']})
+    data = {'@context': 'https://schema.org', '@graph': graph}
+    head = f'<title>{E(title)}</title><meta name="description" content="{E(description)}"><link rel="canonical" href="{url}"><meta property="og:type" content="website"><meta property="og:site_name" content="Taskobo"><meta property="og:locale" content="ja_JP"><meta property="og:url" content="{url}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description)}"><meta property="og:image" content="{ORIGIN}{BASE}assets/{og_asset}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{E(title)}"><meta name="twitter:description" content="{E(description)}"><meta name="twitter:image" content="{ORIGIN}{BASE}assets/{og_asset}"><script type="application/ld+json">{json.dumps(data, ensure_ascii=False).replace("<", chr(92) + "u003c")}</script><link rel="stylesheet" href="{BASE}assets/{css}"><script defer src="{BASE}assets/{js}"></script>'
+    content = content.replace('</nav>', '</nav>' + product_nav(page_path), 1)
+    return template.replace('%%HEAD%%', head).replace('%%MAIN%%', phrase_headings(content))
+
+
+def render_existing_pages(output):
+    """Publish copy/metadata changes without regenerating samples, JS, images, ZIPs or docs."""
+    manifest = json.loads((ROOT / 'website/build-manifest.json').read_text(encoding='utf-8'))
+    if manifest['skillVersion'] != VERSION:
+        raise ValueError('Skill version changed; rebuild and verify the distribution before rendering pages only.')
+    CATALOG[:] = manifest['cases']
+    css = 'illustration-' + digest((ROOT / 'website/illustration.css').read_bytes())[:12] + '.css'
+    js = 'illustration-' + digest((ROOT / 'website/illustration.js').read_bytes())[:12] + '.js'
+    recorded = {item['path'] for item in manifest['files']}
+    if not {'assets/' + css, 'assets/' + js}.issubset(recorded):
+        raise ValueError('Runtime assets changed; pages-only rendering requires the existing verified asset set.')
+    hero = manifest['hero']
+    template = (ROOT / 'website/portal-shell.html').read_text(encoding='utf-8')
+    page_inputs = [
+        ('', LANDING_TITLE, LANDING_DESCRIPTION, homepage(hero), [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE)]),
+        ('tool/', TOOL_TITLE, TOOL_DESCRIPTION, toolpage(manifest['skillZip']), [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE), ('制作ツール', ORIGIN + BASE + 'tool/')]),
+    ]
+    for page_path, title, description, content, breadcrumb in page_inputs:
+        target = output / page_path / 'index.html'
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(render_page(page_path, title, description, content, hero['large'], breadcrumb, template, css, js), encoding='utf-8', newline='\n')
+    print(json.dumps({'pagesOnly': True, 'files': ['index.html', 'tool/index.html'], 'skillVersion': VERSION}))
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, default=ROOT / 'site')
     parser.add_argument('--icons-only', action='store_true', help='Regenerate editable icon sources before PNG export')
+    parser.add_argument('--pages-only', action='store_true', help='Render only the two product pages using the verified existing asset/archive manifest')
     args = parser.parse_args()
+    if args.pages_only:
+        render_existing_pages(args.output.resolve())
+        return
     if args.icons_only:
         for case in CATALOG:
             folder = ROOT / 'examples' / case['id'] / 'icons'
@@ -268,19 +344,12 @@ def main():
     template = (ROOT / 'website/portal-shell.html').read_text(encoding='utf-8')
     routes = []
     def page(path, title, description, content, og_asset, breadcrumb):
-        url = ORIGIN + BASE + path
-        data = {'@context': 'https://schema.org', '@graph': [
-            {'@type': 'WebPage', 'name': title, 'description': description, 'url': url, 'inLanguage': 'ja', 'isPartOf': {'@id': ORIGIN + '/#website'}},
-            {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': i+1, 'name': name, 'item': link} for i, (name, link) in enumerate(breadcrumb)]}
-        ]}
-        head = f'<title>{E(title)}</title><meta name="description" content="{E(description)}"><link rel="canonical" href="{url}"><meta property="og:type" content="website"><meta property="og:site_name" content="Taskobo"><meta property="og:locale" content="ja_JP"><meta property="og:url" content="{url}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description)}"><meta property="og:image" content="{ORIGIN}{BASE}assets/{og_asset}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{E(title)}"><meta name="twitter:description" content="{E(description)}"><meta name="twitter:image" content="{ORIGIN}{BASE}assets/{og_asset}"><script type="application/ld+json">{json.dumps(data, ensure_ascii=False).replace("<", chr(92) + "u003c")}</script><link rel="stylesheet" href="{BASE}assets/{css}"><script defer src="{BASE}assets/{js}"></script>'
         target = out / path / 'index.html'
         target.parent.mkdir(parents=True, exist_ok=True)
-        content = content.replace('</nav>', '</nav>' + product_nav(path), 1)
-        target.write_text(template.replace('%%HEAD%%', head).replace('%%MAIN%%', phrase_headings(content)), encoding='utf-8', newline='\n')
+        target.write_text(render_page(path, title, description, content, og_asset, breadcrumb, template, css, js), encoding='utf-8', newline='\n')
         routes.append(BASE + path)
-    page('', 'Taskobo Visuals | 企業資料のイラスト・テーマ別アイコンをつくるAI Skill', 'テーマや文書から企業向けのイラストとアイコンを制作する無料のAI Skill。製造・物流、小売・サービス、医療・ケア、教育・研修の実作品と配色プレビューを公開。独立した制作ツールで依頼文の作成とSkillの導入ができる。', homepage(hero), hero['large'], [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE)])
-    page('tool/', '制作ツール | Taskobo Visuals', 'テーマ・用途・画風・配色から、企業資料用イラストとアイコンの依頼文を作成。制作ブリーフをJSONで保存し、無料Skillと組み合わせて利用中のAIに渡せる。', toolpage(skill_zip), hero['large'], [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE), ('制作ツール', ORIGIN + BASE + 'tool/')])
+    page('', LANDING_TITLE, LANDING_DESCRIPTION, homepage(hero), hero['large'], [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE)])
+    page('tool/', TOOL_TITLE, TOOL_DESCRIPTION, toolpage(skill_zip), hero['large'], [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE), ('制作ツール', ORIGIN + BASE + 'tool/')])
     for case in CATALOG:
         page('samples/' + case['id'] + '/', f'{case["name"]}のイラスト・アイコン例 | Taskobo Visuals', case['description'] + 'メインイラスト、編集可能なSVGアイコン6点、透明PNG、配色とAIへの依頼文を公開。', sample(case), case['assets']['large'], [('ホーム', ORIGIN + '/'), ('Taskobo Visuals', ORIGIN + BASE), (case['name'], ORIGIN + BASE + 'samples/' + case['id'] + '/')])
     manifest = {'skillVersion': VERSION, 'routes': routes, 'skillZip': skill_zip, 'hero': hero, 'cases': CATALOG, 'files': [{'path': p.relative_to(out).as_posix(), 'sha256': digest(p.read_bytes()), 'bytes': p.stat().st_size} for p in sorted(out.rglob('*')) if p.is_file()]}

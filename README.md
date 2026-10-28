@@ -1,14 +1,14 @@
-# Taskobo Visuals
-
-イラストとアイコンは同じスタイルID・同じ画法で一対一に対応する。線、塗り、材質、質感、光を共通化し、大きさに応じて構図と細部の量だけを調整する。スタイルの追加・変更・廃止は[一つの定義](references/style-recipes.json)で両方へ反映する。既存作例が全スタイルのペア検証済みという意味ではない。
+# Taskobo Visuals：企業向けイラスト・アイコンを制作するAIスキル
 
 **業務に合うイラストとアイコンを、チーム共通の基準で。**
 
-テーマや文書から伝える内容を決め、画風と配色を選び、普段使っているAIで制作するSkill。提案書、研修資料、報告書、Webのために、承認した見本と制作条件を引き継ぐ。
+テーマや文書から伝える内容を決め、画風と配色を選び、普段使っているAIで制作するAIエージェント用スキル（SKILL.md）。提案書、研修資料、報告書、Webのために、承認した見本と制作条件を引き継ぐ。
 
 [作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.3.7) · [利用ガイド](docs/guide.ja.md)
 
 [English](README.en.md) · [中文・维护基准](README.zh-CN.md)
+
+[TaskoboのAIスキル一覧](https://taskobo.com/skills/)で、業務図表の更新と挿絵・アイコン制作の用途を比較できる。
 
 ## 3枚の画像で見る、Skillの使い方
 
@@ -79,6 +79,8 @@ $taskobo-visuals を使い、業務引継ぎ資料の挿絵1点とテーマ別�
 [別の文書へ画風を引き継ぐ方法と、題材・配色を変えた実生成](docs/style-portability.ja.md)。
 
 ## 文書に合わせ、会社の基準を残す
+
+イラストとアイコンは同じスタイルID・同じ画法で一対一に対応する。線、塗り、材質、質感、光を共通化し、大きさに応じて構図と細部の量だけを調整する。スタイルの追加・変更・廃止は[一つの定義](references/style-recipes.json)で両方へ反映する。既存作例が全スタイルのペア検証済みという意味ではない。
 
 | 項目 | Skillの進め方 |
 | --- | --- |
