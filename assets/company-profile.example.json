@@ -1,0 +1,24 @@
+{
+  "schema": "taskobo-visuals.organization-profile/v1",
+  "name": "Taskobo Sample Standard",
+  "version": "1.0.0",
+  "styleId": "enterprise-narrative",
+  "styleVersion": "1",
+  "palette": {
+    "roles": {
+      "ink": "#0D2046",
+      "primary": "#1456D9",
+      "primarySoft": "#EDF3FF",
+      "paper": "#FCFBF8"
+    },
+    "lockedRoles": [
+      "ink",
+      "primary"
+    ]
+  },
+  "typography": {
+    "zh-CN": "Microsoft YaHei",
+    "ja": "Meiryo UI"
+  },
+  "references": []
+}

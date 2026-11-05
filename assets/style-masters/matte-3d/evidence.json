@@ -1,0 +1,48 @@
+{
+  "schema": "taskobo-visuals.paired-style-evidence/v1",
+  "date": "2026-11-05",
+  "skillVersion": "0.4.0",
+  "styleId": "matte-3d",
+  "status": "agent-visually-reviewed-example",
+  "userApproved": false,
+  "generator": "built-in imagegen",
+  "file": "paired-master.png",
+  "prompt": "generation.prompt.txt",
+  "sha256": "3c6681aa1b70b5c7f641a46fa4e9c6853fe6393401bd4425d1348467bd2e809b",
+  "size": [
+    1536,
+    1024
+  ],
+  "alpha": {
+    "range": [
+      0,
+      254
+    ],
+    "fullyTransparentPixels": 848540
+  },
+  "topic": "楼宇能源计划讨论",
+  "palette": {
+    "ink": "#0D2046",
+    "primary": "#1456D9",
+    "primarySoft": "#EDF3FF"
+  },
+  "contentScope": "One original fictional scene and four corresponding thematic icons. No customer documents or user screenshot included.",
+  "visualReview": [
+    "Actual light-background composite inspected; original Alpha retained.",
+    "Scene and icons use the same contour/fill/material method, with simpler icon detail.",
+    "The scene shows discussion or pending review; no completed approval is asserted.",
+    "No rectangular illustration frame or decorative display pedestal."
+  ],
+  "limitations": [
+    "One topic/palette/generation per new sheet; no repeated generation or cross-model stability claim.",
+    "Four icons are a review row in one image, not four separate deliverables.",
+    "Generated color tones and very subtle tonal variations are not exact HEX or flat-fill measurements.",
+    "A paired sheet is not an all-size or arbitrary-document validation."
+  ],
+  "independentReview": {
+    "status": "acceptable-paired-example",
+    "method": "Original image plus actual light/dark background diagnostic previews inspected by another agent.",
+    "smallSizeMeasured": false,
+    "scope": "One topic; not repeated or arbitrary-document verification."
+  }
+}

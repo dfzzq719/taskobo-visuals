@@ -1,6 +1,6 @@
 {
   "schema": "taskobo-visuals.style-recipes/v1",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "scope": "One drawing-style registry for illustrations and icons. Published numbers 01-23 are unchanged; enterprise-narrative is an existing unnumbered preset. Shared recipes are callable directions, not proof that both asset kinds have been visually validated.",
   "styles": [
     {
@@ -15,10 +15,19 @@
         "icon"
       ],
       "status": "active",
-      "styleVersion": "1",
+      "styleVersion": "2",
       "validation": {
-        "icon": "existing-examples",
-        "illustration": "not-pair-validated"
+        "illustration": "paired-example-reviewed",
+        "icon": "paired-example-reviewed",
+        "evidence": "assets/style-masters/monoline/evidence.json",
+        "scope": "One original scene and a four-icon overview on one topic; not standalone icon deliveries, repeated generation or all-input verification."
+      },
+      "styleReference": {
+        "file": "assets/style-masters/monoline/paired-master.png",
+        "sha256": "adf278c8857627d0151716cb101f2b978c8ad62bae16e0f7b46a017e5cbd88a4",
+        "role": "style",
+        "status": "agent-reviewed-example",
+        "scope": "Same drawing method for illustration and icon. Ignore this sheet topic, palette, review layout and icon inventory; adapt to current brief."
       }
     },
     {
@@ -168,10 +177,19 @@
         "icon"
       ],
       "status": "active",
-      "styleVersion": "1",
+      "styleVersion": "2",
       "validation": {
-        "icon": "existing-examples",
-        "illustration": "not-pair-validated"
+        "illustration": "paired-example-reviewed",
+        "icon": "paired-example-reviewed",
+        "evidence": "assets/style-masters/matte-3d/evidence.json",
+        "scope": "One original scene and a four-icon overview on one topic; not standalone icon deliveries, repeated generation or all-input verification."
+      },
+      "styleReference": {
+        "file": "assets/style-masters/matte-3d/paired-master.png",
+        "sha256": "3c6681aa1b70b5c7f641a46fa4e9c6853fe6393401bd4425d1348467bd2e809b",
+        "role": "style",
+        "status": "agent-reviewed-example",
+        "scope": "Same drawing method for illustration and icon. Ignore this sheet topic, palette, review layout and icon inventory; adapt to current brief."
       }
     },
     {
@@ -447,8 +465,10 @@
       "status": "active",
       "styleVersion": "1",
       "validation": {
-        "illustration": "existing-examples",
-        "icon": "not-pair-validated"
+        "illustration": "paired-page-reviewed",
+        "icon": "paired-page-reviewed",
+        "evidence": "https://github.com/dfzzq719/taskobo-visuals/tree/main/examples/service-story",
+        "scope": "Three user-approved promotional page-images; same drawing method in page illustrations and icons. Not separate transparent icon assets."
       }
     }
   ],
