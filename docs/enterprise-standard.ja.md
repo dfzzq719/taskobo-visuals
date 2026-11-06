@@ -13,7 +13,7 @@ python scripts/doctor.py --skills-root /path/to/installed-skills
 
 ## 2. Webの草稿に意味を補う
 
-Webではテーマ、24の具体的な画法、色、外形、用途と表示サイズを選ぶ。出力は `status: draft` の制作意向だ。Skillを導入したAIに渡し、本資料の意味、描く対象・動作、必要な出典と誤示を補う。
+Webではテーマ、具体的な画法、色、外形、用途と表示サイズを選ぶ。現在選べる画法は[制作ツールの画風欄](https://taskobo.com/free-tools/taskobo-visuals/tool/)で確認する。出力は `status: draft` の制作意向だ。Skillを導入したAIに渡し、本資料の意味、描く対象・動作、必要な出典と誤示を補う。
 
 ```sh
 python scripts/prepare_visual_jobs.py --brief draft.json --validate-only

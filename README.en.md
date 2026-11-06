@@ -14,17 +14,17 @@ Enterprise illustrations and coordinated thematic icons, made with your own AI f
 
 Local production records connect each asset to its actual prompt, references, host-tool receipt, output hashes and immutable attempts. Retry only the failed or requested asset while retaining earlier results. Delivery manifests match independent files to job IDs and distinguish PNG, native SVG and SVG containing raster content. An overview does not replace separate deliverables. Search approved assets by meaning, multilingual aliases, style, palette and organization profile version; verify the files before reuse.
 
-The 24 shared styles, portable team profiles, draft validation and Alpha diagnostics remain. Generation takes place in the host AI. Helpers do not generate images or automatically approve business meaning, visual quality or style.
+The shared style definitions, portable team profiles, draft validation and Alpha diagnostics remain. Generation takes place in the host AI. Helpers do not generate images or automatically approve business meaning, visual quality or style.
 
 [Production, delivery and reuse](docs/production-workflow.ja.md) · [Team-profile CLI](docs/enterprise-standard.ja.md) · [Actual image evidence and limits](docs/validation-matrix.ja.md). Drafts, executable plans, generated images and visual approval are distinct states; no model or web generation backend is bundled.
 
 ## Compare visual directions
 
-[Browse 23 icon drawing and material examples](docs/icon-styles.ja.md), controlled for business themes and blue/navy palette. These are selection examples, not measured adoption rankings or 23 fixed presets.
+[Browse 23 icon drawing and material examples](docs/icon-styles.ja.md), created on 2026-10-25 with v0.3.5 and controlled for business themes and a blue/navy palette. This historical comparison does not state the current number of selectable styles or measured adoption rankings.
 
-The Skill has three starting directions: `precision`, `editorial` and `dimensional`. Two named optional presets are documented: [`technical-spot`](references/technical-spot.md) and [`enterprise-narrative`](references/enterprise-narrative.md). Choose content, palette and viewpoint independently.
+Starting directions such as `precision`, `editorial` and `dimensional` help with selection. Documented drawing methods include [`technical-spot`](references/technical-spot.md) and [`enterprise-narrative`](references/enterprise-narrative.md). Choose content, palette and viewpoint independently.
 
-v0.3.5 also bundles [23 drawing recipes](references/style-recipes.json), selectable by number or name and combined with the current document's subjects and palette. Both comparison boards have been regenerated from these recipes and reviewed cell by cell. [Document-to-image validation](docs/document-driven-validation.ja.md) records three fictional inputs and 12 actually generated Technical Spot icons. The comparison boards cover all23 styles on controlled topics; document-driven forward generation currently covers No.06, not every style or arbitrary input.
+Check the [Web workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) and [shared style registry](references/style-recipes.json) for current choices. Use the selected style ID and name with the current document's subjects and palette. The historical comparison boards were generated from the v0.3.5 recipes and reviewed cell by cell. [Document-to-image validation](docs/document-driven-validation.ja.md) records three fictional inputs and 12 actually generated Technical Spot icons. The comparison boards record the 23 recipes used at that time on controlled topics; this document-driven validation covers No.06, not every style or arbitrary input.
 
 ## Start
 

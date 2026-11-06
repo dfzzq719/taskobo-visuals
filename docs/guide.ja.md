@@ -2,7 +2,7 @@
 
 提案書、研修資料、報告書、Webに合うイラストとテーマ別アイコンを制作するAIエージェント用スキル（SKILL.md）。テーマ、画風、配色を別々に決め、チームの見本と制作基準を引き継ぐ。
 
-[作品展示](https://taskobo.com/free-tools/taskobo-visuals/) · [23の画風・素材の作例](icon-styles.ja.md) · [業種別サンプル](gallery.ja.md) · [Skill本体](../SKILL.md)
+[作品展示](https://taskobo.com/free-tools/taskobo-visuals/) · [画風・素材の比較作例](icon-styles.ja.md) · [業種別サンプル](gallery.ja.md) · [Skill本体](../SKILL.md)
 
 [TaskoboのAIスキル一覧](https://taskobo.com/skills/)で用途を比較できる。議事録からWBS・責任分担表・工程表を更新する場合は、[Taskobo Diagrams](https://taskobo.com/free-tools/taskobo-diagrams/)を参照する。
 
@@ -44,7 +44,7 @@ $taskobo-visuals を使い、新入社員のオンボーディングを説明す
 小サイズで確認し、採用する見本と生成プロンプトを保存する。
 ```
 
-[23の画法・素材作例](icon-styles.ja.md)から方向を選べる。v0.3.5では対応する[23の画法レシピ](../references/style-recipes.json)もSkillに同梱する。Webの選択肢は3つの基本方向・2つの具体的なプリセットで、全レシピの設定画面ではない。作例番号と名称をAIへの依頼文に添え、今回の内容・表示サイズに合わせて制作する。
+[画法・素材の作例](icon-styles.ja.md)で表現の違いを比較できる。掲載の比較画像は2026-10-25にv0.3.5の23レシピから制作した記録であり、現在の選択肢の総数を示すものではない。現在選べる画法は[制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)と[共通の画法定義](../references/style-recipes.json)で確認する。画法のID・名称を依頼文に添え、今回の内容・表示サイズに合わせて制作する。
 
 ### 技術テーマのスポットイラスト
 
@@ -76,7 +76,7 @@ python scripts/extract_context.py --input proposal.pptx > document-context.json
 
 各アイコンについて、根拠、伝える意味、描く物・動作、誤解させてはいけない条件をAIが整理する。例えば「承認待ち」を、見栄えのために「承認済み」のチェックへ変えない。対象と配色は今回の資料から決める。Agentが整理したアイコン用ブリーフは、`scripts/prepare_icon_jobs.py --brief brief.json --context document-context.json --output generation-jobs.json` で画法レシピと組み合わせられる。補助スクリプト自体は意味を推論せず、画像も生成しない。
 
-[DOCX・PPTX・Markdownからの実生成検証](document-driven-validation.ja.md)では、新しい3業務・12アイコンを06の画法で制作した。これは06の具体的な検証であり、23画法すべての画質や任意文書の一回成功を保証するものではない。
+[DOCX・PPTX・Markdownからの実生成検証](document-driven-validation.ja.md)では、新しい3業務・12アイコンを06の画法で制作した。これは06の具体的な検証であり、すべての画法の画質や任意文書の一回成功を保証するものではない。
 
 PDFの文字抽出は追加の `pypdf` に依存する。画像内の文字、スキャン文書のOCR、ページ上の余白とレイアウト理解は、利用するAIの機能による。入力ファイルは変更しない。資料をAIへ渡す際は、そのソフトのデータ取扱いと社内ルールを確認する。
 
