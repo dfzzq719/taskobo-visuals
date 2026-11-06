@@ -1,0 +1,62 @@
+{
+  "schema": "taskobo-visuals.paired-style-evidence/v1",
+  "styleId": "faceted-geometric",
+  "styleVersion": "1",
+  "date": "2026-11-06",
+  "status": "agent-reviewed-example",
+  "userApproved": false,
+  "outputRole": "paired-overview-reference",
+  "productionMethod": "agent-native-svg-with-sharp-png-export",
+  "aiRasterGeneration": false,
+  "model": null,
+  "seed": null,
+  "hostRequestId": null,
+  "actualLoadedSkillVersion": "0.6.0",
+  "actualRegistryVersion": "0.6.0",
+  "file": {
+    "file": "paired-master.png",
+    "sha256": "a56f5a75a4e793d757fe4a10b3f0cf16d283c6efab092a88c7918a5496c3f46e"
+  },
+  "nativeSourcesAndExports": [
+    {
+      "file": "board.svg",
+      "sha256": "c593011db77f30aa3fc90a09a633adbba8f56adc2478dea6cfdf731f346dcaec"
+    },
+    {
+      "file": "scene-01.svg",
+      "sha256": "d361e6c3154b60e1d57e6dc5511b3f4875f8bf030623fce8ae21204646ca6111"
+    },
+    {
+      "file": "icon-01.svg",
+      "sha256": "3990332bfc0068f759eedecd8040332fd4825a2fece08aeaeb7caae432332a38"
+    },
+    {
+      "file": "icon-02.svg",
+      "sha256": "6b9c3a46c18ad79db18396b629c188a569824cc567dc5545ad11ff71e1ef3878"
+    },
+    {
+      "file": "scene-01.png",
+      "sha256": "0f5f47725165301595badc89901a743d8f37136c4e9b39ac011e176504b1f0f0"
+    },
+    {
+      "file": "icon-01.png",
+      "sha256": "a829941c88325875ea658e3872f29751043ecd3fabd67fceac663943a0e244e3"
+    },
+    {
+      "file": "icon-02.png",
+      "sha256": "147d30c10e2e496604799e581ce40ef61a2ca3de24ba773707b4e626a9f33e66"
+    }
+  ],
+  "review": {
+    "creator": "Agent reviewed actual files, Alpha and target-size diagnostics",
+    "independent": "Blind classification against all20 current recipes before named-folder mapping",
+    "blindCandidate": "G",
+    "scope": "One fictional topic, one blue/teal palette, one scene and two icon concepts."
+  },
+  "limitations": [
+    "A paired board is not three independent PNG deliveries. Native sources, where supplied, are separate files.",
+    "Agent review does not mean user or company approval; no arbitrary-document, all-size or repeatability guarantee.",
+    "This palette is for light documents. Navy shapes need recoloring for dark placement; exact font identity was not assessed.",
+    "Native SVG and model-generated bitmaps are different production methods and are recorded separately."
+  ]
+}

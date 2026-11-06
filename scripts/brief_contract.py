@@ -24,27 +24,67 @@ def skill_version(root=ROOT):
     return re.search(r'version:\s*["\']([^"\']+)', (root / 'SKILL.md').read_text(encoding='utf-8'))[1]
 
 
+def style_aliases(style):
+    """Legacy recipe numbers are aliases, never the current display position."""
+    aliases = {str(style[k]).strip().casefold() for k in ('id', 'nameZh', 'nameJa', 'nameEn') if style.get(k)}
+    number = style.get('number')
+    if number is not None:
+        if isinstance(number, bool) or not isinstance(number, int) or number < 1:
+            raise ValueError('Style numbers must be positive integer legacy identifiers.')
+        aliases.update((str(number), f'{number:02d}'))
+    return aliases
+
+
+def retired_styles(catalog, root=ROOT):
+    """Read refusal metadata only; retired records never provide callable recipes."""
+    pointer = catalog.get('retiredStyleRegistry')
+    if pointer is None:
+        return []
+    if not isinstance(pointer, dict) or not isinstance(pointer.get('file'), str):
+        raise ValueError('The retired-style registry pointer is invalid; repair the Skill installation.')
+    relative = Path(pointer['file'])
+    target = (Path(root) / relative).resolve()
+    if relative.is_absolute() or not target.is_relative_to(Path(root).resolve()):
+        raise ValueError('The retired-style registry path must stay inside the Skill installation.')
+    try:
+        data = read_json(target)
+        if (data.get('schema') != 'taskobo-visuals.retired-styles/v1'
+                or data.get('version') != catalog.get('version') or not isinstance(data.get('styles'), list)):
+            raise ValueError('Invalid retired-style metadata.')
+        for style in data['styles']:
+            if (not isinstance(style, dict) or style.get('status') != 'retired'
+                    or not all(isinstance(style.get(k), str) and style[k].strip()
+                               for k in ('id', 'nameZh', 'nameJa', 'nameEn', 'retiredIn', 'reason'))
+                    or any(k in style for k in ('treatment', 'styleReference', 'styleVersion'))):
+                raise ValueError('Retired styles must contain refusal metadata, not executable recipes.')
+            style_aliases(style)
+        return data['styles']
+    except (OSError, UnicodeError, ValueError, TypeError, AttributeError) as exc:
+        raise ValueError('Retired-style metadata is missing or invalid; repair the Skill installation before generating.') from exc
+
+
 def resolve_style(direction, catalog=None):
-    catalog = catalog or read_json(ROOT / 'references/style-recipes.json')
+    catalog = catalog if catalog is not None else read_json(ROOT / 'references/style-recipes.json')
     if not isinstance(direction, dict):
         raise ValueError('direction must be an object.')
     selections = [direction[k] for k in ('styleId', 'recipe', 'preset') if direction.get(k) is not None]
     if not selections:
         raise ValueError('Choose direction.styleId; a broad family such as Editorial is not a concrete drawing style.')
+    tombstones = retired_styles(catalog)
     resolved = []
     for selection in selections:
         key = str(selection).strip().casefold()
         matches = []
-        for style in catalog['styles']:
-            aliases = {str(style[k]).casefold() for k in ('id', 'nameZh', 'nameJa', 'nameEn')}
-            if style.get('number') is not None:
-                aliases.update((str(style['number']), f"{style['number']:02d}"))
-            if key in aliases:
+        for style in [*catalog['styles'], *tombstones]:
+            if key in style_aliases(style):
                 matches.append(style)
         if len(matches) != 1:
             raise ValueError('Style must uniquely match the shared style registry; no fallback is allowed.')
         if matches[0].get('status', 'active') != 'active':
-            raise ValueError('The selected shared style is retired for illustrations and icons.')
+            style = matches[0]
+            when = f" in {style['retiredIn']}" if style.get('retiredIn') else ''
+            raise ValueError(f"Shared style '{style['id']}' was retired{when} for both illustrations and icons. "
+                             'Choose a current style explicitly and re-publish any company profile; no automatic replacement is applied.')
         resolved.append(matches[0])
     if any(s['id'] != resolved[0]['id'] for s in resolved):
         raise ValueError('Style selections conflict; illustrations and icons require the same shared style ID.')

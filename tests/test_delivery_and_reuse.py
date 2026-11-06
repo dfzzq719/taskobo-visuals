@@ -269,7 +269,7 @@ class CatalogTests(Fixture):
     def test_unapproved_metadata_is_never_returned(self):
         entry = self.approve()
         path = self.catalog_dir/'catalog.json'
-        data = json.loads(path.read_text())
+        data = json.loads(path.read_text(encoding='utf-8'))
         data['assets'][0]['review']['status'] = 'generated-unreviewed'
         path.write_text(json.dumps(data), encoding='utf-8')
         self.assertFalse(catalog.search_catalog(self.catalog_dir)['matches'])

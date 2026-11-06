@@ -1,0 +1,1 @@
+Agent authored original SVG paths for the planned handover review scene, document/magnifier icon and folder/handover icon. The shared current recipe governs all three. Sources included; PNG is an actual Sharp raster export of the SVG, not an image-model output.

@@ -1,5 +1,5 @@
 {
-  "skillVersion": "0.5.0",
+  "skillVersion": "0.6.0",
   "routes": [
     "/free-tools/taskobo-visuals/",
     "/free-tools/taskobo-visuals/tool/",
@@ -8,7 +8,7 @@
     "/free-tools/taskobo-visuals/samples/healthcare-care/",
     "/free-tools/taskobo-visuals/samples/education-training/"
   ],
-  "skillZip": "taskobo-visuals-v0.5.0-756ee2b6883f.zip",
+  "skillZip": "taskobo-visuals-v0.6.0-eb4dd427efd0.zip",
   "hero": {
     "small": "service-story-02-768-4157bb50ed68.webp",
     "large": "service-story-02-1440-f91c75081f1b.webp",
@@ -840,9 +840,9 @@
       "bytes": 628
     },
     {
-      "path": "assets/illustration-c017530c6eb6.js",
-      "sha256": "c017530c6eb6fecaa78c6f15e985c870e3b3c93665b8580ace923e419974bb93",
-      "bytes": 22772
+      "path": "assets/illustration-a1d681dfcd5e.js",
+      "sha256": "a1d681dfcd5e7f6143e3bceb7a6f85175af2a0553fb209a050a8db4af03b6ffd",
+      "bytes": 23962
     },
     {
       "path": "assets/illustration-d26181b2b96b.css",
@@ -915,39 +915,39 @@
       "bytes": 2788667
     },
     {
-      "path": "downloads/taskobo-visuals-v0.5.0-756ee2b6883f.zip",
-      "sha256": "756ee2b6883f0a6d4c35f1b16a9afb7d142564dce0594fd93c54a5085f6bf505",
-      "bytes": 9167552
+      "path": "downloads/taskobo-visuals-v0.6.0-eb4dd427efd0.zip",
+      "sha256": "eb4dd427efd0d5bd3a97b978961f9c0e344ae1499fd8f29b3e01d27b277e0bfb",
+      "bytes": 14686573
     },
     {
       "path": "index.html",
-      "sha256": "6336e77a795d199db59c48928d3d83554d43a15908f3ecc792104eb0bcd21da6",
+      "sha256": "ea61d74cc20dc62ef5d167206bf5bef2fdb4c04199fef88f31c36207f8dd20a3",
       "bytes": 26118
     },
     {
       "path": "samples/education-training/index.html",
-      "sha256": "6be54f2c1f4281e00075316bd21de1cf0ad01f64361d8cdb74d9671b6d1cf10b",
+      "sha256": "9c18c3c52b13885bb215ad26579d5698c56c9ad5b4f06c790f7281ec57d4b826",
       "bytes": 26789
     },
     {
       "path": "samples/healthcare-care/index.html",
-      "sha256": "579e2819baf6cec57308bf150335c9cb32b08077c711851c5677bff3ac49fb94",
+      "sha256": "8ffacb6ff41b5c22b181e854efe3337575d907ef0039122332f409d06b0f1492",
       "bytes": 26512
     },
     {
       "path": "samples/manufacturing-logistics/index.html",
-      "sha256": "2ff1a754662a8726881f0e82c1580d7e80a7d6b8244a3db43f0fc3556d4322d5",
+      "sha256": "67f4da3c1a4aa824285835fb59549391b532400c43ff3a91f5c863050b8543d2",
       "bytes": 26781
     },
     {
       "path": "samples/retail-service/index.html",
-      "sha256": "6d2136f9a94fccf7d1957dba1d7e139c037ed8f1b70794c7e4782d67ff363b91",
+      "sha256": "e58d680496b113d49a30c4043ec92ca66012409dbaac091d05e6aee89e4459d0",
       "bytes": 27144
     },
     {
       "path": "tool/index.html",
-      "sha256": "c97d811b11151166dc2737ff9b5c3f6b5539f36578bba846a0fa8f4ea7f89d65",
-      "bytes": 41397
+      "sha256": "53d5997cdba06bbf9e6b48b2bd37ceae9cc0dda210df1063b250aa45d9cba50c",
+      "bytes": 47613
     }
   ]
 }

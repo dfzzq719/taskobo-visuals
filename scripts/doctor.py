@@ -49,11 +49,56 @@ def installation_report(root=ROOT, expected_version=None, skills_root=None, incl
         raw = registry_path.read_bytes()
         registry = json.loads(raw.decode('utf-8-sig'))
         styles = registry['styles']
-        ids = [s['id'] for s in styles]
-        if not styles or len(ids) != len(set(ids)):
+        ids = [s['id'].casefold() for s in styles]
+        if not styles or any(not x for x in ids) or len(ids) != len(set(ids)):
             raise ValueError('Style identifiers must be nonempty and unique.')
         if 'version' in meta and registry['version'] != meta['version']:
             errors.append({'code': 'registry-version-mismatch', 'message': 'The registry and Skill versions differ.'})
+        retired = []
+        pointer = registry.get('retiredStyleRegistry')
+        if pointer is not None:
+            if not isinstance(pointer, dict) or not isinstance(pointer.get('file'), str):
+                raise ValueError('Invalid retired-style registry pointer.')
+            relative = Path(pointer['file'])
+            retired_path = (root / relative).resolve()
+            if relative.is_absolute() or not retired_path.is_relative_to(root):
+                raise ValueError('Unsafe retired-style metadata path.')
+            tombstones = json.loads(retired_path.read_text(encoding='utf-8-sig'))
+            if (tombstones.get('schema') != 'taskobo-visuals.retired-styles/v1'
+                    or tombstones.get('version') != registry['version'] or not isinstance(tombstones.get('styles'), list)):
+                raise ValueError('Invalid retired-style metadata schema or version.')
+            retired = tombstones['styles']
+            for style in retired:
+                if (style.get('status') != 'retired'
+                        or not all(isinstance(style.get(k), str) and style[k].strip()
+                                   for k in ('id', 'nameZh', 'nameJa', 'nameEn', 'retiredIn', 'reason'))
+                        or any(k in style for k in ('treatment', 'styleReference', 'styleVersion'))):
+                    errors.append({'code': 'invalid-retired-style', 'message': 'Retired styles must contain refusal metadata without callable recipes.'})
+            checks.append('retired-style-metadata')
+        all_ids, numbers, aliases = set(), set(), set()
+        for style in [*styles, *retired]:
+            identity = style['id'].strip().casefold()
+            if not identity or identity in all_ids:
+                errors.append({'code': 'style-id-collision', 'message': 'Active and retired style identifiers must remain unique.'})
+            all_ids.add(identity)
+            number = style.get('number')
+            if number is not None:
+                if isinstance(number, bool) or not isinstance(number, int) or number < 1 or number in numbers:
+                    errors.append({'code': 'style-number-collision', 'message': 'Legacy recipe numbers must be positive, unique and never reassigned.'})
+                numbers.add(number)
+            current_aliases = {str(style[k]).strip().casefold() for k in ('id', 'nameZh', 'nameJa', 'nameEn') if style.get(k)}
+            if isinstance(number, int) and not isinstance(number, bool):
+                current_aliases.update((str(number), f'{number:02d}'))
+            if aliases.intersection(current_aliases):
+                errors.append({'code': 'style-alias-collision', 'message': 'Current and retired names or legacy numbers resolve ambiguously.'})
+            aliases.update(current_aliases)
+        expected_count = registry.get('policy', {}).get('activeStyleCount')
+        if expected_count is not None and (len(styles) != expected_count or any(s.get('status') != 'active' for s in styles)):
+            errors.append({'code': 'active-style-count-mismatch', 'message': 'The current registry must contain exactly the declared number of active styles; retirement metadata belongs in its separate file.'})
+        display_order = [style.get('displayOrder') for style in styles]
+        if any(v is not None for v in display_order) and (any(isinstance(v, bool) or not isinstance(v, int) for v in display_order)
+                                                        or sorted(display_order) != list(range(1, len(styles) + 1))):
+            errors.append({'code': 'invalid-display-order', 'message': 'Display positions must be contiguous and independent of immutable legacy numbers.'})
         references = []
         for style in styles:
             if set(style.get('assetKinds', [])) != {'illustration', 'icon'}:
@@ -70,9 +115,9 @@ def installation_report(root=ROOT, expected_version=None, skills_root=None, incl
             if actual != reference.get('sha256'):
                 errors.append({'code': 'reference-hash-mismatch', 'styleId': style['id'], 'message': 'A bundled style reference differs from its recorded hash.'})
             references.append({'styleId': style['id'], 'sha256': actual})
-        report['registry'] = {'version': registry['version'], 'sha256': hashlib.sha256(raw).hexdigest(), 'styles': len(styles), 'references': references}
+        report['registry'] = {'version': registry['version'], 'sha256': hashlib.sha256(raw).hexdigest(), 'styles': len(styles), 'retiredStyles': len(retired), 'references': references}
         checks.append('shared-registry-and-reference-hashes')
-    except (OSError, UnicodeError, ValueError, KeyError, TypeError):
+    except (OSError, UnicodeError, ValueError, KeyError, TypeError, AttributeError):
         errors.append({'code': 'invalid-registry', 'message': 'The shared style registry could not be validated.'})
     required = ['prepare_icon_jobs.py', 'prepare_visual_jobs.py', 'extract_context.py', 'check_palette.py', 'check_assets.py',
                 'production_run.py', 'delivery_manifest.py', 'asset_catalog.py']

@@ -4,23 +4,21 @@
 
 テーマや文書から伝える内容を決め、画風と配色を選び、普段使っているAIで制作するAIエージェント用スキル（SKILL.md）。提案書、研修資料、報告書、Webのために、承認した見本と制作条件を引き継ぐ。
 
-[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0) · [利用ガイド](docs/guide.ja.md)
+[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.6.0) · [利用ガイド](docs/guide.ja.md)
 
 [English](README.en.md) · [中文・维护基准](README.zh-CN.md)
 
 [TaskoboのAIスキル一覧](https://taskobo.com/skills/)で、業務図表の更新と挿絵・アイコン制作の用途を比較できる。
 
-## v0.5.0 — 制作の履歴を残し、採用素材を次の仕事へ
+## v0.6.0 — 業務資料に使う20種へ整理
 
-- 素材ごとに実際のプロンプト、参照、生成ツールの返答、出力ファイルを記録する。
-- 失敗した素材や修正が必要な素材だけを再制作し、過去の試行と採用済みファイルを残す。
-- タスクと独立ファイルを照合。「挿絵1点＋アイコン4点」は5点として確認し、総覧と区別する。
-- 採用の根拠を明記した素材を、意味・別名・画法・配色・社内規格の版から探して再利用する。
-- 画法の共通定義、会社規格JSON／ZIP、Alpha診断、Webからの引継ぎを継続する。
+イラストとアイコンで共通の画法を20種に整理した。14種を継続し、装飾性や材質依存の強い10種を廃止。構造デュオトーン、幾何ファセット、クリーン手描き、ワークショップ・マーカー、色鉛筆、ガッシュを加えた。
 
-[制作記録・納品確認・素材の再利用](docs/production-workflow.ja.md) · [会社規格とCLI](docs/enterprise-standard.ja.md) · [画法別の実生成・未検証範囲](docs/validation-matrix.ja.md) · [制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/#company-standard)
+通常の報告・提案は線画と平面から、人や研修の説明には手描き、表紙や重点表現には適切な立体を選ぶ。20種すべてが同じ頻度で使われるという意味ではない。選定は中国・日本・米国を含む公開企業規範に基づく編集判断で、採用率ランキングではない。
 
-Webは制作条件を整える。画像はSkillを導入したAIで生成する。機械検査は意味や画風の自動承認ではなく、生成結果の最終採用は実画像を確認して決める。
+[20種の用途・相違点・廃止理由](docs/icon-styles.ja.md) · [実生成の範囲](docs/validation-matrix.ja.md) · [制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)
+
+制作履歴、修正対象だけの再制作、独立ファイルの納品確認、採用素材の検索・原図再利用は引き続き利用できる。[制作から再利用まで](docs/production-workflow.ja.md)。画像はSkillを導入したAIで生成し、内容と画風を人が確認する。
 
 ## 3枚の画像で見る、Skillの使い方
 
@@ -42,28 +40,15 @@ Webは制作条件を整える。画像はSkillを導入したAIで生成する�
 
 画像として直接生成したプレゼンテーション作例。Webは依頼文と制作条件を作り、画像の制作はSkillを導入したAIで行う。独立素材は透明背景が標準で、この3枚は文字と素材を組み合わせたページ画像。
 
-## 画風を見て選ぶ
+## 画風を選ぶ
 
-線画、フラット、テクニカルスポット、マット3D、ガラス、金属、紙、刺繍まで。2026-10-25にv0.3.5で制作した23の比較作例を、同じ4テーマ・同じブルー系の配色で確認できる。これは制作当時の比較記録であり、現在選べる画風の総数を示すものではない。
+[現在の20種](docs/icon-styles.ja.md)を、用途と描き方の違いから選ぶ。線、色面、筆致、材質、光はイラストとアイコンに共通の一つの定義を使う。具体的なIDと名称を今回の業務内容・配色と組み合わせる。
 
-<p>
-  <a href="docs/icon-styles.ja.md#基本表現と立体表現"><img src="docs/assets/icon-styles/styles-ja-01-v4.png" width="49%" alt="01から12：基本表現と立体表現の作例" /></a>
-  <a href="docs/icon-styles.ja.md#素材感とブランド表現"><img src="docs/assets/icon-styles/styles-ja-02-v2.png" width="49%" alt="13から23：素材感とブランド表現の作例" /></a>
-</p>
-
-[23の作例を拡大して見る・用途から選ぶ](docs/icon-styles.ja.md)。2枚とも制作当時のv0.3.5のレシピを使い、06の平面表現と各素材の違いを見直した。番号と名称を依頼文に添えると、求める表現を共有しやすい。配列は用途の広さを考えた目安で、企業の利用率を測定したランキングではない。
-
-現在選べる画風は[制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)と[共通の画法定義](references/style-recipes.json)で確認する。基本方向は選ぶ際の手掛かりで、実行時には具体的な画法ID・名称を使う。今回の文書の意味と配色を組み合わせて依頼文を作る。比較作例は既製アイコン集ではなく、すべての画法や題材を検証済みという意味でもない。[新しい3業務の文書から実際に制作した例](docs/document-driven-validation.ja.md)で、確認した範囲と限界を公開する。
-
-| 基本方向 | 主な用途 | 整理済みのプリセット |
-| --- | --- | --- |
-| Precision | 説明用アイコン、技術・業務の小さな挿絵 | [`technical-spot`](references/technical-spot.md)：2Dの輪郭線と平面の色面で具体的な対象を伝える |
-| Editorial | 人と仕事の関係、書籍、広報の場面イラスト | [`enterprise-narrative`](references/enterprise-narrative.md)：自然な人物と動作、軽い描画の質感 |
-| Dimensional | 表紙、製品能力、強調したい概念 | マットな立体と安定した光で方向を決める |
+刺繍、レザー、磁器などは現行の選択肢から外した。[旧版23種の比較画像](docs/icon-styles-history-v035.ja.md)は過去の研究記録として保持する。旧番号へ新しい画法を割り当てず、廃止したIDを別の画法へ自動置換しない。
 
 ## まず1セット作る
 
-1. [v0.5.0のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
+1. [v0.6.0のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.6.0)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
 2. Skillを再読み込みし、制作条件を渡す。[Webの制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)でも依頼文とJSONを作れる。
 3. 素材を用途に合うサイズで確認し、採用した見本、配色、生成プロンプトをチームに共有する。
 

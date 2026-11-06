@@ -4,31 +4,27 @@ Each style applies the exact same drawing method to illustrations and icons unde
 
 Enterprise illustrations and coordinated thematic icons, made with your own AI from a topic or document. Content, art direction and palette remain independent choices.
 
-[日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.5.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0)
+[日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.6.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.6.0)
 
 ![Original promotional example combining icons, an illustration and Japanese copy](examples/service-story/page-02.png)
 
 [Explore the three-image story: icons and text → icons, illustration and text → illustration and text](examples/service-story/README.ja.md). These original images were generated using one `enterprise-narrative` drawing method and palette. Original PNGs, prompts and generation records are included. The Web workspace prepares requests; creation takes place in your AI with the Skill installed.
 
-## v0.5.0: trace each asset, retry selectively, reuse approved work
+## v0.6.0: 20 shared drawing methods for business documents
 
-Local production records connect each asset to its actual prompt, references, host-tool receipt, output hashes and immutable attempts. Retry only the failed or requested asset while retaining earlier results. Delivery manifests match independent files to job IDs and distinguish PNG, native SVG and SVG containing raster content. An overview does not replace separate deliverables. Search approved assets by meaning, multilingual aliases, style, palette and organization profile version; verify the files before reuse.
+Keep 14, retire 10 and add 6: structural duotone, geometric facets, clean handdrawing, workshop marker, colored pencil and editorial gouache. The current total is 20, including enterprise narrative. Icons and illustrations share the exact same drawing definition and lifecycle.
 
-The shared style definitions, portable team profiles, draft validation and Alpha diagnostics remain. Generation takes place in the host AI. Helpers do not generate images or automatically approve business meaning, visual quality or style.
+Prefer simple lines and flat forms for regular reports. Select technical, handdrawn or dimensional work for its communication task. Public Chinese, Japanese and US enterprise guidelines inform this editorial selection; it is not a measured adoption ranking. Retired IDs and legacy numbers are never reassigned or silently substituted.
 
-[Production, delivery and reuse](docs/production-workflow.ja.md) · [Team-profile CLI](docs/enterprise-standard.ja.md) · [Actual image evidence and limits](docs/validation-matrix.ja.md). Drafts, executable plans, generated images and visual approval are distinct states; no model or web generation backend is bundled.
+[Current styles, applications and sources](docs/icon-styles.ja.md) · [Actual generation evidence and limits](docs/validation-matrix.ja.md). Per-asset production records, bounded selective retries, independent delivery and approved exact-file reuse remain available in the [workflow guide](docs/production-workflow.ja.md).
 
 ## Compare visual directions
 
-[Browse 23 icon drawing and material examples](docs/icon-styles.ja.md), created on 2026-10-25 with v0.3.5 and controlled for business themes and a blue/navy palette. This historical comparison does not state the current number of selectable styles or measured adoption rankings.
-
-Starting directions such as `precision`, `editorial` and `dimensional` help with selection. Documented drawing methods include [`technical-spot`](references/technical-spot.md) and [`enterprise-narrative`](references/enterprise-narrative.md). Choose content, palette and viewpoint independently.
-
-Check the [Web workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) and [shared style registry](references/style-recipes.json) for current choices. Use the selected style ID and name with the current document's subjects and palette. The historical comparison boards were generated from the v0.3.5 recipes and reviewed cell by cell. [Document-to-image validation](docs/document-driven-validation.ja.md) records three fictional inputs and 12 actually generated Technical Spot icons. The comparison boards record the 23 recipes used at that time on controlled topics; this document-driven validation covers No.06, not every style or arbitrary input.
+Use the [current 20-style guide](docs/icon-styles.ja.md), [Web workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) and [single registry](references/style-recipes.json). A medium or texture is retained only where it serves a useful business communication task. The [historical 23-style boards](docs/icon-styles-history-v035.ja.md) record earlier experiments and do not describe current selectable styles.
 
 ## Start
 
-1. Extract the Skill ZIP from [v0.5.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0) into a Skill directory supported by your AI application. The folder is `taskobo-visuals`; repository-based installers should use this repository root.
+1. Extract the Skill ZIP from [v0.6.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.6.0) into a Skill directory supported by your AI application. The folder is `taskobo-visuals`; repository-based installers should use this repository root.
 2. Reload the Skill and invoke `$taskobo-visuals` with a topic, use, palette and art direction. The Web workspace creates a reusable request and brief JSON.
 3. Review at the intended size and share the approved master, palette and prompts with your team.
 

@@ -1,0 +1,34 @@
+{
+  "schema": "taskobo-visuals.paired-style-evidence/v1",
+  "styleId": "workshop-marker",
+  "styleVersion": "1",
+  "date": "2026-11-06",
+  "status": "agent-reviewed-example",
+  "userApproved": false,
+  "outputRole": "paired-overview-reference",
+  "productionMethod": "built-in-imagegen",
+  "aiRasterGeneration": true,
+  "model": null,
+  "seed": null,
+  "hostRequestId": null,
+  "actualLoadedSkillVersion": "0.5.0",
+  "actualRegistryVersion": "0.6.0",
+  "file": {
+    "file": "paired-master.png",
+    "sha256": "669ebe6390bd1f3928a307e07ad8cd5939d99eef105ecfd943545c9742b7aa02"
+  },
+  "nativeSourcesAndExports": [],
+  "review": {
+    "creator": "Agent reviewed actual files, Alpha and target-size diagnostics",
+    "independent": "Blind classification against all20 current recipes before named-folder mapping",
+    "blindCandidate": "C",
+    "scope": "One fictional topic, one blue/teal palette, one scene and two icon concepts."
+  },
+  "limitations": [
+    "A paired board is not three independent PNG deliveries. Native sources, where supplied, are separate files.",
+    "Agent review does not mean user or company approval; no arbitrary-document, all-size or repeatability guarantee.",
+    "This palette is for light documents. Navy shapes need recoloring for dark placement; exact font identity was not assessed.",
+    "Native SVG and model-generated bitmaps are different production methods and are recorded separately.",
+    "Current example has broad marker marks with rounded tips; it is not proof of a particular chisel nib shape."
+  ]
+}

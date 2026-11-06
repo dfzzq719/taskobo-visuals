@@ -5,8 +5,16 @@ const { buildDraft, validateOrganization, makeOrganization } = require('../websi
 const root = path.resolve(__dirname, '..');
 const catalog = JSON.parse(fs.readFileSync(path.join(root,'references/style-recipes.json'),'utf8'));
 catalog.skillVersion = /version:\s*"([^"]+)"/.exec(fs.readFileSync(path.join(root,'SKILL.md'),'utf8'))[1];
+const retired = JSON.parse(fs.readFileSync(path.join(root,'references/retired-styles.json'),'utf8')).styles;
+assert.equal(catalog.styles.filter(s=>s.status==='active').length,20);
+assert.deepEqual(catalog.styles.map(s=>s.displayOrder).sort((a,b)=>a-b),Array.from({length:20},(_,i)=>i+1));
+for (const style of catalog.styles) assert.deepEqual([...style.assetKinds].sort(),['icon','illustration']);
 const values = { topic:'取引先への追加確認と契約準備', use:'サービス紹介の提案書', kind:'both', direction:'enterprise-narrative', framing:'freeform', palette:'custom', primary:'#7D3C98', language:'ja', targetSize:'16:9の資料・半ページ程度', iconCount:'4', iconSizePx:'96' };
 const first = buildDraft(values,catalog);
+for (const style of retired) {
+  assert.throws(()=>buildDraft({...values,direction:style.id},catalog),/現在のSkillで選択できない/);
+  assert.throws(()=>validateOrganization({schema:'taskobo-visuals.organization-profile/v1',name:'旧社内基準',version:'1.0.0',styleId:style.id,styleVersion:'1'},catalog),/現在のSkillで選択できない/);
+}
 assert.equal(first.status,'draft');
 assert.equal(first.assets.length,5);
 assert.ok(first.assets.every(asset=>asset.status==='draft' && asset.meaning==='' && asset.subject==='' && asset.sourceRefs.length===0));
