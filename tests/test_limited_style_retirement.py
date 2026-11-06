@@ -8,12 +8,12 @@ from brief_contract import read_json, resolve_style
 from prepare_icon_jobs import prepare
 
 class LimitedRetirementTests(unittest.TestCase):
-    def test_only_user_selected_three_are_retired_with_original_numbering(self):
+    def test_only_user_selected_four_are_retired_with_original_numbering(self):
         styles=read_json(ROOT/'references/style-recipes.json')['styles']
-        self.assertEqual({s['id'] for s in styles if s['status']=='retired'}, {'embroidered-textile','embossed-leather','glazed-porcelain'})
+        self.assertEqual({s['id'] for s in styles if s['status']=='retired'}, {'embroidered-textile','embossed-leather','glazed-porcelain','modular-pixel'})
         active=[s for s in styles if s['status']=='active']
-        self.assertEqual(len(active),21)
-        self.assertEqual(sum(s['number'] is not None for s in active),20)
+        self.assertEqual(len(active),20)
+        self.assertEqual(sum(s['number'] is not None for s in active),19)
         self.assertEqual([(s['id'],s['number']) for s in active if s['number'] is None],[('enterprise-narrative',None)])
 
     def test_retirement_applies_to_both_asset_kinds_and_all_existing_aliases(self):

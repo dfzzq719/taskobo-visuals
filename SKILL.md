@@ -2,7 +2,7 @@
 name: taskobo-visuals
 description: "Create enterprise illustrations, thematic icon sets and promotional slide-images from a topic or document, using a shared drawing style and a chosen or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.5.1"
+  version: "0.5.2"
 ---
 
 # Taskobo Visuals
@@ -28,7 +28,7 @@ metadata:
 
 ## 同一个样式，配对制作
 
-插图与图标完全共用一个 `direction.styleId` 和唯一[画法目录](references/style-recipes.json)。轮廓、填色、材质、纹理与光照一致，只按尺寸调整构图和细节量。新增、修改、停用、删除同时作用于两类资产，不分开维护。23个已发布编号不重排，企业叙事画法沿用未编号ID。 当前仅停用20号瓷釉、21号皮革压印、22号织物刺绣；其余20种编号画法和企业叙事预设沿用原有定义、色系与参考。局部修改只作用于被指定项，不据此重做其他画风或替换已有认可示例。
+插图与图标完全共用一个 `direction.styleId` 和唯一[画法目录](references/style-recipes.json)。轮廓、填色、材质、纹理与光照一致，只按尺寸调整构图和细节量。新增、修改、停用、删除同时作用于两类资产，不分开维护。23个已发布编号不重排，企业叙事画法沿用未编号ID。当前停用20号瓷釉、21号皮革压印、22号织物刺绣、23号模块像素；保留01–19共19种编号画法，加上企业叙事预设，合计20种。保留项沿用原有定义、色系与参考。局部修改只作用于被指定项，不据此重做其他画风或替换已有认可示例。
 
 按编号、ID、中日英文名称匹配；未知、停用、冲突或公司规范版本漂移时先解决差异，不换成相近画法。旧 `recipe/preset` 仅是同一ID的兼容选型。见[统一样式](references/shared-styles.md)、[视觉简报](references/visual-profile.md)。
 

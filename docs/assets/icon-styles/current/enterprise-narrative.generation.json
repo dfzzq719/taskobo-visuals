@@ -1,0 +1,87 @@
+{
+  "schema": "taskobo-visuals.comparison-generation/v1",
+  "date": "2026-11-06",
+  "styleId": "enterprise-narrative",
+  "styleVersion": "1",
+  "assetKind": "icon",
+  "purpose": "One four-concept comparison strip; not separate icon deliveries.",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "actualArguments": {
+    "promptFile": "enterprise-narrative.prompt.txt",
+    "referenced_image_paths": [
+      "assets/approved/enterprise-narrative.png"
+    ],
+    "transparent_background": true
+  },
+  "styleReference": {
+    "file": "assets/approved/enterprise-narrative.png",
+    "sha256": "4d4196a39cb6c591ba81772a2ed3b8193489323c01c771aad925ec2423f5494f",
+    "role": "drawing-treatment reference only; no branding or subject copied"
+  },
+  "output": {
+    "file": "enterprise-narrative-icons.png",
+    "sha256": "2348576589570204d447dc643254d148ae1da1bc219d7feb89ceadae4c4d7538",
+    "mode": "RGBA",
+    "dimensions": [
+      2172,
+      724
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "transparentBackground": true
+  },
+  "visualReview": {
+    "status": "agent-reviewed-comparison",
+    "checks": [
+      "four distinct concepts in expected order",
+      "mature adult collaborators",
+      "graded ink and restrained watercolor",
+      "clear document, gear and shield",
+      "no background plate, frame or floor base",
+      "transparent surrounding alpha"
+    ],
+    "scope": "This comparison strip only; not approval for arbitrary documents or all future outputs."
+  },
+  "layout": {
+    "source": "gallery.html",
+    "font": "Meiryo UI",
+    "measuredPlatformFonts": [
+      {
+        "selector": "h1",
+        "fonts": [
+          {
+            "familyName": "Meiryo UI",
+            "postScriptName": "MeiryoUI-Bold",
+            "isCustomFont": false,
+            "glyphCount": 13
+          }
+        ]
+      },
+      {
+        "selector": "h2",
+        "fonts": [
+          {
+            "familyName": "Meiryo UI",
+            "postScriptName": "MeiryoUI-Bold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ]
+      },
+      {
+        "selector": ".labels span",
+        "fonts": [
+          {
+            "familyName": "Meiryo UI",
+            "postScriptName": "MeiryoUI",
+            "isCustomFont": false,
+            "glyphCount": 2
+          }
+        ]
+      }
+    ]
+  }
+}

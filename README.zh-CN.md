@@ -4,9 +4,9 @@
 
 **围绕业务内容制作企业插图与主题图标，让团队沿用共同的视觉基准。**
 
-中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.5.1](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.1)。
+中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.5.2](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.2)。
 
-[作品展示](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件与依頼文工具](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [23种画法与材质作例](docs/icon-styles.ja.md)
+[作品展示](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件与依頼文工具](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [当前20种画法对照](docs/icon-styles.ja.md)
 
 ## v0.5.0：逐张记录、局部重做与认可素材复用
 
@@ -26,7 +26,7 @@
 
 ## 内容、风格与色系分别选择
 
-v0.5.1只停用20号瓷釉、21号皮革压印、22号织物刺绣，其余画法、色系、参考图和现有示例图片原样保留。当前为20种编号画法，加上既有企业叙事预设。
+当前严格保留20种：编号01–19，加上未编号的企业叙事插画。瓷釉、皮革压印、刺绣、模块像素四项停用，图标与插图同步。保留项的画法、色系、参考和旧编号不变。
 
 - 内容来自本次业务主题、受众和文档依据，不把任何单一行业当作默认。
 - 画法、视角与材质按用途组合，系列内统一线条、视觉重量和细节量。
@@ -35,7 +35,7 @@ v0.5.1只停用20号瓷釉、21号皮革压印、22号织物刺绣，其余画�
 
 Precision、Editorial、Dimensional用于初步选型；已整理的具体画法示例包括 `technical-spot`（技术主题小插图）和 `enterprise-narrative`（企业叙事插画）。
 
-2026-10-25基于v0.3.5制作的历史作例集覆盖此前生成的22个方向，加上技术主题小插图，共23种。这是当时的比较记录，不代表当前可选风格总数。它们是画法、视角、材质的组合示范，不能描述成23套固定参数的正式预设。编号沿用之前按企业常见场景作出的近似选型顺序，不是实际采用率或优劣排名。中文名称与说明在[机器可读清单](docs/assets/icon-styles/catalog.json)保留，日文展示图与用途说明见作例集。
+[当前20种对照图](docs/icon-styles.ja.md)分两页展示：01–10，以及11–19＋企业叙事。01–19直接沿用原有图标，只重新排版；企业叙事补充同样四个主题的图标示例。日文字体使用Meiryo UI。旧23种图和原始生成记录保留在[历史记录](docs/icon-styles.ja.md#旧23種の比較記録)，不再作为当前选择入口。顺序不是企业实际采用率或优劣排名。
 
 当前可选画法以[网页制作工具](https://taskobo.com/free-tools/taskobo-visuals/tool/)与[共用画法目录](references/style-recipes.json)为准。按具体ID与名称选择后，结合当次文档的语义、对象与色系组合提示词，图标内容不锁定为示例库存。历史两张风格对照图按制作时的v0.3.5配方生成并逐格自查，保留生成和修订提示词。[文档到成图的公开验证](docs/document-driven-validation.ja.md)保留3份自拟资料、语义简报、原始提示词和12个实际生成图标；固定主题下的23种画法对照，与06号跨文档生成验证分别记录，不把它夸大成所有风格或任意文档一次成功。
 

@@ -5,7 +5,7 @@
 ## 1. インストールを確かめる
 
 ```sh
-python scripts/doctor.py --expected-version 0.5.1
+python scripts/doctor.py --expected-version 0.5.2
 python scripts/doctor.py --skills-root /path/to/installed-skills
 ```
 

@@ -1,0 +1,567 @@
+{
+  "schema": "taskobo-visuals.current-style-gallery/v1",
+  "date": "2026-11-06",
+  "skillVersion": "0.5.2",
+  "activeTotal": 20,
+  "activeNumbered": 19,
+  "activeUnnumbered": [
+    "enterprise-narrative"
+  ],
+  "retiredIds": [
+    "glazed-porcelain",
+    "embossed-leather",
+    "embroidered-textile",
+    "modular-pixel"
+  ],
+  "numbering": "Legacy 01–19 unchanged; enterprise-narrative remains unnumbered.",
+  "rendering": "Native HTML layout with Meiryo UI text. Original 01–19 image sources are reused without redrawing, recoloring or filters; crops select existing artwork only. One new enterprise-narrative comparison strip uses built-in imagegen.",
+  "historicalCatalog": "../catalog.json",
+  "sources": [
+    {
+      "file": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "sha256": "755bf8eaa50a336075472c834735d76e023a3927fb90004e1b644f7036f828b0"
+    },
+    {
+      "file": "docs/assets/icon-styles/styles-ja-02-v2.png",
+      "sha256": "b4366d36d2b4507aa3708bc858f576c3261a1f1500a95d5361e277ce64a844a0"
+    },
+    {
+      "file": "docs/assets/icon-styles/current/enterprise-narrative-icons.png",
+      "sha256": "2348576589570204d447dc643254d148ae1da1bc219d7feb89ceadae4c4d7538"
+    }
+  ],
+  "entries": [
+    {
+      "styleId": "monoline",
+      "number": 1,
+      "nameJa": "モノライン",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        27,
+        219,
+        486,
+        111
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "geometric-flat",
+      "number": 2,
+      "nameJa": "フラット",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        541,
+        219,
+        486,
+        111
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "outline-fill",
+      "number": 3,
+      "nameJa": "線と塗り",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        27,
+        436,
+        486,
+        106
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "negative-space",
+      "number": 4,
+      "nameJa": "ネガティブスペース",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        541,
+        436,
+        486,
+        106
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "technical-line",
+      "number": 5,
+      "nameJa": "テクニカル線画",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        27,
+        648,
+        486,
+        116
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "technical-spot",
+      "number": 6,
+      "nameJa": "テクニカルスポット",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        541,
+        648,
+        486,
+        116
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "gradient-vector",
+      "number": 7,
+      "nameJa": "グラデーション",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        27,
+        867,
+        486,
+        123
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "isometric-vector",
+      "number": 8,
+      "nameJa": "アイソメトリック",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        541,
+        867,
+        486,
+        123
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "matte-3d",
+      "number": 9,
+      "nameJa": "マット3D",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        27,
+        1092,
+        486,
+        122
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "layered-relief",
+      "number": 10,
+      "nameJa": "浅いレリーフ",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        541,
+        1092,
+        486,
+        122
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "real-object-miniature",
+      "number": 11,
+      "nameJa": "実物のミニチュア",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        27,
+        1317,
+        486,
+        123
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "editorial-ink",
+      "number": 12,
+      "nameJa": "ペン画",
+      "source": "docs/assets/icon-styles/styles-ja-01-v4.png",
+      "crop": [
+        541,
+        1317,
+        486,
+        123
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "translucent-glass",
+      "number": 13,
+      "nameJa": "ガラス",
+      "source": "docs/assets/icon-styles/styles-ja-02-v2.png",
+      "crop": [
+        27,
+        225,
+        486,
+        120
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "machined-metal",
+      "number": 14,
+      "nameJa": "切削メタル",
+      "source": "docs/assets/icon-styles/styles-ja-02-v2.png",
+      "crop": [
+        541,
+        225,
+        486,
+        120
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "paper-collage",
+      "number": 15,
+      "nameJa": "ペーパーコラージュ",
+      "source": "docs/assets/icon-styles/styles-ja-02-v2.png",
+      "crop": [
+        27,
+        449,
+        486,
+        124
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "screen-print",
+      "number": 16,
+      "nameJa": "2色スクリーン印刷",
+      "source": "docs/assets/icon-styles/styles-ja-02-v2.png",
+      "crop": [
+        541,
+        449,
+        486,
+        124
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "geometric-origami",
+      "number": 17,
+      "nameJa": "折り紙",
+      "source": "docs/assets/icon-styles/styles-ja-02-v2.png",
+      "crop": [
+        27,
+        670,
+        486,
+        121
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "powder-coated",
+      "number": 18,
+      "nameJa": "粉体塗装",
+      "source": "docs/assets/icon-styles/styles-ja-02-v2.png",
+      "crop": [
+        541,
+        670,
+        486,
+        121
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "bookbinding-paper",
+      "number": 19,
+      "nameJa": "製本・紙素材",
+      "source": "docs/assets/icon-styles/styles-ja-02-v2.png",
+      "crop": [
+        27,
+        892,
+        486,
+        138
+      ],
+      "sourceSize": [
+        1052,
+        1495
+      ],
+      "origin": "original-artwork-native-layout"
+    },
+    {
+      "styleId": "enterprise-narrative",
+      "number": null,
+      "nameJa": "企業叙事イラスト",
+      "source": "docs/assets/icon-styles/current/enterprise-narrative-icons.png",
+      "crop": [
+        45,
+        70,
+        2085,
+        550
+      ],
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "origin": "new-imagegen-comparison-row"
+    }
+  ],
+  "metrics": {
+    "font": "\"Meiryo UI\"",
+    "images": [
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-01-v4.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-02-v2.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-02-v2.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-02-v2.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-02-v2.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-02-v2.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-02-v2.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "../styles-ja-02-v2.png",
+        "size": [
+          1052,
+          1495
+        ]
+      },
+      {
+        "src": "enterprise-narrative-icons.png",
+        "size": [
+          2172,
+          724
+        ]
+      }
+    ],
+    "cards": 20,
+    "platformFonts": [
+      {
+        "selector": "h1",
+        "fonts": [
+          {
+            "familyName": "Meiryo UI",
+            "postScriptName": "MeiryoUI-Bold",
+            "isCustomFont": false,
+            "glyphCount": 13
+          }
+        ]
+      },
+      {
+        "selector": "h2",
+        "fonts": [
+          {
+            "familyName": "Meiryo UI",
+            "postScriptName": "MeiryoUI-Bold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ]
+      },
+      {
+        "selector": ".labels span",
+        "fonts": [
+          {
+            "familyName": "Meiryo UI",
+            "postScriptName": "MeiryoUI",
+            "isCustomFont": false,
+            "glyphCount": 2
+          }
+        ]
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "file": "styles-current-01.png",
+      "sha256": "2a9841c74501b9ee44a03524193b498b7d7762c61d66034d556273deca7a178f"
+    },
+    {
+      "file": "styles-current-02.png",
+      "sha256": "bac3b0e5f6f5507c4a7ed9319be0ff9c4db1018687c758c4919011b528a015ff"
+    }
+  ],
+  "scope": "A style comparison on four controlled concepts; not validation of every possible document or independent icon deliveries."
+}

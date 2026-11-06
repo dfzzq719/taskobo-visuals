@@ -1,0 +1,9 @@
+Use case: illustration-story. Asset type: four new enterprise-narrative icons for a Japanese business drawing-style comparison gallery.
+Reference image is ONLY a drawing-treatment reference: preserve its elegant graded navy ink outlines, restrained cobalt and pale blue fills, subtle watercolor/paper finish, mature credible people and clear compact business objects. Ignore its old branding, industrial subjects, collage, frames, and layout. Use the same exact drawing method for these icons as for that illustration, reduced to compact detail.
+Create ONE transparent horizontal strip with FOUR distinct well-separated icons, equal size and visual weight, aligned center, in this exact order:
+1 a white business document with three blue writing lines and a small blue check mark, representing 文書;
+2 two mature adult colleagues in a credible collaborative conversation, simplified busts with one compact speech bubble, representing 協働;
+3 a single blue gear with a clear light lightning symbol or compact operating lever, representing 自動化;
+4 a blue shield with a clear navy check mark, representing 安全.
+Palette cobalt blue #1456D9, deep navy #0D2046, pale blue #B9DCFF, muted slate #496385; retain natural skin tones for the colleagues. Soft restrained tonal modeling, hand-ink structural variation; no glossy plastic, no extrusion, no isometric base, no 3D object pedestal, no background plates or frames, no bottom floor shadow. Each icon has a natural independent outline, transparent surrounding alpha. Clear recognizability at 100px icon size, no tiny ports/circuits.
+No text anywhere, no title, no letters, no numbers, no logos. All four icons completely within the canvas with generous transparent gutters, none touching. Wide roughly 4:1 composition.

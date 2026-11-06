@@ -4,7 +4,7 @@
 
 テーマや文書から伝える内容を決め、画風と配色を選び、普段使っているAIで制作するAIエージェント用スキル（SKILL.md）。提案書、研修資料、報告書、Webのために、承認した見本と制作条件を引き継ぐ。
 
-[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.1) · [利用ガイド](docs/guide.ja.md)
+[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.2) · [利用ガイド](docs/guide.ja.md)
 
 [English](README.en.md) · [中文・维护基准](README.zh-CN.md)
 
@@ -42,18 +42,18 @@ Webは制作条件を整える。画像はSkillを導入したAIで生成する�
 
 画像として直接生成したプレゼンテーション作例。Webは依頼文と制作条件を作り、画像の制作はSkillを導入したAIで行う。独立素材は透明背景が標準で、この3枚は文字と素材を組み合わせたページ画像。
 
-## 画風を見て選ぶ
+## 現在選べる20の画風
 
-v0.5.1では20番「磁器・釉薬」、21番「レザーの型押し」、22番「刺繍」のみ新規制作の選択肢から外した。ほかの画法・配色・参照画像と下の比較画像はそのまま保つ。現在は番号付き20画法と既存の企業叙事プリセットを選べる。
+01–19の19画法と「企業叙事イラスト」で、合計20種。挿絵とアイコンは同じ画法を使う。既存番号は変えず、企業叙事は名称・IDで選ぶ。20番「磁器・釉薬」、21番「レザーの型押し」、22番「刺繍」、23番「ピクセル」は新規制作の選択肢から外した。
 
-線画、フラット、テクニカルスポット、マット3Dなどの違いを確認する。2026-10-25にv0.3.5で制作した23の比較作例を、同じ4テーマ・同じブルー系の配色で確認できる。これは制作当時の比較記録であり、現在選べる画風の総数を示すものではない。
+文書・協働・自動化・安全の4テーマを、同じブルー系の配色で比較する。01–19は従来の原画をそのまま使って再配置し、企業叙事だけ同じテーマの見本を追加した。
 
 <p>
-  <a href="docs/icon-styles.ja.md#基本表現と立体表現"><img src="docs/assets/icon-styles/styles-ja-01-v4.png" width="49%" alt="01から12：基本表現と立体表現の作例" /></a>
-  <a href="docs/icon-styles.ja.md#素材感とブランド表現"><img src="docs/assets/icon-styles/styles-ja-02-v2.png" width="49%" alt="13から23：素材感とブランド表現の作例" /></a>
+  <a href="docs/assets/icon-styles/current/styles-current-01.png"><img src="docs/assets/icon-styles/current/styles-current-01.png" width="49%" alt="現在選べる20画法の前半：01から10" /></a>
+  <a href="docs/assets/icon-styles/current/styles-current-02.png"><img src="docs/assets/icon-styles/current/styles-current-02.png" width="49%" alt="現在選べる20画法の後半：11から19と企業叙事イラスト" /></a>
 </p>
 
-[23の作例を拡大して見る・用途から選ぶ](docs/icon-styles.ja.md)。2枚とも制作当時のv0.3.5のレシピを使い、06の平面表現と各素材の違いを見直した。番号と名称を依頼文に添えると、求める表現を共有しやすい。配列は用途の広さを考えた目安で、企業の利用率を測定したランキングではない。
+[20の作例を拡大して見る・用途から選ぶ](docs/icon-styles.ja.md)。番号・名称と今回のテーマを添えて依頼できる。配列は企業の実測利用率や品質の順位ではない。[旧23種の比較画像と制作記録](docs/icon-styles.ja.md#旧23種の比較記録)は履歴として残す。
 
 現在選べる画風は[制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)と[共通の画法定義](references/style-recipes.json)で確認する。基本方向は選ぶ際の手掛かりで、実行時には具体的な画法ID・名称を使う。今回の文書の意味と配色を組み合わせて依頼文を作る。比較作例は既製アイコン集ではなく、すべての画法や題材を検証済みという意味でもない。[新しい3業務の文書から実際に制作した例](docs/document-driven-validation.ja.md)で、確認した範囲と限界を公開する。
 
@@ -65,7 +65,7 @@ v0.5.1では20番「磁器・釉薬」、21番「レザーの型押し」、22�
 
 ## まず1セット作る
 
-1. [v0.5.1のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.1)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
+1. [v0.5.2のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.2)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
 2. Skillを再読み込みし、制作条件を渡す。[Webの制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)でも依頼文とJSONを作れる。
 3. 素材を用途に合うサイズで確認し、採用した見本、配色、生成プロンプトをチームに共有する。
 
