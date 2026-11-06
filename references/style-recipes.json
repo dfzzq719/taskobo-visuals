@@ -1,7 +1,7 @@
 {
   "schema": "taskobo-visuals.style-recipes/v1",
-  "version": "0.6.0",
-  "scope": "Exactly 20 active shared drawing styles for illustrations and icons. Legacy recipe numbers are permanent selectors, not current display positions. Retired identifiers and numbers remain reserved in separate refusal metadata. Recipe availability is not evidence of visual validation.",
+  "version": "0.5.0",
+  "scope": "One drawing-style registry for illustrations and icons. Published numbers 01-23 are unchanged; enterprise-narrative is an existing unnumbered preset. Shared recipes are callable directions, not proof that both asset kinds have been visually validated.",
   "styles": [
     {
       "number": 1,
@@ -28,17 +28,7 @@
         "role": "style",
         "status": "agent-reviewed-example",
         "scope": "Same drawing method for illustration and icon. Ignore this sheet topic, palette, review layout and icon inventory; adapt to current brief."
-      },
-      "group": "everyday",
-      "useCases": [
-        "Navigation cues",
-        "Procedures",
-        "General business reports"
-      ],
-      "avoidCases": [
-        "Fine detail at small display sizes"
-      ],
-      "displayOrder": 1
+      }
     },
     {
       "number": 2,
@@ -56,17 +46,7 @@
       "validation": {
         "icon": "existing-examples",
         "illustration": "not-pair-validated"
-      },
-      "group": "everyday",
-      "useCases": [
-        "Business summaries",
-        "Onboarding",
-        "Digital service overviews"
-      ],
-      "avoidCases": [
-        "Precise mechanical construction"
-      ],
-      "displayOrder": 2
+      }
     },
     {
       "number": 3,
@@ -84,54 +64,6 @@
       "validation": {
         "icon": "existing-examples",
         "illustration": "not-pair-validated"
-      },
-      "group": "everyday",
-      "useCases": [
-        "Training materials",
-        "Procedures",
-        "General enterprise presentations"
-      ],
-      "avoidCases": [
-        "Dense component assemblies at small sizes"
-      ],
-      "displayOrder": 3
-    },
-    {
-      "number": 24,
-      "id": "structural-duotone",
-      "nameZh": "结构双色",
-      "nameJa": "構造デュオトーン",
-      "nameEn": "Structural duotone",
-      "treatment": "Flat frontal forms built from two interlocking opaque fill planes: one establishes the main body and one separates a functional detail or relationship. Use two contrasting roles from the current palette, not two shades applied arbitrarily to the same flat shape. Preserve this base-and-detail construction in both illustrations and icons. Crisp shape boundaries, purposeful negative spaces, no enclosing outline, gradient, extrusion or modeled volume.",
-      "assetKinds": [
-        "illustration",
-        "icon"
-      ],
-      "status": "active",
-      "styleVersion": "1",
-      "group": "everyday",
-      "useCases": [
-        "Functional relationships",
-        "Service summaries",
-        "Simple layered responsibilities"
-      ],
-      "avoidCases": [
-        "Using two colors as a decorative recolor without structural separation"
-      ],
-      "validation": {
-        "illustration": "paired-example-reviewed",
-        "icon": "paired-example-reviewed",
-        "evidence": "assets/style-masters/structural-duotone/evidence.json",
-        "scope": "One-topic scene and two-icon overview with independent blind Agent review. Not user approval or all-input validation."
-      },
-      "displayOrder": 4,
-      "preferredRenderer": "native-svg",
-      "styleReference": {
-        "file": "assets/style-masters/structural-duotone/paired-master.png",
-        "sha256": "69fcea29761e2ca314d8051bb43eed9e414115ae29e4e66a20fc9b01dc778192",
-        "role": "style",
-        "status": "agent-reviewed-example",
-        "scope": "Use drawing method only for both asset kinds. Do not copy this topic, objects, blue/teal palette or overview layout."
       }
     },
     {
@@ -150,17 +82,7 @@
       "validation": {
         "icon": "existing-examples",
         "illustration": "not-pair-validated"
-      },
-      "group": "everyday",
-      "useCases": [
-        "Section symbols",
-        "Simple concepts",
-        "Strong figure-ground emphasis"
-      ],
-      "avoidCases": [
-        "Complex scenes with many overlapping actors"
-      ],
-      "displayOrder": 5
+      }
     },
     {
       "number": 5,
@@ -178,18 +100,7 @@
       "validation": {
         "icon": "existing-examples",
         "illustration": "not-pair-validated"
-      },
-      "group": "technical",
-      "useCases": [
-        "Equipment explanations",
-        "Architecture concepts",
-        "Process documentation"
-      ],
-      "avoidCases": [
-        "Invented engineering specifications",
-        "Hairline detail at small display sizes"
-      ],
-      "displayOrder": 6
+      }
     },
     {
       "number": 6,
@@ -214,17 +125,7 @@
       "validation": {
         "icon": "existing-examples",
         "illustration": "not-pair-validated"
-      },
-      "group": "technical",
-      "useCases": [
-        "Technical business reports",
-        "Operations explanations",
-        "Device and service concepts"
-      ],
-      "avoidCases": [
-        "Miniature device assemblies at small sizes"
-      ],
-      "displayOrder": 7
+      }
     },
     {
       "number": 7,
@@ -242,17 +143,7 @@
       "validation": {
         "icon": "existing-examples",
         "illustration": "not-pair-validated"
-      },
-      "group": "everyday",
-      "useCases": [
-        "Digital service introductions",
-        "Section illustrations",
-        "Technology narratives"
-      ],
-      "avoidCases": [
-        "Safety-critical meaning conveyed by gradient alone"
-      ],
-      "displayOrder": 8
+      }
     },
     {
       "number": 8,
@@ -271,55 +162,6 @@
       "validation": {
         "icon": "existing-examples",
         "illustration": "not-pair-validated"
-      },
-      "group": "technical",
-      "useCases": [
-        "Systems and facilities",
-        "Spatial relationships",
-        "Logistics explanations"
-      ],
-      "avoidCases": [
-        "Unnecessary three-dimensional views of simple actions"
-      ],
-      "displayOrder": 9
-    },
-    {
-      "number": 25,
-      "id": "faceted-geometric",
-      "nameZh": "几何切面",
-      "nameJa": "ジオメトリック・ファセット",
-      "nameEn": "Faceted geometric",
-      "treatment": "Angular low-poly forms constructed from a small number of hard-edged planar facets. Use adjacent solid roles from the current palette to separate structural front, side and turning planes; geometry carries the form without smooth shading. Preserve the same planar construction in scenes and icons. No folded-paper seams, origami creases, paper fibers, bevels, glass or metallic material rendering. Simplify the number of facets at small sizes.",
-      "assetKinds": [
-        "illustration",
-        "icon"
-      ],
-      "status": "active",
-      "styleVersion": "1",
-      "group": "technical",
-      "useCases": [
-        "Abstract systems",
-        "Technology concepts",
-        "Structured transformation narratives"
-      ],
-      "avoidCases": [
-        "Paper-fold metaphors",
-        "Many narrow facets at small display sizes"
-      ],
-      "validation": {
-        "illustration": "paired-example-reviewed",
-        "icon": "paired-example-reviewed",
-        "evidence": "assets/style-masters/faceted-geometric/evidence.json",
-        "scope": "One-topic scene and two-icon overview with independent blind Agent review. Not user approval or all-input validation."
-      },
-      "displayOrder": 10,
-      "preferredRenderer": "native-svg",
-      "styleReference": {
-        "file": "assets/style-masters/faceted-geometric/paired-master.png",
-        "sha256": "a56f5a75a4e793d757fe4a10b3f0cf16d283c6efab092a88c7918a5496c3f46e",
-        "role": "style",
-        "status": "agent-reviewed-example",
-        "scope": "Use drawing method only for both asset kinds. Do not copy this topic, objects, blue/teal palette or overview layout."
       }
     },
     {
@@ -348,18 +190,7 @@
         "role": "style",
         "status": "agent-reviewed-example",
         "scope": "Same drawing method for illustration and icon. Ignore this sheet topic, palette, review layout and icon inventory; adapt to current brief."
-      },
-      "group": "expressive",
-      "useCases": [
-        "Product concepts",
-        "Promotional presentations",
-        "Tangible service metaphors"
-      ],
-      "avoidCases": [
-        "Dense process diagrams",
-        "Tiny material-dependent details"
-      ],
-      "displayOrder": 11
+      }
     },
     {
       "number": 10,
@@ -377,17 +208,7 @@
       "validation": {
         "icon": "existing-examples",
         "illustration": "not-pair-validated"
-      },
-      "group": "expressive",
-      "useCases": [
-        "Layered systems",
-        "Structured service concepts",
-        "Chapter illustrations"
-      ],
-      "avoidCases": [
-        "Precise engineering section drawings"
-      ],
-      "displayOrder": 12
+      }
     },
     {
       "number": 11,
@@ -405,17 +226,223 @@
       "validation": {
         "icon": "existing-examples",
         "illustration": "not-pair-validated"
-      },
-      "group": "expressive",
-      "useCases": [
-        "Concrete business metaphors",
-        "Product-oriented presentations",
-        "Object-led introductions"
+      }
+    },
+    {
+      "number": 12,
+      "id": "editorial-ink",
+      "nameZh": "钢笔编辑",
+      "nameJa": "ペン画",
+      "nameEn": "Editorial ink",
+      "treatment": "Mature hand-drawn pen drawings with fine line-weight variation, intentional light hatching and restrained primarySoft color wash inside forms. No messy doodles; use only the background requested by the current asset brief.",
+      "assetKinds": [
+        "illustration",
+        "icon"
       ],
-      "avoidCases": [
-        "Abstract meanings requiring many literal props"
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 13,
+      "id": "translucent-glass",
+      "nameZh": "透光玻璃",
+      "nameJa": "ガラス",
+      "nameEn": "Translucent glass",
+      "treatment": "Transparent glass tinted in the current primary color, visible refraction, clear edge thickness and crisp restrained reflective rims. Semantic detail stays legible. No backdrop glass panel or neon; object glass transparency is separate from the transparent canvas.",
+      "assetKinds": [
+        "illustration",
+        "icon"
       ],
-      "displayOrder": 13
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 14,
+      "id": "machined-metal",
+      "nameZh": "精工金属",
+      "nameJa": "切削メタル",
+      "nameEn": "Machined metal",
+      "treatment": "Anodized brushed metal in the selected primary color, fine directional brushing, precise modest bevels, neutral metal edges and machined inset detail. No mirror chrome, unrelated colors or toy plastic.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 15,
+      "id": "paper-collage",
+      "nameZh": "纸艺拼贴",
+      "nameJa": "ペーパーコラージュ",
+      "nameEn": "Paper collage",
+      "treatment": "Thin overlapping primary and primarySoft paper cut-outs, subtle visible fibers and a few purposeful torn edges, tiny shadows only at overlaps. Flat composition; no folded triangular facets, thick relief or confetti.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 16,
+      "id": "screen-print",
+      "nameZh": "双色网印",
+      "nameJa": "2色スクリーン印刷",
+      "nameEn": "Two-color screen print",
+      "treatment": "Flat primary and ink screen-print silhouettes, controlled visible halftone dots and a few intentional registration offsets. No watercolor, 3D volume, background paper or distressed scenery.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 17,
+      "id": "geometric-origami",
+      "nameZh": "折纸几何",
+      "nameJa": "折り紙",
+      "nameEn": "Geometric origami",
+      "treatment": "Crisp folded paper in the current palette, a few angular triangular or trapezoidal facets and meaningful creases, limited planar shading and credible sharp fold construction. No torn collage or smooth curved plastic.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 18,
+      "id": "powder-coated",
+      "nameZh": "工业涂层",
+      "nameJa": "粉体塗装",
+      "nameEn": "Powder coated",
+      "treatment": "Rigid thin engineered metal shapes with fine primary-color powder-coat orange-peel texture, modest chamfers and only necessary functional fasteners. Clearly rough coated surfaces, not brushed bare metal or smooth porcelain.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 19,
+      "id": "bookbinding-paper",
+      "nameZh": "装帧纸材",
+      "nameJa": "製本・紙素材",
+      "nameEn": "Bookbinding paper",
+      "treatment": "Thin shapes made of layered neutral page edges and primary-color bookcloth, precise small folded spine joins. Page layers and bookcloth remain visible. No torn collage, bulky leather or fixed book subject unrelated to this brief.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 20,
+      "id": "glazed-porcelain",
+      "nameZh": "瓷釉工艺",
+      "nameJa": "磁器・釉薬",
+      "nameEn": "Glazed porcelain",
+      "treatment": "Thin hard light porcelain silhouettes with selected-primary glazed faces and exposed neutral rims, controlled vitreous glaze highlights and clean slender thickness. No thick inflated clay or transparent glass.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 21,
+      "id": "embossed-leather",
+      "nameZh": "皮革压印",
+      "nameJa": "レザーの型押し",
+      "nameEn": "Embossed leather",
+      "treatment": "Fine-grain structured leather tinted in the selected primary or ink color, thin credible cut edges, sparse neat stitches and debossed semantic marks. No rectangular backing patch, plush stuffing or fixed brown/blue palette.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 22,
+      "id": "embroidered-textile",
+      "nameZh": "织物刺绣",
+      "nameJa": "刺繍",
+      "nameEn": "Embroidered textile",
+      "treatment": "High-density directional satin stitches in the current palette, fine thread fibers and clean cut edges following the depicted forms. Thin unstuffed fabric; no surrounding badge, backing rectangle or unrelated fabric decoration.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
+    },
+    {
+      "number": 23,
+      "id": "modular-pixel",
+      "nameZh": "模块像素",
+      "nameJa": "ピクセル",
+      "nameEn": "Modular pixel",
+      "treatment": "Crisp square-grid modules, only horizontal and vertical stepped boundaries, about 18 to 24 cells across each symbol. Use current ink and primary colors with transparent voids. No antialiased smooth curves, invented pixel text or arcade scenery.",
+      "assetKinds": [
+        "illustration",
+        "icon"
+      ],
+      "status": "active",
+      "styleVersion": "1",
+      "validation": {
+        "icon": "existing-examples",
+        "illustration": "not-pair-validated"
+      }
     },
     {
       "number": null,
@@ -442,218 +469,7 @@
         "icon": "paired-page-reviewed",
         "evidence": "https://github.com/dfzzq719/taskobo-visuals/tree/main/examples/service-story",
         "scope": "Three user-approved promotional page-images; same drawing method in page illustrations and icons. Not separate transparent icon assets."
-      },
-      "group": "storytelling",
-      "useCases": [
-        "Business collaboration",
-        "Industry-specific stories",
-        "Service introductions"
-      ],
-      "avoidCases": [
-        "Generic office props without meaningful actions"
-      ],
-      "displayOrder": 14
-    },
-    {
-      "number": 12,
-      "id": "editorial-ink",
-      "nameZh": "钢笔编辑",
-      "nameJa": "ペン画",
-      "nameEn": "Editorial ink",
-      "treatment": "Mature hand-drawn pen drawings with fine line-weight variation, intentional light hatching and restrained primarySoft color wash inside forms. No messy doodles; use only the background requested by the current asset brief.",
-      "assetKinds": [
-        "illustration",
-        "icon"
-      ],
-      "status": "active",
-      "styleVersion": "1",
-      "validation": {
-        "icon": "existing-examples",
-        "illustration": "not-pair-validated"
-      },
-      "group": "storytelling",
-      "useCases": [
-        "Editorial narratives",
-        "Research insights",
-        "Human judgment and collaboration"
-      ],
-      "avoidCases": [
-        "Texture-heavy micro-icons"
-      ],
-      "displayOrder": 15
-    },
-    {
-      "number": 26,
-      "id": "clean-handdrawn",
-      "nameZh": "清爽手绘",
-      "nameJa": "クリーン手描き",
-      "nameEn": "Clean handdrawn",
-      "treatment": "Controlled single-pass organic contour lines with gently imperfect curves and simple stable geometry. Use clean unbroken lines, rounded natural turns and restrained flat palette fills where needed. A finished editorial handdrawn treatment, with the same line character for scenes and icons. No repeated sketch searching, hatching, scratchy pencil texture, rough scribbles or dimensional material shading.",
-      "assetKinds": [
-        "illustration",
-        "icon"
-      ],
-      "status": "active",
-      "styleVersion": "1",
-      "group": "storytelling",
-      "useCases": [
-        "Human collaboration",
-        "Learning and onboarding",
-        "Approachable business explanations"
-      ],
-      "avoidCases": [
-        "Rough brainstorming marks",
-        "Precise construction drawings"
-      ],
-      "validation": {
-        "illustration": "recipe-only",
-        "icon": "recipe-only",
-        "scope": "Recipe direction only. Current raster and native-vector trials did not clearly distinguish finished natural handdrawing from outline-fill; they are not approved references. Both asset kinds require fresh per-result review."
-      },
-      "displayOrder": 16
-    },
-    {
-      "number": 27,
-      "id": "workshop-marker",
-      "nameZh": "工坊马克笔",
-      "nameJa": "ワークショップ・マーカー",
-      "nameEn": "Workshop marker",
-      "treatment": "Confident broad chisel-tip marker strokes with visible width changes as stroke direction turns, blunt clean ends and limited broad opaque marker fills. Keep forms deliberate and uncluttered, preserving the same broad marker gesture in scenes and icons. Do not simulate a font, add handwritten labels, a whiteboard canvas, paper backing, rough scribble clouds or dense crosshatching. Reduce internal strokes at small sizes without replacing the chisel-tip treatment with thin monoline.",
-      "assetKinds": [
-        "illustration",
-        "icon"
-      ],
-      "status": "active",
-      "styleVersion": "1",
-      "group": "storytelling",
-      "useCases": [
-        "Workshop summaries",
-        "Change narratives",
-        "Team discussion and decisions"
-      ],
-      "avoidCases": [
-        "Handwritten typography",
-        "Fine technical detail at small display sizes"
-      ],
-      "validation": {
-        "illustration": "paired-example-reviewed",
-        "icon": "paired-example-reviewed",
-        "evidence": "assets/style-masters/workshop-marker/evidence.json",
-        "scope": "One-topic scene and two-icon overview with independent blind Agent review. Not user approval or all-input validation."
-      },
-      "displayOrder": 17,
-      "styleReference": {
-        "file": "assets/style-masters/workshop-marker/paired-master.png",
-        "sha256": "669ebe6390bd1f3928a307e07ad8cd5939d99eef105ecfd943545c9742b7aa02",
-        "role": "style",
-        "status": "agent-reviewed-example",
-        "scope": "Use drawing method only for both asset kinds. Do not copy this topic, objects, blue/teal palette or overview layout."
       }
-    },
-    {
-      "number": 28,
-      "id": "colored-pencil",
-      "nameZh": "彩铅叙事",
-      "nameJa": "色鉛筆",
-      "nameEn": "Colored pencil",
-      "treatment": "Directional colored-pencil hatching with restrained layered pigment; visible strokes follow object planes and contours. Preserve clear silhouettes and sufficient ink-to-fill contrast using the current palette. Keep the same controlled pencil mark and pigment layering in scenes and icons, simplifying stroke count at small sizes. No fuzzy low-contrast outlines, muddy color blending, broad marker blocks or an opaque paper canvas.",
-      "assetKinds": [
-        "illustration",
-        "icon"
-      ],
-      "status": "active",
-      "styleVersion": "1",
-      "group": "storytelling",
-      "useCases": [
-        "Learning materials",
-        "Human-centered stories",
-        "Reflective business narratives"
-      ],
-      "avoidCases": [
-        "Low-contrast micro-icons",
-        "Dense hatching that hides the main action"
-      ],
-      "validation": {
-        "illustration": "paired-example-reviewed",
-        "icon": "paired-example-reviewed",
-        "evidence": "assets/style-masters/colored-pencil/evidence.json",
-        "scope": "One-topic scene and two-icon overview with independent blind Agent review. Not user approval or all-input validation."
-      },
-      "displayOrder": 18,
-      "styleReference": {
-        "file": "assets/style-masters/colored-pencil/paired-master.png",
-        "sha256": "ae08b537691399bdc114ad9c575b7d7b29678bc182cb87f8745dbf7eec3fb199",
-        "role": "style",
-        "status": "agent-reviewed-example",
-        "scope": "Use drawing method only for both asset kinds. Do not copy this topic, objects, blue/teal palette or overview layout."
-      }
-    },
-    {
-      "number": 29,
-      "id": "editorial-gouache",
-      "nameZh": "编辑水粉",
-      "nameJa": "エディトリアル・ガッシュ",
-      "nameEn": "Editorial gouache",
-      "treatment": "Broad opaque handpainted matte color blocks with subtle dry-brush edges and restrained pigment variation inside clearly separated forms. Use the current palette and preserve the same opaque painted shapes in scenes and icons. Edges remain readable at the intended size. No pen outline, transparent watercolor wash, glossy modeled volume or opaque rectangular paper canvas.",
-      "assetKinds": [
-        "illustration",
-        "icon"
-      ],
-      "status": "active",
-      "styleVersion": "1",
-      "group": "storytelling",
-      "useCases": [
-        "Editorial business stories",
-        "Service narratives",
-        "Warm industry illustrations"
-      ],
-      "avoidCases": [
-        "Transparent watercolor effects",
-        "Texture-dependent tiny symbols"
-      ],
-      "validation": {
-        "illustration": "paired-example-reviewed",
-        "icon": "paired-example-reviewed",
-        "evidence": "assets/style-masters/editorial-gouache/evidence.json",
-        "scope": "One-topic scene and two-icon overview with independent blind Agent review. Not user approval or all-input validation."
-      },
-      "displayOrder": 19,
-      "styleReference": {
-        "file": "assets/style-masters/editorial-gouache/paired-master.png",
-        "sha256": "106ed08ffb1a9931fd54adaabaa4e2b80d00000bbe4915a83aa3154af8694dcc",
-        "role": "style",
-        "status": "agent-reviewed-example",
-        "scope": "Use drawing method only for both asset kinds. Do not copy this topic, objects, blue/teal palette or overview layout."
-      }
-    },
-    {
-      "number": 15,
-      "id": "paper-collage",
-      "nameZh": "纸艺拼贴",
-      "nameJa": "ペーパーコラージュ",
-      "nameEn": "Paper collage",
-      "treatment": "Thin overlapping primary and primarySoft paper cut-outs, subtle visible fibers and a few purposeful torn edges, tiny shadows only at overlaps. Flat composition; no folded triangular facets, thick relief or confetti.",
-      "assetKinds": [
-        "illustration",
-        "icon"
-      ],
-      "status": "active",
-      "styleVersion": "1",
-      "validation": {
-        "icon": "existing-examples",
-        "illustration": "not-pair-validated"
-      },
-      "group": "expressive",
-      "useCases": [
-        "Learning materials",
-        "Creative workshops",
-        "Human-centered storytelling"
-      ],
-      "avoidCases": [
-        "Technical precision",
-        "Dense surface texture at small sizes"
-      ],
-      "displayOrder": 20
     }
   ],
   "policy": {
@@ -675,13 +491,7 @@
       "detailLevel",
       "background"
     ],
-    "lifecycle": "Change or retire one shared style for both asset kinds. Retired IDs, names and legacy numbers are reserved and fail explicitly without automatic replacement.",
-    "adaptation": "Scale detail and composition to the asset; preserve the exact drawing method, contour, fill, material, texture and lighting. Do not substitute a related style.",
-    "activeStyleCount": 20,
-    "numbering": "Never reassign a published legacy number or ID. displayOrder is presentation order only and is not a numeric selector."
-  },
-  "retiredStyleRegistry": {
-    "file": "references/retired-styles.json",
-    "schema": "taskobo-visuals.retired-styles/v1"
+    "lifecycle": "Change, retire or remove one shared style record for both asset kinds. Unknown or retired styles fail without a fallback.",
+    "adaptation": "Scale detail and composition to the asset; preserve the exact drawing method, contour, fill, material, texture and lighting. Do not substitute a related style."
   }
 }

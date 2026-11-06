@@ -5,8 +5,8 @@
 ## 安装与版本
 
 ```text
-python scripts/doctor.py --expected-version 0.6.0
-python scripts/doctor.py --expected-version 0.6.0 --skills-root /explicit/installed-skills
+python scripts/doctor.py --expected-version 0.5.0
+python scripts/doctor.py --expected-version 0.5.0 --skills-root /explicit/installed-skills
 ```
 
 检查Skill版本、统一样式目录、两类资产支持、参考图文件及哈希、辅助脚本语法与导入。只在明确给出`--skills-root`时扫描该目录下一层；按`SKILL.md`中的名称识别同名备份，不因目录名写了backup就忽略它。发现重复或版本不符时停止按该安装继续制作，由Agent核对正确安装；自检本身不替用户修改配置。

@@ -77,67 +77,6 @@ class BriefContractTests(unittest.TestCase):
         with self.assertRaises(ValueError): resolve_style({'styleId': 'unknown-style'})
         with self.assertRaises(ValueError): resolve_style({'styleId': 'technical-spot', 'preset': 'enterprise-narrative'})
 
-    def test_twenty_active_shared_styles_preserve_legacy_identity(self):
-        catalog = read_json(ROOT / 'references/style-recipes.json')
-        historical = read_json(ROOT / 'references/icon-style-recipes.json')
-        retired = read_json(ROOT / 'references/retired-styles.json')
-        expected_new = {'structural-duotone': 24, 'faceted-geometric': 25, 'clean-handdrawn': 26,
-                        'workshop-marker': 27, 'colored-pencil': 28, 'editorial-gouache': 29}
-        self.assertEqual(len(catalog['styles']), 20)
-        self.assertEqual(len(retired['styles']), 10)
-        self.assertEqual([s['displayOrder'] for s in catalog['styles']], list(range(1, 21)))
-        self.assertIn('enterprise-narrative', {s['id'] for s in catalog['styles']})
-        by_id = {s['id']: s for s in [*catalog['styles'], *retired['styles']]}
-        self.assertEqual(len(by_id), 30)
-        for previous in historical['styles']:
-            self.assertEqual(by_id[previous['id']]['number'], previous['number'])
-        for style in catalog['styles']:
-            self.assertEqual(style['status'], 'active')
-            self.assertEqual(set(style['assetKinds']), {'illustration', 'icon'})
-            if style['id'] in expected_new:
-                self.assertEqual(style['number'], expected_new[style['id']])
-            source = brief(); source['direction']['styleId'] = style['id']
-            result = prepare(source, allow_illustrations=True)
-            self.assertEqual([j['subject'] for j in result['jobs']], [a['subject'] for a in source['assets']])
-            self.assertTrue(all(j['styleId'] == style['id'] for j in result['jobs']))
-            self.assertEqual(result['styleLock']['drawingTreatment'], style['treatment'])
-
-    def test_retired_ids_names_and_old_numbers_fail_without_replacement(self):
-        retired = read_json(ROOT / 'references/retired-styles.json')['styles']
-        for style in retired:
-            self.assertFalse({'treatment', 'styleReference', 'styleVersion'} & set(style))
-            for key in ('id', 'nameZh', 'nameJa', 'nameEn', 'number'):
-                with self.subTest(style=style['id'], alias=key), self.assertRaisesRegex(ValueError, 'retired.*0.6.0'):
-                    resolve_style({'recipe': style[key]})
-            for kind in ('illustration', 'icon'):
-                source = brief(); source['direction']['styleId'] = style['id']
-                source['assets'] = [a for a in source['assets'] if a['kind'] == kind]
-                with self.subTest(style=style['id'], kind=kind), self.assertRaisesRegex(ValueError, 'retired'):
-                    prepare(source, allow_illustrations=True)
-
-    def test_retained_number_is_not_current_display_position(self):
-        self.assertEqual(resolve_style({'recipe': '04'})['id'], 'negative-space')
-        self.assertEqual(resolve_style({'recipe': '24'})['id'], 'structural-duotone')
-        self.assertEqual(resolve_style({'recipe': 15})['id'], 'paper-collage')
-        self.assertEqual(resolve_style({'recipe': 29})['id'], 'editorial-gouache')
-        with self.assertRaisesRegex(ValueError, 'retired'):
-            resolve_style({'recipe': 14})
-
-    def test_retired_organization_profiles_require_explicit_republication(self):
-        old = profile(); old.update(styleId='translucent-glass', styleVersion='1')
-        with self.assertRaisesRegex(ValueError, 'retired.*both illustrations and icons'):
-            validate_profile(old)
-        source = brief(); source['organizationProfile'] = old
-        with self.assertRaisesRegex(ValueError, 're-publish'):
-            prepare(source, allow_illustrations=True)
-        self.assertFalse(inspect_brief(source)['ready'])
-
-    def test_retired_alias_cannot_be_shadowed_by_an_active_record(self):
-        catalog = read_json(ROOT / 'references/style-recipes.json')
-        catalog['styles'][0]['number'] = 13
-        with self.assertRaisesRegex(ValueError, 'uniquely'):
-            resolve_style({'recipe': 13}, catalog)
-
     def test_asset_style_override_fails(self):
         source = brief(); source['assets'][1]['styleId'] = 'technical-spot'
         with self.assertRaises(ValueError): prepare(source, allow_illustrations=True)
@@ -250,17 +189,6 @@ class BriefContractTests(unittest.TestCase):
             report = json.loads(result.stdout)
             self.assertFalse(report['ready'])
             self.assertTrue(any(e['path'] == 'assets' for e in report['issues']))
-
-    def test_strict_plane_methods_use_same_native_route_for_both_asset_kinds(self):
-        for style_id in ('structural-duotone', 'faceted-geometric'):
-            source = brief()
-            source['direction'] = {'styleId': style_id}
-            tasks = prepare(source, allow_illustrations=True)
-            self.assertEqual({j['tool'] for j in tasks['jobs']}, {'host-native-svg'})
-            self.assertEqual({j['kind'] for j in tasks['jobs']}, {'illustration', 'icon'})
-            self.assertTrue(all('native SVG geometry' in j['prompt'] for j in tasks['jobs']))
-            self.assertTrue(all(j['transparent_background'] for j in tasks['jobs']))
-        self.assertEqual({j['tool'] for j in prepare(brief(), allow_illustrations=True)['jobs']}, {'host-image-generation'})
 
     def test_web_draft_to_ready_tasks_forward_handoff(self):
         node = shutil.which('node')

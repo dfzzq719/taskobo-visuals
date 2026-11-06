@@ -118,9 +118,8 @@
     form.elements.direction.disabled = Boolean(organization);
     const reference = style.styleReference ? '生成に渡す参照見本あり' : '画法の定義から制作する方向';
     const validation = style.validation || {};
-    const evidence = validation.icon === 'recipe-only' || validation.illustration === 'recipe-only' ? '新しい画法の定義。適合する参照の有無と実生成の範囲を確認する。' : '公開作例は確認した範囲の見本。全題材や全サイズを検証済みという意味ではない。';
-    const contexts = {everyday:'報告・提案の基本表現', technical:'技術・構造の説明', storytelling:'人物・研修・業務の物語', expressive:'表紙・重点表現など、用途に応じて選択'};
-    document.getElementById('style-evidence').textContent = `${contexts[style.group] || ''}。${reference}・画法の版 ${style.styleVersion}。${evidence}`;
+    const evidence = validation.icon === 'not-pair-validated' || validation.illustration === 'not-pair-validated' ? '全題材での挿絵・アイコンの組合せを検証済みという意味ではない。' : '公開されている作例の範囲を検証記録で確認できる。';
+    document.getElementById('style-evidence').textContent = `${reference}・画法の版 ${style.styleVersion}。${evidence}`;
   }
   function updateFraming() {
     const iconsOnly = form.elements.kind.value === 'icons';
@@ -139,11 +138,6 @@
       const style = styleFor(catalog, brief.direction.styleId), roleText = Object.entries(brief.palette.roles).map(([role,color]) => `${role} ${color}`).join('、');
       const kind = form.elements.kind.value, framing = kind === 'icons' ? 'freeform' : form.elements.framing.value;
       output.value = `$taskobo-visuals を使い、次の制作意向から企業向け素材を制作する。添付するJSONは status: draft のため、そのまま生成タスクとして実行しない。内容の根拠から各素材の meaning・subject・必要なsourceRefsを補い、検証してreadyにする。\n\n内容テーマ：${brief.topic.title}\n用途：${brief.medium.purpose}\n制作物：${kind === 'both' ? 'メインイラスト1点と' + form.elements.iconCount.value + '点のテーマ別アイコン' : kind === 'icons' ? form.elements.iconCount.value + '点のテーマ別アイコン' : 'メインイラスト1点'}\n画風：${style.nameJa}（styleId: ${style.id}、画法の版 ${style.styleVersion}）。挿絵とアイコンは完全に同じ画法を使い、線・塗り・材質・質感・光を共通化する。構図と細部の量だけをサイズに合わせる。\n配色：${roleText || '提供文書から根拠を示して提案し、色の役割を補う。'}\n${organization ? '社内基準：' + organization.name + ' v' + organization.version + '。固定した画法・色・字体と異なる場合は上書きせず確認する。\n' : ''}配置先：${brief.medium.targetSize}。独立アイコンの実表示サイズ ${form.elements.iconSizePx.value}px。\n文字：${brief.medium.language === 'ja' ? '日本語 Meiryo UI' : '中国語 Microsoft YaHei'}。字体と正確な文字が必要な場合は、対応字体のある文字の配置処理で確認する。純粋な画像生成だけで字体の一致を保証しない。\n外形：${framingNames[framing]}。${framingInstructions[framing]}\n背景：${framing === 'full-scene' ? '主イラストは不透明（transparent_background: false）。独立アイコンは実際のAlphaを持つ透明PNG（transparent_background: true）。' : '実際のAlphaを持つ透明PNG（transparent_background: true）。白い背景や市松模様を焼き込まない。'}\n\n内容と画法と配色を分ける。文書の状態・対象・行動を確認し、見本の対象物や青色を固定しない。承認待ちを承認済みに描き替えず、数字や導入効果を創作しない。Skill同梱の選択画法の参照見本があれば実際に画像生成ツールへ渡す。\n実際に生成した原図と提示詞を保存し、Alpha・輪郭の切れ・明暗の背景・実際の表示サイズを確認する。図形として編集できるものだけをSVGと呼び、ビットマップ画像をSVGと呼ばない。\n制作記録：Skillのローカル機能で素材ごとの試行を記録し、実際に使った提示詞・参照見本・ツールの応答と原画像を結び付ける。取得できなかったモデル・seed・リクエストIDは推測で補わない。\n再制作：失敗・修正対象の素材だけを、記録した条件から明示的に選ぶ。採用済みの原図を上書きせず、試行回数の上限内で行う。結果が不明な場合は、重複生成の前に出力を確認する。\n納品と再利用：各素材に対応する独立ファイルを確認する。一覧画像を個別の納品物として数えない。ファイル検査と見た目・業務上の採用判定を分け、明示的に採用した素材だけを再利用カタログへ登録する。`;
-      if (style.preferredRenderer === 'native-svg') {
-        output.value = output.value.replace('Skill同梱の選択画法の参照見本があれば実際に画像生成ツールへ渡す。', 'Skill同梱の参照見本を見て、同じ画法で今回の内容のSVG図形を構成する。見本のビットマップをSVGへ埋め込まない。');
-        output.value += '\n制作方式：この画法はネイティブSVGを優先する。挿絵とアイコンの両方を編集可能な同じ図形手法で制作し、必要に応じて透明PNGへ出力する。画像モデルによる生成と区別して記録する。';
-      }
-      if (style.id === 'clean-handdrawn') output.value += '\nクリーン手描きは合格した参照がまだない。単なる線と塗りや、輪郭へ不規則さを加えただけの図を、この画法の検証済み見本として扱わない。';
       if (style.id === 'technical-spot') output.value += '\n06の小図は1つの主対象と必要な補助1つまで。小さな端子・放熱フィン・機器の寄せ集めを避け、現在のコンパクト参照を実際に画像生成ツールへ渡す。';
       document.getElementById('download-brief').disabled = false;
       document.getElementById('export-organization').disabled = !validHex(brief.palette.roles.primary);

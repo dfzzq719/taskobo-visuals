@@ -36,21 +36,6 @@ class DoctorTests(unittest.TestCase):
     def save_registry(self):
         (self.skill / 'references/style-recipes.json').write_text(json.dumps(self.registry), encoding='utf-8')
 
-    def add_retired_metadata(self):
-        self.registry['retiredStyleRegistry'] = {'file': 'references/retired-styles.json',
-                                                 'schema': 'taskobo-visuals.retired-styles/v1'}
-        self.registry['styles'][0].update(number=1, status='active', displayOrder=1,
-                                         nameZh='Current Zh', nameJa='Current Ja', nameEn='Current En')
-        self.tombstones = {'schema': 'taskobo-visuals.retired-styles/v1', 'version': self.registry['version'],
-                           'styles': [{'id': 'old-style', 'number': 13, 'nameZh': 'Old Zh', 'nameJa': 'Old Ja',
-                                       'nameEn': 'Old En', 'status': 'retired', 'retiredIn': '0.4.0',
-                                       'reason': 'Historical fixture style is no longer active.'}]}
-        self.save_registry()
-        self.save_retired()
-
-    def save_retired(self):
-        (self.skill / 'references/retired-styles.json').write_text(json.dumps(self.tombstones), encoding='utf-8')
-
     def test_valid_installation_is_read_only_and_private(self):
         before = {p.relative_to(self.skill).as_posix(): p.read_bytes() for p in self.skill.rglob('*') if p.is_file()}
         report = doctor.installation_report(self.skill, expected_version='0.4.0')
@@ -106,49 +91,6 @@ class DoctorTests(unittest.TestCase):
         self.save_registry()
         report = doctor.installation_report(self.skill)
         self.assertIn('shared-style-contract', [e['code'] for e in report['errors']])
-
-    def test_separate_retirement_metadata_is_checked_without_generation(self):
-        self.add_retired_metadata()
-        self.registry['policy'] = {'activeStyleCount': 1}
-        self.save_registry()
-        report = doctor.installation_report(self.skill)
-        self.assertTrue(report['passed'], report)
-        self.assertEqual(report['registry']['retiredStyles'], 1)
-        self.assertIn('retired-style-metadata', report['checks'])
-        self.assertNotIn(str(self.folder), json.dumps(report))
-
-    def test_retired_id_number_and_name_cannot_be_reused(self):
-        self.add_retired_metadata()
-        original = dict(self.tombstones['styles'][0])
-        for field in ('id', 'number', 'nameJa'):
-            self.tombstones['styles'][0] = dict(original)
-            self.tombstones['styles'][0][field] = self.registry['styles'][0][field]
-            self.save_retired()
-            report = doctor.installation_report(self.skill)
-            expected = {'id': 'style-id-collision', 'number': 'style-number-collision',
-                        'nameJa': 'style-alias-collision'}[field]
-            with self.subTest(field=field):
-                self.assertIn(expected, [e['code'] for e in report['errors']])
-
-    def test_retirement_metadata_cannot_be_a_second_callable_registry(self):
-        self.add_retired_metadata()
-        self.tombstones['styles'][0]['treatment'] = 'Do not execute this retired recipe.'
-        self.save_retired()
-        report = doctor.installation_report(self.skill)
-        self.assertIn('invalid-retired-style', [e['code'] for e in report['errors']])
-        (self.skill / 'references/retired-styles.json').unlink()
-        report = doctor.installation_report(self.skill)
-        self.assertIn('invalid-registry', [e['code'] for e in report['errors']])
-
-    def test_active_count_and_display_position_do_not_reassign_old_aliases(self):
-        self.add_retired_metadata()
-        self.registry['policy'] = {'activeStyleCount': 20}
-        self.registry['styles'][0]['displayOrder'] = 13
-        self.save_registry()
-        report = doctor.installation_report(self.skill)
-        codes = [e['code'] for e in report['errors']]
-        self.assertIn('active-style-count-mismatch', codes)
-        self.assertIn('invalid-display-order', codes)
 
     def test_registry_version_and_syntax_are_checked(self):
         self.registry['version'] = '0.3.7'

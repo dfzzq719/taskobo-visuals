@@ -2,7 +2,7 @@
 name: taskobo-visuals
 description: "Create enterprise illustrations, thematic icon sets and promotional slide-images from a topic or document, using a shared drawing style and a chosen or document-matched palette. Use for 企业插图、主题图标、宣传图、报告和PPT配图及系列视觉设计."
 metadata:
-  version: "0.6.0"
+  version: "0.5.0"
 ---
 
 # Taskobo Visuals
@@ -28,17 +28,13 @@ metadata:
 
 ## 同一个样式，配对制作
 
-插图与图标完全共用一个 `direction.styleId` 和唯一[画法目录](references/style-recipes.json)，当前共20种有效画法，包含企业叙事。轮廓、填色、材质、纹理与光照一致，只按尺寸调整构图和细节量。新增、修改、停用、删除同时作用于两类资产，不分开维护。旧编号与ID不重用；当前展示顺序不是旧编号的替代含义。停用项保留[迁移记录](references/retired-styles.json)，不能静默改成替代画法。
-
-企业PPT优先选清楚、易辨认、便于换色与成套复用的线稿、平面、描边填色；技术图看内容与证据；手绘用于培训、文化与业务叙事，立体及纸艺用于适当的封面和重点说明。20种不是20种同频常用，更不是三国使用率榜单。选型、适用边界与公开依据见[企业画法筛选](references/enterprise-style-curation.md)。同一内容系列先定一种，不按每页题材随意换画法。
+插图与图标完全共用一个 `direction.styleId` 和唯一[画法目录](references/style-recipes.json)。轮廓、填色、材质、纹理与光照一致，只按尺寸调整构图和细节量。新增、修改、停用、删除同时作用于两类资产，不分开维护。23个已发布编号不重排，企业叙事画法沿用未编号ID。
 
 按编号、ID、中日英文名称匹配；未知、停用、冲突或公司规范版本漂移时先解决差异，不换成相近画法。旧 `recipe/preset` 仅是同一ID的兼容选型。见[统一样式](references/shared-styles.md)、[视觉简报](references/visual-profile.md)。
 
 有参考图时先查看并实际传入图像工具，记录哈希；只在提示词里提到不算已使用。样式参考与验证范围见目录及[验证矩阵](references/validation-matrix.md)。对照板和编排测试不代表所有题材、所有尺寸的成图都已验证。
 
 `technical-spot` 用二维描边填色，不生成球面阴影、塑料高光、倒角或挤出厚度。72–128px小图标从compact起步：一个主对象＋至多一个必要提示，不堆电路、端口和设备；见[技术主题小插图](references/technical-spot.md)。`enterprise-narrative` 保留成熟人物、可信动作、分级墨线与轻水彩，配套图标也用同一画法；见[企业叙事](references/enterprise-narrative.md)。
-
-`structural-duotone` 和 `faceted-geometric` 优先使用原生SVG控制色面，再按需导出透明PNG；整组插图与图标走同一路径。原生矢量和模型生成位图分别记账，不把渲染导出说成图像模型生成，也不能把失败的位图试作当作合格母样。手绘等艺术性画法使用宿主图像工具，按实际成图核验；`clean-handdrawn`当前试作尚未形成与描边填色足够区分的合格参考，不以新名称冒充已验证能力。
 
 ## 外形、颜色与文字
 

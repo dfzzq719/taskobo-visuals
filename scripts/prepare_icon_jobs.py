@@ -136,8 +136,6 @@ def prepare(brief, context=None, contact_sheet=False, allow_illustrations=False,
         avoid = asset.get('avoid', [])
         if not isinstance(avoid, list) or any(not isinstance(v, str) for v in avoid):
             raise ValueError('avoid must be a list of visual misreadings.')
-        native_vector = recipe.get('preferredRenderer') == 'native-svg'
-        output_instruction = ('Output: independently editable native SVG geometry (paths and shapes, no embedded raster, foreignObject or outlined fake bitmap). Keep the canvas transparent; derive a transparent PNG with an available vector renderer when needed.' if transparent else 'Output: independently editable native SVG geometry with the explicitly requested opaque scene. No embedded raster.') if native_vector else ('Output: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.' if transparent else 'Output: opaque full-scene artwork as explicitly requested; background and composition follow the current asset brief.')
         prompt = '\n'.join([
             'Use case: productivity-visual. Asset: a standalone enterprise explanatory ' + kind + '.',
             'Reader should recognize: ' + asset['meaning'],
@@ -150,10 +148,10 @@ def prepare(brief, context=None, contact_sheet=False, allow_illustrations=False,
             'Viewpoint: ' + viewpoint + '. Preserve the shared contour, fill, material, texture and lighting method; scale detail to each asset size.',
             'Image framing: ' + framing_text,
             'Palette roles: ' + palette_text + '. These override reference and example colors.',
-            output_instruction,
+            'Output: genuinely transparent PNG with real Alpha, isolated artwork, generous safe edge, no baked paper/white/checkerboard ground.' if transparent else 'Output: opaque full-scene artwork as explicitly requested; background and composition follow the current asset brief.',
             'No decorative base, pedestal, backing plate, brand, watermark or embedded labels. Object surfaces remain opaque where appropriate.',
             'A style reference supplies drawing treatment only; do not copy its topics, objects, layout, labels or colors.',
-            *([('Inspect the bundled reference for drawing grammar. Construct original SVG paths for the current meaning; do not embed its pixels or copy the reference subjects.' if native_vector else 'Inspect and pass the bundled shared style reference to the image tool. Its drawing method applies to both asset kinds; compact detail density applies only at small display sizes.')] if references else []),
+            *(['Inspect and pass the bundled shared style reference to the image tool. Its drawing method applies to both asset kinds; compact detail density applies only at small display sizes.'] if references else []),
             'Avoid these semantic errors: ' + ('; '.join(avoid) if avoid else 'inventing approval, outcomes, figures or relationships absent from the brief.')
         ])
         jobs.append({'id': asset['id'], 'kind': kind, 'styleId': recipe['id'], 'styleVersion': recipe.get('styleVersion', '1'), 'label': asset.get('label', asset['id']),
@@ -164,7 +162,7 @@ def prepare(brief, context=None, contact_sheet=False, allow_illustrations=False,
                      'framing': framing,
                      'language': language,
                      'typography': typography,
-                     'tool': 'host-native-svg' if native_vector else 'host-image-generation', 'transparent_background': transparent,
+                     'tool': 'host-image-generation', 'transparent_background': transparent,
                      'prompt': prompt})
     result = {'schema': 'taskobo-visuals.generation-jobs/v1', 'status': 'planned',
               'recipe': {'number': recipe['number'], 'id': recipe['id'], 'version': catalog['version']},
