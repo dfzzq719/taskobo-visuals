@@ -4,17 +4,19 @@ Each style applies the exact same drawing method to illustrations and icons unde
 
 Enterprise illustrations and coordinated thematic icons, made with your own AI from a topic or document. Content, art direction and palette remain independent choices.
 
-[日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.4.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.4.0)
+[日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.5.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0)
 
 ![Original promotional example combining icons, an illustration and Japanese copy](examples/service-story/page-02.png)
 
 [Explore the three-image story: icons and text → icons, illustration and text → illustration and text](examples/service-story/README.ja.md). These original images were generated using one `enterprise-narrative` drawing method and palette. Original PNGs, prompts and generation records are included. The Web workspace prepares requests; creation takes place in your AI with the Skill installed.
 
-## v0.4.0: portable team standards
+## v0.5.0: trace each asset, retry selectively, reuse approved work
 
-Choose a concrete shared style, carry a draft from the Web to an Agent-authored semantic plan, and validate it before preparing generation jobs. Versioned organization JSON/ZIP profiles preserve style, locked palette roles, fonts and checksummed references. `doctor.py` checks installation/version/duplicate discovery; `check_assets.py` creates read-only Alpha, geometry and light/dark placement diagnostics. Regression tests and CI are included in the repository.
+Local production records connect each asset to its actual prompt, references, host-tool receipt, output hashes and immutable attempts. Retry only the failed or requested asset while retaining earlier results. Delivery manifests match independent files to job IDs and distinguish PNG, native SVG and SVG containing raster content. An overview does not replace separate deliverables. Search approved assets by meaning, multilingual aliases, style, palette and organization profile version; verify the files before reuse.
 
-[CLI and workflow](docs/enterprise-standard.ja.md) · [Actual image evidence and limits](docs/validation-matrix.ja.md). Drafts, executable plans, generated images and visual approval are distinct states; no model or web generation backend is bundled.
+The 24 shared styles, portable team profiles, draft validation and Alpha diagnostics remain. Generation takes place in the host AI. Helpers do not generate images or automatically approve business meaning, visual quality or style.
+
+[Production, delivery and reuse](docs/production-workflow.ja.md) · [Team-profile CLI](docs/enterprise-standard.ja.md) · [Actual image evidence and limits](docs/validation-matrix.ja.md). Drafts, executable plans, generated images and visual approval are distinct states; no model or web generation backend is bundled.
 
 ## Compare visual directions
 
@@ -26,7 +28,7 @@ v0.3.5 also bundles [23 drawing recipes](references/style-recipes.json), selecta
 
 ## Start
 
-1. Extract the Skill ZIP from [v0.4.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.4.0) into a Skill directory supported by your AI application. The folder is `taskobo-visuals`; repository-based installers should use this repository root.
+1. Extract the Skill ZIP from [v0.5.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0) into a Skill directory supported by your AI application. The folder is `taskobo-visuals`; repository-based installers should use this repository root.
 2. Reload the Skill and invoke `$taskobo-visuals` with a topic, use, palette and art direction. The Web workspace creates a reusable request and brief JSON.
 3. Review at the intended size and share the approved master, palette and prompts with your team.
 

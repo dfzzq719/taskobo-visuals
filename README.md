@@ -4,21 +4,21 @@
 
 テーマや文書から伝える内容を決め、画風と配色を選び、普段使っているAIで制作するAIエージェント用スキル（SKILL.md）。提案書、研修資料、報告書、Webのために、承認した見本と制作条件を引き継ぐ。
 
-[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.4.0) · [利用ガイド](docs/guide.ja.md)
+[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0) · [利用ガイド](docs/guide.ja.md)
 
 [English](README.en.md) · [中文・维护基准](README.zh-CN.md)
 
 [TaskoboのAIスキル一覧](https://taskobo.com/skills/)で、業務図表の更新と挿絵・アイコン制作の用途を比較できる。
 
-## v0.4.0 — チームの基準を、次の制作へ
+## v0.5.0 — 制作の履歴を残し、採用素材を次の仕事へ
 
-- 24画法から具体的なIDを選び、挿絵とアイコンへ同じ画法を適用する。
-- Webの制作意向を草稿として保存し、AIが意味と対象を補ってから生成タスクへ進める。
-- 社内基準のJSON／ZIPを共有し、画法・版・固定色・参照の差異を明示する。
-- 実ファイルのAlpha、余白、サイズ、裁切リスクを調べ、明暗背景の確認画像を作る。
-- インストールと同名Skillの診断、回帰テストを同梱／公開する。
+- 素材ごとに実際のプロンプト、参照、生成ツールの返答、出力ファイルを記録する。
+- 失敗した素材や修正が必要な素材だけを再制作し、過去の試行と採用済みファイルを残す。
+- タスクと独立ファイルを照合。「挿絵1点＋アイコン4点」は5点として確認し、総覧と区別する。
+- 採用の根拠を明記した素材を、意味・別名・画法・配色・社内規格の版から探して再利用する。
+- 24画法の共通定義、会社規格JSON／ZIP、Alpha診断、Webからの引継ぎを継続する。
 
-[使い方とCLI](docs/enterprise-standard.ja.md) · [画法別の実生成・未検証範囲](docs/validation-matrix.ja.md) · [制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/#company-standard)
+[制作記録・納品確認・素材の再利用](docs/production-workflow.ja.md) · [会社規格とCLI](docs/enterprise-standard.ja.md) · [画法別の実生成・未検証範囲](docs/validation-matrix.ja.md) · [制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/#company-standard)
 
 Webは制作条件を整える。画像はSkillを導入したAIで生成する。機械検査は意味や画風の自動承認ではなく、生成結果の最終採用は実画像を確認して決める。
 
@@ -53,7 +53,7 @@ Webは制作条件を整える。画像はSkillを導入したAIで生成する�
 
 [23の作例を拡大して見る・用途から選ぶ](docs/icon-styles.ja.md)。2枚とも現行v0.3.5のレシピから新規制作し、06の平面表現と各素材の違いを見直した。番号と名称を依頼文に添えると、求める表現を共有しやすい。配列は用途の広さを考えた目安で、企業の利用率を測定したランキングではない。
 
-現在のSkillは3つの基本方向と2つの具体的なプリセットを持つ。v0.3.5では23作例に対応する[画法レシピ](references/style-recipes.json)も同梱する。番号・名称から画法を選び、今回の文書の意味と配色を組み合わせられる。23種類の固定レンダラーや既製アイコン集ではない。[新しい3業務の文書から実際に制作した例](docs/document-driven-validation.ja.md)で、確認した範囲と限界を公開する。
+現在のSkillは23の番号付き画法と企業叙事の計24定義を共有する。3つの基本方向は選型の手掛かりで、実行時には具体的なIDを使う。v0.3.5から23作例に対応する[画法レシピ](references/style-recipes.json)も同梱する。番号・名称から画法を選び、今回の文書の意味と配色を組み合わせられる。23種類の固定レンダラーや既製アイコン集ではない。[新しい3業務の文書から実際に制作した例](docs/document-driven-validation.ja.md)で、確認した範囲と限界を公開する。
 
 | 基本方向 | 主な用途 | 整理済みのプリセット |
 | --- | --- | --- |
@@ -63,7 +63,7 @@ Webは制作条件を整える。画像はSkillを導入したAIで生成する�
 
 ## まず1セット作る
 
-1. [v0.4.0のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.4.0)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
+1. [v0.5.0のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
 2. Skillを再読み込みし、制作条件を渡す。[Webの制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)でも依頼文とJSONを作れる。
 3. 素材を用途に合うサイズで確認し、採用した見本、配色、生成プロンプトをチームに共有する。
 

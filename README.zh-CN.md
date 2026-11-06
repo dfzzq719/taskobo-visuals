@@ -4,15 +4,17 @@
 
 **围绕业务内容制作企业插图与主题图标，让团队沿用共同的视觉基准。**
 
-中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.4.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.4.0)。
+中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.5.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0)。
 
 [作品展示](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件与依頼文工具](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [23种画法与材质作例](docs/icon-styles.ja.md)
 
-## v0.4.0：可迁移的企业视觉规范
+## v0.5.0：逐张记录、局部重做与认可素材复用
 
-网页选择具体画法，导出保留选择的草稿；Agent补齐业务语义后，显式转换为可执行简报。新增公司规范JSON／ZIP、版本和参考校验、锁定颜色冲突提示、安装诊断、真实成图文件检查与明暗背景预览。测试和CI随仓库公开。
+每张素材保留实际提示词、参考、宿主回执、文件哈希和独立尝试记录。失败或需修改时仅重做目标项，保留其他结果。独立交付清单按任务ID核对文件，区分PNG、原生SVG与内嵌位图；对照板不能冒充独立素材。已明确认可的素材可按业务含义、多语言别名、画法、配色和公司规范版本检索，复用前核对原文件。
 
-[企业规范与执行](references/enterprise-standard.md) · [实际生成与验证范围](references/validation-matrix.md) · [日文CLI使用说明](docs/enterprise-standard.ja.md)
+延续24种共享画法、草稿/就绪校验、公司规范JSON／ZIP、安装诊断与Alpha预览。生成仍由宿主AI执行；脚本不调用生图后端，也不自动批准业务含义或审美。
+
+[逐张制作记录](references/production-run.md) · [交付与复用](references/delivery-and-reuse.md) · [企业规范与执行](references/enterprise-standard.md) · [实际生成与验证范围](references/validation-matrix.md) · [日文CLI使用说明](docs/enterprise-standard.ja.md)
 
 生成任务不等于图片，文件检查不等于语义或审美通过；安装包不含模型和生图后端。
 

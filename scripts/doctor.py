@@ -74,7 +74,8 @@ def installation_report(root=ROOT, expected_version=None, skills_root=None, incl
         checks.append('shared-registry-and-reference-hashes')
     except (OSError, UnicodeError, ValueError, KeyError, TypeError):
         errors.append({'code': 'invalid-registry', 'message': 'The shared style registry could not be validated.'})
-    required = ['prepare_icon_jobs.py', 'prepare_visual_jobs.py', 'extract_context.py', 'check_palette.py', 'check_assets.py']
+    required = ['prepare_icon_jobs.py', 'prepare_visual_jobs.py', 'extract_context.py', 'check_palette.py', 'check_assets.py',
+                'production_run.py', 'delivery_manifest.py', 'asset_catalog.py']
     helpers = [p.name for p in sorted((root / 'scripts').glob('*.py')) if p.name != 'doctor.py']
     missing = sorted(set(required) - set(helpers))
     if missing:

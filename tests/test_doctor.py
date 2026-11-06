@@ -27,7 +27,7 @@ class DoctorTests(unittest.TestCase):
                          'styleReference': {'file': 'assets/reference.bin', 'sha256': hashlib.sha256(self.reference.read_bytes()).hexdigest()}}]}
         self.save_registry()
         (self.skill / 'scripts').mkdir()
-        for name in ['prepare_icon_jobs.py', 'prepare_visual_jobs.py', 'extract_context.py', 'check_palette.py', 'check_assets.py']:
+        for name in ['prepare_icon_jobs.py', 'prepare_visual_jobs.py', 'extract_context.py', 'check_palette.py', 'check_assets.py', 'production_run.py', 'delivery_manifest.py', 'asset_catalog.py']:
             (self.skill / 'scripts' / name).write_text('VALUE = 1\n', encoding='utf-8')
 
     def tearDown(self):
