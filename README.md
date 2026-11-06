@@ -4,7 +4,7 @@
 
 テーマや文書から伝える内容を決め、画風と配色を選び、普段使っているAIで制作するAIエージェント用スキル（SKILL.md）。提案書、研修資料、報告書、Webのために、承認した見本と制作条件を引き継ぐ。
 
-[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0) · [利用ガイド](docs/guide.ja.md)
+[作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.1) · [利用ガイド](docs/guide.ja.md)
 
 [English](README.en.md) · [中文・维护基准](README.zh-CN.md)
 
@@ -44,7 +44,9 @@ Webは制作条件を整える。画像はSkillを導入したAIで生成する�
 
 ## 画風を見て選ぶ
 
-線画、フラット、テクニカルスポット、マット3D、ガラス、金属、紙、刺繍まで。2026-10-25にv0.3.5で制作した23の比較作例を、同じ4テーマ・同じブルー系の配色で確認できる。これは制作当時の比較記録であり、現在選べる画風の総数を示すものではない。
+v0.5.1では20番「磁器・釉薬」、21番「レザーの型押し」、22番「刺繍」のみ新規制作の選択肢から外した。ほかの画法・配色・参照画像と下の比較画像はそのまま保つ。現在は番号付き20画法と既存の企業叙事プリセットを選べる。
+
+線画、フラット、テクニカルスポット、マット3Dなどの違いを確認する。2026-10-25にv0.3.5で制作した23の比較作例を、同じ4テーマ・同じブルー系の配色で確認できる。これは制作当時の比較記録であり、現在選べる画風の総数を示すものではない。
 
 <p>
   <a href="docs/icon-styles.ja.md#基本表現と立体表現"><img src="docs/assets/icon-styles/styles-ja-01-v4.png" width="49%" alt="01から12：基本表現と立体表現の作例" /></a>
@@ -63,7 +65,7 @@ Webは制作条件を整える。画像はSkillを導入したAIで生成する�
 
 ## まず1セット作る
 
-1. [v0.5.0のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
+1. [v0.5.1のSkill ZIP](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.1)を展開し、`taskobo-visuals` フォルダーを利用中のAIソフトのSkill対応ディレクトリに置く。
 2. Skillを再読み込みし、制作条件を渡す。[Webの制作ツール](https://taskobo.com/free-tools/taskobo-visuals/tool/)でも依頼文とJSONを作れる。
 3. 素材を用途に合うサイズで確認し、採用した見本、配色、生成プロンプトをチームに共有する。
 

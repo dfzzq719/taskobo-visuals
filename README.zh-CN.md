@@ -4,7 +4,7 @@
 
 **围绕业务内容制作企业插图与主题图标，让团队沿用共同的视觉基准。**
 
-中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.5.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0)。
+中文作为内容维护基准，默认公开入口为[日文首页](README.md)，另有[英文简介](README.en.md)。Skill当前固定发行版为[v0.5.1](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.1)。
 
 [作品展示](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件与依頼文工具](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [23种画法与材质作例](docs/icon-styles.ja.md)
 
@@ -25,6 +25,8 @@
 [查看完整三图故事与生成记录](examples/service-story/README.ja.md)：图标与文字 → 图标、插图与文字 → 插图与文字。三张统一使用 `enterprise-narrative` 画法与蓝色系，展示从业务语义到团队共通视觉标准的过程。保留原图与实际生成提示词；Web整理制作条件，安装Skill的AI执行生成。
 
 ## 内容、风格与色系分别选择
+
+v0.5.1只停用20号瓷釉、21号皮革压印、22号织物刺绣，其余画法、色系、参考图和现有示例图片原样保留。当前为20种编号画法，加上既有企业叙事预设。
 
 - 内容来自本次业务主题、受众和文档依据，不把任何单一行业当作默认。
 - 画法、视角与材质按用途组合，系列内统一线条、视觉重量和细节量。

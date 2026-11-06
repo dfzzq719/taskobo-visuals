@@ -4,7 +4,7 @@ Each style applies the exact same drawing method to illustrations and icons unde
 
 Enterprise illustrations and coordinated thematic icons, made with your own AI from a topic or document. Content, art direction and palette remain independent choices.
 
-[日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.5.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0)
+[日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.5.1](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.1)
 
 ![Original promotional example combining icons, an illustration and Japanese copy](examples/service-story/page-02.png)
 
@@ -20,6 +20,8 @@ The shared style definitions, portable team profiles, draft validation and Alpha
 
 ## Compare visual directions
 
+v0.5.1 retires only glazed porcelain (20), embossed leather (21) and embroidery (22). All other drawing methods, palettes, references and existing images remain unchanged. There are 20 numbered active methods plus the existing enterprise-narrative preset.
+
 [Browse 23 icon drawing and material examples](docs/icon-styles.ja.md), created on 2026-10-25 with v0.3.5 and controlled for business themes and a blue/navy palette. This historical comparison does not state the current number of selectable styles or measured adoption rankings.
 
 Starting directions such as `precision`, `editorial` and `dimensional` help with selection. Documented drawing methods include [`technical-spot`](references/technical-spot.md) and [`enterprise-narrative`](references/enterprise-narrative.md). Choose content, palette and viewpoint independently.
@@ -28,7 +30,7 @@ Check the [Web workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) 
 
 ## Start
 
-1. Extract the Skill ZIP from [v0.5.0](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.0) into a Skill directory supported by your AI application. The folder is `taskobo-visuals`; repository-based installers should use this repository root.
+1. Extract the Skill ZIP from [v0.5.1](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.1) into a Skill directory supported by your AI application. The folder is `taskobo-visuals`; repository-based installers should use this repository root.
 2. Reload the Skill and invoke `$taskobo-visuals` with a topic, use, palette and art direction. The Web workspace creates a reusable request and brief JSON.
 3. Review at the intended size and share the approved master, palette and prompts with your team.
 

@@ -1,6 +1,6 @@
 {
   "schema": "taskobo-visuals.style-recipes/v1",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "scope": "One drawing-style registry for illustrations and icons. Published numbers 01-23 are unchanged; enterprise-narrative is an existing unnumbered preset. Shared recipes are callable directions, not proof that both asset kinds have been visually validated.",
   "styles": [
     {
@@ -383,7 +383,7 @@
         "illustration",
         "icon"
       ],
-      "status": "active",
+      "status": "retired",
       "styleVersion": "1",
       "validation": {
         "icon": "existing-examples",
@@ -401,7 +401,7 @@
         "illustration",
         "icon"
       ],
-      "status": "active",
+      "status": "retired",
       "styleVersion": "1",
       "validation": {
         "icon": "existing-examples",
@@ -419,7 +419,7 @@
         "illustration",
         "icon"
       ],
-      "status": "active",
+      "status": "retired",
       "styleVersion": "1",
       "validation": {
         "icon": "existing-examples",

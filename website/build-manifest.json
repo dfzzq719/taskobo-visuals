@@ -1,5 +1,5 @@
 {
-  "skillVersion": "0.5.0",
+  "skillVersion": "0.5.1",
   "routes": [
     "/free-tools/taskobo-visuals/",
     "/free-tools/taskobo-visuals/tool/",
@@ -8,7 +8,7 @@
     "/free-tools/taskobo-visuals/samples/healthcare-care/",
     "/free-tools/taskobo-visuals/samples/education-training/"
   ],
-  "skillZip": "taskobo-visuals-v0.5.0-756ee2b6883f.zip",
+  "skillZip": "taskobo-visuals-v0.5.1-0ec85c4a50cb.zip",
   "hero": {
     "small": "service-story-02-768-4157bb50ed68.webp",
     "large": "service-story-02-1440-f91c75081f1b.webp",
@@ -915,13 +915,13 @@
       "bytes": 2788667
     },
     {
-      "path": "downloads/taskobo-visuals-v0.5.0-756ee2b6883f.zip",
-      "sha256": "756ee2b6883f0a6d4c35f1b16a9afb7d142564dce0594fd93c54a5085f6bf505",
-      "bytes": 9167552
+      "path": "downloads/taskobo-visuals-v0.5.1-0ec85c4a50cb.zip",
+      "sha256": "0ec85c4a50cbb64c655998481eb5bf30d845a1a427693691d2c96bd549e4308d",
+      "bytes": 9167811
     },
     {
       "path": "index.html",
-      "sha256": "6336e77a795d199db59c48928d3d83554d43a15908f3ecc792104eb0bcd21da6",
+      "sha256": "8ea0a44df42246a3b77007291fe77dbd2581975b7a32ecdcda913f4e0ee945a6",
       "bytes": 26118
     },
     {
@@ -946,8 +946,8 @@
     },
     {
       "path": "tool/index.html",
-      "sha256": "c97d811b11151166dc2737ff9b5c3f6b5539f36578bba846a0fa8f4ea7f89d65",
-      "bytes": 41397
+      "sha256": "e21cb12827df2c74e73292592c57bc2408497999ef8a3952ef22070f943b44ff",
+      "bytes": 39622
     }
   ]
 }
