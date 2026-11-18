@@ -6,6 +6,8 @@ Enterprise illustrations and coordinated thematic icons, made with your own AI f
 
 [日本語](README.md) · [中文](README.zh-CN.md) · [Showcase](https://taskobo.com/free-tools/taskobo-visuals/) · [Request workspace](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Download v0.5.2](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.2)
 
+Choose a color in the education sample and select “この配色で依頼文を作る” to carry the training topic and selected color into the AI prompt and production brief JSON. [Try the education sample](https://taskobo.com/free-tools/taskobo-visuals/samples/education-training/#sample-icons)
+
 ![Original promotional example combining icons, an illustration and Japanese copy](examples/service-story/page-02.png)
 
 [Explore the three-image story: icons and text → icons, illustration and text → illustration and text](examples/service-story/README.ja.md). These original images were generated using one `enterprise-narrative` drawing method and palette. Original PNGs, prompts and generation records are included. The Web workspace prepares requests; creation takes place in your AI with the Skill installed.
@@ -20,9 +22,9 @@ The shared style definitions, portable team profiles, draft validation and Alpha
 
 ## Compare visual directions
 
-There are **20 active drawing methods: legacy numbers 01–19 plus the existing unnumbered enterprise-narrative style**. Glazed porcelain (20), embossed leather (21), embroidery (22) and modular pixel (23) are retired for both icons and illustrations. All retained drawing definitions, palettes and references remain unchanged.
+The comparison boards show styles 01–19 and the unnumbered enterprise-narrative style. The web workspace lists the styles available for a new request. Glazed porcelain (20), embossed leather (21), embroidery (22) and modular pixel (23) are retired for both icons and illustrations. All retained drawing definitions, palettes and references remain unchanged.
 
-[Compare the current 20 styles](docs/icon-styles.ja.md). The two updated boards reuse the original artwork for 01–19 without redrawing it and add one enterprise-narrative comparison row on the same four concepts. The [original 23-style boards and generation records](docs/icon-styles.ja.md#旧23種の比較記録) remain available as history, rather than the current selection guide. The order is not a measured adoption ranking.
+[Compare the illustrated styles](docs/icon-styles.ja.md). The two updated boards reuse the original artwork for 01–19 without redrawing it and add one enterprise-narrative comparison row on the same four concepts. The [original 23-style boards and generation records](docs/icon-styles.ja.md#旧23種の比較記録) remain available as history, rather than the current selection guide. The order is not a measured adoption ranking.
 
 Starting directions such as `precision`, `editorial` and `dimensional` help with selection. Documented drawing methods include [`technical-spot`](references/technical-spot.md) and [`enterprise-narrative`](references/enterprise-narrative.md). Choose content, palette and viewpoint independently.
 

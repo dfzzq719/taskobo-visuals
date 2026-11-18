@@ -6,6 +6,8 @@
 
 [作品を見る](https://taskobo.com/free-tools/taskobo-visuals/) · [制作条件を整える](https://taskobo.com/free-tools/taskobo-visuals/tool/) · [Skillをダウンロード](https://github.com/dfzzq719/taskobo-visuals/releases/tag/v0.5.2) · [利用ガイド](docs/guide.ja.md)
 
+教育・研修の作例でアイコンの色を選び、「この配色で依頼文を作る」を開くと、研修のテーマと選んだ主色が依頼文と制作条件JSONに入る。[研修資料の作例で試す](https://taskobo.com/free-tools/taskobo-visuals/samples/education-training/#sample-icons)
+
 [English](README.en.md) · [中文・维护基准](README.zh-CN.md)
 
 [TaskoboのAIスキル一覧](https://taskobo.com/skills/)で、業務図表の更新と挿絵・アイコン制作の用途を比較できる。
@@ -42,15 +44,15 @@ Webは制作条件を整える。画像はSkillを導入したAIで生成する�
 
 画像として直接生成したプレゼンテーション作例。Webは依頼文と制作条件を作り、画像の制作はSkillを導入したAIで行う。独立素材は透明背景が標準で、この3枚は文字と素材を組み合わせたページ画像。
 
-## 現在選べる20の画風
+## 作例で画風を比較する
 
-01–19の19画法と「企業叙事イラスト」で、合計20種。挿絵とアイコンは同じ画法を使う。既存番号は変えず、企業叙事は名称・IDで選ぶ。20番「磁器・釉薬」、21番「レザーの型押し」、22番「刺繍」、23番「ピクセル」は新規制作の選択肢から外した。
+この比較図には、番号01〜19の画法と「企業叙事イラスト」の作例を収録した。Webで制作する際は、制作ツールの画風一覧から選ぶ。挿絵とアイコンは同じ画法を使う。既存番号は変えず、企業叙事は名称・IDで選ぶ。20番「磁器・釉薬」、21番「レザーの型押し」、22番「刺繍」、23番「ピクセル」は新規制作の選択肢から外した。
 
 文書・協働・自動化・安全の4テーマを、同じブルー系の配色で比較する。01–19は従来の原画をそのまま使って再配置し、企業叙事だけ同じテーマの見本を追加した。
 
 <p>
-  <a href="docs/assets/icon-styles/current/styles-current-01.png"><img src="docs/assets/icon-styles/current/styles-current-01.png" width="49%" alt="現在選べる20画法の前半：01から10" /></a>
-  <a href="docs/assets/icon-styles/current/styles-current-02.png"><img src="docs/assets/icon-styles/current/styles-current-02.png" width="49%" alt="現在選べる20画法の後半：11から19と企業叙事イラスト" /></a>
+  <a href="docs/assets/icon-styles/current/styles-current-01.png"><img src="docs/assets/icon-styles/current/styles-current-01.png" width="49%" alt="画風の比較図。番号01から10の作例" /></a>
+  <a href="docs/assets/icon-styles/current/styles-current-02.png"><img src="docs/assets/icon-styles/current/styles-current-02.png" width="49%" alt="画風の比較図。番号11から19と企業叙事イラストの作例" /></a>
 </p>
 
 [20の作例を拡大して見る・用途から選ぶ](docs/icon-styles.ja.md)。番号・名称と今回のテーマを添えて依頼できる。配列は企業の実測利用率や品質の順位ではない。[旧23種の比較画像と制作記録](docs/icon-styles.ja.md#旧23種の比較記録)は履歴として残す。

@@ -10,6 +10,7 @@ import json
 import math
 import re
 from pathlib import Path
+from urllib.parse import urlencode
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 from PIL import Image
 
@@ -18,7 +19,8 @@ BASE = '/free-tools/taskobo-visuals/'
 ORIGIN = 'https://taskobo.com'
 REPO = 'https://github.com/dfzzq719/taskobo-visuals'
 VERSION = re.search(r'version:\s*[\"\']([^\"\']+)', (ROOT / 'SKILL.md').read_text(encoding='utf-8'))[1]
-PAGE_MODIFIED = '2026-11-06'
+PAGE_MODIFIED = '2026-11-18'
+LANDING_MODIFIED = '2026-11-06'
 LANDING_TITLE = '業務資料のイラスト・アイコン制作AIスキル | Taskobo Visuals'
 LANDING_DESCRIPTION = '提案書・報告書・研修資料のイラストとアイコンを、共通の画風と配色で制作する企業向けAIスキル。利用中のAIで制作し、ローカルに生成記録を残し、採用した素材をチームで再利用できる。作品例と導入方法を公開。'
 TOOL_TITLE = 'イラスト・アイコンの依頼文作成 | Taskobo Visuals'
@@ -151,6 +153,10 @@ def copy_block(text, ident='sample-prompt'):
 def palette_buttons(accent):
     return ''.join(f'<button type="button" data-accent="{c["accent"]}" data-wash="{c["wash"]}" aria-pressed="{str(c["accent"] == accent).lower()}"><i aria-hidden="true" style="--swatch:{c["accent"]}"></i>{c["paletteName"]}</button>' for c in CATALOG)
 
+def palette_controls(case):
+    target = BASE + 'tool/?' + urlencode({'sample': case['id'], 'accent': case['accent'].upper()})
+    return palette_buttons(case['accent']) + f'<a class="ill-copy" data-palette-request href="{E(target, quote=True)}">この配色で依頼文を作る {ARROW}</a>'
+
 def sample(case):
     icons = ''
     for key, title, meaning in case['icons']:
@@ -162,9 +168,9 @@ def sample(case):
 <header class="ill-intro"><h1>{E(case['title'])}</h1><p>{E(case['description'])}</p><div class="ill-actions"><a class="button button-primary" href="#sample-icons">テーマ別アイコンを見る {ARROW}</a><a href="{BASE}downloads/{case['assets']['zip']}" download>このサンプル一式を保存</a></div></header>
 <figure class="ill-art">{image(case)}<figcaption>Taskobo Visualsで制作した架空の業務場面。AI生成のイラストと、独立したSVGアイコンを組み合わせたサンプル。</figcaption></figure>
 <dl class="ill-brief"><div><dt>対象</dt><dd>{E(case['audience'])}</dd></div><div><dt>用途</dt><dd>{E(case['uses'])}</dd></div><div><dt>配色</dt><dd class="ill-palette-sample"><span class="ill-swatch" style="--swatch:{case['accent']}" aria-hidden="true"></span><span>{case['paletteName']}<br>{case['accent']}</span></dd></div></dl>
-<section class="ill-section" id="sample-icons" aria-labelledby="icon-heading" data-palette-scope style="--sample-accent:{case['accent']};--sample-wash:{case['wash']}"><div class="ill-section-head"><h2 id="icon-heading">同じ資料に、同じ表現のアイコンを。</h2><p>輪郭、線幅、余白をそろえた6点。意味が異なる対象は形でも区別し、名称は画像の外に置く。</p></div><div class="ill-palette" aria-label="アイコンの配色プレビュー">{palette_buttons(case['accent'])}</div><p class="ill-status" data-palette-status role="status">アイコンのみ配色を切り替えて比較できる。上のイラストとダウンロード素材は元のサンプル配色。</p><div class="ill-icon-grid">{icons}</div><p class="ill-icon-caption">個別SVGは図形を編集でき、PNGは透明背景の768px。サンプル一式には元の配色、SVG・PNG、イラスト、依頼文を収録。プレビューでの色変更はダウンロード素材には反映されない。</p></section>
+<section class="ill-section" id="sample-icons" aria-labelledby="icon-heading" data-palette-scope data-sample-id="{case['id']}" style="--sample-accent:{case['accent']};--sample-wash:{case['wash']}"><div class="ill-section-head"><h2 id="icon-heading">同じ資料に、同じ表現のアイコンを。</h2><p>輪郭、線幅、余白をそろえた6点。意味が異なる対象は形でも区別し、名称は画像の外に置く。</p></div><div class="ill-palette" aria-label="アイコンの配色プレビュー">{palette_controls(case)}</div><p class="ill-status" data-palette-status role="status">アイコンのみ配色を切り替えて比較できる。上のイラストとダウンロード素材は元のサンプル配色。</p><div class="ill-icon-grid">{icons}</div><p class="ill-icon-caption">個別SVGは図形を編集でき、PNGは透明背景の768px。サンプル一式には元の配色、SVG・PNG、イラスト、依頼文を収録。プレビューでの色変更はダウンロード素材には反映されない。</p></section>
 <section class="ill-section"><div class="ill-split"><div><h2>自分の業務に、置き換えて使う。</h2><p>{E(case['meaning'])}</p></div><div><p>まず目的、読者、伝えたい行動を決める。その後に画風と配色を選ぶ。添付文書がある場合は、AIにページや段落の根拠を示させ、実際の業務に合うか確認する。</p>{copy_block(request(case))}<div class="ill-actions" style="margin-top:20px"><a href="{BASE}assets/{case['assets']['original']}" download>イラストのPNGを保存</a><a href="{REPO}/tree/main/examples/{case['id']}">元データと生成プロンプト</a></div></div></div></section>
-<section class="ill-section"><div class="ill-split"><div><h2>あなたのAIに、共通の制作基準を。</h2><p>テーマは業務に合わせて変え、社内の色と表現は引き継ぐ。</p></div><div><p>Skillを導入したAIに依頼文を渡す。利用するAIの画像生成機能やローカル実行環境が必要だ。制作ツールで依頼文を調整し、Skillの導入手順も確認できる。</p><div class="ill-actions"><a class="button button-primary" href="{BASE}tool/#install">Skillの導入手順 {ARROW}</a><a href="{BASE}tool/?sample={case['id']}">自分の条件で依頼文を作る</a></div></div></div></section>
+<section class="ill-section"><div class="ill-split"><div><h2>あなたのAIに、共通の制作基準を。</h2><p>テーマは業務に合わせて変え、社内の色と表現は引き継ぐ。</p></div><div><p>Skillを導入したAIに依頼文を渡す。利用するAIの画像生成機能やローカル実行環境が必要だ。制作ツールで依頼文を調整し、Skillの導入手順も確認できる。</p><div class="ill-actions"><a class="button button-primary" href="{BASE}tool/#install">Skillの導入手順 {ARROW}</a><a data-palette-request href="{BASE}tool/?sample={case['id']}">自分の条件で依頼文を作る</a></div></div></div></section>
 <section class="ill-section"><h2>ほかの業務の表現も見る。</h2><div class="ill-related">{related}</div></section>
 <p class="ill-license">2026年10月22日公開。架空の業務サンプル。実企業の導入実績や効果を示すものではない。<a href="{REPO}/blob/main/LICENSE">MITライセンス</a>。生成画像は業務の正確性を確認し、図表や手順書の代わりに使う場合は専門担当者が検証する。</p></div>'''
 
@@ -222,6 +228,7 @@ def render_page(page_path, title, description, content, og_asset, breadcrumb, te
     url = ORIGIN + BASE + page_path
     page_entity = {'@type': 'WebPage', '@id': url + '#webpage', 'name': title,
                    'description': description, 'url': url, 'inLanguage': 'ja',
+                   'dateModified': LANDING_MODIFIED if page_path == '' else PAGE_MODIFIED,
                    'isPartOf': {'@id': ORIGIN + '/#website'}}
     graph = [page_entity, {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb',
                           'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': name, 'item': link}
@@ -235,7 +242,7 @@ def render_page(page_path, title, description, content, og_asset, breadcrumb, te
             {'@type': 'WebSite', '@id': ORIGIN + '/#website', 'name': 'Taskobo', 'url': ORIGIN + '/',
              'inLanguage': 'ja', 'publisher': {'@id': organization_id}},
         ]
-        page_entity.update({'publisher': {'@id': organization_id}, 'dateModified': PAGE_MODIFIED,
+        page_entity.update({'publisher': {'@id': organization_id},
                             'breadcrumb': {'@id': url + '#breadcrumb'}, 'relatedLink': ORIGIN + '/skills/'})
         graph.append({'@type': 'SoftwareSourceCode', '@id': skill_id, 'name': 'Taskobo Visuals',
                       'url': ORIGIN + BASE, 'codeRepository': REPO, 'license': REPO + '/blob/main/LICENSE',
@@ -256,6 +263,8 @@ def render_page(page_path, title, description, content, og_asset, breadcrumb, te
                           'featureList': ['共通の画風・配色・字体・表示サイズの指定', 'AIに渡す依頼文と草稿ブリーフのJSON保存', '社内ビジュアル基準JSONの保存・読込み']})
     data = {'@context': 'https://schema.org', '@graph': graph}
     head = f'<title>{E(title)}</title><meta name="description" content="{E(description)}"><link rel="canonical" href="{url}"><meta property="og:type" content="website"><meta property="og:site_name" content="Taskobo"><meta property="og:locale" content="ja_JP"><meta property="og:url" content="{url}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description)}"><meta property="og:image" content="{ORIGIN}{BASE}assets/{og_asset}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{E(title)}"><meta name="twitter:description" content="{E(description)}"><meta name="twitter:image" content="{ORIGIN}{BASE}assets/{og_asset}"><script type="application/ld+json">{json.dumps(data, ensure_ascii=False).replace("<", chr(92) + "u003c")}</script><link rel="stylesheet" href="{BASE}assets/{css}"><script defer src="{BASE}assets/{js}"></script>'
+    if page_path == 'tool/':
+        head += '<script defer src="/assets/usage-20261118.js"></script>'
     content = content.replace('</nav>', '</nav>' + product_nav(page_path), 1)
     return template.replace('%%HEAD%%', head).replace('%%MAIN%%', phrase_headings(content))
 
@@ -284,12 +293,88 @@ def render_existing_pages(output):
     print(json.dumps({'pagesOnly': True, 'files': ['index.html', 'tool/index.html'], 'skillVersion': VERSION}))
 
 
+def render_web_update(output, baseline):
+    """Update the verified deployed HTML/runtime only; never rebuild a ZIP or new style catalog."""
+    manifest = json.loads((ROOT / 'website/build-manifest.json').read_text(encoding='utf-8'))
+    if manifest['skillVersion'] != VERSION:
+        raise ValueError('The baseline and current Skill versions must agree.')
+    CATALOG[:] = manifest['cases']
+    js_bytes = (ROOT / 'website/illustration.js').read_bytes()
+    js = 'illustration-' + digest(js_bytes)[:12] + '.js'
+    routes = ['', 'tool/'] + ['samples/' + case['id'] + '/' for case in CATALOG]
+    files = []
+    for route in routes:
+        relative = route + 'index.html'
+        content = (baseline / relative).read_text(encoding='utf-8')
+        if f'<link rel="canonical" href="{ORIGIN}{BASE}{route}">' not in content:
+            raise ValueError('Unexpected baseline canonical: ' + relative)
+        old_scripts = re.findall(r'<script defer src="' + re.escape(BASE) + r'assets/(illustration-[a-f0-9]{12}\.js)"></script>', content)
+        if len(old_scripts) != 1:
+            raise ValueError('Expected one shared runtime: ' + relative)
+        old_js = old_scripts[0]
+        if digest((baseline / 'assets' / old_js).read_bytes())[:12] not in old_js:
+            raise ValueError('Baseline runtime fingerprint mismatch.')
+        content = content.replace('assets/' + old_js, 'assets/' + js)
+        if route.startswith('samples/'):
+            case = next(case for case in CATALOG if route == 'samples/' + case['id'] + '/')
+            marker = 'data-palette-scope style='
+            updated_marker = f'data-palette-scope data-sample-id="{case["id"]}" style='
+            buttons = palette_buttons(case['accent'])
+            if content.count(buttons) != 1:
+                raise ValueError('Unexpected sample preview markup: ' + relative)
+            if content.count(marker) == 1:
+                content = content.replace(marker, updated_marker, 1)
+            elif content.count(updated_marker) != 1:
+                raise ValueError('Unexpected sample identity: ' + relative)
+            if 'data-palette-request' not in content:
+                content = content.replace(buttons, palette_controls(case), 1)
+            elif content.count(palette_controls(case)) != 1:
+                raise ValueError('Unexpected sample handoff link: ' + relative)
+            legacy = f'<a href="{BASE}tool/?sample={case["id"]}">自分の条件で依頼文を作る</a>'
+            linked_legacy = legacy.replace('<a href=', '<a data-palette-request href=', 1)
+            if content.count(legacy) == 1:
+                content = content.replace(legacy, linked_legacy, 1)
+            elif content.count(linked_legacy) != 1:
+                raise ValueError('Unexpected legacy sample handoff link: ' + relative)
+        if route == 'tool/':
+            catalog_data = re.search(r'<script[^>]*id="style-catalog"[^>]*>(.*?)</script>', content, re.S)
+            if not catalog_data or json.loads(catalog_data[1])['skillVersion'] != VERSION:
+                raise ValueError('Unexpected baseline style catalog/version.')
+            usage = '<script defer src="/assets/usage-20261118.js"></script>'
+            if usage not in content:
+                content = content.replace('</head>', usage + '</head>', 1)
+        def update_date(match):
+            data = json.loads(match[2])
+            for entity in data.get('@graph', [data]):
+                if entity.get('@type') == 'WebPage':
+                    entity['dateModified'] = LANDING_MODIFIED if route == '' else PAGE_MODIFIED
+            return match[1] + json.dumps(data, ensure_ascii=False).replace('<', chr(92) + 'u003c') + match[3]
+        content, count = re.subn(r'(<script type="application/ld\+json">)(.*?)(</script>)', update_date, content, flags=re.S)
+        if count != 1:
+            raise ValueError('Expected one JSON-LD block: ' + relative)
+        target = output / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(content, encoding='utf-8', newline='\n')
+        files.append({'path': relative, 'sha256': digest(target.read_bytes()), 'bytes': target.stat().st_size})
+    (output / 'assets').mkdir(parents=True, exist_ok=True)
+    (output / 'assets' / js).write_bytes(js_bytes)
+    files.append({'path': 'assets/' + js, 'sha256': digest(js_bytes), 'bytes': len(js_bytes)})
+    print(json.dumps({'webOnly': True, 'baseline': str(baseline), 'skillVersion': VERSION, 'files': files}))
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, default=ROOT / 'site')
     parser.add_argument('--icons-only', action='store_true', help='Regenerate editable icon sources before PNG export')
     parser.add_argument('--pages-only', action='store_true', help='Render only the two product pages using the verified existing asset/archive manifest')
+    parser.add_argument('--web-only', action='store_true', help='Update deployed HTML and shared JS without generating archives, images or a new style catalog')
+    parser.add_argument('--baseline', type=Path, help='Fresh verified production Visuals directory, including its shared runtime asset')
     args = parser.parse_args()
+    if args.web_only:
+        if not args.baseline or args.pages_only or args.icons_only:
+            parser.error('--web-only requires --baseline and cannot be combined with other build modes')
+        render_web_update(args.output.resolve(), args.baseline.resolve())
+        return
     if args.pages_only:
         render_existing_pages(args.output.resolve())
         return

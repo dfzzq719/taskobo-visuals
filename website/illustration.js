@@ -3,6 +3,16 @@
   const FONTS = { 'zh-CN': 'Microsoft YaHei', ja: 'Meiryo UI' };
   const clone = value => JSON.parse(JSON.stringify(value));
   const validHex = value => typeof value === 'string' && /^#[0-9a-f]{6}$/i.test(value);
+  function sampleRequestURL(sampleId, accent) {
+    if (!/^[a-z0-9-]+$/.test(sampleId || '') || !validHex(accent)) throw new Error('サンプルと主色を確認する。');
+    return '/free-tools/taskobo-visuals/tool/?' + new URLSearchParams({ sample: sampleId, accent: accent.toUpperCase() });
+  }
+  function resolveSampleRequest(search, presets) {
+    const params = new URLSearchParams(search), sampleId = params.get('sample');
+    if (!Object.hasOwn(presets, sampleId)) return null;
+    const preset = presets[sampleId], accent = params.get('accent');
+    return { ...preset, accent: validHex(accent) ? accent.toUpperCase() : preset.accent };
+  }
   const fontMap = fonts => {
     const result = { ...FONTS, ...(fonts || {}) };
     if (Object.keys(result).some(key => !Object.hasOwn(FONTS, key) || result[key] !== FONTS[key])) throw new Error('文字の基準は日本語 Meiryo UI、中国語 Microsoft YaHei。対応するフォントを指定する。');
@@ -68,22 +78,32 @@
   function makeOrganization(brief, catalog, name, version, existing = null) {
     return validateOrganization({ schema: 'taskobo-visuals.organization-profile/v1', name, version, styleId: brief.direction.styleId, styleVersion: styleFor(catalog, brief.direction.styleId).styleVersion, palette: { roles: clone(brief.palette.roles), lockedRoles: clone(brief.palette.lockedRoles) }, typography: clone(brief.typography), references: existing ? clone(existing.references) : [] }, catalog);
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = { buildDraft, validateOrganization, makeOrganization, styleFor };
+  if (typeof module !== 'undefined' && module.exports) module.exports = { buildDraft, validateOrganization, makeOrganization, styleFor, sampleRequestURL, resolveSampleRequest };
   if (typeof document === 'undefined') return;
   // Keep published sample, request and install links working.
   if (location.pathname.replace(/\/$/, '') === '/free-tools/taskobo-visuals' && ['#request', '#install'].includes(location.hash)) {
     location.replace('/free-tools/taskobo-visuals/tool/' + location.hash); return;
   }
   const copyStatus = document.querySelector('[data-copy-status]');
+  let sampleRequest = null;
   document.querySelectorAll('[data-copy]').forEach(button => button.addEventListener('click', async () => {
     const source = document.getElementById(button.dataset.copy);
-    try { await navigator.clipboard.writeText(source.value || source.textContent); (document.getElementById(button.dataset.status) || copyStatus).textContent = 'コピーした。利用中のAIに貼り付けて使える。'; }
-    catch { source.focus(); if (source.select) source.select(); (document.getElementById(button.dataset.status) || copyStatus).textContent = '表示された依頼文を選択してコピーできる。'; }
+    let copied = false;
+    try { await navigator.clipboard.writeText(source.value || source.textContent); copied = true; }
+    catch {
+      source.focus(); if (source.select) source.select();
+      try { copied = document.execCommand('copy') === true; } catch { /* Keep manual selection available. */ }
+    }
+    (document.getElementById(button.dataset.status) || copyStatus).textContent = copied ? 'コピーした。利用中のAIに貼り付けて使える。' : '表示された依頼文を選択してコピーできる。';
+    if (copied && sampleRequest && button.dataset.copy === 'request-output') window.taskoboUsage?.('visuals-sample-prompt-copy');
   }));
   document.querySelectorAll('[data-accent]').forEach(button => button.addEventListener('click', () => {
     const section = button.closest('[data-palette-scope]');
     section.style.setProperty('--sample-accent', button.dataset.accent); section.style.setProperty('--sample-wash', button.dataset.wash);
     section.querySelectorAll('[data-accent]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    document.querySelectorAll('[data-palette-request]').forEach(request => {
+      request.setAttribute('href', sampleRequestURL(section.dataset.sampleId, button.dataset.accent));
+    });
     section.querySelector('[data-palette-status]').textContent = `${button.textContent.trim()}をプレビュー中。SVG・PNGの個別ダウンロードは元のサンプル配色。`;
   }));
   const form = document.getElementById('request-form');
@@ -101,11 +121,11 @@
     'full-scene': '主イラストは背景を含む場面を画面全体に構成する。同じシリーズの独立アイコンは自然な輪郭の透過素材とする。'
   };
   const presets = JSON.parse(document.getElementById('sample-presets').textContent);
-  const sampleId = new URLSearchParams(location.search).get('sample');
-  const preset = Object.hasOwn(presets, sampleId) ? presets[sampleId] : null;
+  const preset = resolveSampleRequest(location.search, presets);
+  sampleRequest = preset;
   if (preset) {
     form.elements.topic.value = preset.theme; palette.value = 'custom'; custom.value = preset.accent;
-    const notice = document.getElementById('preset-status'); notice.hidden = false; notice.textContent = `${preset.name}のテーマと配色を読み込んだ。自分の業務に合わせて変更できる。`;
+    const notice = document.getElementById('preset-status'); notice.hidden = false; notice.textContent = `${preset.name}のテーマと主色 ${preset.accent.toUpperCase()} を読み込んだ。自分の業務に合わせて変更できる。`;
   }
   let brief = null, organization = null, pendingOrganization = null;
   function updateColor() {
