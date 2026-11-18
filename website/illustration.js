@@ -31,7 +31,7 @@
     const palette = value.palette;
     if (!palette || !palette.roles || !validHex(palette.roles.primary) || !validHex(palette.roles.ink) || Object.values(palette.roles).some(color => !validHex(color))) throw new Error('主色・濃色を含む6桁HEXの配色が必要。');
     if (!Array.isArray(palette.lockedRoles) || palette.lockedRoles.some(role => !Object.hasOwn(palette.roles, role)) || new Set(palette.lockedRoles).size !== palette.lockedRoles.length) throw new Error('固定する色の役割を確認する。');
-    if (!value.typography || typeof value.typography !== 'object' || Object.keys(value.typography).length !== 2 || Object.keys(FONTS).some(language => value.typography[language] !== FONTS[language])) throw new Error('社内基準には日本語 Meiryo UI と中国語 Microsoft YaHei の両方の字体を指定する。');
+    if (!value.typography || typeof value.typography !== 'object' || Object.keys(value.typography).length !== 2 || Object.keys(FONTS).some(language => value.typography[language] !== FONTS[language])) throw new Error('社内基準には日本語 Meiryo UI と中国語 Microsoft YaHei の両方のフォントを指定する。');
     const typography = fontMap(value.typography);
     const refs = value.references || [];
     if (!Array.isArray(refs) || refs.length > 62 || refs.some(ref => !ref || typeof ref.file !== 'string' || !ref.file || ref.file.includes('\\') || ref.file.startsWith('/') || ref.file.split('/').some(part => !part || part === '..' || part === '.') || /[:\x00-\x1f]/.test(ref.file) || ref.file.split('/').some(part => /[. ]$/.test(part) || /^(?:con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\..*)?$/i.test(part)) || !/\.(?:png|jpe?g|webp)$/i.test(ref.file) || !/^[a-f0-9]{64}$/.test(ref.sha256 || '') || typeof ref.role !== 'string' || !ref.role.trim())) throw new Error('参照見本は安全な相対パス・SHA-256・用途を持つ必要がある。');
@@ -157,11 +157,11 @@
       brief = buildDraft(values(), catalog, organization);
       const style = styleFor(catalog, brief.direction.styleId), roleText = Object.entries(brief.palette.roles).map(([role,color]) => `${role} ${color}`).join('、');
       const kind = form.elements.kind.value, framing = kind === 'icons' ? 'freeform' : form.elements.framing.value;
-      output.value = `$taskobo-visuals を使い、次の制作意向から企業向け素材を制作する。添付するJSONは status: draft のため、そのまま生成タスクとして実行しない。内容の根拠から各素材の meaning・subject・必要なsourceRefsを補い、検証してreadyにする。\n\n内容テーマ：${brief.topic.title}\n用途：${brief.medium.purpose}\n制作物：${kind === 'both' ? 'メインイラスト1点と' + form.elements.iconCount.value + '点のテーマ別アイコン' : kind === 'icons' ? form.elements.iconCount.value + '点のテーマ別アイコン' : 'メインイラスト1点'}\n画風：${style.nameJa}（styleId: ${style.id}、画法の版 ${style.styleVersion}）。挿絵とアイコンは完全に同じ画法を使い、線・塗り・材質・質感・光を共通化する。構図と細部の量だけをサイズに合わせる。\n配色：${roleText || '提供文書から根拠を示して提案し、色の役割を補う。'}\n${organization ? '社内基準：' + organization.name + ' v' + organization.version + '。固定した画法・色・字体と異なる場合は上書きせず確認する。\n' : ''}配置先：${brief.medium.targetSize}。独立アイコンの実表示サイズ ${form.elements.iconSizePx.value}px。\n文字：${brief.medium.language === 'ja' ? '日本語 Meiryo UI' : '中国語 Microsoft YaHei'}。字体と正確な文字が必要な場合は、対応字体のある文字の配置処理で確認する。純粋な画像生成だけで字体の一致を保証しない。\n外形：${framingNames[framing]}。${framingInstructions[framing]}\n背景：${framing === 'full-scene' ? '主イラストは不透明（transparent_background: false）。独立アイコンは実際のAlphaを持つ透明PNG（transparent_background: true）。' : '実際のAlphaを持つ透明PNG（transparent_background: true）。白い背景や市松模様を焼き込まない。'}\n\n内容と画法と配色を分ける。文書の状態・対象・行動を確認し、見本の対象物や青色を固定しない。承認待ちを承認済みに描き替えず、数字や導入効果を創作しない。Skill同梱の選択画法の参照見本があれば実際に画像生成ツールへ渡す。\n実際に生成した原図と提示詞を保存し、Alpha・輪郭の切れ・明暗の背景・実際の表示サイズを確認する。図形として編集できるものだけをSVGと呼び、ビットマップ画像をSVGと呼ばない。\n制作記録：Skillのローカル機能で素材ごとの試行を記録し、実際に使った提示詞・参照見本・ツールの応答と原画像を結び付ける。取得できなかったモデル・seed・リクエストIDは推測で補わない。\n再制作：失敗・修正対象の素材だけを、記録した条件から明示的に選ぶ。採用済みの原図を上書きせず、試行回数の上限内で行う。結果が不明な場合は、重複生成の前に出力を確認する。\n納品と再利用：各素材に対応する独立ファイルを確認する。一覧画像を個別の納品物として数えない。ファイル検査と見た目・業務上の採用判定を分け、明示的に採用した素材だけを再利用カタログへ登録する。`;
+      output.value = `$taskobo-visuals を使い、以下の制作条件に沿って、指定された業務資料用の素材を作る。添付するJSONは status: draft のため、そのまま生成タスクとして実行しない。内容の根拠から各素材の meaning・subject・必要なsourceRefsを補い、検証してreadyにする。\n\nテーマ：${brief.topic.title}\n用途：${brief.medium.purpose}\n制作物：${kind === 'both' ? 'メインイラスト1点と' + form.elements.iconCount.value + '点のテーマ別アイコン' : kind === 'icons' ? form.elements.iconCount.value + '点のテーマ別アイコン' : 'メインイラスト1点'}\n画風：${style.nameJa}（styleId: ${style.id}、画法の版 ${style.styleVersion}）。挿絵とアイコンは完全に同じ画法を使い、線・塗り・材質・質感・光を共通化する。構図と細部の量だけをサイズに合わせる。\n配色：${roleText || '提供文書から根拠を示して提案し、色の役割を補う。'}\n${organization ? '社内基準：' + organization.name + ' v' + organization.version + '。固定した画法・色・フォントと異なる場合は上書きせず確認する。\n' : ''}配置先：${brief.medium.targetSize}。独立アイコンの実表示サイズ ${form.elements.iconSizePx.value}px。\n文字：${brief.medium.language === 'ja' ? '日本語 Meiryo UI' : '中国語 Microsoft YaHei'}。指定のフォントと正確な表記が必要な箇所は、画像生成後に対応フォントで文字を配置し、仕上がりを確認する。\n外形：${framingNames[framing]}。${framingInstructions[framing]}\n背景：${framing === 'full-scene' ? '主イラストは不透明（transparent_background: false）。独立アイコンは実際のAlphaを持つ透明PNG（transparent_background: true）。' : '実際のAlphaを持つ透明PNG（transparent_background: true）。白い背景や市松模様を焼き込まない。'}\n\n内容と画法と配色を分ける。文書の状態・対象・行動を確認し、見本の対象物や青色を固定しない。承認待ちを承認済みに描き替えず、数字や導入効果を創作しない。Skill同梱の選択画法の参照見本があれば実際に画像生成ツールへ渡す。\n生成した原図と、実際に使ったプロンプトを保存し、Alpha・輪郭の切れ・明暗の背景・実際の表示サイズを確認する。図形として編集できるものだけをSVGと呼び、ビットマップ画像をSVGと呼ばない。\n制作記録：Skillのローカル機能で素材ごとの試行を記録し、使ったプロンプト、参考画像、ツールの応答を、生成した原画像と一緒に記録する。取得できなかったモデル・seed・リクエストIDは推測で補わない。\n再制作：失敗・修正対象の素材だけを、記録した条件から明示的に選ぶ。採用済みの原図を上書きせず、試行回数の上限内で行う。結果が不明な場合は、重複生成の前に出力を確認する。\n納品と再利用：各素材に対応する独立ファイルを確認する。一覧画像を個別の納品物として数えない。ファイル検査と見た目・業務上の採用判定を分け、明示的に採用した素材だけを再利用カタログへ登録する。`;
       if (style.id === 'technical-spot') output.value += '\n06の小図は1つの主対象と必要な補助1つまで。小さな端子・放熱フィン・機器の寄せ集めを避け、現在のコンパクト参照を実際に画像生成ツールへ渡す。';
       document.getElementById('download-brief').disabled = false;
       document.getElementById('export-organization').disabled = !validHex(brief.palette.roles.primary);
-      if (announce) resultStatus.textContent = '制作意向を更新した。AIが意味と対象を補い、検証してから画像を生成する。';
+      if (announce) resultStatus.textContent = '依頼文を更新した。コピーして、スキルを導入したAIに渡せる。';
       resultStatus.classList.remove('ill-error'); return true;
     } catch (error) { resultStatus.textContent = error.message; resultStatus.classList.add('ill-error'); document.getElementById('download-brief').disabled = true; document.getElementById('export-organization').disabled = true; return false; }
   }
@@ -173,13 +173,13 @@
   palette.addEventListener('change', updateColor); custom.addEventListener('input', updateColor);
   form.elements.direction.addEventListener('change', updateStyle); form.elements.kind.addEventListener('change', updateFraming);
   form.addEventListener('input', () => { resultStatus.textContent = '条件を変更した。「依頼文を更新」で反映できる。'; document.getElementById('download-brief').disabled = true; document.getElementById('export-organization').disabled = true; });
-  document.getElementById('download-brief').addEventListener('click', () => { if (brief) { download(brief,'taskobo-visuals-brief.json'); resultStatus.textContent = '制作意向のJSONを保存した。依頼文と一緒にAIへ渡す。意味と対象はAIが補う。'; } });
+  document.getElementById('download-brief').addEventListener('click', () => { if (brief) { download(brief,'taskobo-visuals-brief.json'); resultStatus.textContent = '制作条件のJSONを保存した。依頼文と一緒に、スキルを導入したAIに渡す。'; } });
   document.getElementById('export-organization').addEventListener('click', () => {
     if (!createBrief(false)) return;
     try {
       const name = document.getElementById('organization-name').value, version = document.getElementById('organization-version').value;
       const value = makeOrganization(brief,catalog,name,version,organization);
-      download(value,'taskobo-visuals-organization.json'); profileStatus.textContent = '画法・配色・字体の社内基準JSONを保存した。採用した参照見本の実ファイルはSkillの配布ツールで追加・照合する。'; profileStatus.classList.remove('ill-error');
+      download(value,'taskobo-visuals-organization.json'); profileStatus.textContent = '画法・配色・フォントの社内基準JSONを保存した。採用した参照見本の実ファイルはSkillの配布ツールで追加・照合する。'; profileStatus.classList.remove('ill-error');
     } catch(error) { profileStatus.textContent = error.message; profileStatus.classList.add('ill-error'); }
   });
   document.getElementById('import-organization').addEventListener('change', async event => {
@@ -198,7 +198,7 @@
     form.elements.direction.value = organization.styleId; palette.value = 'custom'; custom.value = organization.palette.roles.primary;
     document.getElementById('organization-name').value = organization.name; document.getElementById('organization-version').value = organization.version;
     document.getElementById('apply-organization').disabled = true; document.getElementById('release-organization').disabled = false;
-    updateStyle(); updateColor(); createBrief(); profileStatus.textContent = `「${organization.name} v${organization.version}」を適用中。画風・字体と指定の色を固定した。個別に変更する場合は基準を解除する。`;
+    updateStyle(); updateColor(); createBrief(); profileStatus.textContent = `「${organization.name} v${organization.version}」を適用中。画風・フォントと指定の色を固定した。個別に変更する場合は基準を解除する。`;
   });
   document.getElementById('release-organization').addEventListener('click', () => {
     organization = null; document.getElementById('release-organization').disabled = true; updateStyle(); updateColor(); createBrief(); profileStatus.textContent = '社内基準の固定を解除した。現在の画風・配色は保持している。';
